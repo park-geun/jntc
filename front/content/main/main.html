@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-Compatible" content="IE=edge">
+    <title>JNTC</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../resources/plugin/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <!-- jquery -->
+    <script src="../../resources/plugin/jquery/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="../../resources/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper -->
+    <script src="../../resources/plugin/swiper/js/swiper.min.js"></script>
+    <!-- ui 관련 -->
+    <script src="../../resources/js/ui.js"></script>
+</head>
+
+<body>
+ <div id="wrapper">
+   
+   <a href="../vision/vision.html" class="vision">vision</a>   
+   <a href="javascript:void(0);" class="search">test</a>
+   <a href="javascript:void(0);" class="sitemap">site</a>
+   <a href="javascript:void(0);" class="close">close</a>
+   <a href="javascript:void(0);" class="sub"></a>
+
+    <img src="../../resources/images/home.jpg" alt="">
+    <img src="../../resources/images/home-search.jpg" alt="" class="search-img">
+    <img src="../../resources/images/home-sitemap.jpg" alt="" class="sitemap-img">
+   
+    <a href="../intro/intro.html" class="intro">
+       <img src="../../resources/images/home-sub.jpg" alt="" class="home-sub-img">
+   </a>
+ </div>
+
+ <script>
+  
+     $('.search').on('click',function(){
+        $('.search-img').css('display','block');
+        
+     })
+     $('.sitemap').on('click',function(){
+        $('.sitemap-img').css('display','block');
+     })
+     $('.sub').on('click',function(){
+        $('.home-sub-img').css('display','block');
+     })
+     $('.close').on('click',function(){
+        $('.search-img').css('display','none'); 
+        $('.sitemap-img').css('display','none');
+        $('.home-sub-img').css('display','none');
+     })
+ </script>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ margin:0; border:0; padding:0; box-sizing: border-box; }
+        .wrap{ padding:100px; }
+        .history{padding: 50px 0;}
+        .history dl{ position: relative; }
+        .history dl:after{ content:'';display:block;clear:both; }
+        .history dl dt{position: absolute;left:0;top: -16px;font-size: 24px;font-weight: normal;}
+        .history dl dd{float: left;margin-left: 145px;width:calc(100% - 146px);border-left:1px solid #ccc;padding-bottom: 80px;}
+        .history dl dd:after{width:9px;height:9px;border-radius: 9px;background: #737373;content: '';display: block;position:absolute;left: 141px;top: -4px;}
+        .history dl dd div{margin-bottom: 20px;height: 20px;}
+        .history dl dd div::after{ content:''; display:block; clear:both; }
+        .history dl dd div p{float: left;color:#000;line-height: 1;font-size:19px;}
+        .history dl dd div p.line{width:92px;height: 9.5px;margin-right:40px;}
+        .history dl dd div p.line span{border-top:1px solid #ccc;position: relative;height: 100%; display:block;}
+        .history dl dd div p.line span:after{width:7px;height:7px;border-radius: 7px;border:2px solid #535353;background: #fff;content: '';display: block;position:absolute;right:-3.5px;top: -4.5px;box-sizing: border-box;}
+        .history dl dd div p.number{width:80px;font-weight: normal;margin-right:40px;margin-top: -9.5px;}
+        .history dl dd div p.text{width:calc(100% - 253px);margin-top: -9.5px;}
+        .history dl dd div.on p{color: #f47920;}
+        .history dl dd div.on p.line span:after{border-color: #f47920;}
+        .history dl.dl_last dd{padding: 0;height: 0;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 여기부터 확인하시면 됩니다. -->
+        <div class="history">
+            <dl>
+                <dt>1996</dt>
+                <dd>
+                    <div>
+                        <p class="line"><span></span></p>
+                        <p class="number">1996. 11</p>
+                        <p class="text">(주)협진공업 설립 (서울 금천 독산동 998-7)</p>
+                    </div>
+                    <div class="on">
+                        <p class="line"><span></span></p>
+                        <p class="number">1996. 11</p>
+                        <p class="text">(주)협진공업 설립 (서울 금천 독산동 998-7)</p>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+                <dt>1997</dt>
+                <dd>
+                    <div>
+                        <p class="line"><span></span></p>
+                        <p class="number">1996. 11</p>
+                        <p class="text">(주)협진공업 설립 (서울 금천 독산동 998-7)</p>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+                <dt>1997</dt>
+                <dd>
+                    <div>
+                        <p class="line"><span></span></p>
+                        <p class="number">1996. 11</p>
+                        <p class="text">(주)협진공업 설립 (서울 금천 독산동 998-7)</p>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="dl_last">
+                <dt>1997</dt>
+                <dd>
+                    <div>
+                        <p class="line"><span></span></p>
+                        <p class="number">1996. 11</p>
+                        <p class="text">(주)협진공업 설립 (서울 금천 독산동 998-7)</p>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</body>
+</html>

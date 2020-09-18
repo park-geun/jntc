@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-Compatible" content="IE=edge">
+    <title>JNTC</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../resources/plugin/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <!-- //fontawesome cnd -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="../../resources/plugin/jquery/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="../../resources/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper -->
+    <script src="../../resources/plugin/swiper/js/swiper.min.js"></script>
+    <!-- ui 관련 -->
+    <script src="../../resources/js/ui.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="header">
+            <header>
+                <div class="container d-flex align-items-center justify-content-between">
+                    <div> <a href="../main/main_2.html"><img src="../../resources/images/logo.png" alt="JNTC 로고"> </a></div>
+                    <nav>
+                        <ul>
+                            <li class="active"><a href="">기업정보</a></li>
+                            <li><a href="">제품</a></li>
+                            <li><a href="">기술</a></li>
+                            <li><a href="">인재/채용</a></li>
+                            <li><a href="">투자정보</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <select name="" id="">
+                            <option value="">KOR</option>
+                            <option value="">JAP</option>
+                            <option value="">CHA</option>
+                        </select>
+                        <a href="javascript:void(0);" onclick="openSearch()"> <img
+                                src="../../resources/images/search.png" alt="서치"> </a>
+                        <a href="javascript:void(0);" onclick="openSiteMap()"> <img
+                                src="../../resources/images/menu.png" alt="메뉴바"> </a>
+                    </div>
+                </div>
+            </header>
+            <!-- GNB -->
+            <div class="gnb">
+                <div class="container d-flex justify-content-between">
+                    <div class="col-10 gnb-list d-flex">
+                        <ul>
+                            <li class="gnb-title">회사소개</li>
+                            <li><a href="">개요</a></li>
+                            <li><a href="../intro/ceo.html">CEO 인사말</a></li>
+                            <li><a href="">연력/수상내역</a></li>
+                            <li><a href="../intro/vision.html">비전 및 조직문화 CI</a></li>
+                        </ul>
+                        <ul>
+                            <li class="gnb-title">사업소개</li>
+                            <li><a href="../business/cover_glass.html">커버글라스</a></li>
+                            <li><a href="">커넥터</a></li>
+                        </ul>
+                        <ul>
+                            <li class="gnb-title">사업장</li>
+                            <li><a href="">국내 사업장</a></li>
+                            <li><a href="">해외 사업장</a></li>
+                        </ul>
+                        <ul>
+                            <li class="gnb-title">지속가능경영</li>
+                            <li><a href="">품질경영</a></li>
+                            <li><a href="">환경경영</a></li>
+                            <li><a href="">사회공헌</a></li>
+                            <li><a href="">분쟁광물</a></li>
+                        </ul>
+                        <ul>
+                            <li class="gnb-title">계열사소개</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 gnb-list-sub">
+                        <p>기업정보</p>
+                        <p>디지털 제품의 새로운 가치를 창조하는 기업</p>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" onclick="closeBtn();">
+                    <div class="close-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 사이트맵 -->
+            <div class="sitemaps">
+                <div class="container">
+                    <div class="row">
+                        <div class="col sitemap-list">
+                            <h2>기업정보</h2>
+                            <ul>
+                                <li class="sitemap-title">회사소개</li>
+                                <li><a href="../intro/ci.html">개요</a></li>
+                                <li><a href="../intro/ceo.html">CEO 인사말</a></li>
+                                <li><a href="">연력/수상내역</a></li>
+                                <li><a href="../intro/vision.html">비전 및 조직문화 CI</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title">사업소개</li>
+                                <li><a href="../business/cover_glass.html">커버글라스</a></li>
+                                <li><a href="">커넥터</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title">사업장</li>
+                                <li><a href="">국내 사업장</a></li>
+                                <li><a href="">해외 사업장</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title">지속가능경영</li>
+                                <li><a href="">품질경영</a></li>
+                                <li><a href="">환경경영 (HSF방침)</a></li>
+                                <li><a href="">사회공헌</a></li>
+                                <li><a href="">분쟁광물</a></li>
+                            </ul>
+                            <ul>
+                                <li>계열사소개</li>
+                            </ul>
+                        </div>
+                        <div class="col sitemap-list">
+                            <h2>제품</h2>
+                            <ul>
+                                <li class="sitemap-title">커버글라스</li>
+                                <li><a href="">모바일용</a></li>
+                                <li><a href="">차량용</a></li>
+                                <li><a href="">카메라윈도우용</a></li>
+                                <li><a href="">UTG용</a></li>
+                                <li><a href="">스마트와치용</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title">커넥터</li>
+                                <li><a href="">모바일용</a></li>
+                                <li><a href="">차량용</a></li>
+                                <li><a href="">카메라윈도우용</a></li>
+                                <li><a href="">UTG용</a></li>
+                                <li><a href="">스마트와치용</a></li>
+                            </ul>
+                        </div>
+                        <div class="col sitemap-list">
+                            <h2>기술</h2>
+                            <ul>
+                                <li class="sitemap-title"><a href="">R&D 현황</a></li>
+                                <li><a href="">연구소 소개</a></li>
+                                <li><a href="">기술 경쟁력</a></li>
+                                <li><a href="">비전 및 로드맵</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title">연구개발 성과</li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title">핵심 기술력</li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title">지적재산권</li>
+                            </ul>
+                        </div>
+                        <div class="col sitemap-list">
+                            <h2>인재/채용</h2>
+                        </div>
+                        <div class="col sitemap-list">
+                            <h2>투자정보</h2>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" onclick="closeBtn();">
+                    <div class="close-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    <!-- 검색창 -->
+    <div class="search-bar">
+        <div class="input-group inputSearch">
+            <input type="text" class="form-control" placeholder="검색어를 입력해 주세요" aria-label="Search User" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">
+                <a href="#/"><i class="fa fa-search"></i></a></span>
+            </div>
+        </div>
+        <a href="javascript:void(0);" onclick="closeBtn();">
+            <div class="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+        </a>
+    </div>
+        
+      
+        
+        <section class="section-1">
+            <div class="swiper-container">
+                
+                <div class="swiper-wrapper">
+                
+                    <div class="swiper-slide banner-1">
+                        <div class="banner-wrap">
+                            <p>차별화된 제품으로 <br>
+                               최고의 고객가치를 창출합니다.
+                            </p>
+                            <p>Connector</p>
+                            <p>(5G, Waterproof etc.)</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide banner-1">
+                        <div class="banner-wrap">
+                            <p>차별화된 제품으로 <br>
+                               최고의 고객가치를 창출합니다.
+                            </p>
+                            <p>Connector</p>
+                            <p>(5G, Waterproof etc.)</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide banner-1">
+                        <div class="banner-wrap">
+                            <p>차별화된 제품으로 <br>
+                               최고의 고객가치를 창출합니다.
+                            </p>
+                            <p>Connector</p>
+                            <p>(5G, Waterproof etc.)</p>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div class="swiper-pagination"></div>
+    
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            
+            </div>
+        </section>
+
+    
+        <section class="section-2">
+            <div class="container">
+                <h1 class="text-center">About JNTC</h1>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 border-right text-center">
+                        <div class="about">
+                            <div class="ic-1"></div>
+                            <p>설립연도</p>
+                            <p>1999<span>년</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 border-right text-center">
+                        <div class="about">
+                            <div class="ic-2"></div>
+                            <p>매출</p>
+                            <p>3862<span>억원</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 border-right text-center">
+                        <div class="about">
+                            <div class="ic-3"></div>
+                            <p>임직원</p>
+                            <p>460<span>명</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 text-center">
+                        <div class="about">
+                            <div class="ic-3"></div>
+                            <p>생산 및 판매거점</p>
+                            <p>3<span>개국</span>5<span>개</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-12">
+                        <div class="global-img text-center">
+                            <img src="../../resources/images/earth-map.png" alt="지구본">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-center">
+                        <div class="global-text">
+                            <p>대한민국을 대표하는<br>
+                                <span>글로벌 No.1 기술선도 기업</span>으로<br>
+                                지속 성장하고 있습니다.
+                            </p>
+                            <p>
+                                전자기기의 핵심부품을 생산하는 제이앤티씨는<br>
+                                스마트폰용 커넥터, 커버글라스를 비롯해 차량용 디스플레이부품까지<br>언제나 새로운 디지털 제품을 만들고 있습니다
+                            </p>
+
+                            <a href="" class="link-btn">자세히 보기 <img src="../../resources/images/ic-s-right.png"
+                                    alt="자세히 보기">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-4">
+            <div class="container">
+                <h1 class="text-center">Featured Products</h1>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-12 col-sm-12 col-12">
+                        <div class="fp-wrap">
+                            <p>3D 커버글라스</p>
+
+                            <p>스마트폰에 적용되는 전면 커버글라스, 카메라윈도우글라스 시장을 <br>선도하고 있으며, UTG 및 차량용 디스플레이 부품 등으로 사업을<br> 확대해가고
+                                있습니다.</p>
+
+                            <a href="" class="link-btn">자세히 보기 <img src="../../resources/images/ic-s-right.png" alt="자세히 보기">
+                            </a>
+                            <div class="phone-img"></div>
+                            <div class="phone-img-2"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-sm-12 col-12">
+                        <div class="fp-wrap">
+                            <p>커넥터</p>
+
+                            <p>5G, 방수, 고속(Type-C) 등 최신 모바일 트렌드 변화에 맞춘<br>고기능성 커넥터를 글로벌 기업에 공급하며 시장 니즈에 적극<br>대응해 나가고
+                                있습니다</p>
+
+                            <a href="" class="link-btn">자세히 보기 <img src="../../resources/images/ic-s-right.png"
+                                    alt="자세히 보기"></a>
+                            <div class="connect-img">
+                                <img src="../../resources/images/ic-connect.png" alt="부품">
+                                <img src="../../resources/images/ic-connect-2.png" alt="부품">
+                                <img src="../../resources/images/ic-connect-3.png" alt="부품">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-5">
+            <div class="container">
+                <h1 class="text-center">Newsroom</h1>
+                <div class="row">
+                    <div class="col-xl-4 col-md-12 col-sm-12 col-12">
+                        <div class="newsroom">
+                            <div class="newsroom-img">
+                                <img src="../../resources/images/human-01.png" alt="">
+                            </div>
+                            <div class="newsroom-content">
+                                <p class="border-text">채용공고</p>
+                                <p class="news-title">JNTC 커넥터 전자부품 생산직 정규사원 모집중</p>
+                                <p class="news-date">2020.08.14</p>
+                                <div class="text-right">
+                                    <a href="" class="link-btn">더보기<img src="../../resources/images/ic-s-right.png"
+                                            alt="더보기"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-12">
+                        <div class="newsroom">
+                            <div class="newsroom-img">
+                                <img src="../../resources/images/newsroom-02.png" alt="">
+                            </div>
+                            <div class="newsroom-content">
+                                <p class="border-text">투자정보</p>
+                                <p class="news-title">JNTC 커넥터 전자부품 생산직 정규사원 모집중</p>
+                                <p class="news-date">2020.08.14</p>
+                                <div class="text-right">
+                                    <a href="" class="link-btn">더보기<img src="../../resources/images/ic-s-right.png"
+                                            alt="더보기"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4  col-md-12 col-sm-12 col-12">
+                        <div class="newsroom">
+                            <div class="newsroom-content">
+                                <p class="border-text">뉴스</p>
+
+                                <div class="news-list">
+                                    <p class="news-title">제이앤티씨, 차량용 3D 커버글라스 제품 납품 준비 완료</p>
+                                    <p class="news-date">2020.08.14</p>
+                                </div>
+                                <div class="news-list">
+                                    <p class="news-title">제이앤티씨, 26일 박영준 신임 대표 선임</p>
+                                    <p class="news-date">2020.08.14</p>
+                                </div>
+                                <div class="news-list">
+                                    <p class="news-title">3D 커버글라스 전문기업 제이앤티씨, 코스닥 입성</p>
+                                    <p class="news-date">2020.08.14</p>
+                                </div>
+
+                                <div class="text-right">
+                                    <a href="" class="link-btn">최신 뉴스보기<img src="../../resources/images/ic-s-right.png"
+                                            alt="더보기"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ul>
+                            <li class="active"><a href="">사업장 안내</a></li>
+                            <li><a href="">개인정보취급방침</a></li>
+                            <li><a href="">이메일무단수집거부</a></li>
+                            <li><a href="">부정비리 신고센터</a></li>
+                            <li><a href="">사이트 맵</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row footer-info">
+                    <div class="col-md-6 col-sm-12 col-12 text-left">
+                        <p>8523 경기도 화성시 정남면 내향안길 240-5 <span>대표전화 82-70-4050-3100</span>
+                        </p>
+                        <p>© 2020 제이앤티씨 ALL RIGHTS RESERVED</p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12 text-right">
+                        <a href="" class="link-btn">패밀리사이트<img src="../../resources/images/ic-s-right.png" alt="패밀리사이트"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="../../resources/js/common.js"></script>
+</body>
+
+</html>

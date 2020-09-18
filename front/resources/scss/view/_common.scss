@@ -1,0 +1,134 @@
+$orange : #f47920;
+$black:#000000;
+$gray-79:#797979;
+$gray-f2:#f2f2f2;
+$gray-33:#333333;
+$gray-dd:#dddddd;
+$gray-ef:#efefef;
+$gray-f5:#f5f5f5;
+$gray-88:#888888;
+$gray-aa:#aaaaaa;
+$white : #ffffff;
+
+body {
+    text-decoration: none;
+}
+
+p,
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: $black;
+    word-break: keep-all;
+}
+
+.margin {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.link-btn {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    color: $black;
+    padding: 10px 25px;
+    display: inline-block;
+    margin: 30px 0;
+    background-color: $white;
+    vertical-align: middle;
+
+    img {
+        vertical-align: inherit;
+        margin: 0 5px 0 20px;
+    }
+}
+
+.border-text {
+    width: 90px;
+    padding: 0 5px;
+    border: 1px solid #797979;
+    border-radius: 30px;
+    font-size: 17px;
+    color: #000000;
+    font-weight: lighter;
+    margin: 20px 0;
+    display: inline-block;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.c-lg-text {
+    font-size: 36px;
+}
+
+.c-text-border {
+    font-size: 36px;
+    position: relative;
+    padding-bottom: 10px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 1px;
+        background-color: $orange;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.c-m-text {
+    font-size: 22px;
+    color: $orange;
+    margin: 30px 0;
+}
+
+.c-s-text {
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1.68;
+}
+
+@include media-breakpoint-down(md) {
+    .link-btn {
+        font-size: 16px;
+        padding: 10px;
+        display: inline-block;
+        margin: 20px 0;
+    }
+    .c-lg-text {
+        font-size: 30px;
+    }
+    
+    .c-text-border {
+        font-size: 30px;
+        position: relative;
+        padding-bottom: 10px;
+    
+        &::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 1px;
+            background-color: $orange;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    
+    .c-m-text {
+        font-size: 20px;
+        color: $orange;
+        margin: 20px 0;
+    }
+    
+    .c-s-text {
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 1.68;
+    }
+}
