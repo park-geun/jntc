@@ -10,7 +10,7 @@
                 display: flex;
                 font-size: 28px;
                 li { padding: 20px 30px; font-weight: 700; color:$black;
-                    &.active{color:$orange;border-bottom:1px solid $orange;
+                    &.active{color:$orange;border-bottom:2px solid $orange;
                         a{color:$orange;}
                     }
                 }

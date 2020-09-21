@@ -22,6 +22,22 @@ $(document).ready(function () {
     }, function () {
 
     })
+
+    $('.glass-list').hover(function(){
+        var idx = $(this).index()+1;
+        var glassImg = $('#glass_img_'+idx);
+
+        $(this).addClass('active');
+        glassImg.attr('src','../../resources/images/phone-1.png');
+        
+    },function(){
+        var idx = $(this).index()+1;
+        var glassImg = $('#glass_img_'+idx);
+
+        $(this).removeClass('active');
+        glassImg.attr('src','../../resources/images/product-2016.png');
+
+    })
 })
 
 

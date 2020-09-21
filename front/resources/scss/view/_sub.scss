@@ -129,147 +129,53 @@
 
     ///////커버글라스
     .cover-glass{
+        margin-left:-10px;
+        margin-right:-10px;
         .cover-glass-content{
             margin-top: 60px;
-            p:nth-child(1){font-size:24px;color:$orange; margin-bottom: 20px;}
+            p:nth-child(1){margin-bottom: 30px;}
             p:nth-child(2){font-size:19px;line-height: 1.58;font-weight: 300;}
         }
         .flat{
-            width: 20%;
+            width: 100%;
             padding-bottom: 70px;
             position: relative;
-            &::after{
-                content:"";
-                width: 95%;
-                height: 1px;
+            // flex-flow:wrap;
+         
+        }
+  
+        .glass-list{
+            width: 20%;   
+            padding: 0 10px;        
+            margin-top: 20px;
+            .glass-item{height: 100%;}  
+        }
+        .glass-list.active{
+            position: relative;
+            .glass-img{
+                border: 3px solid $orange;
+                background-color: $gray-f5;
+            }
+            .arrow-plus{
+                width: 25px;
+                height: 25px;
+                background-image: url('../../resources/images/ic-plus.png');
+                background-size: contain;
                 position: absolute;
-                bottom:0;
+                top: 30%;
                 left: 50%;
-                background-color: $gray-88;
-                transform: translate(-50%, 0);
-            }
-            .glass-list{
-                width: 100%;   
-                margin: 0 10px;        
-                .glass-item{border:1px solid $gray-aa;height: 100%;}  
-            }
-            .arrow-name{
-                font-size: 24px;
-                position: absolute;
-                bottom:-3%;
-                left: 50%;   
-                transform: translate(-50%, 3%);
-                background-color: $white;
-                z-index: 2;
-                padding : 0 15px;
-            }
-            .arrow-right{
-                width: 10px;
-                height: 20px;
-                background-image: url('../../resources/images/g-btn-right.png');
-                background-repeat: no-repeat;
-                position: absolute;
-                bottom:-5px;
-                right:3px;
-                transform: translate(-3px, 5px);
-                z-index: 2;
+                transform: translate(-50%,-30%);
+
             }
         }
-        .curved{
-            width: 40%;
-            padding-bottom: 70px;
-            position: relative;
-            &::after{
-                content:"";
-                width: 96%;
-                height: 1px;
-                position: absolute;
-                bottom:0;
-                left: 50%;                
-                background-color: $gray-88;
-                transform: translate(-50%, 0);
-            }
-     
-            .glass-list{
-                width: 50%;   
-                margin: 0 10px;  
-                >p{font-size: 30px; padding : 5px 20px;}     
-                .glass-item{border:1px solid $gray-aa;height: 100%;} 
-            }
-            .arrow-name{
-                font-size: 24px;
-                position: absolute;
-                bottom:-3%;
-                left: 50%;   
-                transform: translate(-50%, 3%);
-                background-color: $white;
-                z-index: 2;
-                padding : 0 15px;
-            }
-            .arrow-right{
-                width: 10px;
-                height: 20px;
-                background-image: url('../../resources/images/g-btn-right.png');
-                background-repeat: no-repeat;
-                position: absolute;
-                bottom:-5px;
-                right:5px;
-                transform: translate(-5px, 5px);
-                z-index: 2;
-            }
-        }
-        .keyless{
-            width: 40%;
-            padding-bottom: 70px;
-            position: relative;
-            &::after{
-                content:"";
-                width: 96%;
-                height: 1px;
-                position: absolute;
-                bottom:0;
-                left: 50%;
-                background-color: $gray-88;
-                transform: translate(-50%, 0);
-            }
-            .glass-list{
-                width: 50%;   
-                margin: 0 10px;
-                >p{font-size: 30px; padding : 5px 20px;}    
-                .glass-item{
-                    border:1px solid $gray-aa;
-                    height: 100%;
-                
-                }       
-            }
-            .arrow-name{
-                font-size: 24px;
-                position: absolute;
-                bottom:-3%;
-                left: 50%;   
-                transform: translate(-50%, 3%);
-                background-color: $white;
-                z-index: 2;
-                padding : 0 15px;
-            }
-            .arrow-right{
-                width: 10px;
-                height: 20px;
-                background-image: url('../../resources/images/g-btn-right.png');
-                background-repeat: no-repeat;
-                position: absolute;
-                bottom:-5px;
-                right:5px;
-                transform: translate(-5px, 5px);
-                z-index: 2;
-            }
-        }
-        
      
         .glass-img{
-            background-color: $gray-f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            border:1px solid $gray-aa;
             padding :30px 0;
-            
         }
         .glass-text{
             padding : 15px 20px;
@@ -277,9 +183,27 @@
             
             .glass-text-title{
                 p:nth-child(1){font-size:19px;line-height: 1.26;}
-                p:nth-child(2){font-size:17px;line-height: 1.76;font-weight: 300; border:1px solid $black; border-radius:15px; padding: 0 15px;}
+                p:nth-child(2){font-size:17px; margin-top: 5px;}
             }
-            .glass-name{font-size:19px;line-height: 1.26;font-weight: 300;margin-top: 20px;}
+            .glass-brand{font-size:19px;line-height: 1.26;margin-top: 30px;font-weight: 300;}
+            .glass-name{font-size:19px;line-height: 1.26;font-weight: 300;margin-top: 10px;}
+            .s-text-border {
+                font-size: 24px;
+                position: relative;
+                padding:0;
+                color: $orange;
+            
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 40px;
+                    height: 2px;
+                    background-color: $orange;
+                    top: 55px;
+                    left: 50%;
+                    transform: translate(-50% , 0);
+                }
+            }
         }
     }    
 
@@ -315,30 +239,89 @@
     .product-glass{
         margin-left:-10px;
         margin-right:-10px;
-        .glass-list{
+     
+    }
+   /////제품->카메라윈도우
+
+     
+    
+    .camera-window{
+        margin-left:-10px;
+        margin-right:-10px;
+    
+
+        .camera-list{
             width: 20%;   
             padding: 0 10px;        
             margin-top: 20px;
-            .glass-item{border:1px solid $gray-aa;height: 100%;}  
+            .glass-item{height: 100%;}  
         }
-        .glass-img{
-            background-color: $gray-f5;
-            padding :30px 0;
-            
+        .camera-list.active{
+            position: relative;
+            .camera-img{
+                border: 3px solid $orange;
+                background-color: $gray-f5;
+            }
+            .arrow-plus{
+                width: 25px;
+                height: 25px;
+                background-image: url('../../resources/images/ic-plus.png');
+                background-size: contain;
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%,-30%);
+
+            }
         }
-        .glass-text{
+    
+        .camera-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border:1px solid $gray-aa;
+
+        }
+        .camera-text{
             padding : 15px 20px;
             text-align: left;
-            
-            .glass-text-title{
-                p:nth-child(1){font-size:19px;line-height: 1.26;}
-                p:nth-child(2){font-size:17px;line-height: 1.76;font-weight: 300; border:1px solid $black; border-radius:15px; padding: 0 15px;}
+
+            .camera-brand{font-size:19px;line-height: 1.26;margin-top: 30px;}
+            .camera-name{font-size:19px;line-height: 1.26;}
+
+            .camera-text-title{
+                
+                p:nth-child(2){font-size:17px; margin-top: 5px;}
             }
-            .glass-brand{font-size:19px;line-height: 1.26;margin-top: 30px;}
-            .glass-name{font-size:19px;line-height: 1.26;font-weight: 300;}
+            .s-text-border {
+                font-size: 24px;
+                position: relative;
+                padding:0;
+                color: $orange;
+            
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 40px;
+                    height: 2px;
+                    background-color: $orange;
+                    top: 100px;
+                    left: 50%;
+                    transform: translate(-50% , 0);
+                }
+            }
+        }
+    }   
+    //카메라윈도우
+    @include media-breakpoint-down(md){
+        .camera-window{
+            .camera-list{
+                width: 50%;   
+                padding: 0 10px;        
+                margin-top: 20px;
+                .glass-item{height: 100%;}  
+            }
         }
     }
-   
-     
-
 }
+
