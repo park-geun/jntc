@@ -307,30 +307,30 @@
         .camera-text{
             padding : 15px 20px;
             text-align: left;
-
+            position: relative;
             .camera-brand{font-size:19px;line-height: 1.26;margin-top: 30px;}
             .camera-name{font-size:19px;line-height: 1.26;}
 
             .camera-text-title{
                 
-                p:nth-child(2){font-size:17px; margin-top: 5px;}
+                p:nth-child(2){font-size:19px; margin-top: 5px;}
             }
             .s-text-border {
                 font-size: 24px;
-                position: relative;
+  
                 padding:0;
                 color: $orange;
             
-                &::after {
-                    content: "";
-                    position: absolute;
-                    width: 40px;
-                    height: 2px;
-                    background-color: $orange;
-                    top: 100px;
-                    left: 50%;
-                    transform: translate(-50% , 0);
-                }
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 40px;
+                height: 2px;
+                background-color: $orange;
+                top: 100px;
+                left: 50%;
+                transform: translate(-50% , 0);
             }
         }
     }   

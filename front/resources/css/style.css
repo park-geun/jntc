@@ -14075,6 +14075,7 @@ h5 {
 #wrap .camera-window .camera-text {
   padding: 15px 20px;
   text-align: left;
+  position: relative;
 }
 
 #wrap .camera-window .camera-text .camera-brand {
@@ -14089,18 +14090,17 @@ h5 {
 }
 
 #wrap .camera-window .camera-text .camera-text-title p:nth-child(2) {
-  font-size: 17px;
+  font-size: 19px;
   margin-top: 5px;
 }
 
 #wrap .camera-window .camera-text .s-text-border {
   font-size: 24px;
-  position: relative;
   padding: 0;
   color: #f47920;
 }
 
-#wrap .camera-window .camera-text .s-text-border::after {
+#wrap .camera-window .camera-text::after {
   content: "";
   position: absolute;
   width: 40px;
