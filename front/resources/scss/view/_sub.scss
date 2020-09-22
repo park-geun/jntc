@@ -8,7 +8,6 @@
     .section-main{
         position: relative;
         width: 100%;
-        height: 80vh;
         .vision-box{
             p:nth-child(1){font-size:30px;}
             p:nth-child(2){font-size:24px; color:$orange;margin:20px 0;}
@@ -107,8 +106,8 @@
                 color: #000000;
             }
             .sign{
-                width: 200px;
-                height:75px;
+                width: 150px;
+                height:50px;
                 background-image: url('../../resources/images/sign.png');
             }
         }
@@ -129,8 +128,7 @@
 
     ///////커버글라스
     .cover-glass{
-        margin-left:-10px;
-        margin-right:-10px;
+
         .cover-glass-content{
             margin-top: 60px;
             p:nth-child(1){margin-bottom: 30px;}
@@ -205,7 +203,31 @@
                 }
             }
         }
+        
     }    
+    @include media-breakpoint-down(md){
+        .cover-glass{
+            .glass-list{
+                width: 50%;   
+                padding: 0 10px;        
+                margin-top: 20px;
+                .glass-item{height: 100%;}  
+            }
+            .glass-img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 250px;
+                border:1px solid $gray-aa;
+                padding :15px 0;
+            }
+            .glass-text{
+                padding:10px;
+            }
+        }
+  
+    }
+
 
     ////ci소개
     .color-system{
@@ -323,5 +345,54 @@
             }
         }
     }
+
+
+    //연구소 소개
+
+    .section-2.introduce{
+        padding : 0 0 80px 0;
+        margin:0;
+        .ic-intro-1 {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-image: url('../../resources/images/ic-introduce-1.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .ic-intro-2 {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-image: url('../../resources/images/ic-introduce-2.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .ic-intro-3 {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-image: url('../../resources/images/ic-introduce-3.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .ic-intro-4 {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-image: url('../../resources/images/ic-introduce-4.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    //연구개발 성과
+    
 }
 

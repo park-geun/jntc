@@ -208,3 +208,13 @@
     padding: 0;
     height: 0;
 }
+@media screen and (max-width:991.98px){
+    .tab-content > div .left-content{ 
+        width:403px;
+        margin-right:120px;
+        float: inherit;   
+     }
+     .tab-content > div .right-content{ width:calc(100% - 524px);
+        float: inherit;   
+    }
+}

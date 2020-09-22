@@ -12468,6 +12468,7 @@ h5 {
   font-size: 19px;
   font-weight: 300;
   line-height: 1.68;
+  margin: 45px 0;
 }
 
 .c-text-border {
@@ -12480,7 +12481,24 @@ h5 {
   content: "";
   position: absolute;
   width: 50px;
-  height: 1px;
+  height: 3px;
+  background-color: #f47920;
+  bottom: 0;
+  left: 0;
+}
+
+.lg-text-border {
+  font-size: 36px;
+  position: relative;
+  padding-bottom: 10px;
+  color: #f47920;
+}
+
+.lg-text-border::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
   background-color: #f47920;
   bottom: 0;
   left: 0;
@@ -12505,6 +12523,99 @@ h5 {
           transform: translate(-50%, 0);
 }
 
+.border-box {
+  border: 1px solid #b2b2b2;
+  padding: 50px;
+  margin-top: 45px;
+}
+
+.border-box.vision {
+  border: 1px solid #b2b2b2;
+  padding: 50px 120px;
+  margin-top: 45px;
+}
+
+.nav-tabs {
+  margin: 45px 0;
+}
+
+.nav-tabs .nav-item {
+  width: 50%;
+  text-align: center;
+  padding: 0;
+}
+
+.nav-tabs .nav-item .nav-link {
+  padding: 20px 0;
+  border: none;
+  font-size: 24px;
+  color: #000000;
+  border: 1px solid #333333;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  background-color: #f47920;
+  border: 1px solid #f47920;
+  color: #ffffff;
+}
+
+.nav-tabs .nav-item-3 {
+  width: 33.3%;
+  text-align: center;
+  padding: 0;
+}
+
+.nav-tabs .nav-item-3 .nav-link {
+  padding: 20px 0;
+  border: none;
+  font-size: 24px;
+  color: #000000;
+  border: 1px solid #333333;
+}
+
+.nav-tabs .nav-item-3 .nav-link.active {
+  background-color: #f47920;
+  border: 1px solid #f47920;
+  color: #ffffff;
+}
+
+.table.tab-panel th, .table.tab-panel td {
+  border-top: none;
+  border-bottom: 1px solid #dddddd;
+}
+
+.table.tab-panel thead {
+  border-top: 2px solid #dddddd;
+}
+
+.table.tab-panel thead th {
+  padding: 10px 0;
+  background-color: #f5f5f5;
+}
+
+.table.tab-panel tbody td, .table.tab-panel tbody th {
+  padding: 30px;
+  vertical-align: middle;
+}
+
+.table.tab-panel .table-dot-list li {
+  position: relative;
+  padding-left: 10px;
+}
+
+.table.tab-panel .table-dot-list li::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50px;
+  left: 0;
+  top: 35%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background-color: #dddddd;
+}
+
 @media (max-width: 991.98px) {
   .link-btn {
     font-size: 16px;
@@ -12513,31 +12624,93 @@ h5 {
     margin: 20px 0;
   }
   .c-lg-text {
-    font-size: 30px;
+    font-size: 23px;
   }
   .c-text-border {
-    font-size: 30px;
+    font-size: 23px;
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
   .c-text-border::after {
     content: "";
     position: absolute;
-    width: 50px;
+    width: 40px;
     height: 1px;
     background-color: #f47920;
     bottom: 0;
     left: 0;
   }
+  .lg-text-border {
+    font-size: 23px;
+    position: relative;
+    padding-bottom: 5px;
+    color: #f47920;
+  }
+  .lg-text-border::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: #f47920;
+    bottom: 0;
+    left: 0;
+  }
   .c-m-text {
-    font-size: 20px;
+    font-size: 19px;
     color: #f47920;
     margin: 20px 0;
   }
   .c-s-text {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.68;
+  }
+  .nav-tabs {
+    margin: 45px 0;
+  }
+  .nav-tabs .nav-item {
+    width: 50%;
+    text-align: center;
+    padding: 0;
+  }
+  .nav-tabs .nav-item .nav-link {
+    padding: 10px 0;
+    border: none;
+    font-size: 19px;
+    color: #000000;
+    border: 1px solid #333333;
+  }
+  .nav-tabs .nav-item .nav-link.active {
+    background-color: #f47920;
+    border: 1px solid #f47920;
+    color: #ffffff;
+  }
+  .nav-tabs .nav-item-3 {
+    width: 33.3%;
+    text-align: center;
+    padding: 0;
+  }
+  .nav-tabs .nav-item-3 .nav-link {
+    padding: 10px 0;
+    border: none;
+    font-size: 17px;
+    color: #000000;
+    border: 1px solid #333333;
+  }
+  .nav-tabs .nav-item-3 .nav-link.active {
+    background-color: #f47920;
+    border: 1px solid #f47920;
+    color: #ffffff;
+  }
+  .border-box {
+    border: 1px solid #b2b2b2;
+    padding: 25px;
+    margin-top: 25px;
+  }
+  .border-box.vision {
+    border: 1px solid #b2b2b2;
+    padding: 10px 20px;
+    margin-top: 25px;
   }
 }
 
@@ -12804,12 +12977,6 @@ h5 {
   #wrap header nav ul li.active a {
     color: #f47920;
   }
-  #wrap header select {
-    margin: 0 20px 0 0;
-  }
-  #wrap header a img {
-    padding: 0 0 0 20px;
-  }
 }
 
 @media (max-width: 991.98px) {
@@ -12819,8 +12986,48 @@ h5 {
   #wrap .gnb {
     display: none;
   }
-  #wrap .sitemap-list {
+  #wrap .sitemaps .sitemap-list {
     margin-top: 50px;
+  }
+  #wrap .sitemaps .close-btn {
+    top: 20px;
+    right: 20px;
+  }
+  #wrap header {
+    padding: 10px 0;
+  }
+  #wrap header select {
+    margin: 0 5px 0 0;
+  }
+  #wrap header a img {
+    padding: 0 0 0 10px;
+  }
+  #wrap header .logo img {
+    width: 60%;
+  }
+  #wrap header .left-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #wrap header .left-header img {
+    width: 40px;
+  }
+  #wrap .search-bar {
+    padding: 50px 0;
+  }
+  #wrap .search-bar .inputSearch {
+    width: 60%;
+  }
+  #wrap .search-bar .input-group-text {
+    height: 45px;
+  }
+  #wrap .search-bar .close-btn {
+    top: 20px;
+    right: 20px;
+  }
+  #wrap footer .link-btn {
+    margin-top: 20px;
   }
   #wrap footer ul {
     width: 100%;
@@ -12962,14 +13169,14 @@ h5 {
     margin-left: 15px;
   }
   #wrap .sub-content .title-box {
-    padding: 70px 0;
+    padding: 50px 0;
   }
   #wrap .sub-content .title-box .title {
-    font-size: 40px;
+    font-size: 36px;
   }
   #wrap .sub-content .title-box p {
     width: 80%;
-    font-size: 19px;
+    font-size: 16px;
   }
   #wrap .sub-section-banner {
     margin: 30px 0;
@@ -13426,7 +13633,6 @@ h5 {
 #wrap .section-main {
   position: relative;
   width: 100%;
-  height: 80vh;
 }
 
 #wrap .section-main .vision-box p:nth-child(1) {
@@ -13609,8 +13815,8 @@ h5 {
     color: #000000;
   }
   #wrap .ceo-sign .sign {
-    width: 200px;
-    height: 75px;
+    width: 150px;
+    height: 50px;
     background-image: url("../../resources/images/sign.png");
   }
   #wrap .ceo-profile .ceo-profile-title {
@@ -13635,11 +13841,6 @@ h5 {
     font-weight: 300;
     font-size: 14px;
   }
-}
-
-#wrap .cover-glass {
-  margin-left: -10px;
-  margin-right: -10px;
 }
 
 #wrap .cover-glass .cover-glass-content {
@@ -13754,6 +13955,34 @@ h5 {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+}
+
+@media (max-width: 991.98px) {
+  #wrap .cover-glass .glass-list {
+    width: 50%;
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+  #wrap .cover-glass .glass-list .glass-item {
+    height: 100%;
+  }
+  #wrap .cover-glass .glass-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 250px;
+    border: 1px solid #aaaaaa;
+    padding: 15px 0;
+  }
+  #wrap .cover-glass .glass-text {
+    padding: 10px;
+  }
 }
 
 #wrap .color-system {
@@ -13892,5 +14121,50 @@ h5 {
   #wrap .camera-window .camera-list .glass-item {
     height: 100%;
   }
+}
+
+#wrap .section-2.introduce {
+  padding: 0 0 80px 0;
+  margin: 0;
+}
+
+#wrap .section-2.introduce .ic-intro-1 {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-image: url("../../resources/images/ic-introduce-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#wrap .section-2.introduce .ic-intro-2 {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-image: url("../../resources/images/ic-introduce-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#wrap .section-2.introduce .ic-intro-3 {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-image: url("../../resources/images/ic-introduce-3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#wrap .section-2.introduce .ic-intro-4 {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-image: url("../../resources/images/ic-introduce-4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*# sourceMappingURL=style.css.map */

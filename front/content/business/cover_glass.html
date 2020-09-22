@@ -28,7 +28,8 @@
         <div class="header">
             <header>
                 <div class="container d-flex align-items-center justify-content-between">
-                    <div> <a href="../main/main_2.html"><img src="../../resources/images/logo.png" alt="JNTC 로고"> </a></div>
+                    <div class="logo"> <a href="../main/main_2.html"><img src="../../resources/images/logo.png"
+                                alt="JNTC 로고"> </a></div>
                     <nav>
                         <ul>
                             <li class="active"><a href="">기업정보</a></li>
@@ -38,7 +39,7 @@
                             <li><a href="">투자정보</a></li>
                         </ul>
                     </nav>
-                    <div>
+                    <div class="left-header">
                         <select name="" id="">
                             <option value="">KOR</option>
                             <option value="">JAP</option>
@@ -137,9 +138,9 @@
                             <ul>
                                 <li class="sitemap-title">커버글라스</li>
                                 <li><a href="../product/glass.html">모바일용</a></li>
-                                <li><a href="">차량용</a></li>
+                                <li><a href="../product/car.html">차량용</a></li>
                                 <li><a href="../product/camera_window.html">카메라윈도우용</a></li>
-                                <li><a href="">UTG용</a></li>
+                                <li><a href="../product/utg_glass.html">UTG용</a></li>
                                 <li><a href="../product/smart_watch.html">스마트와치용</a></li>
                             </ul>
                             <ul>
@@ -155,12 +156,12 @@
                             <h2>기술</h2>
                             <ul>
                                 <li class="sitemap-title"><a href="">R&D 현황</a></li>
-                                <li><a href="">연구소 소개</a></li>
+                                <li><a href="../technology/introduce.html">연구소 소개</a></li>
                                 <li><a href="">기술 경쟁력</a></li>
                                 <li><a href="">비전 및 로드맵</a></li>
                             </ul>
                             <ul>
-                                <li class="sitemap-title">연구개발 성과</li>
+                                <li class="sitemap-title"><a href="../technology/develop_result.html">연구개발 성과</a></li>
                             </ul>
                             <ul>
                                 <li class="sitemap-title">핵심 기술력</li>
@@ -184,6 +185,7 @@
                 </a>
             </div>
         </div>
+
 
         <!-- 검색창 -->
         <div class="search-bar">
@@ -224,135 +226,158 @@
                         </div>
                         <p>커버글라스</p>
                     </div>
+                   
 
+                   
 
-                    <section>
+                    <section class="m-0">
                         <div class="cover-glass">
                             <div class="row">
                                 <div class="col-12">
-                                    <ul class="tab-title cnt_02">
-                                        <!-- ul클래스 cnt_0* = 탭갯수 -->
-                                        <li class="active">커버글라스</li>
-                                        <li>커넥터</li>
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tap-1" role="tab"
+                                                aria-controls="home" aria-selected="true">커버글라스</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tap-2" role="tab"
+                                                aria-controls="profile" aria-selected="false">커넥터</a>
+                                        </li>
+                
                                     </ul>
-                                    <div class="cover-glass-content">
-                                        <p class="c-lg-text">시장트렌드에 선제적으로 대응하며 <span>3D 커버글라스 기술 선도</span></p>
-                                        <p>
-                                            스마트 기기의 커버글라스는 2D에서 현재는 3D까지 진화했으며 스마트폰 보급률의 증가 및 디스플레이 고도화로 인해 커버글라스 시장의
-                                            규모는 점점 커지고
-                                            있습니다. 제이앤티씨는 2014년 세계 최초로 3D 커버글라스 양산 이후, 현재까지 압도적인 기술력을 기반으로 3D 커버글라스 시장을
-                                            선점해 왔습니다.
-                                            2020년에는 폴더블용 UTG의 핵심 공정 기술 및 설비 최적화를 통해 글로벌 경쟁력을 확보하였으며, 차량용 디스플레이 시장 진출로
-                                            글로벌 자동차산업
-                                            선도기업들의 많은 관심을 받고 있습니다.<br>
-                                            <br>
-                                            2015년 베트남 진출이후, 글로벌 스마트폰 제조사의 수요를 충족시킬 수 있는 최신 설비를 갖춘 대규모 해외 생산기지를 구축하고 국내
-                                            휴대폰 제조사
-                                            뿐만 아니라 중국은 물론, 미국 일본과 신흥시장까지 확대되고 있습니다.
-                                        </p>
+                                  
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="tap-1" role="tabpanel" aria-labelledby="home-tab">
+                                            <div class="cover-glass-content">
+                                                <p class="c-lg-text">시장트렌드에 선제적으로 대응하며 <span>3D 커버글라스 기술 선도</span></p>
+                                                <p>
+                                                    스마트 기기의 커버글라스는 2D에서 현재는 3D까지 진화했으며 스마트폰 보급률의 증가 및 디스플레이 고도화로 인해 커버글라스 시장의
+                                                    규모는 점점 커지고
+                                                    있습니다. 제이앤티씨는 2014년 세계 최초로 3D 커버글라스 양산 이후, 현재까지 압도적인 기술력을 기반으로 3D 커버글라스 시장을
+                                                    선점해 왔습니다.
+                                                    2020년에는 폴더블용 UTG의 핵심 공정 기술 및 설비 최적화를 통해 글로벌 경쟁력을 확보하였으며, 차량용 디스플레이 시장 진출로
+                                                    글로벌 자동차산업
+                                                    선도기업들의 많은 관심을 받고 있습니다.<br>
+                                                    <br>
+                                                    2015년 베트남 진출이후, 글로벌 스마트폰 제조사의 수요를 충족시킬 수 있는 최신 설비를 갖춘 대규모 해외 생산기지를 구축하고 국내
+                                                    휴대폰 제조사
+                                                    뿐만 아니라 중국은 물론, 미국 일본과 신흥시장까지 확대되고 있습니다.
+                                                </p>
+                                            </div>
+
+                                            <div class="container p-0">
+                                                <p class="c-text-border mb-5 mt-5">제품소개 및 특징</p>
+                                                <div class="row margin">
+                
+                                                    <div class="flat d-flex text-center flex-wrap">
+                                                        <div class="glass-list">
+                                                            <a href="">
+                                                                <div class="glass-item">
+                                                                    <div class="glass-img">
+                                                                        <img src="../../resources/images/product-2014.png" alt="커버글라스2014" id="glass_img_1">
+                                                                    </div>
+                                                                    <div class="glass-text text-center">
+                                                                        <div class="glass-text-title">
+                                                                            <p class="s-text-border">1-Bended</p>
+                                                                        </div>
+                                                                        <p class="glass-name">갤럭시노트4 엣지</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                            <div class="arrow-plus"></div>
+                                                        </div>
+                                                        <div class="glass-list">
+                                                            <a href="">
+                                                                <div class="glass-item">
+                                                                    <div class="glass-img">
+                                                                        <img src="../../resources/images/product-2016.png" alt="커버글라스2014" id="glass_img_2">
+                                                                    </div>
+                                                                    <div class="glass-text text-center">
+                                                                        <div class="glass-text-title">
+                                                                            <p class="s-text-border">1-Bended</p>
+                                                                        </div>
+                                                                        <p class="glass-name">갤럭시노트4 엣지</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                            <div class="arrow-plus"></div>
+                                                        </div>
+                                                        <div class="glass-list">
+                                                            <a href="">
+                                                                <div class="glass-item">
+                                                                    <div class="glass-img">
+                                                                        <img src="../../resources/images/product-2015.png" alt="커버글라스2014" id="glass_img_3">
+                                                                    </div>
+                                                                    <div class="glass-text text-center">
+                                                                        <div class="glass-text-title">
+                                                                            <p class="s-text-border">1-Bended</p>
+                                                                        </div>
+                                                                        <p class="glass-name">갤럭시노트4 엣지,갤럭시노트4 엣지
+                                                                            ,갤럭시노트4 엣지,갤럭시노트4 엣지
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                            <div class="arrow-plus"></div>
+                                                        </div>
+                                                        <div class="glass-list">
+                                                            <a href="">
+                                                                <div class="glass-item">
+                                                                    <div class="glass-img">
+                                                                        <img src="../../resources/images/product-2019.png" alt="커버글라스2014" id="glass_img_4">
+                                                                    </div>
+                                                                    <div class="glass-text text-center">
+                                                                        <div class="glass-text-title">
+                                                                            <p class="s-text-border">Super curved (C-type)</p>
+                                                                        </div>
+                                                                        <p class="glass-name">갤럭시노트4 엣지</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                            <div class="arrow-plus"></div>
+                                                        </div>
+                                                        <div class="glass-list">
+                                                            <a href="">
+                                                                <div class="glass-item">
+                                                                    <div class="glass-img">
+                                                                        <img src="../../resources/images/product-2020.png" alt="커버글라스2014" id="glass_img_5">
+                                                                    </div>
+                                                                    <div class="glass-text text-center">
+                                                                        <div class="glass-text-title">
+                                                                            <p class="s-text-border">1-Bended</p>
+                                                                        </div>
+                                                                        <p class="glass-name">갤럭시노트4 엣지</p>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                            <div class="arrow-plus"></div>
+                                                        </div>
+                                                        <!--<p class="arrow-name">Flat</p>
+                                                        <div class="arrow-right"></div> -->
+                
+                
+                                                    </div>
+                
+                                                    <img src="../../resources/images/arrow-img.png" alt="">
+                
+                
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="tab-pane fade" id="tap-2" role="tabpanel" aria-labelledby="home-tab">
+                
+                                        </div>
+                
+                
                                     </div>
+                                   
                                 </div>
                             </div>
 
 
-                            <div class="container p-0">
-                                <p class="c-text-border mb-5 mt-5">제품소개 및 특징</p>
-                                <div class="row margin">
-
-                                    <div class="flat d-flex text-center">
-                                        <div class="glass-list">
-                                            <a href="">
-                                                <div class="glass-item">
-                                                    <div class="glass-img">
-                                                        <img src="../../resources/images/product-2014.png" alt="커버글라스2014" id="glass_img_1">
-                                                    </div>
-                                                    <div class="glass-text text-center">
-                                                        <div class="glass-text-title">
-                                                            <p class="s-text-border">1-Bended</p>
-                                                        </div>
-                                                        <p class="glass-name">갤럭시노트4 엣지</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="arrow-plus"></div>
-                                        </div>
-                                        <div class="glass-list">
-                                            <a href="">
-                                                <div class="glass-item">
-                                                    <div class="glass-img">
-                                                        <img src="../../resources/images/product-2016.png" alt="커버글라스2014" id="glass_img_2">
-                                                    </div>
-                                                    <div class="glass-text text-center">
-                                                        <div class="glass-text-title">
-                                                            <p class="s-text-border">1-Bended</p>
-                                                        </div>
-                                                        <p class="glass-name">갤럭시노트4 엣지</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="arrow-plus"></div>
-                                        </div>
-                                        <div class="glass-list">
-                                            <a href="">
-                                                <div class="glass-item">
-                                                    <div class="glass-img">
-                                                        <img src="../../resources/images/product-2015.png" alt="커버글라스2014" id="glass_img_3">
-                                                    </div>
-                                                    <div class="glass-text text-center">
-                                                        <div class="glass-text-title">
-                                                            <p class="s-text-border">1-Bended</p>
-                                                        </div>
-                                                        <p class="glass-name">갤럭시노트4 엣지,갤럭시노트4 엣지
-                                                            ,갤럭시노트4 엣지,갤럭시노트4 엣지
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="arrow-plus"></div>
-                                        </div>
-                                        <div class="glass-list">
-                                            <a href="">
-                                                <div class="glass-item">
-                                                    <div class="glass-img">
-                                                        <img src="../../resources/images/product-2019.png" alt="커버글라스2014" id="glass_img_4">
-                                                    </div>
-                                                    <div class="glass-text text-center">
-                                                        <div class="glass-text-title">
-                                                            <p class="s-text-border">Super curved (C-type)</p>
-                                                        </div>
-                                                        <p class="glass-name">갤럭시노트4 엣지</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="arrow-plus"></div>
-                                        </div>
-                                        <div class="glass-list">
-                                            <a href="">
-                                                <div class="glass-item">
-                                                    <div class="glass-img">
-                                                        <img src="../../resources/images/product-2020.png" alt="커버글라스2014" id="glass_img_5">
-                                                    </div>
-                                                    <div class="glass-text text-center">
-                                                        <div class="glass-text-title">
-                                                            <p class="s-text-border">1-Bended</p>
-                                                        </div>
-                                                        <p class="glass-name">갤럭시노트4 엣지</p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <div class="arrow-plus"></div>
-                                        </div>
-                                        <!--<p class="arrow-name">Flat</p>
-                                        <div class="arrow-right"></div> -->
-
-
-                                    </div>
-
-                                    <img src="../../resources/images/arrow-img.png" alt="">
-
-
-                                </div>
-                            </div>
+                            
                         </div>
                     </section>
 

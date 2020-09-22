@@ -21,19 +21,21 @@
     <!-- ui 관련 -->
     <script src="../../resources/js/ui.js"></script>
     <style>
-     
+
     </style>
     <!-- tab script -->
     <script>
-  
+
     </script>
 </head>
+
 <body>
     <div id="wrap">
         <div class="header">
             <header>
                 <div class="container d-flex align-items-center justify-content-between">
-                    <div> <a href="../main/main_2.html"><img src="../../resources/images/logo.png" alt="JNTC 로고"> </a></div>
+                    <div class="logo"> <a href="../main/main_2.html"><img src="../../resources/images/logo.png"
+                                alt="JNTC 로고"> </a></div>
                     <nav>
                         <ul>
                             <li class="active"><a href="">기업정보</a></li>
@@ -43,7 +45,7 @@
                             <li><a href="">투자정보</a></li>
                         </ul>
                     </nav>
-                    <div>
+                    <div class="left-header">
                         <select name="" id="">
                             <option value="">KOR</option>
                             <option value="">JAP</option>
@@ -113,7 +115,7 @@
                                 <li class="sitemap-title">회사소개</li>
                                 <li><a href="../intro/summary.html">개요</a></li>
                                 <li><a href="../intro/ceo.html">CEO 인사말</a></li>
-                                <li><a href="">연력/수상내역</a></li>
+                                <li><a href="../intro/history.html">연혁/수상내역</a></li>
                                 <li><a href="../intro/vision.html">비전 및 조직문화 CI</a></li>
                             </ul>
                             <ul>
@@ -142,9 +144,9 @@
                             <ul>
                                 <li class="sitemap-title">커버글라스</li>
                                 <li><a href="../product/glass.html">모바일용</a></li>
-                                <li><a href="">차량용</a></li>
+                                <li><a href="../product/car.html">차량용</a></li>
                                 <li><a href="../product/camera_window.html">카메라윈도우용</a></li>
-                                <li><a href="">UTG용</a></li>
+                                <li><a href="../product/utg_glass.html">UTG용</a></li>
                                 <li><a href="../product/smart_watch.html">스마트와치용</a></li>
                             </ul>
                             <ul>
@@ -160,12 +162,12 @@
                             <h2>기술</h2>
                             <ul>
                                 <li class="sitemap-title"><a href="">R&D 현황</a></li>
-                                <li><a href="">연구소 소개</a></li>
+                                <li><a href="../technology/introduce.html">연구소 소개</a></li>
                                 <li><a href="">기술 경쟁력</a></li>
                                 <li><a href="">비전 및 로드맵</a></li>
                             </ul>
                             <ul>
-                                <li class="sitemap-title">연구개발 성과</li>
+                                <li class="sitemap-title"><a href="../technology/develop_result.html">연구개발 성과</a></li>
                             </ul>
                             <ul>
                                 <li class="sitemap-title">핵심 기술력</li>
@@ -189,6 +191,7 @@
                 </a>
             </div>
         </div>
+
 
         <!-- 검색창 -->
         <div class="search-bar">
@@ -231,401 +234,427 @@
 
 
                     <section>
-                        <!-- tab start -->
-                        <ul class="tab-title cnt_03">
-                            <!-- ul클래스 cnt_0* = 탭갯수 -->
-                            <li class="active">1996 - 2005</li>
-                            <li>2005 - 2014</li>
-                            <li>2012 - 2020</li>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item-3">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tap-1" role="tab"
+                                    aria-controls="home" aria-selected="true">1996 - 2005</a>
+                            </li>
+                            <li class="nav-item-3">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tap-2" role="tab"
+                                    aria-controls="profile" aria-selected="false">2005 - 2014</a>
+                            </li>
+                            <li class="nav-item-3">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tap-3" role="tab"
+                                    aria-controls="profile" aria-selected="false">2012 - 2020</a>
+                            </li>
                         </ul>
-                        <!-- tab end -->
 
-                        <!-- tab content start -->
-                        <div class="tab-content">
-                            <!-- div에 active시 display:block -->
-                            <div class="active">
-                                <div class="left-content">
-                                    <p class="title">창업과 개척</p>
-                                    <p class="title-sub">1996년 창립이래, 끊임없는 도전정신으로 새로운 시장을 개척</p>
-                                    <p class="img" style="background-image:url('../../resources/images/sub-bg-history-01.png')"></p>
-                                    <p class="img-text">2003년 중국 현지법인 설립</p>
-                                </div>
-                                <div class="right-content">
-                                    <div class="history">
-                                        <dl>
-                                            <dt>2005</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">05월</p>
-                                                    <p class="text">ISO 14000인증 획득</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">06월</p>
-                                                    <p class="text">삼성전자 ECO-PARTNER인증 획득</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">08월</p>
-                                                    <p class="text">㈜코메트 설립 (도금 공장)</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>2004</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">08월</p>
-                                                    <p class="text">수출유망중소기업 선정 (중소기업진흥공단)</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">09월</p>
-                                                    <p class="text">유망중소기업 선정 (경기도)</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">11월</p>
-                                                    <p class="text">1,000만불 수출 탑 수상</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>2003</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">11월</p>
-                                                    <p class="text">중국현지법인 설립</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>2002</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">12월</p>
-                                                    <p class="text">공장 신축 및 이전 (정남 제1사업장)</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number"></p>
-                                                    <p class="text">㈜협진아이엔씨 부설연구소 설립</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>2000</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">04월</p>
-                                                    <p class="text">㈜협진아이엔씨 상호변경</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">07월</p>
-                                                    <p class="text">ISO 9001 인증 획득</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>1999</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">02월</p>
-                                                    <p class="text">대표이사 장상욱 취임</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>1997</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">03월</p>
-                                                    <p class="text">사업장 확장이전 (경기 화성 태안 능리 684)</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>1996</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">11월</p>
-                                                    <p class="text">㈜협진공업 설립 (서울 금천 독산동 998-7)</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
+                        <div class="tab-content" id="myTabContent">
+
+                            <div class="tab-pane fade show active" id="tap-1" role="tabpanel" aria-labelledby="home-tab">
+                                <!-- tab content start -->
+                                <div class="tab-content">
+                                    <!-- div에 active시 display:block -->
+                                    <div class="active">
+                                        <div class="left-content">
+                                            <p class="title">창업과 개척</p>
+                                            <p class="title-sub">1996년 창립이래, 끊임없는 도전정신으로 새로운 시장을 개척</p>
+                                            <p class="img"
+                                                style="background-image:url('../../resources/images/sub-bg-history-01.png')">
+                                            </p>
+                                            <p class="img-text">2003년 중국 현지법인 설립</p>
+                                        </div>
+                                        <div class="right-content">
+                                            <div class="history">
+                                                <dl>
+                                                    <dt>2005</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">05월</p>
+                                                            <p class="text">ISO 14000인증 획득</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">06월</p>
+                                                            <p class="text">삼성전자 ECO-PARTNER인증 획득</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">08월</p>
+                                                            <p class="text">㈜코메트 설립 (도금 공장)</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>2004</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">08월</p>
+                                                            <p class="text">수출유망중소기업 선정 (중소기업진흥공단)</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">09월</p>
+                                                            <p class="text">유망중소기업 선정 (경기도)</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">11월</p>
+                                                            <p class="text">1,000만불 수출 탑 수상</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>2003</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">11월</p>
+                                                            <p class="text">중국현지법인 설립</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>2002</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">12월</p>
+                                                            <p class="text">공장 신축 및 이전 (정남 제1사업장)</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number"></p>
+                                                            <p class="text">㈜협진아이엔씨 부설연구소 설립</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>2000</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">04월</p>
+                                                            <p class="text">㈜협진아이엔씨 상호변경</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">07월</p>
+                                                            <p class="text">ISO 9001 인증 획득</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>1999</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">02월</p>
+                                                            <p class="text">대표이사 장상욱 취임</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>1997</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">03월</p>
+                                                            <p class="text">사업장 확장이전 (경기 화성 태안 능리 684)</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>1996</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">11월</p>
+                                                            <p class="text">㈜협진공업 설립 (서울 금천 독산동 998-7)</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="left-content">
+                                            <p class="title">도전과 혁신</p>
+                                            <p class="title-sub">경쟁력 있는 기술력과 축적된 노하우로<br>전세계 고객들에게 차별화된 가치를 제공</p>
+                                            <p class="img"
+                                                style="background-image:url('../../resources/images/sub-bg-history-02.png')">
+                                            </p>
+                                            <p class="img-text">2010년 강화유리 제2공장 준공</p>
+                                        </div>
+                                        <div class="right-content">
+                                            <div class="history">
+                                                <dl>
+                                                    <dt>2019</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">06월</p>
+                                                            <p class="text">강화유리 사업의 중국 진출을 위한 조인트벤처 BNJ Technology 설립
+                                                            </p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>2017</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">01월</p>
+                                                            <p class="text">베트남 법인 하이테크기업 인증</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">05월</p>
+                                                            <p class="text">대표이사 김성한 취임</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">10월</p>
+                                                            <p class="text">강화유리 LG디스플레이 업체등록</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>2016</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">02월</p>
+                                                            <p class="text">삼성전자 강소기업 선정</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">10월</p>
+                                                            <p class="text">베트남법인 JNTC VINA ISO 0991/140001 인증 획득</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>2015</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">03월</p>
+                                                            <p class="text">삼성전자 ‘협성회’ 선정</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">06월</p>
+                                                            <p class="text">베트남 법인 설립</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">10월</p>
+                                                            <p class="text">일자리창출 국무총리상 수상</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>2014</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">08월</p>
+                                                            <p class="text">강화유리 제3공장 신축 (스마트폰용윈도우 글라스)</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">12월</p>
+                                                            <p class="text">1억불 수출 탑 수상</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>2013</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">01월</p>
+                                                            <p class="text">2012년 삼성전자 우수협력사 품질 최우수상</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">07월</p>
+                                                            <p class="text">강화유리 삼성전자 무선사업부 업체등록</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>2012</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">05월</p>
+                                                            <p class="text">상호 변경 (협진아이엔씨 → JNTC로 상호 변경)</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">10월</p>
+                                                            <p class="text">강화유리 제1공장 (스마트폰용 윈도우 글라스) 증설 준공</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">11월</p>
+                                                            <p class="text">2012년 소재부품기술상 대통령 표창 (지식경제부)</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="left-content">
+                                            <p class="title">글로벌 기업으로 도약</p>
+                                            <p class="title-sub">시장 니즈를 선행하는 기술개발을 통해<br>디지털 기기의 새로운 가치를 창조</p>
+                                            <p class="img"
+                                                style="background-image:url('../../resources/images/sub-bg-history-03.png')">
+                                            </p>
+                                            <p class="img-text">2015년 베트남 법인 설립</p>
+                                        </div>
+                                        <div class="right-content">
+                                            <div class="history">
+                                                <dl>
+                                                    <dt>2011</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">01월</p>
+                                                            <p class="text">2010년 삼성전자 우수협력사 품질대상</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">07월</p>
+                                                            <p class="text">벤처 천억기업 수상 (중소기업청)</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>2010</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">06월</p>
+                                                            <p class="text">터치스크린 사업부 분할</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">10월</p>
+                                                            <p class="text">7,000만불 수출의 탑 수상</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number"></p>
+                                                            <p class="text">강화유리 제2공장 준공</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">12월</p>
+                                                            <p class="text">강화유리 (스마트폰용 윈도우 글라스) 양산 체제 구축</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number"></p>
+                                                            <p class="text">2010년 고용창출 우수기업수상 (대통령)</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>2009</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">06월</p>
+                                                            <p class="text">우수제조기술연구센터 지정 (지식경제부)</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">09월</p>
+                                                            <p class="text">기술혁신형중소기업(INNO-BIZ)획득</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number"></p>
+                                                            <p class="text">(중소기업청장:2009..09.18~2012.09.17)</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">10월</p>
+                                                            <p class="text">5,000만불 수출 탑 수상</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>2008</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">05월</p>
+                                                            <p class="text">액면 분할 (10,000원 → 500원)</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">08월</p>
+                                                            <p class="text">샤프(일본) 업체등록 및 납품</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>2007</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">07월</p>
+                                                            <p class="text">주식회사 엠알디 인수 (힌지부품제조 추가)</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">10월</p>
+                                                            <p class="text">향남 제2공장 준공 (터치스크린 사업부 이전)</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>2006</dt>
+                                                    <dd>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">02월</p>
+                                                            <p class="text">환경경영시스템 인증 (KFQ 한국품질재단 한국품질인증센타)</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">05월</p>
+                                                            <p class="text">부품.소재 전문기업확인서 (산업자원부장관)</p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="line"><span></span></p>
+                                                            <p class="number">10월</p>
+                                                            <p class="text">품질경영시스템 인증 (KFQ 한국품질재단 한국품질인증센타)</p>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- tab content end -->
                             </div>
-                            <div>
-                                <div class="left-content">
-                                    <p class="title">도전과 혁신</p>
-                                    <p class="title-sub">경쟁력 있는 기술력과 축적된 노하우로<br>전세계 고객들에게 차별화된 가치를 제공</p>
-                                    <p class="img" style="background-image:url('../../resources/images/sub-bg-history-02.png')"></p>
-                                    <p class="img-text">2010년 강화유리 제2공장 준공</p>
-                                </div>
-                                <div class="right-content">
-                                    <div class="history">
-                                        <dl>
-                                            <dt>2019</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">06월</p>
-                                                    <p class="text">강화유리 사업의 중국 진출을 위한 조인트벤처 BNJ Technology 설립</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>2017</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">01월</p>
-                                                    <p class="text">베트남 법인 하이테크기업 인증</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">05월</p>
-                                                    <p class="text">대표이사 김성한 취임</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">10월</p>
-                                                    <p class="text">강화유리 LG디스플레이 업체등록</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>2016</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">02월</p>
-                                                    <p class="text">삼성전자 강소기업 선정</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">10월</p>
-                                                    <p class="text">베트남법인 JNTC VINA ISO 0991/140001 인증 획득</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>2015</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">03월</p>
-                                                    <p class="text">삼성전자 ‘협성회’ 선정</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">06월</p>
-                                                    <p class="text">베트남 법인 설립</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">10월</p>
-                                                    <p class="text">일자리창출 국무총리상 수상</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>2014</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">08월</p>
-                                                    <p class="text">강화유리 제3공장 신축 (스마트폰용윈도우 글라스)</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">12월</p>
-                                                    <p class="text">1억불 수출 탑 수상</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>2013</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">01월</p>
-                                                    <p class="text">2012년 삼성전자 우수협력사 품질 최우수상</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">07월</p>
-                                                    <p class="text">강화유리 삼성전자 무선사업부 업체등록</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>2012</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">05월</p>
-                                                    <p class="text">상호 변경 (협진아이엔씨 → JNTC로 상호 변경)</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">10월</p>
-                                                    <p class="text">강화유리 제1공장 (스마트폰용 윈도우 글라스) 증설 준공</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">11월</p>
-                                                    <p class="text">2012년 소재부품기술상 대통령 표창 (지식경제부)</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                    </div>
-                                </div>
+
+                            <div class="tab-pane fade" id="tap-2" role="tabpanel" aria-labelledby="home-tab">
+
                             </div>
-                            <div>
-                                <div class="left-content">
-                                    <p class="title">글로벌 기업으로 도약</p>
-                                    <p class="title-sub">시장 니즈를 선행하는 기술개발을 통해<br>디지털 기기의 새로운 가치를 창조</p>
-                                    <p class="img" style="background-image:url('../../resources/images/sub-bg-history-03.png')"></p>
-                                    <p class="img-text">2015년 베트남 법인 설립</p>
-                                </div>
-                                <div class="right-content">
-                                    <div class="history">
-                                        <dl>
-                                            <dt>2011</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">01월</p>
-                                                    <p class="text">2010년 삼성전자 우수협력사 품질대상</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">07월</p>
-                                                    <p class="text">벤처 천억기업 수상 (중소기업청)</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>2010</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">06월</p>
-                                                    <p class="text">터치스크린 사업부 분할</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">10월</p>
-                                                    <p class="text">7,000만불 수출의 탑 수상</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number"></p>
-                                                    <p class="text">강화유리 제2공장 준공</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">12월</p>
-                                                    <p class="text">강화유리 (스마트폰용 윈도우 글라스) 양산 체제 구축</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number"></p>
-                                                    <p class="text">2010년 고용창출 우수기업수상 (대통령)</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>2009</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">06월</p>
-                                                    <p class="text">우수제조기술연구센터 지정 (지식경제부)</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">09월</p>
-                                                    <p class="text">기술혁신형중소기업(INNO-BIZ)획득</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number"></p>
-                                                    <p class="text">(중소기업청장:2009..09.18~2012.09.17)</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">10월</p>
-                                                    <p class="text">5,000만불 수출 탑 수상</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>2008</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">05월</p>
-                                                    <p class="text">액면 분할 (10,000원 → 500원)</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">08월</p>
-                                                    <p class="text">샤프(일본) 업체등록 및 납품</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>2007</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">07월</p>
-                                                    <p class="text">주식회사 엠알디 인수 (힌지부품제조 추가)</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">10월</p>
-                                                    <p class="text">향남 제2공장 준공 (터치스크린 사업부 이전)</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>2006</dt>
-                                            <dd>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">02월</p>
-                                                    <p class="text">환경경영시스템 인증 (KFQ 한국품질재단 한국품질인증센타)</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">05월</p>
-                                                    <p class="text">부품.소재 전문기업확인서 (산업자원부장관)</p>
-                                                </div>
-                                                <div>
-                                                    <p class="line"><span></span></p>
-                                                    <p class="number">10월</p>
-                                                    <p class="text">품질경영시스템 인증 (KFQ 한국품질재단 한국품질인증센타)</p>
-                                                </div>
-                                            </dd>
-                                        </dl>
-                                    </div>
-                                </div>
-                            </div>
+
+
                         </div>
-                        <!-- tab content end -->
+
+
                     </section>
 
                 </div>
