@@ -197,10 +197,13 @@
                     width: 40px;
                     height: 2px;
                     background-color: $orange;
-                    top: 55px;
+                    top: 25px;
                     left: 50%;
                     transform: translate(-50% , 0);
                 }
+            }
+            .s-text-border.list{
+                &::after {top: 60px;}
             }
         }
         
@@ -302,7 +305,9 @@
             align-items: center;
             justify-content: center;
             border:1px solid $gray-aa;
-
+            img{
+                width: 100%;
+            }
         }
         .camera-text{
             padding : 15px 20px;
@@ -328,7 +333,7 @@
                 width: 40px;
                 height: 2px;
                 background-color: $orange;
-                top: 100px;
+                top: 110px;
                 left: 50%;
                 transform: translate(-50% , 0);
             }
@@ -394,5 +399,30 @@
     }
     //연구개발 성과
     
+
+
+    //소켓
+    .socket-explanation{
+        
+        .socket-detail{
+            margin-top: 70px;
+            p{margin-bottom:10px;}
+        }
+    }
+    @include media-breakpoint-down(md){
+        .socket-wrap{
+            padding:0;
+            .ul-list-dot{
+                margin-top: 20px;
+            }
+        }
+        .socket-explanation{
+        
+            .socket-detail{
+                margin-top: 30px;
+                p{margin-bottom:10px;}
+            }
+        }
+    }
 }
 
