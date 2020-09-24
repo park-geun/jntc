@@ -266,6 +266,20 @@
 .toggle_list .list.on .right{width: calc(100% - 504px);height:auto;}
 .toggle_list .list.on .right p.title button{background: url(../../resources/images/g_list_btn_on.png) no-repeat center;}
 
+.icon-list-box{padding: 35px 90px 60px;}
+.icon-list-box:after{content:''; display:block; clear:both;}
+.icon-list-box .icon-list{  }
+.icon-list-box .icon-list li{padding: 25px 0;padding-left:175px;border-top: 1px solid #e5e5e5;background-repeat: no-repeat;background-position: 45px center;}
+.icon-list-box .icon-list li:first-child{border-top: 0;}
+.icon-list-box .icon-list li:after{ content:''; display:block; clear:both; }
+.icon-list-box .icon-list li div{ float:left; }
+.icon-list-box .icon-list li .list-text{width: 100%;}
+.icon-list-box .icon-list li .list-text .list-title{font-size: 24px;font-weight: bold;}
+.icon-list-box .icon-list li .list-text .list-sub-title{font-size: 19px;line-height: 32px;}
+.icon-list-box .sign{float: right;padding-right:152px;background: url(../../resources/images/sign.png) no-repeat right bottom;}
+.icon-list-box .sign p{ font-size:21px; color:#000;line-height:36px; }
+
+
 .only_mo{ display:none !important; }
 @media screen and (max-width:991.98px){
     .only_w{ display:none !important; }
