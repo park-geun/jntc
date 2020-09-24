@@ -12471,6 +12471,11 @@ h5 {
   margin: 45px 0;
 }
 
+.o-s-text {
+  font-size: 19px;
+  color: #f47920;
+}
+
 .b-s-text {
   font-size: 19px;
   font-weight: 700;
@@ -12526,6 +12531,15 @@ h5 {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+}
+
+.d-s-text {
+  font-size: 19px;
+  font-weight: 500 !important;
+}
+
+.d-s-text.light {
+  font-weight: 300;
 }
 
 .border-box {
@@ -12628,6 +12642,45 @@ h5 {
   border-top: none;
   border: 1px solid #dddddd;
   vertical-align: middle;
+}
+
+.table.property th {
+  padding: 10px 15px;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #999999;
+  background-color: #f5f5f5;
+  vertical-align: middle;
+  font-size: 19px;
+}
+
+.table.property td {
+  padding: 20px 30px;
+  border-top: none;
+  vertical-align: middle;
+  border-bottom: 1px solid #dddddd;
+  font-weight: 300;
+}
+
+.table.core th {
+  padding: 10px 15px;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #999999;
+  background-color: #f5f5f5;
+  vertical-align: middle;
+  font-size: 19px;
+}
+
+.table.core td {
+  padding: 20px 30px;
+  border-top: none;
+  vertical-align: middle;
+  border-bottom: 1px solid #dddddd;
+  font-weight: 300;
+}
+
+.table.core ul {
+  padding: 27px 0 24px 0;
+  border-bottom: 1px solid #dddddd;
 }
 
 .ul-list-dot li {
@@ -13166,11 +13219,21 @@ h5 {
   background-size: cover;
 }
 
-#wrap .sub-section-banner p {
+#wrap .sub-section-banner .sub-section-text {
   padding: 130px 0;
+}
+
+#wrap .sub-section-banner .sub-section-text p:nth-child(1) {
   color: #ffffff;
   font-size: 30px;
-  line-height: 1.6;
+  line-height: 48px;
+}
+
+#wrap .sub-section-banner .sub-section-text p:nth-child(2) {
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 48px;
 }
 
 #wrap .swiper-socket {
@@ -14003,7 +14066,7 @@ h5 {
   padding: 30px 0;
 }
 
-#wrap .cover-glass .glass-img.connector-img {
+#wrap .cover-glass .glass-img.connector {
   height: auto;
   padding: 0;
 }
@@ -14232,7 +14295,6 @@ h5 {
 
 #wrap .section-2.introduce {
   padding: 0 0 80px 0;
-  margin: 0;
 }
 
 #wrap .section-2.introduce .ic-intro-1 {
