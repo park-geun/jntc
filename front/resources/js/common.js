@@ -22,22 +22,29 @@ $(document).ready(function () {
     }, function () {
 
     })
-
+    //gnb 삭제
+    $('.gnb').on('mouseleave', function(){
+        $(this).hide();
+    })
+    ///글래스 hover
     $('.glass-list').hover(function(){
         var idx = $(this).index()+1;
         var glassImg = $('#glass_img_'+idx);
 
         $(this).addClass('active');
-        glassImg.attr('src','../../resources/images/phone-1.png');
+        glassImg.attr('src','../../resources/images/phone-'+idx+'.png');
         
     },function(){
         var idx = $(this).index()+1;
         var glassImg = $('#glass_img_'+idx);
 
         $(this).removeClass('active');
-        glassImg.attr('src','../../resources/images/product-2016.png');
+        glassImg.attr('src','../../resources/images/product-'+idx+'.png');
 
     })
+    
+
+    
 })
 
 
