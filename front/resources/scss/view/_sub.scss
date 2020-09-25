@@ -283,12 +283,10 @@
     .camera-window{
         margin-left:-10px;
         margin-right:-10px;
-    
-
         .camera-list{
             width: 20%;   
             padding: 0 10px;        
-            margin-top: 20px;
+            margin-bottom: 30px;
             .glass-item{height: 100%;}  
         }
         .camera-list.active{
@@ -323,15 +321,15 @@
             padding : 15px 20px;
             text-align: left;
             position: relative;
-            .camera-brand{font-size:19px;line-height: 1.26;margin-top: 30px;}
-            .camera-name{font-size:19px;line-height: 1.26;}
+            .camera-brand{font-size:17px;line-height: 1.26;margin-top: 30px;}
+            .camera-name{font-size:17px;line-height: 1.26;}
 
             .camera-text-title{
                 
-                p:nth-child(2){font-size:19px; margin-top: 5px;}
+                p:nth-child(2){font-size:17px; margin-top: 5px;}
             }
             .s-text-border {
-                font-size: 24px;
+                font-size: 22px;
   
                 padding:0;
                 color: $orange;
@@ -343,7 +341,7 @@
                 width: 40px;
                 height: 2px;
                 background-color: $orange;
-                top: 110px;
+                bottom: -5px;
                 left: 50%;
                 transform: translate(-50% , 0);
             }
@@ -434,5 +432,46 @@
             }
         }
     }
+
+    //인재채용
+    .form-download{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;   
+    }
+    .receipt{
+        border-top: 2px solid $rgba-5;
+        border-bottom: 1px solid $rgba-2;
+        padding:30px;
+    }
+    .hire-step{
+        position: relative;
+        .hire-step-img{
+            width: 30%;
+            position: absolute;
+            left: 59%;
+            transform: translate(-62%, 0);
+            img{
+                width: 100%;
+            }
+        }
+    }
+    @include media-breakpoint-down(md){
+        .hire-step{
+            position: relative;
+            .hire-step-img{
+             display:none;
+            }
+        }
+        .form-download{
+            display: block;
+         
+        }
+        
+    }
+    // @media screen and (max-width:500px) {
+        
+    // }
+   
 }
 

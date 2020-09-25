@@ -11,7 +11,7 @@ $gray-88:#888888;
 $gray-aa:#aaaaaa;
 $gray-b2:#b2b2b2;
 $white : #ffffff;
-
+$rgba-2:rgba(0, 0, 0, 0.2);
 $rgba-5:rgba(0, 0, 0, 0.5);
 $rgba-7:rgba(0, 0, 0, 0.7);
 
@@ -45,6 +45,9 @@ h5 {
 .m-t-110{
     margin-top: 110px;
 }
+.p-20{
+    padding:20px;
+}
 .years-line{
     font-size: 24px;
     color: $rgba-5;
@@ -67,7 +70,7 @@ h5 {
 //btn comm
 .link-btn {
     border: 1px solid rgba(0, 0, 0, 0.3);
-    font-size: 18px;
+    font-size: 17px;
     color: $black;
     padding: 10px 25px;
     display: inline-block;
@@ -80,6 +83,24 @@ h5 {
         margin: 0 5px 0 20px;
     }
 }
+.s-link-btn{
+    width: 130px; 
+    height: 30px;
+    font-size: 14px;
+    text-align:center;
+    border-radius: 15px;
+    border:1px solid $gray-dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 5px;
+    &.orange{
+        border:none;
+        background-color: $orange;
+        color: $white;
+    }
+}
+
 .border-text {
     width: 90px;
     padding: 0 5px;
@@ -113,6 +134,7 @@ h5 {
     margin:0 20px;
 }
 //텍스트 comm
+// c = common, o = orange, b = bold, s = small
 
 //큰 텍스트
 .c-lg-text {
@@ -155,9 +177,30 @@ h5 {
     font-size: 22px;
     color: $orange;
     margin: 30px 0;
+    &.black{
+        color: $black;
+        margin:0 0 10px 0;
+    }
 }
+.b-text-border {
+    font-size: 22px;
+    position: relative;
+    padding-bottom: 10px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        background-color: $orange;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50% , 0);
+    }
+}
+
 .s-text-border {
-    font-size: 24px;
+    font-size: 22px;
     position: relative;
     padding-bottom: 10px;
     color: $orange;
@@ -166,7 +209,7 @@ h5 {
         content: "";
         position: absolute;
         width: 40px;
-        height: 1px;
+        height: 3px;
         background-color: $orange;
         bottom: 0;
         left: 50%;
@@ -216,6 +259,39 @@ h5 {
     border:1px solid $gray-b2;
     padding: 50px 120px;
     margin-top: 45px;
+}
+//도형
+
+.orange-circle{
+    width: 240px;
+    height: 240px;
+    background-color: $orange;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 35px auto;
+    .icon{
+        width: 53px;
+        height: 75px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &.small{
+        width: 160px;
+        height: 160px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 30px;
+            background-image: url('../../resources/images/gray-right.png');
+            top:50%;
+            right: -40%;
+            transform: translate(40%,-50%);
+        }
+    }
 }
 //tab panel comm
 .nav-tabs{
@@ -269,7 +345,7 @@ h5 {
             th{padding:10px 0;background-color: $gray-f5;}
         }
         tbody{
-            td,th{padding:30px; vertical-align: middle;}
+            td,th{padding:20px; vertical-align: middle;}
        
             ul{
                 
@@ -296,15 +372,11 @@ h5 {
     }
 }
 
-
-
-
-
 .ul-list-dot{
     li{
         position: relative;
         padding-left: 10px;
-        font-size: 19px;
+        font-size: 17px;
         &::before{
             content:"";
             position: absolute;
@@ -319,7 +391,24 @@ h5 {
     } 
 }
 @include media-breakpoint-down(xl){
+    .orange-circle{
+        &.small{
+            width: 160px;
+            height: 160px;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 30px;
+                background-image: url('../../resources/images/gray-right.png');
+                top:50%;
+                right: -20%;
+                transform: translate(20%,-50%);
+            }
 
+        }
+    }
 }
 @include media-breakpoint-down(md) {
     .link-btn {
@@ -410,7 +499,7 @@ h5 {
             }
         }
     }
-        ///box border comm
+    ///box border comm
     .border-box{
         border:1px solid $gray-b2;
         padding: 25px;
@@ -421,7 +510,36 @@ h5 {
         padding: 10px 20px;
         margin-top: 25px;
     }
+    
+    .talent{
+        .arrow-right{
+            display:none;
+        }
+    }
+  
+    .orange-circle{
+        &.small{
+            &::after{
+                display: none;
+            }
+        }
+    }
+    .ul-list-dot{
+        li{
+            padding: 3px;
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

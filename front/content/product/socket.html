@@ -94,22 +94,22 @@
                                 <p class="c-text-border">5000-6P-1.5T</p>
                                 <div class="row mt-4 p-0">
                                     <div class="col-lg-5">
-                                        <div class="swiper-socket swiper-container">
+                                        <div class="swiper-socket swiper-container" id="swiper_socket_1">
                                             <div class="swiper-wrapper">
             
                                                 <div class="swiper-slide">
-                                                    <a href="../../resources/images/galaxy-a-21-s.png" data-lightbox="roadtrip">
-                                                        <img src="../../resources/images/galaxy-a-21-s.png" alt="">
+                                                    <a href="../../resources/images/connector-1.jpg" data-lightbox="roadtrip2" data-title="5000-6P-1.5T">
+                                                        <img src="../../resources/images/connector-1.jpg" alt="5000-6P-1.5T">
                                                     </a>                                        
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <a href="../../resources/images/galaxy-a-21-s.png" data-lightbox="roadtrip">
-                                                        <img src="../../resources/images/galaxy-a-21-s.png" alt="">
+                                                    <a href="../../resources/images/connector-2.jpg" data-lightbox="roadtrip2" data-title="5000-6P-1.5T">
+                                                        <img src="../../resources/images/connector-2.jpg" alt="5000-6P-1.5T">
                                                     </a>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <a href="../../resources/images/galaxy-a-21-s.png" data-lightbox="roadtrip">
-                                                        <img src="../../resources/images/galaxy-a-21-s.png" alt="">
+                                                    <a href="../../resources/images/connector-3.jpg" data-lightbox="roadtrip2" data-title="5000-6P-1.5T">
+                                                        <img src="../../resources/images/connector-3.jpg" alt="5000-6P-1.5T">
                                                     </a>
                                                 </div>
             
@@ -158,22 +158,25 @@
                                 <p class="c-text-border">5000-6P-1.5T</p>
                                 <div class="row mt-4 p-0">
                                     <div class="col-lg-5">
-                                        <div class="swiper-socket swiper-container">
+                                        <div class="swiper-socket swiper-container" id="swiper_socket_2">
                                             <div class="swiper-wrapper">
             
                                                 <div class="swiper-slide">
-                                                    <a href="../../resources/images/galaxy-a-21-s.png" data-lightbox="roadtrip">
-                                                        <img src="../../resources/images/galaxy-a-21-s.png" alt="">
+                                                    <a href="../../resources/images/connector-4.jpg" data-lightbox="roadtrip1" data-title="5000-8P-1.5ML3
+                                                    ">
+                                                        <img src="../../resources/images/connector-4.jpg" alt="5000-8P-1.5ML3">
                                                     </a>                                        
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <a href="../../resources/images/galaxy-a-21-s.png" data-lightbox="roadtrip">
-                                                        <img src="../../resources/images/galaxy-a-21-s.png" alt="">
+                                                    <a href="../../resources/images/connector-5.jpg" data-lightbox="roadtrip1" data-title="5000-8P-1.5ML3
+                                                    ">
+                                                        <img src="../../resources/images/connector-5.jpg" alt="5000-8P-1.5ML3">
                                                     </a>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <a href="../../resources/images/galaxy-a-21-s.png" data-lightbox="roadtrip">
-                                                        <img src="../../resources/images/galaxy-a-21-s.png" alt="">
+                                                    <a href="../../resources/images/connector-6.jpg" data-lightbox="roadtrip1" data-title="5000-8P-1.5ML3
+                                                    ">
+                                                        <img src="../../resources/images/connector-6.jpg" alt="5000-8P-1.5ML3">
                                                     </a>
                                                 </div>
             
@@ -246,14 +249,8 @@
 
         <script>
             $(document).ready(function () {
-
-                lightbox.option({
-                    'resizeDuration': 200,
-                    'wrapAround': true,
-                    'alwaysShowNavOnTouchDevices':true,
-                })
-
-                var mySwiper = new Swiper('.swiper-socket', {
+        
+                var mySwiper = new Swiper('#swiper-socket_1', {
                     speed: 400,
                     pagination: {
                         el: '.swiper-pagination',
@@ -261,6 +258,25 @@
                     },
 
                 })
+                var mySwiper = new Swiper('#swiper-socket_2', {
+                    speed: 400,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+
+                })
+
+                
+                lightbox.option({
+                    'resizeDuration': 200,
+                    'wrapAround': true,
+                    'alwaysShowNavOnTouchDevices':true,
+                    'disableScrolling':true,
+                    'showImageNumberLabel':false,
+                })
+
+             
             })
         </script>
         <script src="../../resources/js/comm.js"></script>

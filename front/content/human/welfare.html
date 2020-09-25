@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-Compatible" content="IE=edge">
+    <title>JNTC</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../resources/plugin/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <link rel="stylesheet" href="../../resources/css/comm.css">
+    <!-- //fontawesome cnd -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="../../resources/plugin/jquery/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="../../resources/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper -->
+    <script src="../../resources/plugin/swiper/js/swiper.min.js"></script>
+    <!-- ui 관련 -->
+    <script src="../../resources/js/ui.js"></script>
+    
+</head>
+
+<body>
+    <div id="wrap">
+        <?php include "../layout/header.html";?>
+
+
+        <!-- 검색창 -->
+        <div class="search-bar">
+            <div class="input-group inputSearch">
+                <input type="text" class="form-control" placeholder="검색어를 입력해 주세요" aria-label="Search User"
+                    aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">
+                        <a href="#/"><i class="fa fa-search"></i></a></span>
+                </div>
+            </div>
+            <a href="javascript:void(0);" onclick="closeBtn();">
+                <div class="close-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+            </a>
+        </div>
+
+        <div class="sub-content">
+            <div class="sub-bg" style="background-image:url('../../resources/images/sub-bg.png')"></div>
+
+            <div class="container">
+                <div class="title-box">
+                    <h1 class="title">인재상</h1>
+                    <p>창의적 사고와 끝없는 도전으로 새로운 미래를 창조하고 글로벌 일류 기업을 향해 도약하겠습니다</p>
+                </div>
+
+                <div class="content-body">
+                    <div class="section-location">
+                        <span><i class="fas fa-home"></i></span>
+                        <span>인재/채용</span>
+                        <span>복리후생</span>                        
+                    </div>
+                    <div class="sub-title d-flex align-items-center">
+                        <div class="sub-title-ic" style="background-image:url('../../resources/images/ic-ceo.png')">
+                        </div>
+                        <p>CEO 인사말</p>
+                    </div>
+
+
+                    <section>
+                        <p class="c-lg-text">구성원들의 <span>건강하고 풍요로운 삶</span>을 지원</p>
+                        <p class="c-s-text">
+                            제이앤티씨는 구성원 모두가 안정된 직장생활과 풍요로운 가정 환경을 위해 다양한 복리후생 제도를 운영하고 있습니다.
+                        </p>
+
+                        <div class="d-flex align-items-center">
+                            <div class="border-box p-0 m-0">
+                                <img src="../../resources/images/welfare-1.png" alt="복리후생">
+                            </div>
+                            <div class="arrow-right"></div>
+                            <div class="border-box p-0 m-0">
+                                <img src="../../resources/images/welfare-2.png" alt="복리후생">
+                            </div>
+                            <div class="arrow-right"></div>
+                            <div class="border-box p-0 m-0">
+                                <img src="../../resources/images/welfare-3.png" alt="복리후생">
+                            </div>
+                        </div>
+                    </section>
+
+                
+
+                </div>
+
+            </div>
+
+
+
+            <?php include "../layout/footer.html";?>
+        </div> <!-- wrap -->
+
+        <script src="../../resources/js/comm.js"></script>
+        <script src="../../resources/js/common.js"></script>
+</body>
+
+</html>

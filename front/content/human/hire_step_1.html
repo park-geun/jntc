@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-Compatible" content="IE=edge">
+    <title>JNTC</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../resources/plugin/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <link rel="stylesheet" href="../../resources/css/comm.css">
+    <!-- //fontawesome cnd -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="../../resources/plugin/jquery/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="../../resources/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper -->
+    <script src="../../resources/plugin/swiper/js/swiper.min.js"></script>
+    <!-- ui 관련 -->
+    <script src="../../resources/js/ui.js"></script>
+    
+</head>
+
+<body>
+    <div id="wrap">
+        <?php include "../layout/header.html";?>
+
+
+        <!-- 검색창 -->
+        <div class="search-bar">
+            <div class="input-group inputSearch">
+                <input type="text" class="form-control" placeholder="검색어를 입력해 주세요" aria-label="Search User"
+                    aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">
+                        <a href="#/"><i class="fa fa-search"></i></a></span>
+                </div>
+            </div>
+            <a href="javascript:void(0);" onclick="closeBtn();">
+                <div class="close-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+            </a>
+        </div>
+
+        <div class="sub-content">
+            <div class="sub-bg" style="background-image:url('../../resources/images/sub-bg.png')"></div>
+
+            <div class="container">
+                <div class="title-box">
+                    <h1 class="title">채용정보</h1>
+                    <p>창의적 사고와 끝없는 도전으로 새로운 미래를 창조하고 글로벌 일류 기업을 향해 도약하겠습니다</p>
+                </div>
+
+                <div class="content-body">
+                    <div class="section-location">
+                        <span><i class="fas fa-home"></i></span>
+                        <span>인재/채용</span>
+                        <span>채용정보</span>       
+                        <span>채용공고</span>                        
+                    </div>
+                    <div class="sub-title d-flex align-items-center">
+                        <div class="sub-title-ic" style="background-image:url('../../resources/images/ic-hire.png')">
+                        </div>
+                        <p>채용공고</p>
+                    </div>
+
+
+                    <section>
+                        <div class="form-download">
+                            <p class="example">※ 해당 모집부문를 클릭 하시면 상세공고 내용을 보실 수 있습니다.</p>
+                            <a href="" class="link-btn">입사지원서 양식 다운로드 <img src="../../resources/images/ic-s-right.png" alt="자세히 보기"></a>
+                        </div>
+                        <table class="table tab-panel">
+                            <thead class="thead-light">
+                                <tr class="text-center">
+                                    <th scope="col">번호</th>
+                                    <th scope="col">모집부분</th>
+                                    <th scope="col">지원구분</th>
+                                    <th scope="col">접수기한</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="text-center">1</th>
+                                    <td ><a href="../human/hire_step_2.html">JNTC 커넥터 전자부품 생산직 정규사원 모집</a></td>
+                                    <td>경력</td>
+                                    <td>2020-09-28 23:00 </td>
+                                </tr>
+
+                                <tr>
+                                    <th class="text-center">2</th>
+                                    <td><a href="../human/hire_step_2.html">터치스크린 제조 생산직 사원 모집 (주간, 주야2교대)</a></td>
+                                    <td>신입</td>
+                                    <td>2020-09-15 23:00 </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </section>
+
+                
+
+                </div>
+
+            </div>
+
+
+
+            <?php include "../layout/footer.html";?>
+        </div> <!-- wrap -->
+
+        <script src="../../resources/js/comm.js"></script>
+        <script src="../../resources/js/common.js"></script>
+</body>
+
+</html>
