@@ -12389,13 +12389,12 @@ body {
 
 p,
 a,
-span,
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-size: 19px;
+  font-size: 17px;
   color: #000000;
   word-break: keep-all;
 }
@@ -12469,11 +12468,11 @@ h5 {
 }
 
 .product-question {
-  width: 300px;
+  width: 250px;
   border: 1px solid #aaaaaa;
   text-align: center;
   padding: 10px 0;
-  margin: 100px auto;
+  margin: 70px auto;
 }
 
 .product-question span {
@@ -12494,7 +12493,7 @@ h5 {
 }
 
 .c-lg-text {
-  font-size: 36px;
+  font-size: 28px;
 }
 
 .c-lg-text span {
@@ -12502,7 +12501,7 @@ h5 {
 }
 
 .c-text-border {
-  font-size: 36px;
+  font-size: 28px;
   position: relative;
   padding-bottom: 10px;
 }
@@ -12518,7 +12517,7 @@ h5 {
 }
 
 .lg-text-border {
-  font-size: 36px;
+  font-size: 28px;
   position: relative;
   padding-bottom: 10px;
   color: #f47920;
@@ -12560,24 +12559,24 @@ h5 {
 }
 
 .c-s-text {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 300;
-  line-height: 1.68;
-  margin: 45px 0;
+  line-height: 1.6;
+  margin: 20px 0 40px 0;
 }
 
 .o-s-text {
-  font-size: 19px;
+  font-size: 17px;
   color: #f47920;
 }
 
 .b-s-text {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 700;
 }
 
 .d-s-text {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 500 !important;
 }
 
@@ -12586,7 +12585,7 @@ h5 {
 }
 
 .example {
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -12614,9 +12613,9 @@ h5 {
 
 .nav-tabs .nav-item .nav-link {
   height: 100%;
-  padding: 20px 0;
+  padding: 14px 0;
   border: none;
-  font-size: 24px;
+  font-size: 18px;
   color: #000000;
   border: 1px solid #333333;
 }
@@ -12635,9 +12634,9 @@ h5 {
 
 .nav-tabs .nav-item-3 .nav-link {
   height: 100%;
-  padding: 20px 0;
+  padding: 14px 0;
   border: none;
-  font-size: 24px;
+  font-size: 18px;
   color: #000000;
   border: 1px solid #333333;
   display: -webkit-box;
@@ -12750,7 +12749,7 @@ h5 {
 
 @media (max-width: 991.98px) {
   .link-btn {
-    font-size: 16px;
+    font-size: 17px;
     padding: 10px;
     display: inline-block;
     margin: 20px 0;
@@ -12793,7 +12792,7 @@ h5 {
     margin: 20px 0;
   }
   .c-s-text {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 300;
     line-height: 1.68;
   }
@@ -12858,7 +12857,7 @@ h5 {
 }
 
 #wrap header nav ul li {
-  padding: 20px 30px;
+  padding: 10px 30px;
   font-weight: 700;
   color: #000000;
 }
@@ -12900,7 +12899,7 @@ h5 {
 
 #wrap footer ul li a {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 #wrap footer ul li::after {
@@ -12914,7 +12913,7 @@ h5 {
 }
 
 #wrap footer ul :first-child {
-  padding: 0 20px 0 0;
+  padding-left: 0;
 }
 
 #wrap footer ul :first-child::after {
@@ -12924,7 +12923,7 @@ h5 {
 }
 
 #wrap footer .footer-info {
-  padding: 70px 0;
+  padding: 50px 0;
 }
 
 #wrap footer .footer-info p {
@@ -12944,7 +12943,6 @@ h5 {
 #wrap .gnb {
   border-top: 1px solid #dddddd;
   display: none;
-  position: relative;
 }
 
 #wrap .gnb .gnb-list {
@@ -12958,8 +12956,8 @@ h5 {
 
 #wrap .gnb .gnb-list ul .gnb-title {
   color: #000000;
-  font-size: 24px;
-  padding-bottom: 20px;
+  font-size: 18px;
+  padding-bottom: 10px;
   font-weight: 700;
 }
 
@@ -12979,13 +12977,13 @@ h5 {
 }
 
 #wrap .gnb .gnb-list-sub p:nth-child(1) {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 #wrap .gnb .gnb-list-sub p:nth-child(2) {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 #wrap .gnb .gnb-list-sub > div {
@@ -12993,12 +12991,6 @@ h5 {
   height: 100px;
   border: 1px solid #dddddd;
   float: right;
-}
-
-#wrap .gnb .close-btn {
-  position: absolute;
-  top: 35px;
-  right: 10%;
 }
 
 #wrap .gnb .close-btn i {
@@ -13192,21 +13184,21 @@ h5 {
 }
 
 #wrap .sub-content .title-box {
-  padding: 120px 0;
+  padding: 100px 0;
 }
 
 #wrap .sub-content .title-box .title {
-  font-size: 60px;
+  font-size: 42px;
   color: #ffffff;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
 #wrap .sub-content .title-box p {
   width: 40%;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.5;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
 #wrap .content-body {
@@ -13215,11 +13207,11 @@ h5 {
 }
 
 #wrap .content-body .section-location {
-  padding: 30px 0;
+  padding: 16px 0;
 }
 
 #wrap .content-body .section-location span {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 300;
 }
 
@@ -13240,21 +13232,21 @@ h5 {
 #wrap .content-body .sub-title {
   width: 100%;
   border-bottom: 1px solid #dddddd;
-  padding: 30px 0;
+  padding: 16px 0;
 }
 
 #wrap .content-body .sub-title .sub-title-ic {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
 #wrap .content-body .sub-title p {
-  font-size: 42px;
+  font-size: 34px;
   font-weight: 700;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 #wrap .sub-section-banner {
@@ -13357,7 +13349,7 @@ h5 {
   }
   #wrap .sub-content .title-box p {
     width: 80%;
-    font-size: 16px;
+    font-size: 17px;
   }
   #wrap .sub-section-banner {
     margin: 30px 0;
@@ -13817,20 +13809,8 @@ h5 {
   }
 }
 
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1500px !important;
-  }
-}
-
-@media (min-width: 1260px) {
-  .container {
-    max-width: 1500px !important;
-  }
-}
-
 #wrap section {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 #wrap .section-main {
@@ -14046,23 +14026,18 @@ h5 {
   }
 }
 
-#wrap .cover-glass-content {
-  margin-top: 60px;
-}
-
 #wrap .cover-glass-content p:nth-child(1) {
   margin-bottom: 30px;
 }
 
 #wrap .cover-glass-content p:nth-child(2) {
-  font-size: 19px;
+  font-size: 17px;
   line-height: 1.58;
   font-weight: 300;
 }
 
 #wrap .flat {
   width: 100%;
-  padding-bottom: 70px;
   position: relative;
 }
 
@@ -14076,6 +14051,7 @@ h5 {
 }
 
 #wrap .glass-list .glass-item {
+  margin-bottom: 30px;
   height: 100%;
 }
 
@@ -14126,28 +14102,27 @@ h5 {
 }
 
 #wrap .glass-text .glass-brand {
-  font-size: 19px;
+  font-size: 17px;
   line-height: 32px;
-  margin-top: 30px;
+  margin-top: 20px;
   font-weight: 300;
 }
 
 #wrap .glass-text .glass-name {
-  font-size: 19px;
+  font-size: 17px;
   line-height: 32px;
   font-weight: 300;
-  margin-top: 35px;
 }
 
 #wrap .glass-text .s-text-border {
-  font-size: 24px;
+  font-size: 17px;
   position: relative;
   padding: 0;
   color: #f47920;
 }
 
 #wrap .glass-text .s-text-border > span {
-  font-size: 30px;
+  font-size: 18px;
   color: #f47920;
 }
 
@@ -14172,7 +14147,7 @@ h5 {
 }
 
 #wrap .connector-usb p {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 300;
 }
 

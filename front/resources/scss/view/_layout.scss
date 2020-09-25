@@ -9,7 +9,7 @@
             ul {
                 display: flex;
                 font-size: 28px;
-                li { padding: 20px 30px; font-weight: 700; color:$black;
+                li { padding: 10px 30px; font-weight: 700; color:$black;
                     &.active{color:$orange;border-bottom:2px solid $orange;
                         a{color:$orange;}
                     }
@@ -33,7 +33,7 @@
                 padding: 0 20px;
                 a {
                     color: $white;
-                    font-size: 18px;
+                    font-size:17px;
                 }
                 &::after {
                     content: "|";
@@ -46,7 +46,8 @@
             }
 
             :first-child {
-                padding: 0 20px 0 0;
+                // padding: 0 20px 0 0;
+                padding-left:0;
                 &::after {
                     content: "";
                     position: absolute;
@@ -56,10 +57,10 @@
         }
 
         .footer-info {
-            padding: 70px 0;
+            padding: 50px 0;
             p {
                 line-height: 1.76;
-                font-size: 17px;
+                font-size:17px;
                 color:$white;
                 span{color:$white;}
             }
@@ -72,7 +73,7 @@
     .gnb {
         border-top: 1px solid $gray-dd;
         display: none;
-        position: relative;
+     
         .gnb-list {
             padding: 30px 0;
 
@@ -82,8 +83,8 @@
 
                 .gnb-title {
                     color: $black;
-                    font-size: 24px;
-                    padding-bottom: 20px;
+                    font-size: 18px;
+                    padding-bottom: 10px;
                     font-weight: 700;
                 }
 
@@ -98,8 +99,8 @@
             padding : 30px 0;
             text-align: right;
             p{word-break: keep-all;
-                &:nth-child(1){font-size: 32px;}
-                &:nth-child(2){font-size: 20px; font-weight: 300;margin:20px 0;}
+                &:nth-child(1){font-size: 28px;}
+                &:nth-child(2){font-size: 18px; font-weight: 300;margin:10px 0;}
             }
             >div{
                 width: 150px;
@@ -109,9 +110,9 @@
             }
         }
         .close-btn {
-            position: absolute;
-            top: 35px;
-            right: 10%;
+            // position: absolute;
+            // top: 35px;
+            // right: 10%;
 
             i {
                 font-size: 30px;
@@ -144,7 +145,7 @@
                     font-weight: 700;
                     font-size: 24px;
                     padding-bottom: 15px;
-                }
+                     }
 
                 li {
                     color: $black;
@@ -287,22 +288,22 @@
             z-index: -1;
         }
         .title-box{
-            padding :120px 0;
+            padding :100px 0;
             .title{
-                font-size: 60px;
+                font-size: 42px;
                 color: $white;                
-                text-shadow: 0 0 8px rgba(0,0,0,0.2);
+                text-shadow: 0 0 6px rgba(0,0,0,0.2);
             }
-            p{width:40%;color:$white; font-size: 24px;line-height: 1.5;
-            text-shadow: 0 0 8px rgba(0,0,0,0.2);}
+            p{width:40%;color:$white; font-size: 18px;line-height: 1.5;
+            text-shadow: 0 0 6px rgba(0,0,0,0.2);}
         }
     }
     .content-body{
         background-color: $white;
         padding: 0 70px;
         .section-location{
-            padding:30px 0;
-            span{font-size:19px;font-weight: 300;
+            padding:16px 0;
+            span{font-size:17px;font-weight: 300;
                 &:first-child{
                     &::before{
                         content:"";
@@ -322,15 +323,15 @@
         .sub-title{
             width: 100%;
             border-bottom:1px solid $gray-dd;
-            padding:30px 0;
+            padding:16px 0 ;
             .sub-title-ic{
-                width: 40px;
-                height: 40px;
+                width: 30px;
+                height: 30px;
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: center;
             }
-            p{font-size:42px; font-weight: 700;margin-left: 30px;}
+            p{font-size:34px; font-weight: 700;margin-left: 20px;}
         }
     }
     .sub-section-banner{
@@ -406,7 +407,7 @@
         .sub-content .title-box {
             padding: 50px 0;
             .title{font-size:36px;}
-            p{width: 80%; font-size: 16px;}
+            p{width: 80%; font-size:17px;}
         }
         .sub-section-banner{
             margin:30px 0;

@@ -1,7 +1,7 @@
 #wrap{
 
     section{
-        margin-top: 60px;
+        margin-top: 30px;
        
     }
 
@@ -130,13 +130,12 @@
     ///////커버글라스
  
     .cover-glass-content{
-        margin-top: 60px;
+        // margin-top: 60px;
         p:nth-child(1){margin-bottom: 30px;}
-        p:nth-child(2){font-size:19px;line-height: 1.58;font-weight: 300;}
+        p:nth-child(2){font-size:17px;line-height: 1.58;font-weight: 300;}
     }
     .flat{
         width: 100%;
-        padding-bottom: 70px;
         position: relative;
         // flex-flow:wrap;
         .glass-list:last-child{
@@ -152,7 +151,7 @@
     .glass-list{
         width: 20%;   
         padding: 0 10px;        
-        .glass-item{height: 100%;}  
+        .glass-item{margin-bottom:30px;height: 100%;}  
     }
     .glass-list.active{
         position: relative;
@@ -190,14 +189,14 @@
         text-align: left;
         
 
-        .glass-brand{font-size:19px;line-height:32px;margin-top: 30px;font-weight: 300;}
-        .glass-name{font-size:19px;line-height: 32px;font-weight: 300;margin-top: 35px;}
+        .glass-brand{font-size:17px;line-height:32px;margin-top: 20px;font-weight: 300;}
+        .glass-name{font-size:17px;line-height: 32px;font-weight: 300;}
         .s-text-border {
-            font-size: 24px;
+            font-size:17px;
             position: relative;
             padding:0;
             color: $orange;
-            >span{font-size:30px;color:$orange}
+            >span{font-size:18px;color:$orange}
             &::after {
                 content: "";
                 position: absolute;
@@ -215,7 +214,7 @@
     }
     .connector-usb{
         margin:40px 0;
-        p{font-size: 19px;font-weight: 300;}
+        p{font-size:17px;font-weight: 300;}
     }
         
 

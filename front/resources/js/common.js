@@ -22,10 +22,10 @@ $(document).ready(function () {
     }, function () {
 
     })
-    //gnb 삭제
-    $('.gnb').on('mouseleave', function(){
-        $(this).hide();
-    })
+    // //gnb 삭제
+    // $('.gnb').on('mouseleave', function(){
+    //     $(this).hide();
+    // })
     ///글래스 hover
     $('.glass-list').hover(function(){
         var idx = $(this).index()+1;
