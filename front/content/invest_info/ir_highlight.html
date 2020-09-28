@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-Compatible" content="IE=edge">
+    <title>JNTC</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../resources/plugin/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <link rel="stylesheet" href="../../resources/css/comm.css">
+    <!-- //fontawesome cnd -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="../../resources/plugin/jquery/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="../../resources/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper -->
+    <script src="../../resources/plugin/swiper/js/swiper.min.js"></script>
+    <!-- ui 관련 -->
+    <script src="../../resources/js/ui.js"></script>
+    
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="header">
+            <header>
+                <div class="container d-flex align-items-center justify-content-between">
+                    <div class="logo"> <a href="../main/main_2.html"><img src="../../resources/images/logo.png"
+                                alt="JNTC 로고" class="p-0"> </a></div>
+                    <nav>
+                        <ul>
+                            <li class="active"><a href="">기업정보</a></li>
+                            <li><a href="">제품</a></li>
+                            <li><a href="">기술</a></li>
+                            <li><a href="">인재/채용</a></li>
+                            <li><a href="">투자정보</a></li>
+                        </ul>
+                    </nav>
+                    <div class="left-header">
+                        <select name="" id="">
+                            <option value="">KOR</option>
+                            <option value="">JAP</option>
+                            <option value="">CHA</option>
+                        </select>
+                        <a href="javascript:void(0);" onclick="openSearch()"> <img
+                                src="../../resources/images/search.png" alt="서치"> </a>
+                        <a href="javascript:void(0);" class="only_w" onclick="openSiteMap()"> <img
+                                src="../../resources/images/menu.png" alt="메뉴바"> </a>
+                        <a href="javascript:void(0);" class="only_mo" onclick="openMobileMenu()"> <img
+                                src="../../resources/images/menu.png" alt="메뉴바"> </a>
+                    </div>
+                </div>
+            </header>
+            <!-- GNB -->
+            <div class="gnb">
+                <div class="container d-flex justify-content-between">
+                    <div class="col-10 gnb-list d-flex">
+                        <ul>
+                            <li class="gnb-title">회사소개</li>
+                            <li><a href="../intro/summary.html">개요</a></li>
+                            <li><a href="../intro/ceo.html">CEO 인사말</a></li>
+                            <li><a href="../intro/history.html">연혁/수상내역</a></li>
+                            <li><a href="../intro/vision.html">비전 및 조직문화 CI</a></li>
+                        </ul>
+                        <ul>
+                            <li class="gnb-title">사업소개</li>
+                            <li><a href="../business/cover_glass.html">커버글라스</a></li>
+                            <li><a href="">커넥터</a></li>
+                        </ul>
+                        <ul>
+                            <li class="gnb-title">사업장</li>
+                            <li><a href="">국내 사업장</a></li>
+                            <li><a href="">해외 사업장</a></li>
+                        </ul>
+                        <ul>
+                            <li class="gnb-title">지속가능경영</li>
+                            <li><a href="">품질경영</a></li>
+                            <li><a href="">환경경영</a></li>
+                            <li><a href="">사회공헌</a></li>
+                            <li><a href="">분쟁광물</a></li>
+                        </ul>
+                        <ul>
+                            <li class="gnb-title">계열사소개</li>
+                            <li><a href="../intro/subsidiary.html">국내 계열사</a></li>
+                            <li><a href="../intro/subsidiary.html">해외 계열사</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2 gnb-list-sub">
+                        <p>기업정보</p>
+                        <p>디지털 제품의 새로운 가치를 창조하는 기업</p>
+                        <div>
+        
+                        </div>
+                    </div>
+                    <a class="menu-close-btn" href="javascript:void(0);" onclick="closeBtn();">
+                        <div class="close-btn">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <!-- 사이트맵 -->
+            <div class="sitemaps">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-6 col-sm-12 sitemap-list">
+                            <h2>기업정보</h2>
+                            <ul>
+                                <li class="sitemap-title">회사소개</li>
+                                <li><a href="../intro/summary.html">개요</a></li>
+                                <li><a href="../intro/ceo.html">CEO 인사말</a></li>
+                                <li><a href="../intro/history.html">연혁/수상내역</a></li>
+                                <li><a href="../intro/vision.html">비전 및 조직문화 CI</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title">사업소개</li>
+                                <li><a href="../business/cover_glass.html">커버글라스</a></li>
+                                <li><a href="">커넥터</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title">사업장</li>
+                                <li><a href="">국내 사업장</a></li>
+                                <li><a href="">해외 사업장</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title">지속가능경영</li>
+                                <li><a href="">품질경영</a></li>
+                                <li><a href="../intro/operation_hsf.html">환경경영 (HSF방침)</a></li>
+                                <li><a href="">사회공헌</a></li>
+                                <li><a href="">분쟁광물</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title">계열사소개</li>
+                                <li><a href="../intro/subsidiary.html">국내 계열사</a></li>
+                                <li><a href="../intro/subsidiary.html">해외 계열사</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12 sitemap-list">
+                            <h2>제품</h2>
+                            <ul>
+                                <li class="sitemap-title">커버글라스</li>
+                                <li><a href="../product/glass.html">모바일용</a></li>
+                                <li><a href="../product/car.html">차량용</a></li>
+                                <li><a href="../product/camera_window.html">카메라윈도우용</a></li>
+                                <li><a href="../product/utg_glass.html">UTG용</a></li>
+                                <li><a href="../product/smart_watch.html">스마트와치용</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title">커넥터</li>
+                                <li><a href="">모바일용</a></li>
+                                <li><a href="">차량용</a></li>
+                                <li><a href="">카메라윈도우용</a></li>
+                                <li><a href="">UTG용</a></li>
+                                <li><a href="">스마트와치용</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12 sitemap-list">
+                            <h2>기술</h2>
+                            <ul>
+                                <li class="sitemap-title"><a href="">R&D 현황</a></li>
+                                <li><a href="../technology/introduce.html">연구소 소개</a></li>
+                                <li><a href="../technology/compete.html">기술 경쟁력</a></li>
+                                <li><a href="../technology/road_map.html">비전 및 로드맵</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title"><a href="../technology/develop_result.html">연구개발 성과</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title"><a href="../technology/core_technology.html">핵심 기술력</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title"><a href="../technology/intellectual_property.html">지적재산권</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12 sitemap-list">
+                            <h2>인재/채용</h2>
+                            <ul>
+                                <li class="sitemap-title"><a href="../human/talent.html">인재상</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title"><a href="">인사제도</a></li>
+                                <li><a href="">인사체계</a></li>
+                                <li><a href="../human/welfare.html">복리후생</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title"><a href="">채용정보</a></li>
+                                <li><a href="">주요 직무소개</a></li>
+                                <li><a href="../human/hire.html">채용절차</a></li>
+                                <li><a href="../human/hire_step_1.html">채용공고</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12 sitemap-list">
+                            <h2>투자정보</h2>
+                            <ul>
+                                <li class="sitemap-title"><a href="../invest_info/ir_highlight.html">IR 하이라이트</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title"><a href="../invest_info/finance.html">재무정보</a></li>
+                                <li><a href="../invest_info/finance.html">요약재무제표</a></li>
+                                <li><a href="../invest_info/finance.html">재무상태표</a></li>
+                                <li><a href="../invest_info/finance.html">손익계산서</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title"><a href="../invest_info/stork.html">주가정보</a></li>
+                                <li><a href="../invest_info/stork.html">실시간 주가</a></li>
+                                <li><a href="../invest_info/stork.html">일자별 주가</a></li>
+                                <li><a href="../invest_info/stork.html">매매동향</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title"><a href="../invest_info/disclosure.html">공시</a></li>                            
+                            </ul>
+                            <ul>
+                                <li class="sitemap-title"><a href="../invest_info/ir_info.html">IR정보</a></li>
+                                <li><a href="../invest_info/ir_info.html">IR 자료실</a></li>
+                                <li><a href="../invest_info/ir_info.html">뉴스</a></li>
+                                <li><a href="../invest_info/ir_info.html">IR Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" onclick="closeBtn();">
+                    <div class="close-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </a>
+            </div>
+        
+            <!-- 모바일 메뉴 -->
+            <div class="mobile_menu">
+                <div class="top">
+                    <div class="text">JNTC에 오신것을 환영합니다.</div>
+                    <button type="button" class="cancel" onclick="closeMoblieBtn();"></button>
+                </div>
+                <div class="bottom">
+                    <div class="title">전체 메뉴</div>
+                    <ul class="left">
+                        <li class="on">기업정보</li>
+                        <li>제품</li>
+                        <li>기술</li>
+                        <li>인재/채용</li>
+                        <li>투자정보</li>
+                    </ul>
+                    <ul class="right">
+                        <li class="on">
+                            <span>회사소개</span>
+                            <div>
+                                <ul>
+                                    <li><a href="../intro/summary.html">개요</a></li>
+                                    <li><a href="../intro/ceo.html">CEO 인사말</a></li>
+                                    <li><a href="../intro/history.html">연혁/수상내역</a></li>
+                                    <li><a href="../intro/vision.html">비전 및 조직문화 CI</a></li>
+                                </ul>
+                            </div>
+                            <span>사업소개</span>
+                            <div>
+                                <ul>
+                                    <li><a href="../business/cover_glass.html">커버글라스</a></li>
+                                    <li><a href="">커넥터</a></li>
+                                </ul>
+                            </div>
+                            <span>사업장</span>
+                            <div>
+                                <ul>
+                                    <li><a href="">국내 사업장</a></li>
+                                    <li><a href="">해외 사업장</a></li>
+                                </ul>
+                            </div>
+                            <span>지속가능경영</span>
+                            <div>
+                                <ul>
+                                    <li><a href="#">품질경영</a></li>
+                                    <li><a href="#">환경경영(HSF방침)</a></li>
+                                    <li><a href="#">사회공헌</a></li>
+                                    <li><a href="#">분쟁광물</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <span>지속가능경영</span>
+                            <div>
+                                <ul>
+                                    <li><a href="#">품질경영</a></li>
+                                    <li><a href="#">환경경영(HSF방침)</a></li>
+                                    <li><a href="#">사회공헌</a></li>
+                                    <li><a href="#">분쟁광물</a></li>
+                                </ul>
+                            </div>
+                            <a href="../intro/subsidiary.html">계열사소개</a>
+                        </li>
+                        <li>
+                            <span>커버글라스</span>
+                            <div>
+                                <ul>
+                                    <li><a href="../product/glass.html">모바일용</a></li>
+                                    <li><a href="../product/car.html">차량용</a></li>
+                                    <li><a href="../product/camera_window.html">카메라윈도우용</a></li>
+                                    <li><a href="../product/utg_glass.html">UTG용</a></li>
+                                    <li><a href="../product/smart_watch.html">스마트와치용</a></li>
+                                </ul>
+                            </div>
+                            <span>커넥터</span>
+                            <div>
+                                <ul>
+                                    <li><a href="#">커넥터</a></li>
+                                    <li><a href="#">모바일용</a></li>
+                                    <li><a href="#">차량용</a></li>
+                                    <li><a href="#">카메라윈도우용</a></li>
+                                    <li><a href="#">UTG용</a></li>
+                                    <li><a href="#">스마트와치용</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <span>R&D 현황</span>
+                            <div>
+                                <ul>
+                                    <li><a href="../technology/introduce.html">연구소 소개</a></li>
+                                    <li><a href="">기술 경쟁력</a></li>
+                                    <li><a href="../technology/road_map.html">비전 및 로드맵</a></li>
+                                </ul>
+                            </div>
+                            <a href="../technology/develop_result.html">연구개발 성과</a>
+                            <a href="#">핵심 기술력</a>
+                            <a href="#">지적재산권</a>
+                        </li>
+                        <li>
+                            <a href="#">인재상</a>
+                            <span>인사제도</span>
+                            <div>
+                                <ul>
+                                    <li><a href="#">인사체계</a></li>
+                                    <li><a href="#">복리후생</a></li>
+                                </ul>
+                            </div>
+                            <span>채용정보</span>
+                            <div>
+                                <ul>
+                                    <li><a href="#">주요 직무소개</a></li>
+                                    <li><a href="#">채용절차</a></li>
+                                    <li><a href="#">채용공고</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">IR 하이라이트</a>
+                            <span>재무정보</span>
+                            <div>
+                                <ul>
+                                    <li><a href="#">요약재무제표</a></li>
+                                    <li><a href="#">재무상태표</a></li>
+                                    <li><a href="#">손익계산서</a></li>
+                                </ul>
+                            </div>
+                            <span>주가정보</span>
+                            <div>
+                                <ul>
+                                    <li><a href="#">실시간 주가</a></li>
+                                    <li><a href="#">일자별 주가</a></li>
+                                    <li><a href="#">매매동향</a></li>
+                                </ul>
+                            </div>
+                            <a href="#">공시</a>
+                            <span>IR정보</span>
+                            <div>
+                                <ul>
+                                    <li><a href="#">IR 자료실</a></li>
+                                    <li><a href="#">뉴스</a></li>
+                                    <li><a href="#">IR Contact</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 검색창 -->
+        <div class="search-bar">
+            <div class="input-group inputSearch">
+                <input type="text" class="form-control" placeholder="검색어를 입력해 주세요" aria-label="Search User"
+                    aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">
+                        <a href="#/"><i class="fa fa-search"></i></a></span>
+                </div>
+            </div>
+            <a href="javascript:void(0);" onclick="closeBtn();">
+                <div class="close-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+            </a>
+        </div>
+
+        <div class="sub-content">
+            <div class="sub-bg" style="background-image:url('../../resources/images/sub-bg.png')"></div>
+
+            <div class="container">
+                <div class="title-box">
+                    <h1 class="title">IR 하이라이트</h1>
+                    <p>창의적 사고와 끝없는 도전으로 새로운 미래를 창조하고 글로벌 일류 기업을 향해 도약하겠습니다</p>
+                </div>
+
+                <div class="content-body">
+                    <div class="section-location">
+                        <span><i class="fas fa-home"></i></span>
+                        <span>투자정보</span>
+                        <span>IR 하이라이트</span>                        
+                    </div>
+
+                   
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="sub-title d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="sub-title-ic" style="background-image:url('../../resources/images/ic-ceo.png')">
+                                        </div>
+                                        <p>뉴스</p>
+                                    </div>
+                                    <a href="" class="link-btn m-0">더보기 <img src="../../resources/images/ic-s-right.png" alt="자세히 보기"></a>
+                                </div>    
+                                
+                                <ul class="ul-list-dot ir">
+                                    <li><span>제이앤티씨, 수익 다변화 전략 '순항'</span><span class="date">2020.09.01</span></li>
+                                    <li><span>제이앤티씨, 상반기 매출 1,992억 원 기록</span><span class="date">2020.08.14</span></li>
+                                    <li><span>차량용 3D 커버글라스 제품 납품 준비 완료</span><span class="date">2020.07.23</span></li>
+                                    <li><span>제이앤티씨, 26일 박영준 신임 대표 선임</span><span class="date">2020.05.26</span></li>
+                                    <li><span>3D 커버글라스 전문기업 제이앤티씨, 코스닥시장 상장</span><span class="date">2020.03.04</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="sub-title d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="sub-title-ic" style="background-image:url('../../resources/images/ic-ceo.png')">
+                                        </div>
+                                        <p>IR 자료실</p>
+                                    </div>
+                                    <a href="" class="link-btn m-0">더보기 <img src="../../resources/images/ic-s-right.png" alt="자세히 보기"></a>
+                                </div>    
+                                <ul class="ul-list-dot ir">
+                                    <li><span>2020년 2분기 실적발표자료</span><span class="date">2020.09.01</span></li>
+                                    <li><span>제 25기 반기보고서</span><span class="date">2020.08.14</span></li>
+                                    <li><span>2020년 1분기 실적발표자료</span><span class="date">2020.07.23</span></li>
+                                    <li><span>제 25기 분기보고서</span><span class="date">2020.05.26</span></li>
+                                    <li><span>제 25기 사업보고서</span><span class="date">2020.03.04</span></li>
+                                </ul>    
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="newsroom border-box none-bg">
+                                    <div class="newsroom-img">
+                                        <p class="news-title">공시정보</p>
+                                        <div class="ir-ic" style="background-image: url('../../resources/images/ic-introduce-1.png');"></div>
+                                    </div>
+                                    <div class="newsroom-content">
+                                        
+                                        <p class="news-date">투명한 경영활동을 통해<br>신뢰를 높이겠습니다.</p>
+                                        <div class="text-right">
+                                            <a href="" class="link-btn mb-0">자세히 보기<img src="../../resources/images/ic-s-right.png" alt="더보기"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="newsroom border-box none-bg">
+                                    <div class="newsroom-img">
+                                        <p class="news-title">주가</p>
+                                        <div class="ir-ic" style="background-image: url('../../resources/images/ic-introduce-1.png');"></div>
+                                    </div>
+                                    <div class="newsroom-content">
+                                       
+                                        <p class="news-date">실시간 주가 현황을<br>확일하실 수 있습니다.</p>
+                                        <div class="text-right">
+                                            <a href="" class="link-btn mb-0">자세히 보기<img src="../../resources/images/ic-s-right.png" alt="더보기"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="newsroom border-box none-bg">
+                                    <div class="newsroom-img">
+                                        <p class="news-title">재무정보</p>
+                                        <div class="ir-ic" style="background-image: url('../../resources/images/ic-introduce-1.png');"></div>
+                                    </div>
+                                    <div class="newsroom-content">
+                                        
+                                        <p class="news-date">주요 재무정보를<br>확인하실 수 있습니다.</p>
+                                        <div class="text-right">
+                                            <a href="" class="link-btn mb-0">자세히 보기<img src="../../resources/images/ic-s-right.png" alt="더보기"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        
+                        </div>
+
+                        <div class="row">
+                
+                            <div class="col-md-6 col-sm-12">
+                                <div class="sub-title d-flex align-items-baseline">
+                                    <div class="sub-title-ic" style="background-image:url('../../resources/images/ic-ceo.png')">
+                                    </div>
+                                    <p>매출액</p><span class="ml-4">(단위 : 억 원, 연결재무제표 기준)</span>
+                                </div>  
+                                <div class="border-box ir" style="background-image:url('../../resources/images/bg_sales_01.png')">
+
+                                </div>  
+                            </div>
+                        
+                        
+                            <div class="col-md-6 col-sm-12">
+                                <div class="sub-title d-flex align-items-baseline">
+                                    <div class="sub-title-ic" style="background-image:url('../../resources/images/ic-ceo.png')">
+                                    </div>
+                                    <p>사업부분별 매출비중</p><span class="ml-4">(단위 : %)</span>
+                                </div>    
+                                <div class="border-box ir" style="background-image:url('../../resources/images/bg_sales_02.png')">
+
+                                </div>
+                            </div>
+                    
+                           
+                        </div>
+
+                
+
+                </div>
+
+            </div>
+
+
+
+            <?php include "../layout/footer.html";?>
+        </div> <!-- wrap -->
+
+        <script src="../../resources/js/comm.js"></script>
+        <script src="../../resources/js/common.js"></script>
+</body>
+
+</html>

@@ -92,7 +92,7 @@ body.lb-disable-scrolling {
   -ms-transform: translate(-50%,0);
   -webkit-transform: translate(-50%,0);
   height: 100%;
-  width: 80vh;
+  width: 70vw;
   z-index: 10;
 }
 

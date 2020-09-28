@@ -1,165 +1,507 @@
-#wrap{
+section {
+    margin-top: 30px;
 
-    section{
-        margin-top: 30px;
-       
-    }
+}
 
 
-    .section-main{
-        position: relative;
-        width: 100%;
-        .vision-box{
-            p:nth-child(1){font-size:30px;}
-            p:nth-child(2){font-size:24px; color:$orange;margin:20px 0;}
-            ul{
-                li{font-size:19px; font-weight: 300;line-height: 1.58;}
-            }
-        }
-        .technology{
-            width: 300px;
-            text-align:left;position: absolute;top:20%;left:10%;transform: translate(-10%, -20%);
-        }
-        .marketing{
-            width: 300px;text-align:left;position: absolute;top:15%;right:5%;transform: translate(-5%, 0);
-        }
-        .produce{
-            width: 300px;text-align:left;position: absolute;bottom:15%;left:10%;transform: translate(-10%, -15%);
-        }
-        .operation{
-            width: 300px;text-align:left;position: absolute;bottom:15%;right:5%;transform: translate(-5%, 0);
+.section-main {
+    position: relative;
+    width: 100%;
+
+    .vision-box {
+        p:nth-child(1) {
+            font-size: 30px;
         }
 
-        .vision-bg{
-            position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);
-            p{
-                font-size: 28px;
-                font-weight: 700;
-                line-height: 1.43;
-                text-align: center;
-                color: $white;
-                position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);
-            }
-        }
-        
-        .technology-icon{position: absolute;left: 35%;top:20%;transform: translate(-35%,-20%);}
-        .marketing-icon{position: absolute;right: 30%;top:20%;transform: translate(-30%,-20%);}
-        .produce-icon{position: absolute;left: 35%;bottom:15%;transform: translate(-35%,-20%);}     
-        .operation-icon{position: absolute;right: 30%;bottom:15%;transform: translate(-30%,-20%);}
-    }
-   
-
-
-
-    ////ceo
-    .ceo-greetings{
-       position: relative;
-       z-index: 1;
-       img{
-           position: absolute;
-           bottom: 0;
-           right: 0;
-           z-index:-1;
-       }
-       
-    }
-    .ceo-sign{
-        margin:45px 0;
-        p{
+        p:nth-child(2) {
             font-size: 24px;
-            line-height: 1.5;
-            color: #000000;
-            span{
-                font-weight: bold;
+            color: $orange;
+            margin: 20px 0;
+        }
+
+        ul {
+            li {
+                font-size: 19px;
+                font-weight: 300;
+                line-height: 1.58;
             }
         }
-        .sign{
-            width: 150px;
-            height:100px;
-            background-image: url('../../resources/images/sign.png');
+    }
+
+    .technology {
+        width: 300px;
+        text-align: left;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        transform: translate(-10%, -20%);
+    }
+
+    .marketing {
+        width: 300px;
+        text-align: left;
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        transform: translate(-5%, 0);
+    }
+
+    .produce {
+        width: 300px;
+        text-align: left;
+        position: absolute;
+        bottom: 15%;
+        left: 10%;
+        transform: translate(-10%, -15%);
+    }
+
+    .operation {
+        width: 300px;
+        text-align: left;
+        position: absolute;
+        bottom: 15%;
+        right: 5%;
+        transform: translate(-5%, 0);
+    }
+
+    .vision-bg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        p {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.43;
+            text-align: center;
+            color: $white;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .technology-icon {
+        position: absolute;
+        left: 35%;
+        top: 20%;
+        transform: translate(-35%, -20%);
+    }
+
+    .marketing-icon {
+        position: absolute;
+        right: 30%;
+        top: 20%;
+        transform: translate(-30%, -20%);
+    }
+
+    .produce-icon {
+        position: absolute;
+        left: 35%;
+        bottom: 15%;
+        transform: translate(-35%, -20%);
+    }
+
+    .operation-icon {
+        position: absolute;
+        right: 30%;
+        bottom: 15%;
+        transform: translate(-30%, -20%);
+    }
+}
+
+
+
+
+////ceo
+.ceo-greetings {
+    position: relative;
+    z-index: 1;
+
+    img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+}
+
+.ceo-sign {
+    margin: 45px 0;
+
+    p {
+        font-size: 24px;
+        line-height: 1.5;
+        color: #000000;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .sign {
+        width: 150px;
+        height: 100px;
+        background-image: url('../../resources/images/sign.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 20px;
+    }
+}
+
+.ceo-profile {
+    .ceo-profile-title {
+        font-size: 24px;
+        line-height: 1;
+        border-bottom: 2px solid $black;
+        padding: 15px 0;
+        margin-bottom: 30px;
+    }
+
+    .ceo-profile-years {
+        li {
+            line-height: 2.11;
+            color: $black;
+            text-align: left;
+            font-size: 19px;
+        }
+    }
+
+    .ceo-profile-job {
+        margin-left: 30px;
+
+        li {
+            line-height: 2.11;
+            color: $black;
+            font-weight: 300;
+            font-size: 19px;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {}
+
+.ceo-sign {
+    margin: 45px 0;
+
+    p {
+        font-size: 17px;
+        line-height: 1.5;
+        color: #000000;
+    }
+
+    .sign {
+        width: 150px;
+        height: 50px;
+        background-image: url('../../resources/images/sign.png');
+    }
+}
+
+.ceo-profile {
+    .ceo-profile-title {
+        font-size: 24px;
+        line-height: 1;
+        border-bottom: 2px solid $black;
+        padding: 15px 0;
+        margin-bottom: 30px;
+    }
+
+    .ceo-profile-years {
+        li {
+            line-height: 2.11;
+            color: $black;
+            text-align: left;
+            font-size: 14px;
+        }
+    }
+
+    .ceo-profile-job {
+        margin-left: 30px;
+
+        li {
+            line-height: 2.11;
+            color: $black;
+            font-weight: 300;
+            font-size: 14px;
+        }
+    }
+}
+
+
+
+///////커버글라스
+
+.cover-glass-content {
+
+    // margin-top: 60px;
+    p:nth-child(1) {
+        margin-bottom: 30px;
+    }
+
+    p:nth-child(2) {
+        font-size: 17px;
+        line-height: 1.58;
+        font-weight: 300;
+    }
+}
+
+.flat {
+    width: 100%;
+    position: relative;
+
+    // flex-flow:wrap;
+    .glass-list:last-child {
+        .years-line {
+            &:after {
+                width: 0;
+            }
+        }
+    }
+
+}
+.cover-glass{
+    &.camera{
+        .glass-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            border: 1px solid $gray-aa;
+            padding: 30px 0;
+            background-size: cover;
             background-repeat: no-repeat;
-            background-size: contain;
-            margin-left: 20px;
+            background-position: center;
+            &.connector {
+                height: auto;
+                padding: 0;
+            }
+            img {
+                height: 100%;
+            }
+        }
+        .glass-list.active {
+    
+            .glass-img {
+                border: 3px solid $orange;
+                background-color: $gray-f5;
+                background-size: inherit;
+                background-repeat: no-repeat;
+                background-position: center;
+                
+            }
+        
         }
     }
-    .ceo-profile{
-        .ceo-profile-title{
-            font-size: 24px;line-height: 1;border-bottom:2px solid $black;padding:15px 0;margin-bottom: 30px;
-        }
-        .ceo-profile-years{
-            li{line-height: 2.11; color: $black; text-align: left;font-size: 19px;}
-        }
-        .ceo-profile-job{
-            margin-left: 30px;
-            li{line-height: 2.11; color: $black; font-weight: 300; font-size: 19px;}
-        }
+}
+.glass-list {
+    width: 20%;
+    padding: 0 10px;
+    .glass-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        border: 1px solid $gray-aa;
+        padding: 30px 0;
+        background-repeat: no-repeat;
+        background-position: center;
     }
-
-    @include media-breakpoint-down(md){
-        .ceo-greetings{
-       
-        }
-        .ceo-sign{
-            margin:45px 0;
-            p{
-                font-size: 17px;
-                line-height: 1.5;
-                color: #000000;
-            }
-            .sign{
-                width: 150px;
-                height:50px;
-                background-image: url('../../resources/images/sign.png');
-            }
-        }
-        .ceo-profile{
-            .ceo-profile-title{
-                font-size: 24px;line-height: 1;border-bottom:2px solid $black;padding:15px 0;margin-bottom: 30px;
-            }
-            .ceo-profile-years{
-                li{line-height: 2.11; color: $black; text-align: left;font-size: 14px;}
-            }
-            .ceo-profile-job{
-                margin-left: 30px;
-                li{line-height: 2.11; color: $black; font-weight: 300; font-size: 14px;}
-            }
-        }
-    }
-
-
-    ///////커버글라스
  
-    .cover-glass-content{
-        // margin-top: 60px;
-        p:nth-child(1){margin-bottom: 30px;}
-        p:nth-child(2){font-size:17px;line-height: 1.58;font-weight: 300;}
+    .glass-item {
+        margin-bottom: 30px;
+        height: 100%;
     }
-    .flat{
+}
+
+.glass-list.active {
+    position: relative;
+
+    .glass-img {
+        border: 3px solid $orange;
+        background-color: $gray-f5;
+        &.camera{
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .arrow-plus {
+        width: 25px;
+        height: 25px;
+        background-image: url('../../resources/images/ic-plus.png');
+        background-size: contain;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+
+    }
+}
+
+
+
+.glass-text {
+    padding: 15px 20px;
+    text-align: left;
+
+
+    .glass-brand {
+        font-size: 17px;
+        line-height: 32px;
+        margin-top: 20px;
+        font-weight: 300;
+    }
+
+    .glass-name {
+        font-size: 17px;
+        line-height: 32px;
+        font-weight: 300;
+    }
+
+    .s-text-border {
+        font-size: 17px;
+        position: relative;
+        padding: 0;
+        color: $orange;
+
+        >span {
+            font-size: 18px;
+            color: $orange
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: $orange;
+            bottom: -15px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+
+    .s-text-border.list {
+        &::after {
+            top: 60px;
+        }
+    }
+}
+
+.connector-usb {
+    margin: 40px 0;
+
+    p {
+        font-size: 17px;
+        font-weight: 300;
+    }
+}
+
+
+@include media-breakpoint-down(md) {
+
+    .glass-list {
+        width: 50%;
+        padding: 0 10px;
+        margin-top: 20px;
+
+        .glass-item {
+            height: 100%;
+        }
+    }
+
+    .glass-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+        border: 1px solid $gray-aa;
+        padding: 15px 0;
+    }
+
+    .glass-text {
+        padding: 10px;
+    }
+
+
+}
+
+
+////ci소개
+.color-system {
+    display: flex;
+    margin-top: 40px;
+
+    .color-box {
+        width: 250px;
+        height: 150px;
+        background-color: $orange;
+    }
+
+    .color-system-text {
         width: 100%;
         position: relative;
-        // flex-flow:wrap;
-        .glass-list:last-child{
-            .years-line{
-                &:after{
-                    width: 0;
-                }
+        margin-left: 50px;
+
+        p {
+            font-size: 24px;
+
+        }
+
+        ul {
+            margin-top: 40px;
+
+            // position: absolute;
+            // bottom: 0;
+            li {
+                font-size: 19px;
+                font-weight: 300;
             }
         }
-        
+    }
+}
+
+.box {
+    height: 150px;
+}
+
+
+
+/////제품->커버글라스
+.product-glass {
+    margin-left: -10px;
+    margin-right: -10px;
+
+}
+
+/////제품->카메라윈도우
+.camera-window {
+    margin-left: -10px;
+    margin-right: -10px;
+
+    .camera-list {
+        width: 20%;
+        padding: 0 10px;
+        margin-bottom: 30px;
+
+        .glass-item {
+            height: 100%;
+        }
     }
 
-    .glass-list{
-        width: 20%;   
-        padding: 0 10px;        
-        .glass-item{margin-bottom:30px;height: 100%;}  
-    }
-    .glass-list.active{
+    .camera-list.active {
         position: relative;
-        .glass-img{
+
+        .camera-img {
             border: 3px solid $orange;
             background-color: $gray-f5;
         }
-        .arrow-plus{
+
+        .arrow-plus {
             width: 25px;
             height: 25px;
             background-image: url('../../resources/images/ic-plus.png');
@@ -167,311 +509,211 @@
             position: absolute;
             top: 30%;
             left: 50%;
-            transform: translate(-50%,-30%);
+            transform: translate(-50%, -30%);
 
         }
     }
-    
-    .glass-img{
+
+    .camera-img {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 300px;
-        border:1px solid $gray-aa;
-        padding :30px 0;
-        &.connector{
-            height: auto;
-            padding : 0;        
-        }
-    }
-    .glass-text{
-        padding : 15px 20px;
-        text-align: left;
-        
+        border: 1px solid $gray-aa;
 
-        .glass-brand{font-size:17px;line-height:32px;margin-top: 20px;font-weight: 300;}
-        .glass-name{font-size:17px;line-height: 32px;font-weight: 300;}
-        .s-text-border {
-            font-size:17px;
-            position: relative;
-            padding:0;
-            color: $orange;
-            >span{font-size:18px;color:$orange}
-            &::after {
-                content: "";
-                position: absolute;
-                width: 40px;
-                height: 2px;
-                background-color: $orange;
-                bottom: -15px;
-                left: 50%;
-                transform: translate(-50% , 0);
-            }
-        }
-        .s-text-border.list{
-            &::after {top: 60px;}
-        }
-    }
-    .connector-usb{
-        margin:40px 0;
-        p{font-size:17px;font-weight: 300;}
-    }
-        
-
-    @include media-breakpoint-down(md){
-       
-        .glass-list{
-            width: 50%;   
-            padding: 0 10px;        
-            margin-top: 20px;
-            .glass-item{height: 100%;}  
-        }
-        .glass-img{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 250px;
-            border:1px solid $gray-aa;
-            padding :15px 0;
-        }
-        .glass-text{
-            padding:10px;
-        }
-
-  
-    }
-
-
-    ////ci소개
-    .color-system{
-        margin-top: 40px;
-        .color-box{
-            width:250px;
-            height: 150px;
-            background-color: $orange;
-        }
-        .color-system-text{
+        img {
             width: 100%;
-            position: relative;
-            margin-left: 50px;
-            p{
-                font-size: 24px;
-                
-            }
-            ul{
-                margin-top: 40px;
-                // position: absolute;
-                // bottom: 0;
-                li{font-size: 19px;font-weight: 300;}
-            }
-        }
-    }
-    .box{height: 150px;}
-
-
-
-    /////제품->커버글라스
-    .product-glass{
-        margin-left:-10px;
-        margin-right:-10px;
-     
-    }
-   /////제품->카메라윈도우
-
-     
-    
-    .camera-window{
-        margin-left:-10px;
-        margin-right:-10px;
-        .camera-list{
-            width: 20%;   
-            padding: 0 10px;        
-            margin-bottom: 30px;
-            .glass-item{height: 100%;}  
-        }
-        .camera-list.active{
-            position: relative;
-            .camera-img{
-                border: 3px solid $orange;
-                background-color: $gray-f5;
-            }
-            .arrow-plus{
-                width: 25px;
-                height: 25px;
-                background-image: url('../../resources/images/ic-plus.png');
-                background-size: contain;
-                position: absolute;
-                top: 30%;
-                left: 50%;
-                transform: translate(-50%,-30%);
-
-            }
-        }
-    
-        .camera-img{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border:1px solid $gray-aa;
-            img{
-                width: 100%;
-            }
-        }
-        .camera-text{
-            padding : 15px 20px;
-            text-align: left;
-            position: relative;
-            .camera-brand{font-size:17px;line-height: 1.26;margin-top: 30px;}
-            .camera-name{font-size:17px;line-height: 1.26;}
-
-            .camera-text-title{
-                
-                p:nth-child(2){font-size:17px; margin-top: 5px;}
-            }
-            .s-text-border {
-                font-size: 22px;
-  
-                padding:0;
-                color: $orange;
-            
-            }
-            &::after {
-                content: "";
-                position: absolute;
-                width: 40px;
-                height: 2px;
-                background-color: $orange;
-                bottom: -5px;
-                left: 50%;
-                transform: translate(-50% , 0);
-            }
-        }
-    }   
-    //카메라윈도우
-    @include media-breakpoint-down(md){
-        .camera-window{
-            .camera-list{
-                width: 50%;   
-                padding: 0 10px;        
-                margin-top: 20px;
-                .glass-item{height: 100%;}  
-            }
         }
     }
 
-
-    //연구소 소개
-
-    .section-2.introduce{
-        padding : 0 0 80px 0;
-
-        .ic-intro-1 {
-            width: 100px;
-            height: 100px;
-            display: inline-block;
-            background-image: url('../../resources/images/ic-introduce-1.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .ic-intro-2 {
-            width: 100px;
-            height: 100px;
-            display: inline-block;
-            background-image: url('../../resources/images/ic-introduce-2.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .ic-intro-3 {
-            width: 100px;
-            height: 100px;
-            display: inline-block;
-            background-image: url('../../resources/images/ic-introduce-3.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .ic-intro-4 {
-            width: 100px;
-            height: 100px;
-            display: inline-block;
-            background-image: url('../../resources/images/ic-introduce-4.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-    }
-    //연구개발 성과
-    
-
-
-    //소켓
-    .socket-explanation{
-        
-        .socket-detail{
-            margin-top: 70px;
-            p{margin-bottom:10px;}
-        }
-    }
-    @include media-breakpoint-down(md){
-        .socket-wrap{
-            padding:0;
-            .ul-list-dot{
-                margin-top: 20px;
-            }
-        }
-        .socket-explanation{
-        
-            .socket-detail{
-                margin-top: 30px;
-                p{margin-bottom:10px;}
-            }
-        }
-    }
-
-    //인재채용
-    .form-download{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;   
-    }
-    .receipt{
-        border-top: 2px solid $rgba-5;
-        border-bottom: 1px solid $rgba-2;
-        padding:30px;
-    }
-    .hire-step{
+    .camera-text {
+        padding: 15px 20px;
+        text-align: left;
         position: relative;
-        .hire-step-img{
-            width: 30%;
+
+        .camera-brand {
+            font-size: 17px;
+            line-height: 1.26;
+            margin-top: 30px;
+        }
+
+        .camera-name {
+            font-size: 17px;
+            line-height: 1.26;
+        }
+
+        .camera-text-title {
+
+            p:nth-child(2) {
+                font-size: 17px;
+                margin-top: 5px;
+            }
+        }
+
+        .s-text-border {
+            font-size: 22px;
+
+            padding: 0;
+            color: $orange;
+
+        }
+
+        &::after {
+            content: "";
             position: absolute;
-            left: 59%;
-            transform: translate(-62%, 0);
-            img{
-                width: 100%;
-            }
+            width: 40px;
+            height: 2px;
+            background-color: $orange;
+            bottom: -5px;
+            left: 50%;
+            transform: translate(-50%, 0);
         }
     }
-    @include media-breakpoint-down(md){
-        .hire-step{
-            position: relative;
-            .hire-step-img{
-             display:none;
-            }
-        }
-        .form-download{
-            display: block;
-         
-        }
-        
-    }
-    // @media screen and (max-width:500px) {
-        
-    // }
-   
 }
 
+//카메라윈도우
+@include media-breakpoint-down(md) {
+    .camera-window {
+        .camera-list {
+            width: 50%;
+            padding: 0 10px;
+            margin-top: 20px;
+
+            .glass-item {
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+//연구소 소개
+
+.section-2.introduce {
+    padding: 0 0 80px 0;
+
+    .ic-intro-1 {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        background-image: url('../../resources/images/ic-introduce-1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .ic-intro-2 {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        background-image: url('../../resources/images/ic-introduce-2.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .ic-intro-3 {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        background-image: url('../../resources/images/ic-introduce-3.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .ic-intro-4 {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        background-image: url('../../resources/images/ic-introduce-4.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+//연구개발 성과
+
+
+
+//소켓
+.socket-explanation {
+
+    .socket-detail {
+        margin-top: 70px;
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .socket-wrap {
+        padding: 0;
+
+        .ul-list-dot {
+            margin-top: 20px;
+        }
+    }
+
+    .socket-explanation {
+
+        .socket-detail {
+            margin-top: 30px;
+
+            p {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+//인재채용
+.form-download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.receipt {
+    border-top: 2px solid $rgba-5;
+    border-bottom: 1px solid $rgba-2;
+    padding: 30px;
+}
+
+.hire-step {
+    position: relative;
+
+    .hire-step-img {
+        width: 30%;
+        position: absolute;
+        left: 59%;
+        transform: translate(-62%, 0);
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .hire-step {
+        position: relative;
+
+        .hire-step-img {
+            display: none;
+        }
+    }
+
+    .form-download {
+        display: block;
+    }
+
+
+}
+///ir
+
+   
+    
+   
