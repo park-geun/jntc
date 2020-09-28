@@ -1,194 +1,581 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-        <title>JNTC FRONT PAGELIST</title>
-        <link rel="icon" href="resources/images/favicon-32.png" sizes="32x32">
-        <link rel="icon" href="resources/images/favicon-128.png" sizes="128x128">
-        <style type="text/css">
-            body{padding:20px;position:relative;}
-            *{margin:0;padding:0;font-size:12px;color:#222;line-height:1.5em;font-family:'NanumGothic';}
-            h1{margin-bottom:20px;font-size:20px;text-align: center;}
-            table{width:100%;border-collapse:collapse;margin: 0 auto;}
-            table th,
-            table td{border:1px solid #ddd;padding:4px 10px;word-break: keep-all}
-            table th{background:#181818;color:#fff;padding:10px;font-size:14px;}
-            table td a{color:#333;text-decoration:none;}
-            table td a:hover{text-decoration:underline;}
-            table tbody tr:hover{background-color: #f2fcf2;}
-            .noteTable{display: table;width: 100%;}
-            .noteTable .date{display: table-cell;color: #e04545;width: 40px;}
-            .noteTable .note{display: table-cell;}
-            .center{text-align: center;}
-            .bg{background: #fff5f5;}
-            ul.float{position:absolute;right:20px;top:20px;}
-            ul.float li{list-style:none;display:inline-block;}
-            ul.float li a{display: block;padding: 4px 10px;background: #111;color: #fff;text-decoration: none;}
-            .end{background:#ffffcc;}
-            .ing{background:#f6b1a6;}
-            .list{text-align:center;padding:0 0 20px;}
-            .list a{text-decoration:none;margin:0 10px;}
-            .list a:hover{text-decoration:underline;}
-        </style>
-    </head>
 
-    <body>
-        <h1>Discovery FRONT PAGELIST</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Depth 1</th>
-                    <th>Depth 2</th>
-                    <th>Depth 3</th>
-                    <th>pageLink</th>
-                    <th></th>
-                    <th>Popup</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td>main</td>
-                    <td></td>
-                    <td></td>
-                    <td><a target="_blank" href="content/main/main_2.html">main.html</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>회사소개</td>
-                    <td>비전</td>
-                    <td><a target="_blank" href="content/intro/vision.html">vision.html</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>ci소개</td>
-                    <td><a target="_blank" href="content/intro/ci.html">ci.html</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>연혁</td>
-                    <td><a target="_blank" href="content/intro/history.html">history.html</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>개요</td>
-                    <td><a target="_blank" href="content/intro/summary.html">summary.html</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>ceo인사말</td>
-                    <td><a target="_blank" href="content/intro/ceo.html">ceo.html</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>JNTC FRONT PAGELIST</title>
+    <link rel="icon" href="resources/images/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="resources/images/favicon-128.png" sizes="128x128">
+    <style type="text/css">
+        body {
+            padding: 20px;
+            position: relative;
+        }
 
-                <!-- ///사업소개 -->
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>사업소개</td>
-                    <td>커버글라스/커넥터</td>
-                    <td><a target="_blank" href="content/business/cover_glass.html">cover_glass.html</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            color: #222;
+            line-height: 1.5em;
+            font-family: 'NanumGothic';
+        }
 
-                <!-- //제품 -->
-                <tr>
-                    <td></td>
-                    <td>제품</td>
-                    <td>커버글라스</td>
-                    <td>모바일용 커버글라스</td>
-                    <td><a target="_blank" href="content/business/glass.html">glass.html</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>모바일용 카메라 윈도우</td>
-                    <td><a target="_blank" href="content/product/camera_window.html">camera_window.html</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>스마트워치</td>
-                    <td><a target="_blank" href="content/product/smart_watch.html">smart_watch.html</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>utg</td>
-                    <td><a target="_blank" href="content/product/utg_glass.html">utg_glass.html</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>자동차용</td>
-                    <td><a target="_blank" href="content/product/car.html">car.html</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>제품</td>
-                    <td>연구진소개</td>
-                    <td><a target="_blank" href="content/technology/introduce.html">introduce.html</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>제품</td>
-                    <td>커넥터</td>
-                    <td>모바일용 커버글라스</td>
-                    <td><a target="_blank" href="content/product/connector.html">connector.html</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>커넥터</td>
-                    <td>모바일용 커버글라스</td>
-                    <td><a target="_blank" href="content/product/connector.html">connector.html</a></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    </body>
+        h1 {
+            margin-bottom: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #ddd;
+            padding: 4px 10px;
+            word-break: keep-all
+        }
+
+        table th {
+            background: #181818;
+            color: #fff;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        table td a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        table td a:hover {
+            text-decoration: underline;
+        }
+
+        table tbody tr:hover {
+            background-color: #f2fcf2;
+        }
+
+        .noteTable {
+            display: table;
+            width: 100%;
+        }
+
+        .noteTable .date {
+            display: table-cell;
+            color: #e04545;
+            width: 40px;
+        }
+
+        .noteTable .note {
+            display: table-cell;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .bg {
+            background: #fff5f5;
+        }
+
+        ul.float {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        ul.float li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        ul.float li a {
+            display: block;
+            padding: 4px 10px;
+            background: #111;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .end {
+            background: #ffffcc;
+        }
+
+        .ing {
+            background: #f6b1a6;
+        }
+
+        .list {
+            text-align: center;
+            padding: 0 0 20px;
+        }
+
+        .list a {
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .list a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Discovery FRONT PAGELIST</h1>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Depth 1</th>
+                <th>Depth 2</th>
+                <th>Depth 3</th>
+                <th>pageLink</th>
+                <th></th>
+                <th>Popup</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>main</td>
+                <td></td>
+                <td></td>
+                <td><a target="_blank" href="content/main/main_2.html">main.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>회사소개</td>
+                <td>비전</td>
+                <td><a target="_blank" href="content/intro/vision.html">vision.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>ci소개</td>
+                <td><a target="_blank" href="content/intro/ci.html">ci.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>연혁</td>
+                <td><a target="_blank" href="content/intro/history.html">history.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>개요</td>
+                <td><a target="_blank" href="content/intro/summary.html">summary.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>ceo인사말</td>
+                <td><a target="_blank" href="content/intro/ceo.html">ceo.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <!-- ///사업소개 -->
+            <tr>
+                <td></td>
+                <td></td>
+                <td>사업소개</td>
+                <td>커버글라스/커넥터</td>
+                <td><a target="_blank" href="content/business/cover_glass.html">cover_glass.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <!-- //제품 -->
+            <tr>
+                <td></td>
+                <td>제품</td>
+                <td>커버글라스</td>
+                <td>모바일용 커버글라스</td>
+                <td><a target="_blank" href="content/product/glass.html">glass.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>모바일용 카메라 윈도우</td>
+                <td><a target="_blank" href="content/product/camera_window.html">camera_window.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>스마트워치</td>
+                <td><a target="_blank" href="content/product/smart_watch.html">smart_watch.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>utg</td>
+                <td><a target="_blank" href="content/product/utg_glass.html">utg_glass.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>자동차용</td>
+                <td><a target="_blank" href="content/product/car.html">car.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- //사업장 및 계열사 -->
+            <tr>
+                <td></td>
+                <td>사업장 및 계열사</td>
+                <td></td>
+                <td>사업장 국내</td>
+                <td><a target="_blank" href="content/intro/work.html">work.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>사업장 해외</td>
+                <td><a target="_blank" href="content/intro/car.html">work.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>국내 계열사 소개</td>
+                <td><a target="_blank" href="content/intro/subsidiary.html">subsidiary.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>해외 계열사 소개</td>
+                <td><a target="_blank" href="content/intro/subsidiary.html">subsidiary.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- //지속가능경영 -->
+            <tr>
+                <td></td>
+                <td>지속가능경영</td>
+                <td></td>
+                <td>분쟁광물 개요</td>
+                <td><a target="_blank" href="content/intro/operation_dispute.html">operation_dispute.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>분쟁광물 정책</td>
+                <td><a target="_blank" href="content/intro/operation_dispute.html">operation_dispute.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>hsf방침</td>
+                <td><a target="_blank" href="content/intro/operation_hsf.html">operation_hsf.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>품질경영</td>
+                <td><a target="_blank" href="content/intro/operation_quality.html">operation_quality.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>사회공헌 (미완성)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- //인재채용 -->
+            <tr>
+                <td></td>
+                <td>인재채용</td>
+                <td></td>
+                <td>인재상</td>
+                <td><a target="_blank" href="content/human/talent.html">talent.html</a></td>
+                <td>(피드백 미수정)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>복리후생</td>
+                <td><a target="_blank" href="content/human/welfare.html">welfare.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>채용절차</td>
+                <td><a target="_blank" href="content/human/hire.html">hire.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>채용공고-1</td>
+                <td><a target="_blank" href="content/human/hire_step_1.html">hire_step_1.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>채용공고-2</td>
+                <td><a target="_blank" href="content/human/hire_step_2.html">hire_step_2.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- //기술 -->
+            <tr>
+                <td></td>
+                <td>기술</td>
+                <td></td>
+                <td>연구개발성과-강화유리</td>
+                <td><a target="_blank" href="content/technology/develop_result.html">develop_result.html</a></td>
+                <td>(피드백 미수정)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>연구개발성과-커넥터</td>
+                <td><a target="_blank" href="content/technology/develop_result.html">develop_result.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>지적재산권-강화유리</td>
+                <td><a target="_blank" href="content/technology/intellectual_property.html">intellectual_property.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>지적재산권-커넥터</td>
+                <td><a target="_blank" href="content/technology/intellectual_property.html">intellectual_property.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>연구소 소개</td>
+                <td><a target="_blank" href="content/technology/introduce.html">introduce.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>핵심기술력-강화유리</td>
+                <td><a target="_blank" href="content/technology/core_technology.html">core_technology.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>핵심기술력-커넥터</td>
+                <td><a target="_blank" href="content/technology/core_technology.html">core_technology.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>비전 및 로드맵</td>
+                <td><a target="_blank" href="content/technology/road_map.html">road_map.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>기술경쟁력</td>
+                <td><a target="_blank" href="content/technology/compete.html">compete.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- //투자정보 -->
+            <tr>
+                <td></td>
+                <td>투자정보</td>
+                <td></td>
+                <td>IR 하이라이트</td>
+                <td><a target="_blank" href="content/invest_info/ir_highlight.html">ir_highlight.html</a></td>
+                <td>(미완성)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>재무정보</td>
+                <td><a target="_blank" href="content/invest_info/ir_highlight.html">ir_highlight.html</a></td>
+                <td>(보류)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>재무상태표</td>
+                <td><a target="_blank" href="content/invest_info/ir_highlight.html">ir_highlight.html</a></td>
+                <td>(보류)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>손익계산서</td>
+                <td><a target="_blank" href="content/invest_info/ir_highlight.html">ir_highlight.html</a></td>
+                <td>(보류)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>실시간주가</td>
+                <td><a target="_blank" href="content/invest_info/ir_highlight.html">ir_highlight.html</a></td>
+                <td>(보류)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>일자별주가</td>
+                <td><a target="_blank" href="content/invest_info/ir_highlight.html">ir_highlight.html</a></td>
+                <td>(보류)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>매매동향</td>
+                <td><a target="_blank" href="content/invest_info/ir_highlight.html">ir_highlight.html</a></td>
+                <td>(보류)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>IR 정보 - 자료실</td>
+                <td><a target="_blank" href="content/invest_info/ir_info.html">ir_info.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>IR 정보 - 뉴스</td>
+                <td><a target="_blank" href="content/invest_info/ir_info.html">ir_info.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>IR 정보 - Contact</td>
+                <td><a target="_blank" href="content/invest_info/ir_info.html">ir_info.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>공시</td>
+                <td>IR 정보 - Contact</td>
+                <td><a target="_blank" href="content/invest_info/ir_info.html">ir_info.html</a></td>
+                <td>(보류)</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>공시(팝업)</td>
+                <td>IR 정보 - Contact</td>
+                <td><a target="_blank" href="content/invest_info/ir_info.html">ir_info.html</a></td>
+                <td>(미완성)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
 </html>

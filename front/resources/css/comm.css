@@ -340,7 +340,7 @@
 #wrap header a img{ height:28px; }
 #wrap header .logo a img{ height:40px; }
 #wrap .gnb .gnb-list-sub > div{  border:0; padding-top:20px;}
-.justify-content-between{ position: relative; }
+.gnb>.container{ position: relative; }
 #wrap .gnb .menu-close-btn{ position: absolute; right: -30px; top: 10px; }
 .link-btn{font-size:17px;     padding: 8px 15px;}
 .link-btn img{ margin: 0 5px 0 15px; }
