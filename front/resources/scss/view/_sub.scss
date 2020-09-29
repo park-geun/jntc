@@ -22,7 +22,7 @@ section {
         ul {
             li {
                 font-size: 19px;
-                font-weight: 300;
+                font-weight: 400;
                 line-height: 1.58;
             }
         }
@@ -176,7 +176,7 @@ section {
         li {
             line-height: 2.11;
             color: $black;
-            font-weight: 300;
+            font-weight: 400;
             font-size: 19px;
         }
     }
@@ -224,7 +224,7 @@ section {
         li {
             line-height: 2.11;
             color: $black;
-            font-weight: 300;
+            font-weight: 400;
             font-size: 14px;
         }
     }
@@ -244,7 +244,7 @@ section {
     p:nth-child(2) {
         font-size: 17px;
         line-height: 1.58;
-        font-weight: 300;
+        font-weight: 400;
     }
 }
 
@@ -353,13 +353,16 @@ section {
         font-size: 17px;
         line-height: 32px;
         margin-top: 20px;
-        font-weight: 300;
+        font-weight: 400;
     }
 
     .glass-name {
         font-size: 17px;
         line-height: 32px;
-        font-weight: 300;
+        font-weight: 400;
+        &.cg{
+            margin-top: 25px;
+        }
     }
 
     .s-text-border {
@@ -397,7 +400,7 @@ section {
 
     p {
         font-size: 17px;
-        font-weight: 300;
+        font-weight: 400;
     }
 }
 
@@ -459,7 +462,7 @@ section {
             // bottom: 0;
             li {
                 font-size: 19px;
-                font-weight: 300;
+                font-weight: 400;
             }
         }
     }
@@ -714,33 +717,92 @@ section {
 }
 ///ir
 
-//사회공헌
-
-.operation-social{
-    width: 100%;
-    height: 600px;
-    .swiper-slide{
-        background-repeat: no-repeat;
-        background-size: cover;
+//공시
+.modal{
+    .modal-dialog{
         
+        &.disclosure{
+            position: inherit;
+            bottom: 0;
+            &::after{
+                content:"";
+                background:none;
+            }
+        }
+     
+    }
+}
+.modal-header{
+    background:none;
+    margin:0;
+    padding:0;
+    .sub-title{
+    
+        p{color:$white;}
     }
 }
 
-  .gallery-thumbs {
-    height: 20%;
-    box-sizing: border-box;
-    padding: 10px 0;
-  }
 
-  .gallery-thumbs .swiper-slide {
-    width: 25%;
+
+   ////사회공헌
+.operation-social {
+    position: relative;
     height: 100%;
-    opacity: 0.4;
-  }
+}
 
-  .gallery-thumbs .swiper-slide-thumb-active {
-    opacity: 1;
-  }
-   
-    
-   
+.thum{  
+    width: 100%;
+    background-color:$gray-f5;
+    padding: 80px 0;
+}
+.gallery-top {
+    width: 70%;
+
+    .social-bg{
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+    }
+    p:nth-child(2){margin-top: 30px;}
+    p:nth-child(3){font-size:14px; color: $gray-a0;margin-bottom: 15px;}
+    p:nth-child(4){line-height: 1.8em;}
+}
+
+.gallery-thumbs {
+    width: 80%;
+    height: 20%;
+
+}
+
+.gallery-thumbs .swiper-slide {
+        width: 20% !important;
+    .social-b{
+        height: 150px;
+        opacity: 0.4;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+    .social-b{
+        opacity: 1;
+    }
+}
+.swiper-button-next.swiper-button-white, .swiper-button-prev.swiper-button-white{
+    --swiper-navigation-color: #999!important;
+}
+@include media-breakpoint-down(sm){
+    .thum{
+        display: none;
+    }
+    .gallery-top{
+        width: 100%;
+        .social-bg{
+            height: 300px;
+        }
+    }
+    .swiper-button-next, .swiper-button-prev{
+        display: none;
+    }
+}

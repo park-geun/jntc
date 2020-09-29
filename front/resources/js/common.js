@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var mySwiper = new Swiper('.swiper-container', {
+    var mySwiper = new Swiper('#swiper-container', {
         speed: 400,
         pagination: {
             el: '.swiper-pagination',

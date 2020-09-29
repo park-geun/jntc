@@ -95,7 +95,7 @@
                 li {
                     color: $black;
                     font-size: 20px;
-                    font-weight: 300;
+                    font-weight: 400;
                 }
             }
         }
@@ -104,7 +104,7 @@
             text-align: right;
             p{word-break: keep-all;
                 &:nth-child(1){font-size: 28px;}
-                &:nth-child(2){font-size: 18px; font-weight: 300;margin:10px 0;}
+                &:nth-child(2){font-size: 18px; font-weight: 400;margin:10px 0;}
             }
             >div{
                 width: 150px;
@@ -147,14 +147,17 @@
                 .sitemap-title {
                     color: $black;
                     font-weight: 700;
-                    font-size: 24px;
+                    font-size: 22px;
                     padding-bottom: 15px;
-                     }
+                    >a{
+                        font-size: 22px;  
+                    }
+                }
 
                 li {
                     color: $black;
                     font-size: 20px;
-                    font-weight: 300;
+                    font-weight: 400;
                 }
             }
         }
@@ -323,7 +326,7 @@
         padding: 0 70px;
         .section-location{
             padding:16px 0;
-            span{font-size:17px;font-weight: 300;
+            span{font-size:17px;font-weight: 400;
                 &:first-child{
                     &::before{
                         content:"";
@@ -364,7 +367,7 @@
             padding : 130px 0;
             p{  
                 &:nth-child(1){color:$white;font-size:30px;line-height: 48px;}
-                &:nth-child(2){font-size: 21px ;color:$white; font-weight: 300; line-height: 48px;}
+                &:nth-child(2){font-size: 21px ;color:$white; font-weight: 400; line-height: 48px;}
             }
         }   
     }
@@ -409,7 +412,7 @@
             padding : 0 10px;
             .section-location{
                 padding:15px 0;
-                span{font-size:14px;font-weight: 300;}
+                span{font-size:14px;font-weight: 400;}
             }
             .sub-title{
                 width: 100%;
@@ -437,7 +440,7 @@
             background-repeat: no-repeat;
             background-size: cover;
     
-            p{padding : 80px 0; color:$white;font-size:22px;line-height: 1.6;}
+            p{padding : 40px 0; color:$white;font-size:22px;line-height: 1.6;}
         }
     
         .detail-title{
@@ -446,6 +449,13 @@
         }
         .swiper-socket{
             width: 100%;
+        }
+    }
+    @include media-breakpoint-down(sm){
+        .sub-section-banner{
+            p{
+                padding:20px 0;
+            }
         }
     }
 }
@@ -466,4 +476,4 @@
     margin: 0 auto;
     border-radius: 4px;
     background-color: $white;
-  }  
+  } 
