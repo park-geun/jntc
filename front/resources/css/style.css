@@ -14829,4 +14829,31 @@ section {
     display: block;
   }
 }
+
+.operation-social {
+  width: 100%;
+  height: 600px;
+}
+
+.operation-social .swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery-thumbs {
+  height: 20%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */
