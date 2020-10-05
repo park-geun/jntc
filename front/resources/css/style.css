@@ -13628,7 +13628,21 @@ h5 {
 }
 
 #wrap .content-body .section-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 16px 0;
+}
+
+#wrap .content-body .section-location .location-ic-home {
+  width: 15px;
+  height: 15px;
+  background-image: url("../../resources/images/ic-home.png");
+  background-size: contain;
+  background-position: center;
 }
 
 #wrap .content-body .section-location span {

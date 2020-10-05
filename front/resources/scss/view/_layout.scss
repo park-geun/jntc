@@ -365,7 +365,16 @@
         background-color: $white;
         padding: 0 70px;
         .section-location{
+            display:flex;
+            align-items: center;
             padding:16px 0;
+            .location-ic-home{
+                width: 15px;
+                height: 15px;
+                background-image: url('../../resources/images/ic-home.png');
+                background-size: contain;
+                background-position: center;
+            }
             span{font-size:17px;font-weight: 400;
                 &:first-child{
                     &::before{
