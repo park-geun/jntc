@@ -36,13 +36,14 @@ $(document).ready(function () {
         console.log(idx);
         $('#gnb-'+idx).show();
         $('#gnb-'+idx).siblings().hide();
+        $('.gnb').show();
     }, function () {
 
 
 
     })
     //gnb 삭제
-    $('.gnb>.container').on('mouseleave', function(){
+    $('.gnb').on('mouseleave', function(){
         $(this).hide();
     })
 
@@ -85,7 +86,10 @@ $(document).ready(function () {
 
 
   
-
+    $( '.top-scroll' ).click( function() {
+        $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+        return false;
+    } );
     
 })
 

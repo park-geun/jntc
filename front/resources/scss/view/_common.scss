@@ -475,7 +475,7 @@ h5 {
             border: none;
             font-size: 18px;
             color: $black;
-            border: 1px solid $gray-cc;
+            border: 1px solid $gray-b2;
 
             &.active {
                 background-color: $orange;
@@ -497,7 +497,7 @@ h5 {
             border: none;
             font-size: 18px;
             color: $black;
-            border: 1px solid $gray-33;
+            border: 1px solid $gray-b2;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -512,7 +512,7 @@ h5 {
 }
 
 .table {
-
+    color: $black;
     &.tab-panel {
 
         th,
@@ -580,6 +580,7 @@ h5 {
     }
 
     &.core {
+        line-height: 32px;
         th {
             padding: 10px 15px;
             border-top: 1px solid $gray-33;
@@ -634,7 +635,7 @@ h5 {
         position: relative;
         padding-left: 10px;
         font-size: 17px;
-
+        line-height: 32px;
         &::before {
             content: "";
             position: absolute;
@@ -649,7 +650,7 @@ h5 {
     }
 
     &.ir {
-        li {
+        li {            
             display: flex;
             justify-content: space-between;
             padding: 10px 0 10px 10px;
@@ -661,6 +662,12 @@ h5 {
             &::before {
                 top: 45%;
                 transform: translate(-50%, 0);
+            }
+            span:nth-child(1){
+                width: 350px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
             }
         }
     }
@@ -849,5 +856,3 @@ h5 {
         }
     }
 }
-
-

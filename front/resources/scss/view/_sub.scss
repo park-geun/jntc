@@ -643,14 +643,16 @@ section {
 .socket-explanation {
 
     .socket-detail {
-        margin-top: 70px;
+        margin-top: 40px;
 
         p {
             margin-bottom: 10px;
         }
     }
 }
-
+.socket-wrap{
+    padding:0;
+}
 @include media-breakpoint-down(md) {
     .socket-wrap {
         padding: 0;
@@ -806,3 +808,12 @@ section {
         display: none;
     }
 }
+
+
+
+
+
+
+
+
+

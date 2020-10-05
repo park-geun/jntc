@@ -12841,7 +12841,7 @@ h5 {
   border: none;
   font-size: 18px;
   color: #000000;
-  border: 1px solid #cccccc;
+  border: 1px solid #b2b2b2;
 }
 
 .nav-tabs .nav-item .nav-link.active {
@@ -12863,7 +12863,7 @@ h5 {
   border: none;
   font-size: 18px;
   color: #000000;
-  border: 1px solid #333333;
+  border: 1px solid #b2b2b2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12879,6 +12879,10 @@ h5 {
   background-color: #f47920;
   border: 1px solid #f47920;
   color: #ffffff;
+}
+
+.table {
+  color: #000000;
 }
 
 .table.tab-panel th,
@@ -12935,6 +12939,10 @@ h5 {
   font-weight: 400;
 }
 
+.table.core {
+  line-height: 32px;
+}
+
 .table.core th {
   padding: 10px 15px;
   border-top: 1px solid #333333;
@@ -12981,6 +12989,7 @@ h5 {
   position: relative;
   padding-left: 10px;
   font-size: 17px;
+  line-height: 32px;
 }
 
 .ul-list-dot li::before {
@@ -13014,6 +13023,13 @@ h5 {
   top: 45%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+}
+
+.ul-list-dot.ir li span:nth-child(1) {
+  width: 350px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .pagination ul a {
@@ -13222,6 +13238,7 @@ h5 {
 #wrap footer ul li {
   position: relative;
   padding: 0 20px;
+  cursor: pointer;
 }
 
 #wrap footer ul li a {
@@ -13612,7 +13629,7 @@ h5 {
 }
 
 #wrap .sub-section-banner .sub-section-text {
-  padding: 130px 0;
+  padding: 100px 0;
 }
 
 #wrap .sub-section-banner .sub-section-text p:nth-child(1) {
@@ -13630,7 +13647,7 @@ h5 {
 
 #wrap .swiper-socket {
   width: 100%;
-  height: 100%;
+  height: 350px;
   border: 1px solid #999999;
 }
 
@@ -13725,6 +13742,7 @@ h5 {
   }
   #wrap .swiper-socket {
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -13842,6 +13860,21 @@ h5 {
   position: absolute;
   top: 0;
   z-index: 2;
+}
+
+#wrap .top-scroll {
+  position: fixed;
+  bottom: 25%;
+  right: 10%;
+  z-index: 111;
+}
+
+#wrap .top-scroll > div {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #wrap section > div > h1 {
@@ -14826,11 +14859,15 @@ section {
 }
 
 .socket-explanation .socket-detail {
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 .socket-explanation .socket-detail p {
   margin-bottom: 10px;
+}
+
+.socket-wrap {
+  padding: 0;
 }
 
 @media (max-width: 991.98px) {
