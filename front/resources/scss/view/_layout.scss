@@ -19,6 +19,20 @@
                 }
             }
         }
+        .right-header{                
+            display: flex;
+            .select-box{
+                display:flex;
+                align-items: center;
+                .select-icon{
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                }
+            }
+            
+        }
+
         select {margin: 0 20px 0 0;border:none;}
         a {
             img {padding: 0 0 0 40px;}
@@ -181,26 +195,46 @@
         background-color: $white;
         padding: 100px 0;
         position: relative;
-
-        .inputSearch {
-            width: 50%;
+        .search {
+            width: 100%;
+            position: relative;
+            display: flex;
+          }
+          
+          .searchTerm {
+            width: 100%;
+            border: 3px solid $gray-dd;
+            border-right: none;
+            padding: 15px;
             height: 60px;
-            margin: auto;
-            background-color: $white;
-
-            .input-group-append {
-                height: 60px;
-            }
-
-            .form-control {
-                border-right: 0px;
-            }
-
-            .input-group-text {
-                background-color: $white;
-                border-left: 0px;
-            }
-        }
+            outline: none;
+            color: #9DBFAF;
+          }
+          
+          .searchTerm:focus{
+            color: red;
+          }
+          
+          .searchButton {
+            width: 40px;
+            height: 60px;
+            border: 3px solid $gray-dd;
+            border-left:none;
+            background: none;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            font-size: 20px;
+            i{color:$gray-dd;}
+          }
+          
+          /*Resize the wrap to see the search bar change!*/
+          .search-wrap{
+            width: 50%;
+            margin:0 auto;
+          }
+    
+       
 
         .close-btn {
             position: absolute;
@@ -267,9 +301,14 @@
             .logo{
                 img{width:60%;}
             }
-            .left-header{
+            .right-header{                
                 display: flex;
                 img{width:40px;}
+                .select-icon{
+                    width: 15px;
+                    height: 15px;
+                    background-size: contain;
+                }
             }
         }
         .search-bar{

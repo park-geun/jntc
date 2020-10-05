@@ -120,13 +120,13 @@
             width: 100%;
             bottom: 20%;
             transform: translate(0, -20%);
-            padding:0 10rem;
             text-align: left;
             .swiper-pagination-bullet{
                 width: 15px;
                 height: 15px;
                 opacity: 1;
                 background-color: $white;
+                margin:10px;
                 &.swiper-pagination-bullet-active{
                     background-color: $orange;
                     width: 60px;
@@ -137,9 +137,9 @@
         }
         .player{
             position: absolute;
-            bottom:20.5%;
-            transform: translate(0, -20.5%);
-            padding: 0 18rem;
+            bottom:22.5%;
+            transform: translate(0, -22.5%);
+            padding: 0 10rem;
             z-index: 10;
             .play-btn{  
                 cursor: pointer;
@@ -163,7 +163,7 @@
         .banner-wrap{
             display: flex;
             flex-flow: column;
-            padding: 10rem;
+            padding: 10rem 0;
             p:nth-child(1){font-weight: bold;font-size:50px;line-height: 1.35;color:$white;}
             p:nth-child(2){color:$white;font-size: 35px;margin-top: 60px;}
             p:nth-child(3){color:$white;font-size: 20px;line-height: 1.6;}
@@ -177,9 +177,9 @@
                 transform: translate(0, -10%);          
             }
             .player{
-                padding: 0 12rem;
-                bottom:11%;
-                transform: translate(0, -11%);
+                padding: 0 14rem;
+                bottom:13.5%;
+                transform: translate(0, -13.5%);
                 .play-btn{
                     &::after{
                         font-size:20px;
@@ -218,9 +218,9 @@
                 }
             }
             .player{
-                padding: 0 8rem;
-                bottom:16.5%;
-                transform: translate(0, -16.5%);
+                padding: 0 10rem;
+                bottom:19%;
+                transform: translate(0, -19%);
                 .play-btn{
                     width: 13px;
                     height: 13px;

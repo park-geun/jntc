@@ -91,6 +91,9 @@ $(document).ready(function () {
         return false;
     } );
     
+   $('.form-control').click(function(){
+        
+    })
 })
 
 

@@ -20,7 +20,7 @@
     <script src="../../resources/plugin/swiper/js/swiper.min.js"></script>
     <!-- ui 관련 -->
     <script src="../../resources/js/ui.js"></script>
-    
+
 </head>
 
 <body>
@@ -39,12 +39,16 @@
                             <li><a href="">투자정보</a></li>
                         </ul>
                     </nav>
-                    <div class="left-header">
-                        <select name="" id="">
-                            <option value="">KOR</option>
-                            <option value="">JAP</option>
-                            <option value="">CHA</option>
-                        </select>
+                    <div class="right-header">
+                        <div class="select-box">
+                            <div class="select-icon" style="background-image: url('../../resources/images/earth.png')">
+                            </div>
+                            <select name="" id="">
+                                <option value="">KOR</option>
+                                <option value="">JAP</option>
+                                <option value="">CHA</option>
+                            </select>
+                        </div>
                         <a href="javascript:void(0);" onclick="openSearch()"> <img
                                 src="../../resources/images/search.png" alt="서치"> </a>
                         <a href="javascript:void(0);" class="only_w" onclick="openSiteMap()"> <img
@@ -101,9 +105,9 @@
                                 </div>
                             </a>
                         </div>
-                   
-        
-                </div>
+
+
+                    </div>
                 </div>
                 <div class="container" id="gnb-2">
                     <div class="row">
@@ -137,7 +141,7 @@
                             </a>
                         </div>
                     </div>
-                  
+
                 </div>
                 <div class="container" id="gnb-3">
                     <div class="row">
@@ -163,7 +167,7 @@
                             <p>경쟁력 있는 기술력과<br>축적된 노하우로 세계 최고를 달성</p>
                             <div>
                                 <img src="../../resources/images/ic-gnb-03.png" alt="gnb아이콘">
-            
+
                             </div>
                             <a class="menu-close-btn" href="javascript:void(0);" onclick="closeBtn();">
                                 <div class="close-btn">
@@ -172,7 +176,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="container" id="gnb-4">
                     <div class="row">
@@ -205,7 +209,7 @@
                             </a>
                         </div>
                     </div>
-                   
+
                 </div>
                 <div class="container" id="gnb-5">
                     <div class="row">
@@ -226,7 +230,7 @@
                                 <li><a href="../invest_info/stork.html">매매동향</a></li>
                             </ul>
                             <ul>
-                                <li class="gnb-title"><a href="../invest_info/disclosure.html">공시</a></li>                            
+                                <li class="gnb-title"><a href="../invest_info/disclosure.html">공시</a></li>
                             </ul>
                             <ul>
                                 <li class="gnb-title"><a href="../invest_info/ir_info.html">IR정보</a></li>
@@ -248,10 +252,10 @@
                             </a>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
-        
+
             <!-- 사이트맵 -->
             <div class="sitemaps">
                 <div class="container">
@@ -321,7 +325,8 @@
                                 <li class="sitemap-title"><a href="../technology/core_technology.html">핵심 기술력</a></li>
                             </ul>
                             <ul>
-                                <li class="sitemap-title"><a href="../technology/intellectual_property.html">지적재산권</a></li>
+                                <li class="sitemap-title"><a href="../technology/intellectual_property.html">지적재산권</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-lg-2 col-md-6 col-sm-12 sitemap-list">
@@ -359,7 +364,7 @@
                                 <li><a href="../invest_info/stork.html">매매동향</a></li>
                             </ul>
                             <ul>
-                                <li class="sitemap-title"><a href="../invest_info/disclosure.html">공시</a></li>                            
+                                <li class="sitemap-title"><a href="../invest_info/disclosure.html">공시</a></li>
                             </ul>
                             <ul>
                                 <li class="sitemap-title"><a href="../invest_info/ir_info.html">IR정보</a></li>
@@ -376,7 +381,7 @@
                     </div>
                 </a>
             </div>
-        
+
             <!-- 모바일 메뉴 -->
             <div class="mobile_menu">
                 <div class="top">
@@ -512,24 +517,28 @@
                 </div>
             </div>
         </div>
-        
-        
+
+
 
         <!-- 검색창 -->
         <div class="search-bar">
-            <div class="input-group inputSearch">
-                <input type="text" class="form-control" placeholder="검색어를 입력해 주세요" aria-label="Search User"
-                    aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <span class="input-group-text" id="basic-addon2">
-                        <a href="#/"><i class="fa fa-search"></i></a></span>
+            <div class="container">
+                <div class="search-wrap">
+                    <div class="search">
+                        <input type="text" class="searchTerm" placeholder="검색어를 입력해주세요">
+                        <button type="submit" class="searchButton">
+                            <a href="#"><i class="fa fa-search"></i></a></span>
+                        </button>
+                    </div>
                 </div>
+
+
+                <a href="javascript:void(0);" onclick="closeBtn();">
+                    <div class="close-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </a>
             </div>
-            <a href="javascript:void(0);" onclick="closeBtn();">
-                <div class="close-btn">
-                    <i class="fas fa-times"></i>
-                </div>
-            </a>
         </div>
 
         <div class="sub-content">
@@ -567,11 +576,11 @@
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tap-1" role="tab"
-                                aria-controls="home" aria-selected="true">강화유리</a>
+                                aria-controls="home" aria-selected="true">예시 텍스트입니다.</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tap-2" role="tab"
-                                aria-controls="profile" aria-selected="false">커넥터</a>
+                                aria-controls="profile" aria-selected="false">예시 텍스트입니다.</a>
                         </li>
 
                     </ul>
@@ -586,13 +595,144 @@
 
 
                     </div>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item-3">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tap-1" role="tab"
+                                aria-controls="home" aria-selected="true">예시 텍스트입니다.</a>
+                        </li>
+                        <li class="nav-item-3">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tap-2" role="tab"
+                                aria-controls="profile" aria-selected="false">예시 텍스트입니다.</a>
+                        </li>
+                        <li class="nav-item-3">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tap-3" role="tab"
+                                aria-controls="profile" aria-selected="false">예시 텍스트입니다.</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="tap-1" role="tabpanel" aria-labelledby="home-tab">
+
+                        </div>
+                        <div class="tab-pane fade" id="tap-2" role="tabpanel" aria-labelledby="home-tab">
+
+                        </div>
+                        <div class="tab-pane fade" id="tap-3" role="tabpanel" aria-labelledby="home-tab">
+
+                        </div>
+
+                    </div>
                     <!-- /// -->
-                    <a href="" class="link-btn">자세히 보기 <img src="../../resources/images/ic-s-right.png" alt="자세히 보기"></a>
+                    <a href="" class="link-btn">자세히 보기 <img src="../../resources/images/ic-s-right.png"
+                            alt="자세히 보기"></a>
+
+
+                    <!-- ///text -->
+                    <p class="c-lg-text">예시 텍스트입니다.</p>
+                    <p class="c-lg-text">예시 <span>텍스트입니다.</span></p>
+                    <p class="c-text-border">예시 텍스트입니다.</p>
+                    <p class="lg-text-border">예시 텍스트입니다.</p>
+                    <p class="c-m-text">예시 텍스트입니다.</p>
+                    <p class="c-m-text black">예시 텍스트입니다.</p>
+                    <span class="b-text-border">예시 텍스트입니다.</span>
+                    <span class="s-text-border">예시 텍스트입니다.</span>
+                    <p class="c-s-text">예시 텍스트입니다.</p>
+                    <p class="o-s-text">예시 텍스트입니다.</p>
+                    <p class="o-b-text">예시 텍스트입니다.</p>
+                    <p class="d-s-text">예시 텍스트입니다.</p>
+                    <p class="example">예시 텍스트입니다.</p>
+
+                    <div class="border-box"></div>
+
+                    <!-- // -->
+                    <br>
+                    <div class="toggle-wrap">
+                        <div class="toggle-head">
+                            <span>
+                                예시 텍스트입니다.
+                            </span>
+                            <button type="button" onclick="toggleBtn()"></button>
+                        </div>
+                        <div class="toggle-content">
+                            <ul class="ul-list-dot">
+                                <li>예시 텍스트입니다.</li>
+                                <li>예시 텍스트입니다.</li>
+                                <li>예시 텍스트입니다.</li>
+                            </ul>
+                            <div class="maps">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- // -->
+                <br>
+                <ul class="ul-list-dot">
+                    <li>예시 텍스트입니다.</li>
+                    <li>예시 텍스트입니다.</li>
+                    <li>예시 텍스트입니다.</li>
+                </ul>
+
+                <!-- // -->
+                <br>
+                <div class="orange-circle"></div>
+                <div class="orange-circle small"></div>
+                <div class="orange-circle large"></div>
+
+                <!-- // 스크롤 = 픽셀로 작업 -->
+                <br>
+                <div class="" style="width:100%; height:200px; overflow:auto">
+                    <table class="table tab-panel" width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <thead class="thead-light">
+                            <tr class="text-center">
+                                <th scope="col">예시 텍스트입니다.</th>
+                                <th scope="col">예시 텍스트입니다.</th>
+                                <th scope="col">예시 텍스트입니다.</th>
+                                <th scope="col">예시 텍스트입니다.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="text-center">asd</th>
+                                <td class="text-center">asd</td>
+                                <td class="text-center">asd</td>
+                                <td class="text-center">asd</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-
-
+            <!-- // -->
+            <br>
+            <div class="pagination">
+                <ul class="d-flex align-items-center">
+                    <a href="#">
+                        <li>
+                            <</li> </a> <a class="active" href="#">
+                        <li>1</li>
+                    </a>
+                    <a href="#">
+                        <li>2</li>
+                    </a>
+                    <a href="#">
+                        <li>3</li>
+                    </a>
+                    <a href="#">
+                        <li>4</li>
+                    </a>
+                    <a href="#">
+                        <li>5</li>
+                    </a>
+                    <a href="#">
+                        <li>6</li>
+                    </a>
+                    <a href="#">
+                        <li>></li>
+                    </a>
+                </ul>
+            </div>
 
             <?php include "../layout/footer.html";?>
         </div> <!-- wrap -->

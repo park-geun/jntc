@@ -13214,6 +13214,27 @@ h5 {
   color: #f47920;
 }
 
+#wrap header .right-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#wrap header .right-header .select-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrap header .right-header .select-box .select-icon {
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+}
+
 #wrap header select {
   margin: 0 20px 0 0;
   border: none;
@@ -13400,26 +13421,50 @@ h5 {
   background-color: #ffffff;
   padding: 100px 0;
   position: relative;
+  /*Resize the wrap to see the search bar change!*/
 }
 
-#wrap .search-bar .inputSearch {
+#wrap .search-bar .search {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#wrap .search-bar .searchTerm {
+  width: 100%;
+  border: 3px solid #dddddd;
+  border-right: none;
+  padding: 15px;
+  height: 60px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+#wrap .search-bar .searchTerm:focus {
+  color: red;
+}
+
+#wrap .search-bar .searchButton {
+  width: 40px;
+  height: 60px;
+  border: 3px solid #dddddd;
+  border-left: none;
+  background: none;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#wrap .search-bar .searchButton i {
+  color: #dddddd;
+}
+
+#wrap .search-bar .search-wrap {
   width: 50%;
-  height: 60px;
-  margin: auto;
-  background-color: #ffffff;
-}
-
-#wrap .search-bar .inputSearch .input-group-append {
-  height: 60px;
-}
-
-#wrap .search-bar .inputSearch .form-control {
-  border-right: 0px;
-}
-
-#wrap .search-bar .inputSearch .input-group-text {
-  background-color: #ffffff;
-  border-left: 0px;
+  margin: 0 auto;
 }
 
 #wrap .search-bar .close-btn {
@@ -13500,13 +13545,18 @@ h5 {
   #wrap header .logo img {
     width: 60%;
   }
-  #wrap header .left-header {
+  #wrap header .right-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  #wrap header .left-header img {
+  #wrap header .right-header img {
     width: 40px;
+  }
+  #wrap header .right-header .select-icon {
+    width: 15px;
+    height: 15px;
+    background-size: contain;
   }
   #wrap .search-bar {
     padding: 50px 0;
@@ -13888,7 +13938,6 @@ h5 {
   bottom: 20%;
   -webkit-transform: translate(0, -20%);
           transform: translate(0, -20%);
-  padding: 0 10rem;
   text-align: left;
 }
 
@@ -13897,6 +13946,7 @@ h5 {
   height: 15px;
   opacity: 1;
   background-color: #ffffff;
+  margin: 10px;
 }
 
 #wrap .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -13908,10 +13958,10 @@ h5 {
 
 #wrap .swiper-container .player {
   position: absolute;
-  bottom: 20.5%;
-  -webkit-transform: translate(0, -20.5%);
-          transform: translate(0, -20.5%);
-  padding: 0 18rem;
+  bottom: 22.5%;
+  -webkit-transform: translate(0, -22.5%);
+          transform: translate(0, -22.5%);
+  padding: 0 10rem;
   z-index: 10;
 }
 
@@ -13944,7 +13994,7 @@ h5 {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  padding: 10rem;
+  padding: 10rem 0;
 }
 
 #wrap .banner-1 .banner-wrap p:nth-child(1) {
@@ -13974,10 +14024,10 @@ h5 {
             transform: translate(0, -10%);
   }
   #wrap .swiper-container .player {
-    padding: 0 12rem;
-    bottom: 11%;
-    -webkit-transform: translate(0, -11%);
-            transform: translate(0, -11%);
+    padding: 0 14rem;
+    bottom: 13.5%;
+    -webkit-transform: translate(0, -13.5%);
+            transform: translate(0, -13.5%);
   }
   #wrap .swiper-container .player .play-btn::after {
     font-size: 20px;
@@ -14024,10 +14074,10 @@ h5 {
     height: 10px;
   }
   #wrap .swiper-container .player {
-    padding: 0 8rem;
-    bottom: 16.5%;
-    -webkit-transform: translate(0, -16.5%);
-            transform: translate(0, -16.5%);
+    padding: 0 10rem;
+    bottom: 19%;
+    -webkit-transform: translate(0, -19%);
+            transform: translate(0, -19%);
   }
   #wrap .swiper-container .player .play-btn {
     width: 13px;
