@@ -20,6 +20,7 @@ $rgba-7:rgba(0, 0, 0, 0.7);
 
 body {
     text-decoration: none;
+    color: $gray-33;
 }
 
 p,
@@ -29,17 +30,22 @@ h2,
 h3,
 h4,
 h5 {
-    font-size: 17px;
-    color: $black;
+    font-size: 16px;
+    color: $gray-33;
     word-break: keep-all;
 }
-
+.container{
+    padding-left:0;
+    padding-right:0;
+}
 //layout comm
 .margin {
     margin-left: -10px;
     margin-right: -10px;
 }
-
+.m-t-40 {
+    margin-top: 40px;
+}
 .m-t-45 {
     margin-top: 45px;
 }
@@ -55,7 +61,10 @@ h5 {
 .p-20 {
     padding: 20px;
 }
-
+.margin-minus{
+    margin-left:-15px !important;
+    margin-right:-15px !important;
+}
 .years-line {
     font-size: 24px;
     color: $rgba-5;
@@ -80,11 +89,11 @@ h5 {
 //btn comm
 .link-btn {
     border: 1px solid rgba(0, 0, 0, 0.3);
-    font-size: 17px;
+    font-size: 16px;
     color: $black;
     padding: 10px 25px;
     display: inline-block;
-    margin: 30px 0;
+    margin-top:30px;
     background-color: $white;
     vertical-align: middle;
 
@@ -118,7 +127,7 @@ h5 {
     padding: 0 5px;
     border: 1px solid #797979;
     border-radius: 30px;
-    font-size: 17px;
+    font-size: 16px;
     color: #000000;
     font-weight: 400;
     margin: 20px 0;
@@ -157,7 +166,7 @@ h5 {
 
 //큰 텍스트
 .c-lg-text {
-    font-size: 28px;
+    font-size: 30px;
 
     span {
         color: $orange
@@ -182,7 +191,7 @@ h5 {
 
 //오렌지 컬러
 .lg-text-border {
-    font-size: 28px;
+    font-size: 26px;
     position: relative;
     padding-bottom: 10px;
     color: $orange;
@@ -200,9 +209,9 @@ h5 {
 
 //중간텍스트
 .c-m-text {
-    font-size: 22px;
+    font-size: 20px;
     color: $orange;
-    margin: 30px 0;
+    margin-top:35px;
 
     &.black {
         color: $black;
@@ -211,7 +220,7 @@ h5 {
 }
 
 .b-text-border {
-    font-size: 22px;
+    font-size: 20px;
     position: relative;
     padding-bottom: 10px;
 
@@ -228,7 +237,7 @@ h5 {
 }
 
 .s-text-border {
-    font-size: 22px;
+    font-size: 20px;
     position: relative;
     padding-bottom: 10px;
     color: $orange;
@@ -247,33 +256,33 @@ h5 {
 
 // 작은텍스트
 .c-s-text {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
-    margin: 20px 0 40px 0;
+    margin-top:35px;
 }
 
 //오렌지색 텍스트
 .o-s-text {
-    font-size: 17px;
+    font-size: 16px;
     color: $orange;
 }
 
 //오렌지색 텍스트
 .o-b-text {
-    font-size: 17px;
+    font-size: 16px;
     color: $b-orange;
 }
 
 //
 .b-s-text {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 700;
 }
 
 
 .d-s-text {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500 !important;
 
     &.light {
@@ -292,12 +301,12 @@ h5 {
 .border-box {
     border: 1px solid $gray-b2;
     padding: 50px;
-    margin-top: 45px;
+
 
     &.vision {
         border: 1px solid $gray-b2;
         padding: 50px 120px;
-        margin-top: 45px;
+  
     }
 
     &.ir {
@@ -326,7 +335,7 @@ h5 {
         }
 
         .news-date {
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 400;
         }
     }
@@ -461,7 +470,8 @@ h5 {
 
 //tab panel comm
 .nav-tabs {
-    margin: 45px 0;
+    margin-top: 45px;
+    margin-bottom:20px;
 
     .nav-item {
         width: 50%;
@@ -471,9 +481,9 @@ h5 {
 
         .nav-link {
             height: 100%;
-            padding: 14px 0;
+            padding: 21px 0;
             border: none;
-            font-size: 18px;
+            font-size: 20px;
             color: $black;
             border: 1px solid $gray-b2;
 
@@ -493,9 +503,9 @@ h5 {
 
         .nav-link {
             height: 100%;
-            padding: 14px 0;
+            padding: 21px 0;
             border: none;
-            font-size: 18px;
+            font-size: 20px;
             color: $black;
             border: 1px solid $gray-b2;
             display: flex;
@@ -549,7 +559,8 @@ h5 {
             border: 1px solid $gray-dd;
             background-color: $gray-f5;
             vertical-align: middle;
-            font-size: 19px;
+            font-size: 16px;
+            font-weight: 400;
         }
 
         td {
@@ -634,7 +645,7 @@ h5 {
     li {
         position: relative;
         padding-left: 10px;
-        font-size: 17px;
+        font-size: 16px;
         line-height: 32px;
         &::before {
             content: "";
@@ -717,10 +728,10 @@ h5 {
 
 @include media-breakpoint-down(md) {
     .link-btn {
-        font-size: 17px;
+        font-size: 16px;
         padding: 10px;
         display: inline-block;
-        margin: 20px 0;
+        margin: 15px 0;
     }
 
     .c-lg-text {
@@ -767,7 +778,7 @@ h5 {
     }
 
     .c-s-text {
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 400;
         line-height: 1.68;
     }
@@ -803,7 +814,7 @@ h5 {
             .nav-link {
                 padding: 10px 0;
                 border: none;
-                font-size: 17px;
+                font-size: 16px;
                 color: $black;
                 border: 1px solid $gray-33;
 
@@ -820,14 +831,13 @@ h5 {
     .border-box {
         border: 1px solid $gray-b2;
         padding: 25px;
-        margin-top: 25px;
 
     }
 
     .border-box.vision {
         border: 1px solid $gray-b2;
         padding: 10px 20px;
-        margin-top: 25px;
+
     }
 
     .talent {

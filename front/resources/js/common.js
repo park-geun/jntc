@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    $('.include-header').load('../layout/header.html');
+    $('.include-footer').load('../layout/footer.html');
+
+
     var mySwiper = new Swiper('#swiper-container', {
         speed: 400,
         pagination: {
@@ -31,22 +35,7 @@ $(document).ready(function () {
     })
 
 
-    $('nav>ul>li').hover(function () {
-        var idx = $(this).index()+1;
-        console.log(idx);
-        $('#gnb-'+idx).show();
-        $('#gnb-'+idx).siblings().hide();
-        $('.gnb').show();
-    }, function () {
-
-
-
-    })
-    //gnb 삭제
-    $('.gnb').on('mouseleave', function(){
-        $(this).hide();
-    })
-
+   
 
 
 
