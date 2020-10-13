@@ -7,6 +7,7 @@
     <title>JNTC</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../resources/plugin/light-box/lightbox.css">
     <link rel="stylesheet" href="../../resources/plugin/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="../../resources/css/style.css">
     <link rel="stylesheet" href="../../resources/css/comm.css">
@@ -20,6 +21,8 @@
     <script src="../../resources/plugin/swiper/js/swiper.min.js"></script>
     <!-- ui 관련 -->
     <script src="../../resources/js/ui.js"></script>
+    <!-- //이미지 슬라이드 -->
+    <script src="../../resources/plugin/light-box/lightbox-plus-jquery.min.js"></script>
 </head>
 
 <body>
@@ -49,7 +52,7 @@
                         </div>
                         <p>모바일용 3D 커버글라스</p>
                     </div>
-                    
+
                     <section>
                         <p class="c-lg-text">2014년 세계 최초로 3D 커버글라스 양산을 통해 입증된</p>
                         <p class="c-lg-text"><span>돋보적인 제품, 디자인, 기술력으로 시장을 선도</span></p>
@@ -68,7 +71,7 @@
                             <div class="row margin">
 
                                 <div class="glass-list">
-                                    <a href="">
+                                    <a href="../../resources/images/product-1.png" data-lightbox="roadtrip1" data-title="Keyless, 2-Bended (2019)_Huawei P30 Pro">
                                         <div class="glass-item">
                                             <div class="glass-img"
                                                 style="background-image: url('../../resources/images/product-1.png');"
@@ -87,7 +90,7 @@
                                     <div class="arrow-plus"></div>
                                 </div>
                                 <div class="glass-list">
-                                    <a href="">
+                                    <a href="../../resources/images/product-2.png" data-lightbox="roadtrip1" data-title="Keyless, 2-Bended (2019)_Huawei P30 Pro">
                                         <div class="glass-item">
                                             <div class="glass-img"
                                                 style="background-image: url('../../resources/images/product-2.png');"
@@ -106,7 +109,7 @@
                                     <div class="arrow-plus"></div>
                                 </div>
                                 <div class="glass-list">
-                                    <a href="">
+                                    <a href="../../resources/images/product-3.png" data-lightbox="roadtrip1" data-title="Keyless, 2-Bended (2019)_Huawei P30 Pro">
                                         <div class="glass-item">
                                             <div class="glass-img"
                                                 style="background-image: url('../../resources/images/product-3.png');"
@@ -125,7 +128,7 @@
                                     <div class="arrow-plus"></div>
                                 </div>
                                 <div class="glass-list">
-                                    <a href="">
+                                    <a href="../../resources/images/product-4.png" data-lightbox="roadtrip1" data-title="Keyless, 2-Bended (2019)_Huawei P30 Pro">
                                         <div class="glass-item">
                                             <div class="glass-img"
                                                 style="background-image: url('../../resources/images/product-4.png');"
@@ -144,7 +147,7 @@
                                     <div class="arrow-plus"></div>
                                 </div>
                                 <div class="glass-list">
-                                    <a href="">
+                                    <a href="../../resources/images/product-5.png" data-lightbox="roadtrip1" data-title="Keyless, 2-Bended (2019)_Huawei P30 Pro">
                                         <div class="glass-item">
                                             <div class="glass-img"
                                                 style="background-image: url('../../resources/images/product-5.png');"
@@ -163,7 +166,7 @@
                                     <div class="arrow-plus"></div>
                                 </div>
                                 <div class="glass-list">
-                                    <a href="">
+                                    <a href="../../resources/images/product-6.png" data-lightbox="roadtrip1" data-title="Keyless, 2-Bended (2019)_Huawei P30 Pro">
                                         <div class="glass-item">
                                             <div class="glass-img"
                                                 style="background-image: url('../../resources/images/product-6.png');"
@@ -182,7 +185,7 @@
                                     <div class="arrow-plus"></div>
                                 </div>
                                 <div class="glass-list">
-                                    <a href="">
+                                    <a href="../../resources/images/product-7.png" data-lightbox="roadtrip1" data-title="Keyless, 2-Bended (2019)_Huawei P30 Pro">
                                         <div class="glass-item">
                                             <div class="glass-img"
                                                 style="background-image: url('../../resources/images/product-7.png');"
@@ -201,7 +204,7 @@
                                     <div class="arrow-plus"></div>
                                 </div>
                                 <div class="glass-list">
-                                    <a href="">
+                                    <a href="../../resources/images/product-8.png" data-lightbox="roadtrip1" data-title="Keyless, 2-Bended (2019)_Huawei P30 Pro">
                                         <div class="glass-item">
                                             <div class="glass-img"
                                                 style="background-image: url('../../resources/images/product-8.png');"
@@ -243,6 +246,19 @@
         </div>
     </div> <!-- wrap -->
 
+    <script>
+        $(document).ready(function(){
+            $('.lb-outerContainer').addClass('glass');
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                'alwaysShowNavOnTouchDevices': true,
+                'disableScrolling': true,
+                'showImageNumberLabel': false,
+            })
+        })
+        
+    </script>
     <script src="../../resources/js/comm.js"></script>
     <script src="../../resources/js/common.js"></script>
 </body>

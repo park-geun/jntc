@@ -5,6 +5,7 @@ $gray-cc:#cccccc;
 $gray-79:#797979;
 $gray-f2:#f2f2f2;
 $gray-33:#333333;
+$gray-66:#666666;
 $gray-99:#999999;
 $gray-dd:#dddddd;
 $gray-ef:#efefef;
@@ -21,6 +22,7 @@ $rgba-7:rgba(0, 0, 0, 0.7);
 body {
     text-decoration: none;
     color: $gray-33;
+    font-weight: 400;
 }
 
 p,
@@ -33,15 +35,40 @@ h5 {
     font-size: 16px;
     color: $gray-33;
     word-break: keep-all;
+    font-weight: 400;
 }
 .container{
     padding-left:0;
     padding-right:0;
 }
+.row{
+    margin-left:0;
+    margin-right:0;
+}
 //layout comm
+.padding-15{
+    padding-left: -15px;
+    padding-right: -15px;
+}
+.padding-30{
+    padding-left: -30px !important;
+    padding-right: -30px !important;
+}
 .margin {
     margin-left: -10px;
     margin-right: -10px;
+}
+.margin-15 {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.margin-20 {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.margin-30{
+    margin-left: -30px;
+    margin-right: -30px;
 }
 .m-t-40 {
     margin-top: 40px;
@@ -127,8 +154,8 @@ h5 {
     padding: 0 5px;
     border: 1px solid #797979;
     border-radius: 30px;
-    font-size: 16px;
-    color: #000000;
+    font-size: 14px;
+    color: $gray-66;
     font-weight: 400;
     margin: 20px 0;
     display: inline-block;
@@ -724,9 +751,33 @@ h5 {
 
         }
     }
+    .margin-15 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .margin-20 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .margin-30{
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 @include media-breakpoint-down(md) {
+     .margin-15 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .margin-20 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .margin-30{
+        margin-left: 0;
+        margin-right: 0;
+    }
     .link-btn {
         font-size: 16px;
         padding: 10px;

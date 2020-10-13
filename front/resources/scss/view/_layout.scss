@@ -11,8 +11,8 @@
                 font-size: 28px;
                 li { padding: 10px 30px; font-weight: 700; color:$black;
                     a{font-size:23px;}
-                    &.active{color:$orange;border-bottom:2px solid $orange;
-                        a{color:$orange;}
+                    &.active{color:$orange;border-bottom:3px solid $orange;
+                        a{color:$orange; font-weight: bold;}
                     }
                 }
             }
@@ -28,7 +28,13 @@
                     background-size: contain;
                 }
             }
-            
+            .select-ic{
+                width: 20px;
+                height: 20px;
+                background-image:url('../../resources/images/earth.png') ;
+                background-size: contain;
+                
+            }
         }
 
         select {margin: 0 20px 0 0;border:none;}
@@ -102,6 +108,12 @@
                     font-size: 18px;
                     padding-bottom: 10px;
                     font-weight: 700;
+                    a{
+                        color: $black;
+                        font-size: 18px;
+                        padding-bottom: 10px;
+                        font-weight: 700;
+                    }
                 }
 
                 li {
@@ -162,7 +174,10 @@
                     font-size: 22px;
                     padding-bottom: 15px;
                     >a{
-                        font-size: 22px;  
+                        color: $black;
+                        font-weight: 700;
+                        font-size: 22px;
+                        padding-bottom: 15px;  
                     }
                 }
 
@@ -267,6 +282,7 @@
                     display: flex;
                     font-size: 20px;
                     li { padding: 10px 15px; font-weight: 700; color:$black;
+                        a{font-size:19px;}
                         &.active{color:$orange;border-bottom:1px solid $orange;
                             a{color:$orange;}
                         }
@@ -290,7 +306,7 @@
         }
         
         header{
-            padding :10px 0;
+            padding :10px;
             select {margin: 0 5px 0 0;}
             a {
                 img {padding: 0 0 0 10px;}
@@ -300,7 +316,7 @@
             }
             .right-header{                
                 display: flex;
-                img{width:40px;}
+                
                 .select-icon{
                     width: 15px;
                     height: 15px;
@@ -522,6 +538,45 @@
     margin: 0 auto;
     border-radius: 4px;
     background-color: $white;
+  } 
+  .lb-dataContainer{
+      position: absolute;
+      top: -10%;
+      left: 50%;
+      transform:translate(-50%, 10%);
+      .lb-details{
+          width: 100%;
+          text-align: center;
+          .lb-caption{
+              font-size: 20px;
+              font-weight: bold;
+              color:$white;
+          }
+      }
+  }
+  .lb-outerContainer{
+    &.glass{
+        position: relative;
+        *zoom: 1;
+        width: 40% !important;
+        height: 50% !important;
+        margin: 0 auto;
+        background-color: transparent !important;
+        .lb-image{
+            width: 50% !important;
+            margin: 0 auto;
+            border:none !important;
+        }
+    }
+ 
+    &.connector{
+        .lb-image{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
   } 
   
  

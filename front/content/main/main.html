@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-Compatible" content="IE=edge">
@@ -8,6 +9,9 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="../../resources/plugin/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="../../resources/css/style.css">
+    <link rel="stylesheet" href="../../resources/css/comm.css">
+    <!-- //fontawesome cnd -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <!-- jquery -->
     <script src="../../resources/plugin/jquery/jquery.min.js"></script>
     <!-- bootstrap -->
@@ -19,41 +23,273 @@
 </head>
 
 <body>
- <div id="wrapper">
-   
-   <a href="../vision/vision.html" class="vision">vision</a>   
-   <a href="javascript:void(0);" class="search">test</a>
-   <a href="javascript:void(0);" class="sitemap">site</a>
-   <a href="javascript:void(0);" class="close">close</a>
-   <a href="javascript:void(0);" class="sub"></a>
+    <div id="wrap">
 
-    <img src="../../resources/images/home.jpg" alt="">
-    <img src="../../resources/images/home-search.jpg" alt="" class="search-img">
-    <img src="../../resources/images/home-sitemap.jpg" alt="" class="sitemap-img">
-   
-    <a href="../intro/intro.html" class="intro">
-       <img src="../../resources/images/home-sub.jpg" alt="" class="home-sub-img">
-   </a>
- </div>
+        <div class="include-header">
+            <!-- ///include header -->
+        </div>
 
- <script>
-  
-     $('.search').on('click',function(){
-        $('.search-img').css('display','block');
-        
-     })
-     $('.sitemap').on('click',function(){
-        $('.sitemap-img').css('display','block');
-     })
-     $('.sub').on('click',function(){
-        $('.home-sub-img').css('display','block');
-     })
-     $('.close').on('click',function(){
-        $('.search-img').css('display','none'); 
-        $('.sitemap-img').css('display','none');
-        $('.home-sub-img').css('display','none');
-     })
- </script>
+
+
+        <section class="section-1 p-0 m-0">
+            <div class="swiper-container" id="swiper-container">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide banner"
+                        style="background-image: url('../../resources/images/main-banner-1.png');">
+                        <div class="container">
+                            <div class="banner-wrap">
+                                <p>압도적인 선도기술로<br>
+                                    <span>기술 초격차를 확대</span>하고 있습니다
+                                </p>
+                                <p>Mobile Device<br>
+                               <span>3D Cover Glass</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide banner" style="background-image:url('../../resources/images/banner.png');">
+                        <div class="container">
+                            <div class="banner-wrap">
+                                <p>다가오는 <span>미래 디스플레이 시장을 선도</span><br>
+                                    하고 있습니다.
+                                </p>
+                                <p>Automotive<br>
+                                 3D Cover Glass</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide banner"
+                        style="background-image:url('../../resources/images/banner.png') ;">
+                        <div class="container">
+                            <div class="banner-wrap">
+                                <p><span>글로벌 혁신기술</span>은 지속성장의<br>
+                                    원동력이 되고 있습니다
+                                </p>
+                                <p>UTG<br>
+                                 <span>(Ultra Thin Glass)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide banner"
+                        style="background-image:url('../../resources/images/banner.png') ;">
+                        <div class="container">
+                            <div class="banner-wrap">
+                                <p>차별화된 제품으로 <br>
+                                    최고의 고객가치를 창출합니다.
+                                </p>
+                                <p>Connector<br>
+                               <span>5G, Waterproof etc.)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="swiper-pagination"></div>
+                    <div class="player">
+                        <div class="play-btn"></div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+
+            </div>
+        </section>
+
+        <section class="section-2">
+            <div class="container">
+                <h1 class="text-center">About JNTC</h1>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 border-right text-center">
+                        <div class="about">
+                            <div class="ic-1"></div>
+                            <p>설립연도</p>
+                            <p>1999<span>년</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 border-right text-center">
+                        <div class="about">
+                            <div class="ic-2"></div>
+                            <p>매출</p>
+                            <p>3862<span>억원</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 border-right text-center">
+                        <div class="about">
+                            <div class="ic-3"></div>
+                            <p>임직원</p>
+                            <p>460<span>명</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 text-center">
+                        <div class="about">
+                            <div class="ic-4"></div>
+                            <p>생산 및 판매거점</p>
+                            <p>3<span>개국</span>5<span>개</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-right p-20">
+                <div class="year-text">(2019년말 연결 기준)</div>
+            </div>
+        </section>
+        <section class="section-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-12">
+                        <div class="global-img text-center">
+                            <img src="../../resources/images/earth-map.png" alt="지구본">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-center">
+                        <div class="global-text">
+                            <p>대한민국을 대표하는<br>
+                                <span>글로벌 No.1 기술선도 기업</span>으로<br>
+                                지속 성장하고 있습니다.
+                            </p>
+                            <p>
+                                전자기기의 핵심부품을 생산하는 제이앤티씨는<br>
+                                스마트폰용 커넥터, 커버글라스를 비롯해 차량용 디스플레이부품까지<br>언제나 새로운 디지털 제품을 만들고 있습니다
+                            </p>
+
+                            <a href="" class="link-btn">자세히 보기 <img src="../../resources/images/ic-s-right.png"
+                                    alt="자세히 보기"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-4">
+            <div class="container">
+                <h1 class="text-center">Featured Products</h1>
+                <div class="row margin-30">
+                    <div class="col-xl-6 col-lg-12 col-sm-12 col-12 p-0">
+                        <div class="features">
+                            <div class="fp-wrap"
+                                style="background-image: url(../../resources/images/main_product_bg_01.png);">
+                                <p>3D 커버글라스</p>
+
+                                <p>스마트폰에 적용되는 전면 커버글라스, 카메라윈도우글라스 시장을 <br>선도하고 있으며, UTG 및 차량용 디스플레이 부품 등으로 사업을<br> 확대해가고
+                                    있습니다.</p>
+
+                                <a href="" class="link-btn">자세히 보기 <img src="../../resources/images/ic-s-right.png"
+                                        alt="자세히 보기">
+                                </a>
+                                <!-- <div class="phone-img"></div>
+                                <div class="phone-img-2"></div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-sm-12 col-12 p-0">
+                        <div class="features">
+                            <div class="fp-wrap"
+                                style="background-image: url(../../resources/images/main_product_bg_02.png);">
+                                <p>커넥터</p>
+
+                                <p>5G, 방수, 고속(Type-C) 등 최신 모바일 트렌드 변화에 맞춘<br>고기능성 커넥터를 글로벌 기업에 공급하며 시장 니즈에 적극<br>대응해 나가고
+                                    있습니다</p>
+
+                                <a href="" class="link-btn">자세히 보기 <img src="../../resources/images/ic-s-right.png"
+                                        alt="자세히 보기"></a>
+                                <!-- <div class="connect-img">
+                                    <img src="../../resources/images/ic-connect.png" alt="부품">
+                                    <img src="../../resources/images/ic-connect-2.png" alt="부품">
+                                    <img src="../../resources/images/ic-connect-3.png" alt="부품">
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-5">
+            <div class="container">
+                <h1 class="text-center">Newsroom</h1>
+                <div class="row margin-20">
+                    <div class="col-xl-4 col-md-12 col-sm-12 col-12 p-0">
+                        <div class="newsroom">
+                            <div class="newsroom-content">
+                                <div class="newsroom-img">
+                                    <img src="../../resources/images/human-01.png" alt="">
+                                </div>
+                                <div class="newsroom-text">
+                                    <p class="border-text">채용공고</p>
+                                    <p class="news-title">JNTC 커넥터 전자부품 생산직 정규사원 모집중</p>
+                                    <p class="news-date">2020.08.14</p>
+                                    <div class="text-right">
+                                        <a href="" class="link-btn">더보기<img src="../../resources/images/ic-s-right.png" alt="더보기"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-12 col-sm-12 col-12 p-0">
+                        <div class="newsroom">
+                            <div class="newsroom-content">
+                                <div class="newsroom-img">
+                                    <img src="../../resources/images/newsroom-02.png" alt="">
+                                </div>
+
+                                <div class="newsroom-text">
+                                    <p class="border-text">투자정보</p>
+                                    <p class="news-title">JNTC 커넥터 전자부품 생산직 정규사원 모집중</p>
+                                    <p class="news-date">2020.08.14</p>
+                                    <div class="text-right">
+                                        <a href="" class="link-btn">더보기<img src="../../resources/images/ic-s-right.png" alt="더보기"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-12 col-sm-12 col-12 p-0">
+                        <div class="newsroom">
+                            <div class="newsroom-content">
+                                <div class="newsroom-text">
+                                    <p class="border-text">뉴스</p>
     
+                                    <div class="news-list">
+                                        <p class="news-title">제이앤티씨, 차량용 3D 커버글라스 제품 납품 준비 완료</p>
+                                        <p class="news-date">2020.08.14</p>
+                                    </div>
+                                    <div class="news-list">
+                                        <p class="news-title">제이앤티씨, 26일 박영준 신임 대표 선임</p>
+                                        <p class="news-date">2020.08.14</p>
+                                    </div>
+                                    <div class="news-list">
+                                        <p class="news-title">3D 커버글라스 전문기업 제이앤티씨, 코스닥 입성</p>
+                                        <p class="news-date">2020.08.14</p>
+                                    </div>
+    
+                                    <div class="text-right">
+                                        <a href="" class="link-btn">최신 뉴스보기<img src="../../resources/images/ic-s-right.png" alt="더보기"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+             
+                </div>
+            </div>
+        </section>
+        <a href="" class="top-scroll">
+            <div style="background-image: url('../../resources/images/icon_scroll_top.png');"></div>
+        </a>
+
+
+
+
+        <div class="include-footer">
+            <!-- ///include footer -->
+        </div>
+
+    </div>
+
+    <script src="../../resources/js/comm.js"></script>
+    <script src="../../resources/js/common.js"></script>
 </body>
+
 </html>

@@ -7,6 +7,7 @@
     <title>JNTC</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../resources/plugin/light-box/lightbox.css">
     <link rel="stylesheet" href="../../resources/plugin/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="../../resources/css/style.css">
     <link rel="stylesheet" href="../../resources/css/comm.css">
@@ -20,6 +21,8 @@
     <script src="../../resources/plugin/swiper/js/swiper.min.js"></script>
     <!-- ui 관련 -->
     <script src="../../resources/js/ui.js"></script>
+    <!-- //이미지 슬라이드 -->
+    <script src="../../resources/plugin/light-box/lightbox-plus-jquery.min.js"></script>
 </head>
 
 <body>
@@ -64,10 +67,10 @@
                     <section>
                         <div class="camera-window">
                             <div class="container p-0">
-                                <div class="row margin">
+                                <div class="row">
 
                                     <div class="camera-list">
-                                        <a href="../product/usb_socket.html">
+                                        <a href="../../resources/images/connector-1.jpg" data-lightbox="roadtrip1" data-title="USB Type C Socket (HY24-AB1015)">
                                             <div class="camera-item">
                                                 <div class="camera-img">
                                                     <img src="../../resources/images/connector-1.jpg" alt="커넥터" id="glass_img_1">
@@ -83,7 +86,7 @@
                                         <div class="arrow-plus"></div>
                                     </div>
                                     <div class="camera-list">
-                                        <a href="../product/usb_socket.html">
+                                        <a href="../../resources/images/connector-2.jpg" data-lightbox="roadtrip1" data-title="USB Type C Socket (HY24-AB1015)">
                                             <div class="camera-item">
                                                 <div class="camera-img">
                                                     <img src="../../resources/images/connector-2.jpg" alt="커넥터" id="glass_img_2">
@@ -99,7 +102,7 @@
                                         <div class="arrow-plus"></div>
                                     </div>
                                     <div class="camera-list">
-                                        <a href="../product/usb_socket.html">
+                                        <a href="../../resources/images/connector-3.jpg" data-lightbox="roadtrip1" data-title="USB Type C Socket (HY24-AB1015)">
                                             <div class="camera-item">
                                                 <div class="camera-img">
                                                     <img src="../../resources/images/connector-3.jpg" alt="커넥터" id="glass_img_3">
@@ -115,7 +118,7 @@
                                         <div class="arrow-plus"></div>
                                     </div>
                                     <div class="camera-list">
-                                        <a href="../product/usb_socket.html">
+                                        <a href="../../resources/images/connector-4.jpg" data-lightbox="roadtrip1" data-title="USB Type C Socket (HY24-AB1015)">
                                             <div class="camera-item">
                                                 <div class="camera-img">
                                                     <img src="../../resources/images/connector-4.jpg" alt="커넥터" id="glass_img_4">
@@ -131,7 +134,7 @@
                                         <div class="arrow-plus"></div>
                                     </div>
                                     <div class="camera-list">
-                                        <a href="../product/usb_socket.html">
+                                        <a href="../../resources/images/connector-5.jpgl" data-lightbox="roadtrip1" data-title="USB Type C Socket (HY24-AB1015)">
                                             <div class="camera-item">
                                                 <div class="camera-img">
                                                     <img src="../../resources/images/connector-5.jpg" alt="커넥터" id="glass_img_5">
@@ -147,7 +150,7 @@
                                         <div class="arrow-plus"></div>
                                     </div>
                                     <div class="camera-list">
-                                        <a href="../product/usb_socket.html">
+                                        <a href="../../resources/images/connector-6.jpgl" data-lightbox="roadtrip1" data-title="USB Type C Socket (HY24-AB1015)">
                                             <div class="camera-item">
                                                 <div class="camera-img">
                                                     <img src="../../resources/images/connector-6.jpg" alt="커넥터" id="glass_img_6">
@@ -189,7 +192,19 @@
             </div>
     
         </div> <!-- wrap -->
-
+        <script>
+            $(document).ready(function(){
+                $('.lb-outerContainer').addClass('connector');
+                lightbox.option({
+                    'resizeDuration': 200,
+                    'wrapAround': true,
+                    'alwaysShowNavOnTouchDevices': true,
+                    'disableScrolling': true,
+                    'showImageNumberLabel': false,
+                })
+            })
+            
+        </script>
         <script src="../../resources/js/comm.js"></script>
         <script src="../../resources/js/common.js"></script>
 </body>

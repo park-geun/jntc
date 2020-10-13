@@ -273,6 +273,7 @@ section {
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            background-origin: inherit;
             &.connector {
                 height: auto;
                 padding: 0;
@@ -289,7 +290,7 @@ section {
                 background-size: inherit;
                 background-repeat: no-repeat;
                 background-position: center;
-                
+              
             }
         
         }
@@ -307,6 +308,9 @@ section {
         padding: 30px 0;
         background-repeat: no-repeat;
         background-position: center;
+        background-size: contain;
+        background-origin: content-box;
+        
     }
  
     .glass-item {
