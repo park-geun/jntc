@@ -8,6 +8,7 @@
                     <li data-toggle="modal" data-target="#footer_email"><span>이메일무단수집거부</span></li>
                     <li data-toggle="modal" data-target="#footer_center"><span>부정비리 신고센터</span></li>
                     <li><a href="">사이트 맵</a></li>
+                    <li data-toggle="modal" data-target="#footer_notice"><span>공지사항</span></li>
                 </ul>
             </div>
         </div>
@@ -23,6 +24,7 @@
         </div>
     </div>
 </footer>
+<!-- 개인정보처리방침 -->
 <div class="modal fade privacy" id="footer_privacy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -48,6 +50,7 @@
         </div>
     </div>
 </div>
+<!-- 이메일 무단수집거부 -->
 <div class="modal fade" id="footer_email" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -67,6 +70,7 @@
         </div>
     </div>
 </div>
+<!-- 부정비리 신고센터 -->
 <div class="modal fade" id="footer_center" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -87,7 +91,122 @@
         </div>
     </div>
 </div>
+<!-- 공지사항 -->
+<div class="modal fade" id="footer_notice" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="title" style="background-image: url(../../resources/images/ic-footer-p-03.png);">
+                    공지사항
+                </p>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tap-1" role="tab"
+                            aria-controls="home" aria-selected="true">거래처 공지사항</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tap-2" role="tab"
+                            aria-controls="profile" aria-selected="false">일반 공지사항</a>
+                    </li>
 
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="tap-1" role="tabpanel" aria-labelledby="home-tab">
+                        <table class="table ir">
+                            <thead class="thead-light">
+                                <tr class="text-center">
+                                    <th scope="col">번호</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">자료 다운로드</th>
+                                    <th scope="col">날짜</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">1</td>
+                                    <td class="d-s-text">2020년 2분기 실적발표자료</td>
+                                    <td class="text-center"><a href="" download="@"></a></td>
+                                    <td class="text-center">2014.12.08</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">2</td>
+                                    <td class="d-s-text">제 25기 반기보고서</td>
+                                    <td class="text-center"><a href="" download="@"></a></td>
+                                    <td class="text-center">2014.12.08</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">3</td>
+                                    <td class="d-s-text">2020년 1분기 실적발표자료</td>
+                                    <td class="text-center"><a href="" download="@"></a></td>
+                                    <td class="text-center">2015.08.13</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">4</td>
+                                    <td class="d-s-text">제 25기 분기보고서</td>
+                                    <td class="text-center"><a href="" download="@"></a></td>
+                                    <td class="text-center">2015.09.25</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">5</td>
+                                    <td class="d-s-text">제 24기 사업보고서</td>
+                                    <td class="text-center"><a href="" download="@"></a></td>
+                                    <td class="text-center">2015.09.25</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                        <div class="pagination">
+                            <ul class="d-flex align-items-center">
+                                <a href="#">
+                                    <li>
+                                        <</li> </a> <a class="active" href="#">
+                                    <li>1</li>
+                                </a>
+                                <a href="#">
+                                    <li>2</li>
+                                </a>
+                                <a href="#">
+                                    <li>3</li>
+                                </a>
+                                <a href="#">
+                                    <li>4</li>
+                                </a>
+                                <a href="#">
+                                    <li>5</li>
+                                </a>
+                                <a href="#">
+                                    <li>6</li>
+                                </a>
+                                <a href="#">
+                                    <li>></li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tap-2" role="tabpanel" aria-labelledby="home-tab">
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
     $('nav>ul>li').hover(function () {

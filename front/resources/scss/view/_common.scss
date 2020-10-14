@@ -25,17 +25,12 @@ body {
     font-weight: 400;
 }
 
-p,
-a,
-h1,
-h2,
-h3,
-h4,
-h5 {
+p,a,h1,h2,h3,h4,h5,li,th,tr,td {
     font-size: 16px;
     color: $gray-33;
     word-break: keep-all;
     font-weight: 400;
+    // transform: skew(-0.1deg);
 }
 .container{
     padding-left:0;
@@ -66,9 +61,21 @@ h5 {
     margin-left: -20px;
     margin-right: -20px;
 }
+.margin-25 {
+    margin-left: -25px;
+    margin-right: -25px;
+}
 .margin-30{
     margin-left: -30px;
     margin-right: -30px;
+}
+.margin-50{
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+.m-t-35 {
+    margin-top: 35px;
 }
 .m-t-40 {
     margin-top: 40px;
@@ -131,8 +138,8 @@ h5 {
 }
 
 .s-link-btn {
-    width: 130px;
-    height: 30px;
+    width: 110px;
+    height: 25px;
     font-size: 14px;
     text-align: center;
     border-radius: 15px;
@@ -178,7 +185,14 @@ h5 {
         margin: 0 10px;
     }
 }
-
+.arrow-left {
+    width: 19px;
+    height: 34px;
+    background-image: url('../../resources/images/gray-left.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 20px;
+}
 .arrow-right {
     width: 19px;
     height: 34px;
@@ -190,11 +204,11 @@ h5 {
 
 //텍스트 comm
 // c = common, o = orange, b = bold, s = small
-
+.bold{font-weight:bold;}
 //큰 텍스트
 .c-lg-text {
     font-size: 30px;
-
+    font-weight:bold;
     span {
         color: $orange
     }
@@ -218,7 +232,7 @@ h5 {
 
 //오렌지 컬러
 .lg-text-border {
-    font-size: 26px;
+    font-size: 30px;
     position: relative;
     padding-bottom: 10px;
     color: $orange;
@@ -299,6 +313,7 @@ h5 {
 .o-b-text {
     font-size: 16px;
     color: $b-orange;
+    font-weight: 700;
 }
 
 //
@@ -310,7 +325,7 @@ h5 {
 
 .d-s-text {
     font-size: 16px;
-    font-weight: 500 !important;
+    font-weight:700;
 
     &.light {
         font-weight: 400;
@@ -328,7 +343,7 @@ h5 {
 .border-box {
     border: 1px solid $gray-b2;
     padding: 50px;
-
+    margin-top: 45px;
 
     &.vision {
         border: 1px solid $gray-b2;
@@ -341,6 +356,7 @@ h5 {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 90%;
+        margin-top:0;
     }
 
     &.none-bg {
@@ -391,6 +407,12 @@ h5 {
     }
 
     .toggle-content {
+        &.ir{
+            
+            ul {
+                margin-bottom:65px;
+            } 
+        }
         display: block;
 
         ul {
@@ -447,8 +469,8 @@ h5 {
     }
 
     &.small {
-        width: 160px;
-        height: 160px;
+        width: 132px;
+        height: 132px;
         position: relative;
 
         &::after {
@@ -460,6 +482,11 @@ h5 {
             top: 50%;
             right: -40%;
             transform: translate(40%, -50%);
+        }
+        &.none-after{
+            &::after {         
+                background-image:none;
+            }   
         }
     }
 
@@ -475,11 +502,24 @@ h5 {
             width: 20px;
             height: 30px;
             background-image: url('../../resources/images/gray-right.png');
+            background-size: contain;
             top: 50%;
             right: -15%;
             transform: translate(40%, -50%);
         }
-
+        &.left{
+            &::after {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 30px;
+                background-image: url('../../resources/images/gray-left.png');
+                background-size: contain;
+                top: 50%;
+                right: -15%;
+                transform: translate(40%, -50%);
+            }  
+        }
         &:nth-child(3n) {
             &::after {
                 content: "";
@@ -549,13 +589,16 @@ h5 {
 }
 
 .table {
+    color: $gray-33;
+    margin-top:50px;
     color: $black;
     &.tab-panel {
-
         th,
         td {
             border-top: none;
             border-bottom: 1px solid $gray-dd;
+            font-size: 16px;
+            color: $gray-33;
         }
 
         thead {
@@ -599,13 +642,15 @@ h5 {
     }
 
     &.property {
+        .bold{font-weight: 700;}
         th {
             padding: 10px 15px;
             border-top: 1px solid $gray-33;
             border-bottom: 1px solid $gray-99;
             background-color: $gray-f5;
             vertical-align: middle;
-            font-size: 19px;
+            font-size: 16px;
+            font-weight: 700;
         }
 
         td {
@@ -625,7 +670,8 @@ h5 {
             border-bottom: 1px solid $gray-dd;
             background-color: $white;
             vertical-align: middle;
-            font-size: 19px;
+            font-size: 18px;
+            font-weight: bold;
         }
 
         td {
@@ -673,7 +719,7 @@ h5 {
         position: relative;
         padding-left: 10px;
         font-size: 16px;
-        line-height: 32px;
+        line-height: 26px;
         &::before {
             content: "";
             position: absolute;
@@ -681,7 +727,7 @@ h5 {
             height: 4px;
             border-radius: 50px;
             left: 0;
-            top: 35%;
+            top: 40%;
             transform: translate(-50%, 0);
             background-color: $gray-dd;
         }
@@ -713,6 +759,28 @@ h5 {
 
 .pagination {
     ul {
+        li{
+            .left-pagination{
+                width: 20px;
+                height: 16px;
+                display: inline-block;
+                background-image: url('../../resources/images/left-pagination.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position:center;
+                vertical-align: middle;
+            }
+            .right-pagination{
+                width: 20px;
+                height: 16px;
+                display: inline-block;
+                background-image: url('../../resources/images/right-pagination.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position:center;
+                vertical-align: middle;
+            }
+        }
         a {
             margin: 0 10px;
 
@@ -722,7 +790,7 @@ h5 {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color: $orange;
+                color: $white;
                 background-color: $gray-dd;
                 padding: 5px;
                 border-radius: 50px;
@@ -847,7 +915,7 @@ h5 {
                 border: none;
                 font-size: 19px;
                 color: $black;
-                border: 1px solid $gray-33;
+                border: 1px solid $gray-b2;
 
                 &.active {
                     background-color: $orange;
@@ -867,7 +935,7 @@ h5 {
                 border: none;
                 font-size: 16px;
                 color: $black;
-                border: 1px solid $gray-33;
+                border: 1px solid $gray-b2;
 
                 &.active {
                     background-color: $orange;

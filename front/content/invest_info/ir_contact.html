@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-Compatible" content="IE=edge">
+    <title>JNTC</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../resources/plugin/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <link rel="stylesheet" href="../../resources/css/comm.css">
+    <!-- //fontawesome cnd -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="../../resources/plugin/jquery/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="../../resources/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper -->
+    <script src="../../resources/plugin/swiper/js/swiper.min.js"></script>
+    <!-- ui 관련 -->
+    <script src="../../resources/js/ui.js"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="include-header">
+            <!-- ///include header -->
+        </div>
+
+        <div class="sub-content">
+            <div class="sub-bg" style="background-image:url('../../resources/images/sub-bg.png')"></div>
+
+            <div class="container">
+                <div class="title-box">
+                    <h1 class="title">IR 정보</h1>
+                </div>
+
+                <div class="content-body">
+                    <div class="section-location">
+                        <p class="location-ic-home"></p>
+                        <span>투자정보</span>
+                        <span>IR 정보</span>
+                        <span>IR 자료실</span>
+                    </div>
+                    <div class="sub-title d-flex align-items-center">
+                        <div class="sub-title-ic" style="background-image:url('../../resources/images/ic-ir-03.png')">
+                            <!-- ic-ir-01 =자료실
+                            ic-ir-02 =뉴스
+                            ic-ir-03 =IR Contact -->
+                        </div>
+                        <p>IR Contact</p>
+                    </div>
+
+
+
+                    <!-- //// -->
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item-3">
+                            <a class="nav-link " id="home-tab" href="ir_info.html">IR 자료실</a>
+                        </li>
+                        <li class="nav-item-3">
+                            <a class="nav-link " id="profile-tab" href="ir_news.html">뉴스</a>
+                        </li>
+                        <li class="nav-item-3">
+                            <a class="nav-link active" id="profile-tab" href="ir_contact.html">IR Contact</a>
+                        </li>
+
+                    </ul>
+
+                
+                    <div class="toggle-wrap m-t-45">
+                        <div class="toggle-head">
+                            <span>
+                                IR관련 문의 (이메일 : jntcir@thejnt.com / 전화번호 : 070-4050-3135)<br>
+                                당사 IR관련 문의는 이메일로 연락주시기 바랍니다.
+                            </span>
+                            <button type="button" onclick="toggleBtn()"></button>
+                        </div>
+                        <div class="toggle-content ir">
+                            <ul class="ul-list-dot">
+                                <li>(18523) 경기도 화성시 정남면 내향안길 240-5</li>
+                                <li>전화 070-4050-3100 팩스 031-8055-8445</li>
+                                <li>IR 담당자 070-4050-3135 이메일 jntcir@thejnt.com</li>
+                            </ul>
+                            <div class="maps">
+                                <div id="google-map"></div>
+                            </div>
+                        </div>
+                    </div>
+                     
+
+                </div>
+
+            </div>
+
+
+
+            <div class="include-footer">
+                <!-- ///include footer -->
+            </div>
+        </div> <!-- wrap -->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwlNqAEil52XRPHmSVb4Luk18qQG9GqcM&sensor=false&language=ko">
+        </script>
+
+        <script>
+            function initialize() {
+                var myLatlng = new google.maps.LatLng(37.2915450, 127.0430790); // 좌표값
+                var mapOptions = {
+                    zoom: 14, // 지도 확대레벨 조정
+                    center: myLatlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                });
+            }
+            window.onload = initialize;
+        </script>
+
+        <script src="../../resources/js/common.js"></script>
+        <script src="../../resources/js/comm.js"></script>
+</body>
+
+</html>

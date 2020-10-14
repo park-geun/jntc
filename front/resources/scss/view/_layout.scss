@@ -9,7 +9,7 @@
             ul {
                 display: flex;
                 font-size: 28px;
-                li { padding: 10px 30px; font-weight: 700; color:$black;
+                li { padding: 25px 30px; font-weight: 700; color:$black;
                     a{font-size:23px;}
                     &.active{color:$orange;border-bottom:3px solid $orange;
                         a{color:$orange; font-weight: bold;}
@@ -202,11 +202,22 @@
 
     }
 
+
     .search-bar {
         display: none;
         background-color: $white;
         padding: 100px 0;
         position: relative;
+        .inputSearch{
+            width: 60%;
+            margin:0 auto;
+            .form-control{
+                border-right:0;
+            }
+            .input-group-text{
+                background-color: $white;
+            }
+        }
         .search {
             width: 100%;
             position: relative;
@@ -268,9 +279,14 @@
                 margin : 20px 0;
                 .form-control{
                     height: 45px;
+                    border:1px solid $gray-33;
+                    border-right:0;
                 }
                 .input-group-text {
                     height: 45px;
+                    background-color: $white;
+                    border:1px solid $gray-33;
+                    border-left:0;
                 }
             }
         }
@@ -364,7 +380,7 @@
             z-index: -1;
         }
         .title-box{
-            padding :100px 0;
+            padding :138px 0;
             .title{
                 font-size: 48px;
                 color: $white;                
@@ -386,8 +402,9 @@
                 background-image: url('../../resources/images/ic-home.png');
                 background-size: contain;
                 background-position: center;
+                background-repeat: no-repeat;
             }
-            span{font-size:16px;font-weight: 400;
+            span{font-size:16px;font-weight: 400;transform: skew(-0.1deg);
                 &:first-child{
                     &::before{
                         content:"";
@@ -419,13 +436,14 @@
         }
     }
     .sub-section-banner{
-        margin:60px 0;
+        margin:0;
         text-align: center;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         .sub-section-text{
             padding : 100px 0;
+            text-shadow: 0.6px 0.8px 1px rgba(0, 0, 0, 0.3);
             p{  
                 &:nth-child(1){color:$white;font-size:30px;line-height: 48px;}
                 &:nth-child(2){font-size: 21px ;color:$white; font-weight: 400; line-height: 48px;}
