@@ -1,5 +1,6 @@
 $orange : #f47920;
 $b-orange:#ef4538;
+$red : #f54336;
 $black:#000000;
 $gray-cc:#cccccc;
 $gray-79:#797979;
@@ -302,7 +303,11 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
     line-height: 1.6;
     margin-top:35px;
 }
-
+// 붉은 색 텍스트
+.r-s-text{
+    font-size: 16px;
+    color: $red;
+}
 //오렌지색 텍스트
 .o-s-text {
     font-size: 16px;
@@ -447,6 +452,28 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
     height: 500px;
     background-color: #ddd;
     border-radius: 4px;
+}
+
+//ic-check
+.ic-check{
+    width: 20px;
+    height: 15px;
+    margin:0 auto;
+    background-image: url('../../resources/images/ic-check.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ic-list-back{
+    width: 20px;
+    height: 15px;
+    margin:0 auto;
+    background-image: url('../../resources/images/ic-list-back.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin:0 10px;
 }
 
 //도형
@@ -946,6 +973,7 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
         }
     }
 
+    
     ///box border comm
     .border-box {
         border: 1px solid $gray-b2;

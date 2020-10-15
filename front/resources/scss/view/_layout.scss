@@ -89,6 +89,13 @@
                 margin: 0;
             }
         }
+
+        //공지사항 팝업 뒤로가기
+        .btn-prev{
+            width: 160px;
+            height: 45px;
+            border:1px solid $gray-33;
+        }
     }
 
     .gnb {
@@ -421,18 +428,20 @@
                 }
             }
         }
-        .sub-title{
-            width: 100%;
-            border-bottom:1px solid $gray-dd;
-            padding:24px 0;
-            .sub-title-ic{
-                width: 40px;
-                height: 40px;
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
+        @at-root{
+            .sub-title{
+                width: 100%;
+                border-bottom:1px solid $gray-dd;
+                padding:24px 0;
+                .sub-title-ic{
+                    width: 40px;
+                    height: 40px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+                p{font-size:34px; font-weight: 700;margin-left: 20px;}
             }
-            p{font-size:34px; font-weight: 700;margin-left: 20px;}
         }
     }
     .sub-section-banner{
@@ -539,6 +548,20 @@
         }
     }
 }
+.modal-footer{
+    margin:0 auto;
+    
+    &.notice{
+        padding:0 0 50px 0;
+    }
+
+    .list-view-btn{
+        width: 160px;
+        height: 45px;
+        line-height: 45px;
+        border:1px solid $gray-33;
+    }
+}
 .lightbox .lb-image {
     display: block;
     width: 100% !important;
@@ -598,7 +621,11 @@
   } 
   
  
-  
+   
+
+
+
+
 
 
    

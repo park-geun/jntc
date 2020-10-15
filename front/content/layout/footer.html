@@ -4,11 +4,11 @@
             <div class="col">
                 <ul>
                     <li class="active"><a href="">사업장 안내</a></li>
-                    <li data-toggle="modal" data-target="#footer_privacy"><span>개인정보취급방침</span></li>
-                    <li data-toggle="modal" data-target="#footer_email"><span>이메일무단수집거부</span></li>
-                    <li data-toggle="modal" data-target="#footer_center"><span>부정비리 신고센터</span></li>
+                    <li><span><a href="#footer_privacy" data-toggle="modal">개인정보취급방침</a></span></li>
+                    <li><span><a href="#footer_email" data-toggle="modal">이메일무단수집거부</a></span></li>
+                    <li><span><a href="#footer_center" da   ta-toggle="modal">부정비리 신고센터</a></span></li>
                     <li><a href="">사이트 맵</a></li>
-                    <li data-toggle="modal" data-target="#footer_notice"><span>공지사항</span></li>
+                    <li><span><a href="#footer_notice_list" data-toggle="modal">공지사항</a></span></li>
                 </ul>
             </div>
         </div>
@@ -91,15 +91,24 @@
         </div>
     </div>
 </div>
-<!-- 공지사항 -->
-<div class="modal fade" id="footer_notice" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
+
+<!-- 공지사항lsit -->
+<div class="modal fade" id="footer_notice_list" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog notice" role="document">
         <div class="modal-content">
-            <div class="modal-body">
-                <p class="title" style="background-image: url(../../resources/images/ic-footer-p-03.png);">
-                    공지사항
-                </p>
+            <div class="modal-header footer-modal">
+                <div class="modal-popup-header">
+                    <div class="sub-title d-flex align-items-center">
+                        <div class="sub-title-ic" style="background-image:url('../../resources/images/ic-footer-p-03.png')">
+                        </div>
+                        <p>공지사항</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body notice">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tap-1" role="tab"
@@ -126,33 +135,142 @@
                             <tbody>
                                 <tr>
                                     <td class="text-center">1</td>
-                                    <td class="d-s-text">2020년 2분기 실적발표자료</td>
-                                    <td class="text-center"><a href="" download="@"></a></td>
+                                    <td class="d-s-text"><a href="javascript:void(0)" onclick="goNoticeView()">협력사 바코드 발행 프로그램 IP 변경 메뉴얼 첨부드립니다.</a></td>
+                                    <td class="text-center"><div class="ic-check"></div></td>
                                     <td class="text-center">2014.12.08</td>
                                 </tr>
                                 <tr>
                                     <td class="text-center">2</td>
-                                    <td class="d-s-text">제 25기 반기보고서</td>
+                                    <td class="d-s-text">JNTC 윤리 경영 교안</td>
                                     <td class="text-center"><a href="" download="@"></a></td>
                                     <td class="text-center">2014.12.08</td>
                                 </tr>
                                 <tr>
                                     <td class="text-center">3</td>
-                                    <td class="d-s-text">2020년 1분기 실적발표자료</td>
+                                    <td class="d-s-text">[거래처] JNTC 부정 비리 제보를 받습니다.</td>
                                     <td class="text-center"><a href="" download="@"></a></td>
                                     <td class="text-center">2015.08.13</td>
                                 </tr>
                                 <tr>
                                     <td class="text-center">4</td>
-                                    <td class="d-s-text">제 25기 분기보고서</td>
+                                    <td class="d-s-text"></td>
                                     <td class="text-center"><a href="" download="@"></a></td>
                                     <td class="text-center">2015.09.25</td>
                                 </tr>
                                 <tr>
                                     <td class="text-center">5</td>
-                                    <td class="d-s-text">제 24기 사업보고서</td>
+                                    <td class="d-s-text"></td>
                                     <td class="text-center"><a href="" download="@"></a></td>
                                     <td class="text-center">2015.09.25</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">6</td>
+                                    <td class="d-s-text"></td>
+                                    <td class="text-center"><a href="" download="@"></a></td>
+                                    <td class="text-center">2015.09.25</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">7</td>
+                                    <td class="d-s-text"></td>
+                                    <td class="text-center"><a href="" download="@"></a></td>
+                                    <td class="text-center">2015.09.25</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"></td>
+                                    <td class="d-s-text"></td>
+                                    <td class="text-center"><a href="" download="@"></a></td>
+                                    <td class="text-center"></td>
+                                </tr>
+                              
+                            </tbody>
+                        </table>
+                        <div class="pagination">
+                            <ul class="d-flex align-items-center">
+                                <a href="#">
+                                    <li><span class="left-pagination"></span></li>
+                                </a>
+            
+                                <li>
+                                    <a href="#">< </a> 
+                                </li> 
+                                <li>
+                                    <a class="active" href="#"> 1</a>
+                                </li>
+            
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+            
+                                
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+            
+                                
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+            
+                                
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+            
+                                
+                                <li>
+                                    <a href="#">6</a>
+                                </li>
+            
+                                <li>
+                                    <a href="#">> </a> 
+                                </li> 
+            
+                                <a href="#">
+                                    <li><span class="right-pagination"></span></li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tap-2" role="tabpanel" aria-labelledby="home-tab">
+                        <table class="table ir">
+                            <thead class="thead-light">
+                                <tr class="text-center">
+                                    <th scope="col">번호</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">자료 다운로드</th>
+                                    <th scope="col">날짜</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">1</td>
+                                    <td class="d-s-text"><a href="javascript:void(0)" class="btn-next">제이앤티씨, 제1사업장(커넥터 사업부) 버스 노선표</a></td>
+                                    <td class="text-center"><div class="ic-check"></div></td>
+                                    <td class="text-center">2020.08.24</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">2</td>
+                                    <td class="d-s-text">JNTC, JNTS, JNTG 전자세금계산서 수신 account@thejnt.com</td>
+                                    <td class="text-center"><a href="" download="@"></a></td>
+                                    <td class="text-center">2020.08.14</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">3</td>
+                                    <td class="d-s-text"></td>
+                                    <td class="text-center"><a href="" download="@"></a></td>
+                                    <td class="text-center">2020.05.23</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">4</td>
+                                    <td class="d-s-text"></td>
+                                    <td class="text-center"><a href="" download="@"></a></td>
+                                    <td class="text-center">2020.05.15</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">5</td>
+                                    <td class="d-s-text"></td>
+                                    <td class="text-center"><a href="" download="@"></a></td>
+                                    <td class="text-center">2020.03.30</td>
                                 </tr>
                                 <tr>
                                     <td></td>
@@ -169,44 +287,126 @@
                             
                             </tbody>
                         </table>
+                
                         <div class="pagination">
                             <ul class="d-flex align-items-center">
                                 <a href="#">
-                                    <li>
-                                        <</li> </a> <a class="active" href="#">
-                                    <li>1</li>
+                                    <li><span class="left-pagination"></span></li>
                                 </a>
+            
+                                <li>
+                                    <a href="#">< </a> 
+                                </li> 
+                                <li>
+                                    <a class="active" href="#"> 1</a>
+                                </li>
+            
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+            
+                                
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+            
+                                
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+            
+                                
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+            
+                                
+                                <li>
+                                    <a href="#">6</a>
+                                </li>
+            
+                                <li>
+                                    <a href="#">> </a> 
+                                </li> 
+            
                                 <a href="#">
-                                    <li>2</li>
-                                </a>
-                                <a href="#">
-                                    <li>3</li>
-                                </a>
-                                <a href="#">
-                                    <li>4</li>
-                                </a>
-                                <a href="#">
-                                    <li>5</li>
-                                </a>
-                                <a href="#">
-                                    <li>6</li>
-                                </a>
-                                <a href="#">
-                                    <li>></li>
+                                    <li><span class="right-pagination"></span></li>
                                 </a>
                             </ul>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="tap-2" role="tabpanel" aria-labelledby="home-tab">
-
-                    </div>
-
-
+                        </div>                    
+                    </div>            
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<!-- 공지사항 view -->
+<div class="modal fade" id="footer_notice_view" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog notice">
+        <div class="modal-content">
+            <div class="modal-header footer-modal">
+                <div class="modal-popup-header">
+                    <div class="sub-title d-flex align-items-center">
+                        <div class="sub-title-ic" style="background-image:url('../../resources/images/ic-footer-p-03.png')">
+                        </div>
+                        <p>공지사항</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body notice">
+                
+                <ul class="nav nav-tabs" id="myTab">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab">거래처 공지사항</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab">일반 공지사항</a>
+                    </li>
+
+                </ul>
+                
+                <section>
+
+                    <div class="announcement-table">
+                        
+                        <div class="announcement">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="">
+                                    <p class="c-m-text black bold">협력사 바코드 발행 프로그램 IP 변경 안내</p>
+                                    <p class="c-s-text m-0">2020.08.20</p>
+                                    <div class="d-flex align-items-center m-t-35">
+                                        <div class="ic-check mr-2"></div>
+                                        <p><span class="r-s-text bold">자료 다운로드 :</span> <a href="javascript:void(0)">20200525 협력사 바코드 프로그램IP 변경 메뉴얼.pptx(466.6K)</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="edit-announcement">
+                            <p>협력사 바코드 발행 프로그램 IP 변경 메뉴얼 첨부드립니다.</p>
+                            <p class="bold">문의 : 031-354-2590 (내선) 212, 221, 230</p>
+                        </div>
+
+                    </div>
+
+                </section>
+          
+            </div>
+            <div class="modal-footer notice">
+                <button type="button" class="list-view-btn btn-default btn-prev">목록보기 <span class="d-inline-block ic-list-back"></span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 
 <script>
     $('nav>ul>li').hover(function () {
@@ -269,4 +469,12 @@ function openMobileMenu() {
 function closeMoblieBtn() {
     $('.mobile_menu').css({'right':'-100%'});
 }
+
+///공지사항 다음탭 이동 스크립트
+function goNoticeView(){
+    $('#footer_notice_list').modal('hide');
+    $('#footer_notice_view').modal('show');
+
+}
+
 </script>

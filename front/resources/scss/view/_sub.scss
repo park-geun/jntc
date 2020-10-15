@@ -762,8 +762,28 @@ section {
     margin:0;
     padding:0;
     .sub-title{
-    
         p{color:$white;}
+    }
+    &.footer-modal{
+        padding: 0 50px;
+        .modal-popup-header{
+            width:100%;
+            padding : 60px 0 24px;
+            border-bottom:1px solid $gray-dd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .sub-title{
+            width:auto;
+            border-bottom:0;
+            padding:0;
+            p{color:$black;}
+        }
+        .close{
+            margin:0;
+            padding:0;
+        }
     }
 }
 
