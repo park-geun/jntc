@@ -90,9 +90,12 @@
 .tab-content > div.active{ 
     display:block;
 }
+.tab-content > .history-wrap{ 
+    display:block;
+    margin-top: 50px;
+}
 .tab-content > div .left-content{ 
-    width:403px;
-    margin-right:120px;
+    margin-right:100px;
     float: left;
  }
 .tab-content > div .left-content .title{ 
@@ -108,7 +111,8 @@
     color:#f47920;
 }
 .tab-content > div .left-content .img{
-    height:258px;
+    width: 320px;
+    height: 210px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -144,7 +148,7 @@
 .tab-content > div .right-content .history dl dd{
     float: left;
     margin-left: 115px;
-    width:calc(100% - 116px);
+    width:100%;
     border-left:1px solid #b2b2b2;
     padding-bottom: 65px;
     margin-bottom:0;
@@ -260,12 +264,14 @@
 .toggle_list .list .right ul.list_info li p.span_wrap{display: inline-block;margin-left: 109px;margin-top: -27px;}
 .toggle_list .list .right ul.list_info li span{display: inline-block;margin-left: 10px;height: 100%;padding: 0 25px;background: #fff;border-radius: 20px;border: 1px solid #bfbdbe;box-sizing: border-box;margin-bottom: 10px;}
 .toggle_list .list.on{  }
+.toggle_list .list .work-box{float: inherit; display:none;}
+.toggle_list .list.on .work-box{float: inherit; display:block;}
 .toggle_list .list.on .left{ height:auto; width:368px; overflow: hidden; }
 .toggle_list .list.on .right{width: calc(100% - 404px);height:auto;}
 .toggle_list .list.on .right p.title button{background: url(../../resources/images/g_list_btn_on.png) no-repeat center;}
-.toggle_list.map .list{height: 85px;overflow:hidden;}
+.toggle_list.map .list{overflow:hidden;}
 .toggle_list.map .list p{font-size: 16px;color:#000;}
-.toggle_list.map .list p.title{font-size:30px;margin-bottom: 35px;position: relative;cursor: pointer;margin-left: 0;}
+.toggle_list.map .list p.title{font-size:30px;margin-bottom: 0;position: relative;cursor: pointer;margin-left: 0;}
 /* .toggle_list.map .list p.title:hover{background: #f5f5f5;} */
 .toggle_list.map .list p.title span{font-weight: bold;line-height:62px;display: inline-block;}
 .toggle_list.map .list p.title span em{color:#f47921;font-style: normal;}
@@ -286,7 +292,7 @@
 .icon-list-box .icon-list li:after{ content:''; display:block; clear:both; }
 .icon-list-box .icon-list li div{ float:left; }
 .icon-list-box .icon-list li .list-text{width: 100%;}
-.icon-list-box .icon-list li .list-text .list-title{font-size: 24px;font-weight: bold;}
+.icon-list-box .icon-list li .list-text .list-title{font-size: 20px;font-weight: bold;}
 .icon-list-box .icon-list li .list-text .list-sub-title{font-size: 16px;line-height: 26px;}
 .icon-list-box .sign{float: right;padding-right:152px;background: url(../../resources/images/sign.png) no-repeat right bottom;}
 .icon-list-box .sign p{ font-size:21px; color:#000;line-height:36px; }
@@ -342,7 +348,7 @@
 #footer_email .modal-dialog{ width:900px; left:calc(50% - 450px) }
 #footer_center .modal-dialog{ width:900px; left:calc(50% - 450px) }
 .modal .modal-body{padding:60px 50px;}
-.modal .modal-body.notice{padding:0 50px 120px;}
+.modal .modal-body.notice{padding:0 50px 0;}
 .modal .modal-body:after{content:'';display:block;clear:both;}
 #footer_email .modal-body{padding: 60px 80px;}
 #footer_center .modal-body{padding: 60px 80px;}

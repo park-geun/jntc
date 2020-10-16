@@ -552,7 +552,7 @@
     margin:0 auto;
     
     &.notice{
-        padding:0 0 50px 0;
+        padding:0;
     }
 
     .list-view-btn{
@@ -561,6 +561,9 @@
         line-height: 45px;
         border:1px solid $gray-33;
     }
+}
+.modal-b-p{
+    padding-bottom:120px;
 }
 .lightbox .lb-image {
     display: block;

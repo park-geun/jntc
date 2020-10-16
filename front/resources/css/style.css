@@ -12540,7 +12540,7 @@ p, a, h1, h2, h3, h4, h5, li, th, tr, td {
 }
 
 .product-question {
-  width: 250px;
+  width: 350px;
   border: 1px solid #aaaaaa;
   text-align: center;
   padding: 10px 0;
@@ -12587,9 +12587,10 @@ p, a, h1, h2, h3, h4, h5, li, th, tr, td {
 }
 
 .c-text-border {
-  font-size: 28px;
+  font-size: 30px;
   position: relative;
   padding-bottom: 10px;
+  font-weight: 700;
 }
 
 .c-text-border::after {
@@ -13018,6 +13019,10 @@ p, a, h1, h2, h3, h4, h5, li, th, tr, td {
   vertical-align: middle;
 }
 
+.table.socket {
+  margin: 0;
+}
+
 .table.socket th {
   padding: 10px 15px;
   border-top: none;
@@ -13050,7 +13055,7 @@ p, a, h1, h2, h3, h4, h5, li, th, tr, td {
 }
 
 .table.property td {
-  padding: 20px 30px;
+  padding: 15px 30px;
   border-top: none;
   vertical-align: middle;
   border-bottom: 1px solid #dddddd;
@@ -14027,7 +14032,7 @@ p, a, h1, h2, h3, h4, h5, li, th, tr, td {
 }
 
 .modal-footer.notice {
-  padding: 0 0 50px 0;
+  padding: 0;
 }
 
 .modal-footer .list-view-btn {
@@ -14035,6 +14040,10 @@ p, a, h1, h2, h3, h4, h5, li, th, tr, td {
   height: 45px;
   line-height: 45px;
   border: 1px solid #333333;
+}
+
+.modal-b-p {
+  padding-bottom: 120px;
 }
 
 .lightbox .lb-image {
@@ -14885,14 +14894,14 @@ section {
 }
 
 .glass-text .glass-brand {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 32px;
   margin-top: 20px;
   font-weight: 400;
 }
 
 .glass-text .glass-name {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 32px;
   font-weight: 400;
 }
@@ -14902,9 +14911,10 @@ section {
 }
 
 .glass-text .s-text-border {
-  font-size: 17px;
+  font-size: 20px;
   position: relative;
   padding: 0;
+  font-weight: bold;
   color: #f47920;
 }
 
@@ -14917,7 +14927,7 @@ section {
   content: "";
   position: absolute;
   width: 40px;
-  height: 2px;
+  height: 3px;
   background-color: #f47920;
   bottom: -15px;
   left: 50%;
@@ -14926,7 +14936,7 @@ section {
 }
 
 .glass-text .s-text-border.list::after {
-  top: 60px;
+  top: 65px;
 }
 
 .connector-usb {
@@ -14984,15 +14994,17 @@ section {
 }
 
 .color-system .color-system-text p {
-  font-size: 24px;
+  font-size: 22px;
+  color: #f47920;
+  font-weight: 700;
 }
 
 .color-system .color-system-text ul {
-  margin-top: 35px;
+  margin-top: 50px;
 }
 
 .color-system .color-system-text ul li {
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -15065,19 +15077,20 @@ section {
 }
 
 .camera-window .camera-text .camera-brand {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.26;
   margin-top: 30px;
 }
 
 .camera-window .camera-text .camera-name {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.26;
 }
 
 .camera-window .camera-text .camera-text-title p:nth-child(2) {
-  font-size: 17px;
+  font-size: 16px;
   margin-top: 5px;
+  font-weight: 700;
 }
 
 .camera-window .camera-text .s-text-border {
@@ -15090,7 +15103,7 @@ section {
   content: "";
   position: absolute;
   width: 40px;
-  height: 2px;
+  height: 3px;
   background-color: #f47920;
   bottom: -5px;
   left: 50%;
@@ -15342,12 +15355,13 @@ section {
 }
 
 .gallery-thumbs {
-  width: 80%;
+  width: 100%;
   height: 20%;
+  padding: 0 50px !important;
 }
 
 .gallery-thumbs .swiper-slide {
-  width: 200px !important;
+  width: 20% !important;
 }
 
 .gallery-thumbs .swiper-slide .social-b {
