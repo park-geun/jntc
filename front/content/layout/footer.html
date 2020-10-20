@@ -1,3 +1,24 @@
+<div class="container">
+    <div class="famliy-site">
+        <div class="famliy-header">
+            <p class="c-s-text m-0">패밀리 사이트</p>
+            <a href="javascript:void(0)" onclick="closeFamilySite()"><div class="ic-close"></div></a>
+        </div>
+        <div class="famliy-content">
+            <ul>
+                <li class="famliy-title c-m-text bold">국내</li>
+                <li><a href="javascript:void(0)">제이앤티이 (JNTE)</a></li>
+                <li><a href="javascript:void(0)">제이앤티지 (JNTG)</a></li>
+                <li><a href="javascript:void(0)">코메트 (COMET)</a></li>
+            </ul>
+            <ul>
+                <li class="famliy-title c-m-text bold">해외</li>
+                <li><a href="javascript:void(0)">JNTC VINA (베트남)</a></li>
+                <li><a href="javascript:void(0)">청도JNTC유한공사 (중국)</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 <footer>
     <div class="container">
         <div class="row">
@@ -7,7 +28,7 @@
                     <li><span><a href="#footer_privacy" data-toggle="modal">개인정보취급방침</a></span></li>
                     <li><span><a href="#footer_email" data-toggle="modal">이메일무단수집거부</a></span></li>
                     <li><span><a href="#footer_center" da   ta-toggle="modal">부정비리 신고센터</a></span></li>
-                    <li><a href="">사이트 맵</a></li>
+                    <li><a href="javascript:void(0)">사이트 맵</a></li>
                     <li><span><a href="#footer_notice_list" data-toggle="modal">공지사항</a></span></li>
                 </ul>
             </div>
@@ -19,7 +40,7 @@
                 <p>© 2020 제이앤티씨 ALL RIGHTS RESERVED</p>
             </div>
             <div class="col-md-6 col-sm-12 col-12 text-right">
-                <a href="" class="link-btn">패밀리사이트<img src="../../resources/images/b-ic-plus.png" alt="패밀리사이트"></a>
+                <a href="javascript:void(0)" class="link-btn" onclick="openFamilySite()">패밀리사이트<img src="../../resources/images/b-ic-plus.png" alt="패밀리사이트"></a>
             </div>
         </div>
     </div>
@@ -418,10 +439,11 @@
     $('nav>ul>li').hover(function () {
         var idx = $(this).index() + 1;
         console.log(idx);
-        $('#gnb-' + idx).show();
+        $('#gnb-' + idx).show();//nav hover gnb open
         $('#gnb-' + idx).siblings().hide();
         $('.gnb').show();
-        console.log('asd');
+        $('#nav-'+idx).addClass('active');//nav text hover
+        $('#nav-'+idx).siblings().removeClass('active');
     }, function () {})
     
      //gnb 삭제
@@ -481,6 +503,15 @@ function goNoticeView(){
     $('#footer_notice_list').modal('hide');
     $('#footer_notice_view').modal('show');
 
+}
+
+//family site open/close
+function openFamilySite(){
+    $('.famliy-site').show();
+    console.log('open')
+}
+function closeFamilySite(){
+    $('.famliy-site').hide();
 }
 
 </script>

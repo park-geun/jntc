@@ -13419,6 +13419,63 @@ p, a, h1, h2, h3, h4, h5, li, th, tr, td {
   padding: 0 0 0 40px;
 }
 
+#wrap .famliy-site {
+  display: none;
+}
+
+#wrap .famliy-site .famliy-header {
+  padding: 15px 25px;
+  background-color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#wrap .famliy-site .famliy-header .ic-close {
+  width: 15px;
+  height: 15px;
+  background-image: url("../../resources/images/icon_cancel_w.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#wrap .famliy-site .famliy-header p {
+  color: #ffffff;
+}
+
+#wrap .famliy-site .famliy-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+}
+
+#wrap .famliy-site .famliy-content ul {
+  width: 25%;
+  padding: 15px 25px;
+  border-right: 1px solid #dddddd;
+}
+
+#wrap .famliy-site .famliy-content ul li {
+  line-height: 1.7;
+}
+
+#wrap .famliy-site .famliy-content ul li.famliy-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+#wrap .famliy-site .famliy-content ul li a:hover {
+  color: #f47920;
+}
+
 #wrap footer {
   background-color: #333333;
 }
@@ -13438,7 +13495,7 @@ p, a, h1, h2, h3, h4, h5, li, th, tr, td {
 
 #wrap footer ul li a {
   color: #ffffff;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 #wrap footer ul li::after {
@@ -13467,7 +13524,7 @@ p, a, h1, h2, h3, h4, h5, li, th, tr, td {
 
 #wrap footer .footer-info p {
   line-height: 1.76;
-  font-size: 17px;
+  font-size: 15px;
   color: #ffffff;
 }
 

@@ -43,6 +43,44 @@
         }
     }
   
+    .famliy-site{
+        display:none;
+        .famliy-header{
+            padding : 15px 25px;
+            background-color:$gray-33;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            .ic-close{
+                width:15px;
+                height: 15px;
+                background-image: url('../../resources/images/icon_cancel_w.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            p{color:$white;}
+
+        }
+        .famliy-content{
+            display:flex;
+            border-left:1px solid $gray-dd;
+            border-right:1px solid $gray-dd;
+            ul{
+                width: 25%;
+                padding : 15px 25px;
+                border-right:1px solid $gray-dd;
+                li{
+                    line-height: 1.7;
+                    &.famliy-title{
+                        margin-top: 0;
+                        margin-bottom: 15px;   
+                    }
+                    a:hover{color: $orange;}
+                }
+            }
+            
+        }
+    }
     footer {
         background-color: $gray-33;
         ul {
@@ -54,7 +92,7 @@
                 cursor: pointer;
                 a {
                     color: $white;
-                    font-size:17px;
+                    font-size:15px;
                 }
                 &::after {
                     content: "|";
@@ -81,7 +119,7 @@
             padding: 50px 0;
             p {
                 line-height: 1.76;
-                font-size:17px;
+                font-size:15px;
                 color:$white;
                 span{color:$white;}
             }

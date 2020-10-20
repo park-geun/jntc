@@ -111,7 +111,3 @@ function toggleBtn(){
     $('.toggle-wrap').toggleClass('active');
 }
  
-
-
-
-
