@@ -18,11 +18,7 @@
     <!-- bootstrap -->
     <script src="../../resources/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Swiper -->
-
     <script src="../../resources/plugin/swiper/js/swiper.min.js"></script>
-    <!-- ui 관련 -->
-    <script src="../../resources/js/ui.js"></script>
-
 </head>
 
 <body>
@@ -148,7 +144,7 @@
 
             </div>
             <div class="container-fluid thum">
-                <div class="container">
+                <div class="container position-relative">
                     <div class="swiper-container gallery-thumbs">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -182,6 +178,9 @@
     
                         </div>
                     </div>
+                    <!-- Add Arrows -->
+                  <div class="swiper-button-next swiper-button-white" id="swiper-button-next"></div>
+                  <div class="swiper-button-prev swiper-button-white" id="swiper-button-prev"></div>
                 </div>
             </div>
 
@@ -199,7 +198,11 @@
             slidesPerView: 5,
             freeMode: true,
             watchSlidesVisibility: true,
-            watchSlidesProgress: true
+            watchSlidesProgress: true,
+            navigation: {
+                nextEl: '#swiper-button-next',
+                prevEl: '#swiper-button-prev',
+            },
         });
         var galleryTop = new Swiper('.gallery-top', {
             spaceBetween: 10,
@@ -213,7 +216,6 @@
             }
         });
     </script>
-    <script src="../../resources/js/comm.js"></script>
     <script src="../../resources/js/common.js"></script>
 
 

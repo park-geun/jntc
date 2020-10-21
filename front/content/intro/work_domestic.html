@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-Compatible" content="IE=edge">
+    <title>JNTC</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../resources/plugin/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <link rel="stylesheet" href="../../resources/css/comm.css">
+    <!-- //fontawesome cnd -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="../../resources/plugin/jquery/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="../../resources/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper -->
+    <script src="../../resources/plugin/swiper/js/swiper.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="include-header">
+            <!-- include-header -->
+        </div>
+        <div class="sub-content">
+            <div class="sub-bg" style="background-image:url('../../resources/images/sub-bg.png')"></div>
+
+            <div class="container">
+                <div class="title-box">
+                    <h1 class="title">사업장</h1>
+
+                </div>
+
+                <div class="content-body">
+                    <div class="section-location">
+                        <p class="location-ic-home"></p>
+                        <span>기업정보</span>
+                        <span>사업장</span>
+                        <span>국내 사업장</span>
+                    </div>
+                    <div class="sub-title d-flex align-items-center">
+                        <div class="sub-title-ic" style="background-image:url('../../resources/images/ic-work.png')">
+                            <!-- <div class="sub-title-ic" style="background-image:url('../../resources/images/ic-work-overseas.png')"> -->
+                        </div>
+                        <p>국내 사업장</p>
+                    </div>
+
+
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="work_domestic.html">국내 사업장</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="work_overseas.html">해외 사업장</a>
+                        </li>
+                    </ul>
+
+
+                    <div class="container">
+                        <ul class="toggle_list map">
+                            <li class="list on">
+                                <p class="title">
+                                    <span><em>커넥터 사업부</em> (제 1사업장)</span>
+                                    <span class="country"><img src="../../resources/images/korea.png" alt="한국 국기"></span>
+                                    <button type="button" class="toggle_btn"></button>
+                                </p>
+                                <div class="work-box">
+                                    <p class="text ">
+                                        (18516) 경기도 화성시 정남면 구내길 81-9 <br>
+                                        전화 031-354-2590&nbsp;&nbsp;팩스 031-354-2562
+                                    </p>
+                                    <div class="maps">
+                                        <div id="google-map"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list">
+                                <p class="title">
+                                    <span><em>강화유리 사업부</em> (제 2사업장)</span>
+                                    <span class="country"><img src="../../resources/images/korea.png" alt="한국 국기"></span>
+                                    <button type="button" class="toggle_btn"></button>
+                                </p>
+                                <div class="work-box">
+                                    <p class="text ">
+                                        (18523) 경기도 화성시 정남면 내향안길 240-5 <br>
+                                        전화 070-4050-3100&nbsp;&nbsp;팩스 031-8055-8445 <br>
+                                        IR 담당자 070-4050-3135&nbsp;&nbsp;이메일 jntcir@thejnt.com
+                                    </p>
+                                    <div class="maps">
+                                        <div id="google-map-2"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                     
+                </div>
+            </div>
+
+            <div class="include-footer">
+                <!-- include-footer -->
+            </div>
+    </div> <!-- wrap -->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwlNqAEil52XRPHmSVb4Luk18qQG9GqcM&sensor=false&language=ko">
+        </script>
+
+        <script>
+            function initialize() {
+                var myLatlng = new google.maps.LatLng(37.2915450, 127.0430790); // 좌표값
+                var mapOptions = {
+                    zoom: 14, // 지도 확대레벨 조정
+                    center: myLatlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                });
+            }
+
+            window.onload = initialize;
+        </script>
+        <script src="../../resources/js/common.js"></script>
+</body>
+
+</html>

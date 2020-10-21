@@ -85,16 +85,19 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
     margin-top: 45px;
 }
 
-.m-t-60 {
-    margin-top: 60px;
-}
+.m-t-60 {margin-top: 60px;}
 
-.m-t-110 {
-    margin-top: 110px;
-}
+.m-t-110 {margin-top: 110px;}
+.m-b-10{margin:0 0 10px 0 !important;}
+.m-b-20{margin:0 0 20px 0 !important;}
+.m-b-30{margin:0 0 30px 0 !important;}
+
 
 .p-20 {
     padding: 20px;
+}
+.p-40 {
+    padding: 40px 0;
 }
 .margin-minus{
     margin-left:-15px !important;
@@ -156,7 +159,13 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
         color: $white;
     }
 }
-
+.send-btn{
+    width: 180px;
+    height: 45px;
+    color: $white;
+    background-color: $orange;
+}
+////
 .border-text {
     width: 90px;
     padding: 0 5px;
@@ -248,7 +257,11 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
         left: 0;
     }
 }
-
+.sub-text{
+    font-size: 24px;
+    font-weight: bold;
+    span{color: $orange;}
+}
 //중간텍스트
 .c-m-text {
     font-size: 20px;
@@ -613,6 +626,29 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             }
         }
     }
+    .search-tabs{
+        width: 16.6%;
+        text-align: center;
+        padding:0;
+        margin-left: -1px;
+        .nav-link{
+            height: 100%;
+            padding: 21px 0;
+            border: none;
+            font-size: 20px;
+            color: $black;
+            border: 1px solid $gray-b2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.active {
+                background-color: $orange;
+                border: 1px solid $orange;
+                color: $white;
+            }
+        }
+    }
+
 }
 
 .table {
@@ -627,28 +663,21 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             font-size: 16px;
             color: $gray-33;
         }
-
         thead {
             border-top: 2px solid $gray-dd;
-
             th {
                 padding: 10px 0;
                 background-color: $gray-f5;
             }
         }
-
         tbody {
-
             td,
             th {
                 padding: 20px;
                 vertical-align: middle;
             }
-
-
         }
     }
-
     &.socket {
         margin:0;
         th {
@@ -660,7 +689,6 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             font-size: 16px;
             font-weight: 400;
         }
-
         td {
             padding: 10px 30px;
             border-top: none;
@@ -680,7 +708,6 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             font-size: 16px;
             font-weight: 700;
         }
-
         td {
             padding: 15px 30px;
             border-top: none;
@@ -689,7 +716,6 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             font-weight: 400;
         }
     }
-
     &.core {
         line-height: 32px;
         th {
@@ -701,22 +727,16 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             font-size: 18px;
             font-weight: bold;
         }
-
         td {
             padding: 20px 30px;
             border-top: none;
             vertical-align: middle;
             border-bottom: 1px solid $gray-dd;
         }
-
         ul {
-
             padding: 27px 0 24px 0;
-            // border-bottom:1px solid $gray-dd;
-
         }
     }
-
     &.ir {
         th {
             padding: 10px 15px;
@@ -726,7 +746,6 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             vertical-align: middle;
             font-size: 19px;
         }
-
         td {
             height: 60px;
             padding: 0 30px;
@@ -736,8 +755,30 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             font-weight: 400;
         }
     }
+   
 }
-
+table{
+    &.send{
+        width: 100%;
+        tr{
+            padding : 10px 0;
+            border-bottom:1px solid $gray-dd;
+        }
+        th{font-weight: bold;}
+        td{
+            height: 60px;
+            .form-control{
+                height: 45px;
+            }
+            input{
+                &.w-100{width: 100%;}
+                &.w-70{width:70%;}
+                &.h-160{height: 160px;}
+            }
+        }
+        
+    }
+}
 .last-border {
     border-bottom: 2px solid $gray-dd;
 }
@@ -1015,7 +1056,14 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
         }
     }
 }
-
+@include media-breakpoint-down(sm){
+    .table-wrap{
+        overflow: scroll;       
+        .table{
+            width: 1000px;
+        }
+    }
+}
 
 				
 			

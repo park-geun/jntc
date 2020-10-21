@@ -431,87 +431,60 @@
 </div>
 
 
+<!-- 문의 메일보내기 -->
+<div class="modal fade" id="send-mail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog send">
+        <div class="modal-content">
+            <div class="modal-header footer-modal">
+                <div class="modal-popup-header">
+                    <div class="sub-title d-flex align-items-center">
+                        <div class="sub-title-ic" style="background-image:url('../../resources/images/ic-send.png')">
+                        </div>
+                        <p>문의 메일보내기</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeBtn();">                       
+                        <div class="close-btn">
+                            <i class="fas fa-times" style="color:#f47920"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body notice m-t-20"> 
+                <table class="send">
+                    <tbody>
+                        <tr>
+                            <th>받는사람</th>
+                            <td><input type="text" class="form-control w-70" placeholder="강화유리 (서형석 팀장)"></td>
+                        </tr>
+                        <tr>
+                            <th>제목</th>
+                            <td><input type="text" class="form-control w-70" placeholder="제목을 작성하세요"></td>
+                        </tr>
+                        <tr>
+                            <th>작성자</th>
+                            <td><input type="text" class="form-control w-100" placeholder="작성자 이름을 입력하세요"></td>
+                        </tr>
+                        <tr>
+                            <th>이메일</th>
+                            <td><input type="text" class="form-control w-100" placeholder="답변 받으실 메일 주소를 입력하세요"></td>
+                        </tr>
+                        <tr>
+                            <th>문의내용</th>
+                            <td><input type="text" class="form-control w-100 h-160" placeholder="문의하실 내용을 작성하세요"></td>
+                        </tr>
+                        <tr>
+                            <th>파일첨부</th>
+                            <td><input type="text" class="form-control w-100" placeholder="보내실 파일을 첨부하세요 (5M 이하 첨부 가능)"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer notice">
+                <div class="p-40">
+                    <button type="button" class="send-btn">메일보내기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-
-
-<script>
-    $('nav>ul>li').hover(function () {
-        var idx = $(this).index() + 1;
-        console.log(idx);
-        $('#gnb-' + idx).show();//nav hover gnb open
-        $('#gnb-' + idx).siblings().hide();
-        $('.gnb').show();
-        $('#nav-'+idx).addClass('active');//nav text hover
-        $('#nav-'+idx).siblings().removeClass('active');
-    }, function () {})
-    
-     //gnb 삭제
-     $('.gnb').on('mouseleave', function(){
-        $(this).hide();
-    })
-
-    $(function(){
-    $('.tab-title li').click(function(){
-        var i = $(this).index();
-
-        $('.tab-title li').removeClass('active');
-        $(this).addClass('active');
-        $('.tab-content > div').removeClass('active').eq(i).addClass('active');
-    });
-    //전체메뉴 2뎁스 펼치기
-	$('.mobile_menu .bottom .left > li').click(function(){
-		var index = $(this).index();
-		console.log('asd');
-		$('.mobile_menu .bottom .left > li').removeClass('on');
-		$(this).addClass('on');
-		$('.mobile_menu .bottom .right > li').removeClass('on').eq(index).addClass('on');
-	});
-	//전체메뉴 3뎁스 펼치기
-	$('.mobile_menu .bottom .right > li > span').click(function(){
-		var depth_height = $(this).next().find('ul').height();
-
-		if($(this).hasClass('on') === true){
-			$(this).removeClass('on');
-			$(this).next().css({'height':'0'});
-		}else{
-			$(this).addClass('on');
-			$(this).next().css({'height':depth_height});
-		}
-    });
-    //toggle_list
-	$('.toggle_list .list .title').click(function(){
-
-		if($(this).parents('.list').hasClass('on') === true){
-			$(this).parents('.list').removeClass('on');
-		}else{
-			$(this).parents('.list').addClass('on');
-		}
-	});
-});
-
-function openMobileMenu() {
-    $('.mobile_menu').css({'right':'0'});
-}
-
-function closeMoblieBtn() {
-    $('.mobile_menu').css({'right':'-100%'});
-}
-
-///공지사항 다음탭 이동 스크립트
-function goNoticeView(){
-    $('#footer_notice_list').modal('hide');
-    $('#footer_notice_view').modal('show');
-
-}
-
-//family site open/close
-function openFamilySite(){
-    $('.famliy-site').show();
-    console.log('open')
-}
-function closeFamilySite(){
-    $('.famliy-site').hide();
-}
-
-</script>

@@ -787,7 +787,7 @@ section {
 
 
 
-   ////사회공헌
+ ////사회공헌
 .operation-social {
     position: relative;
     height: 100%;
@@ -836,6 +836,22 @@ section {
 .swiper-button-next.swiper-button-white, .swiper-button-prev.swiper-button-white{
     --swiper-navigation-color: #999!important;
 }
+#swiper-button-next{
+    &.swiper-button-next{
+        right:-5%;
+    }
+    &::after{font-size:20px;color:$black;}
+}
+#swiper-button-prev{
+    &.swiper-button-prev{
+        left:-5%;
+    }
+    &::after{font-size:20px;color:$black;}
+}
+
+#swiper-button-prev{
+
+}
 @include media-breakpoint-down(sm){
     .thum{
         display: none;
@@ -852,8 +868,18 @@ section {
 }
 
 
-
-
+//검색결과
+.search-result-list{
+    border-bottom:1px solid $gray-33;
+    li{
+        border-bottom:1px solid $gray-dd;
+        padding : 25px 0;
+    }
+}
+.search-result-text{
+    text-align: center;
+    padding:70px 0 25px 0;
+}
 
 
 

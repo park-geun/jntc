@@ -12,6 +12,7 @@
 .text-wrap     { white-space: normal !important; }
 .text-nowrap   { white-space: nowrap !important; }
 .text-truncate { @include text-truncate; }
+.text-truncate-multi{@include text-truncate-multi(16px, 1.4, 2);}
 
 // Responsive alignment
 
