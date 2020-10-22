@@ -521,27 +521,52 @@
                }
            }
        }
-        .swiper-pagination.socket{
-            width: 100%;
-            bottom: 5%;
-            left: 50%;
-            transform: translate(-50%, -5%);
-            padding:0 5rem;
-            text-align: center;
-            .swiper-pagination-bullet{
-                width: 10px;
-                height: 10px;
-                opacity: 1;
-                background-color: $white;
-                border:1px solid $gray-dd;
-                &.swiper-pagination-bullet-active{
-                    background-color: $orange;
-                    width: 10px;
-                    height: 10px;
-                    border-radius: 50px;
-                }
-            }
-        }
+       @at-root{
+            .swiper-pagination{
+               &.socket{
+                   width: 100%;
+                   bottom: 5%;
+                   left: 50%;
+                   transform: translate(-50%, -5%);
+                   padding:0 5rem;
+                   text-align: center;
+                   .swiper-pagination-bullet{
+                       width: 10px;
+                       height: 10px;
+                       opacity: 1;
+                       background-color: $white;
+                       border:1px solid $gray-dd;
+                       &.swiper-pagination-bullet-active{
+                           background-color: $orange;
+                           width: 10px;
+                           height: 10px;
+                           border-radius: 50px;
+                       }
+                   }
+               }
+               &.bending{
+                   width: 100%;
+                   bottom: 5%;
+                   left: 50%;
+                   transform: translate(-50%, -5%);
+                   padding:0 5rem;
+                   text-align: center;
+                   .swiper-pagination-bullet{
+                       width: 10px;
+                       height: 10px;
+                       opacity: 1;
+                       background-color: $white;
+                       border:1px solid $gray-dd;
+                       &.swiper-pagination-bullet-active{
+                           background-color: $orange;
+                           width: 10px;
+                           height: 10px;
+                           border-radius: 50px;
+                       }
+                   } 
+               }
+           }
+       }
    }
    
     @include media-breakpoint-down(md){

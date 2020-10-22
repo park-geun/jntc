@@ -20,45 +20,47 @@
     }
 
     .swiper-container{
-        .swiper-pagination{
-            width: 1210px;
-            bottom: 90px;
-            left: 50%;
-            transform: translate(-50%, 0);
-            text-align: left;
-            .swiper-pagination-bullet{
-                width: 15px;
-                height: 15px;
-                opacity: 1;
-                background-color: $white;
-                margin:0 10px;
-                &.swiper-pagination-bullet-active{
-                    background-color: $orange;
-                    width: 60px;
+        &.main{
+            .swiper-pagination{
+                width: 1210px;
+                bottom: 90px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                text-align: left;
+                .swiper-pagination-bullet{
+                    width: 15px;
                     height: 15px;
-                    border-radius: 15px;
+                    opacity: 1;
+                    background-color: $white;
+                    margin:0 10px;
+                    &.swiper-pagination-bullet-active{
+                        background-color: $orange;
+                        width: 60px;
+                        height: 15px;
+                        border-radius: 15px;
+                    }
+                    &:nth-child(1){margin-left:0px;}
                 }
-                &:nth-child(1){margin-left:0px;}
             }
-        }
-        .player{
-            width: 1210px;
-            position: absolute;
-            bottom: 95px;
-            z-index: 10;
-            left: 50%;
-            transform: translate(-50%, 0);
-            padding : 0 12em;
-            text-align: left;
-            .play-btn{  
-                cursor: pointer;
-                width: 20px;
-                height: 20px;
-                background-image: url('../../resources/images/ic-pause.png');
-                background-size: contain;
-                background-repeat: no-repeat;
-                &.active{
-                    background-image: url('../../resources/images/ic-play.png');
+            .player{
+                width: 1210px;
+                position: absolute;
+                bottom: 95px;
+                z-index: 10;
+                left: 50%;
+                transform: translate(-50%, 0);
+                padding : 0 12em;
+                text-align: left;
+                .play-btn{  
+                    cursor: pointer;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('../../resources/images/ic-pause.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    &.active{
+                        background-image: url('../../resources/images/ic-play.png');
+                    }
                 }
             }
         }
@@ -96,19 +98,21 @@
     }
     @include media-breakpoint-down(xl){
         .swiper-container{
-            .swiper-pagination{
-                width: 100%;
-                padding: 0 4.5em;
-            }
-            .player{
-                width: 100%;
-                padding: 0 16em;
-                .play-btn{
-                    &::after{
-                        font-size:20px;
-                    }
+            &.main{
+                .swiper-pagination{
+                    width: 100%;
+                    padding: 0 4.5em;
                 }
-                
+                .player{
+                    width: 100%;
+                    padding: 0 16em;
+                    .play-btn{
+                        &::after{
+                            font-size:20px;
+                        }
+                    }
+                    
+                }
             }
         }
         .banner {
@@ -129,19 +133,21 @@
     }
     @include media-breakpoint-down(md){
         .swiper-container{
-            .swiper-pagination{
-                width: 100%;
-                padding: 0 4em;
-            }
-            .player{
-                width: 100%;
-                padding: 0 16em;
-                .play-btn{
-                    &::after{
-                        font-size:20px;
-                    }
+            &.main{
+                .swiper-pagination{
+                    width: 100%;
+                    padding: 0 4em;
                 }
-                
+                .player{
+                    width: 100%;
+                    padding: 0 16em;
+                    .play-btn{
+                        &::after{
+                            font-size:20px;
+                        }
+                    }
+                    
+                }
             }
         }
         .banner {
@@ -156,31 +162,31 @@
     }
     @include media-breakpoint-down(sm){
         .swiper-container{
-            
-            .swiper-pagination{
-                padding: 0 2em;
-                bottom:25%;
-                .swiper-pagination-bullet{
-                    width: 10px;
-                    height: 10px;
-                    margin:0 5px;
-                    &.swiper-pagination-bullet-active{
-                        background-color: $orange;
-                        width: 40px;
+            &.main{
+                .swiper-pagination{
+                    padding: 0 2em;
+                    bottom:25%;
+                    .swiper-pagination-bullet{
+                        width: 10px;
                         height: 10px;
+                        margin:0 5px;
+                        &.swiper-pagination-bullet-active{
+                            background-color: $orange;
+                            width: 40px;
+                            height: 10px;
+                        }
                     }
                 }
-            }
-            .player{
-                bottom:25.5%;
-                .play-btn{
-                    width: 13px;
-                    height: 13px;
-                    &::after{
-                        font-size:14px;
+                .player{
+                    bottom:25.5%;
+                    .play-btn{
+                        width: 13px;
+                        height: 13px;
+                        &::after{
+                            font-size:14px;
+                        }
                     }
                 }
-                
             }
         }
         .banner{

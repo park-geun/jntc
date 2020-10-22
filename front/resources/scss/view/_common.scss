@@ -185,7 +185,7 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
     border: 1px solid $gray-aa;
     text-align: center;
     padding: 10px 0;
-    margin: 70px auto;
+    margin: 70px auto 0;
 
     span {
         font-weight: 400;
@@ -681,7 +681,7 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
     &.socket {
         margin:0;
         th {
-            padding: 10px 15px;
+            padding: 5px 15px;
             border-top: none;
             border: 1px solid $gray-dd;
             background-color: $gray-f5;
@@ -690,7 +690,7 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             font-weight: 400;
         }
         td {
-            padding: 10px 30px;
+            padding: 0 30px;
             border-top: none;
             border: 1px solid $gray-dd;
             vertical-align: middle;
@@ -961,13 +961,13 @@ table{
     }
 
     .c-m-text {
-        font-size: 19px;
+        font-size: 17px;
         color: $orange;
         margin: 20px 0;
     }
 
     .c-s-text {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         line-height: 1.68;
     }
@@ -983,7 +983,7 @@ table{
             .nav-link {
                 padding: 10px 0;
                 border: none;
-                font-size: 19px;
+                font-size: 16px;
                 color: $black;
                 border: 1px solid $gray-b2;
 
@@ -1067,6 +1067,4 @@ table{
 
 				
 			
-			
-			
-			
+	

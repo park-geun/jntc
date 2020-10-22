@@ -299,11 +299,14 @@ section {
 .glass-list {
     width: 20%;
     padding: 0 10px;
+    &.business{
+        width: 100%;
+    }
     .glass-img{
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 300px;
+        height: 250px;
         border: 1px solid $gray-aa;
         padding: 30px 0;
         background-repeat: no-repeat;
@@ -881,9 +884,34 @@ section {
     padding:70px 0 25px 0;
 }
 
+//벤딩
+.bending-wrap{
+    border-top:1px solid $black;
+    border-bottom:1px solid $black;
+    .bending-table{margin-top:-1px;}
+    @at-root{
+        .side-none-border{border-left:2px solid $white;border-right:2px solid $white;}
+    }    
+}
+.swiper-slide{
+    &.bending{
+        width: 100%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
 
-
-
+@include media-breakpoint-down(md){
+    .swiper-slide{
+        &.bending{
+            width: 100%;
+            height: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
 
 
 
