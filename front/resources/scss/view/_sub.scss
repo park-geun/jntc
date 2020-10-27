@@ -1,6 +1,3 @@
-section {
-    padding : 45px 0;
-}
 
 
 .section-main {
@@ -180,8 +177,6 @@ section {
         }
     }
 }
-
-@include media-breakpoint-down(md) {}
 
 .ceo-sign {
     margin: 45px 0;
@@ -407,33 +402,6 @@ section {
 }
 
 
-@include media-breakpoint-down(md) {
-
-    .glass-list {
-        width: 100%;
-        padding: 0 10px;
-        margin-top: 20px;
-
-        .glass-item {
-            height: 100%;
-        }
-    }
-
-    .glass-img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 250px;
-        border: 1px solid $gray-aa;
-        padding: 15px 0;
-    }
-
-    .glass-text {
-        padding: 10px;
-    }
-
-
-}
 
 
 ////ci소개
@@ -567,21 +535,6 @@ section {
     }
 }
 
-//카메라윈도우
-@include media-breakpoint-down(md) {
-    .camera-window {
-        .camera-list {
-            width: 50%;
-            padding: 0 10px;
-            margin-top: 20px;
-
-            .glass-item {
-                height: 100%;
-            }
-        }
-    }
-}
-
 
 //연구소 소개
 
@@ -627,9 +580,6 @@ section {
     }
 }
 
-//연구개발 성과
-
-
 
 //소켓
 .socket-explanation {
@@ -652,27 +602,6 @@ section {
         border-bottom:2px solid $gray-33;
         border-left :2px solid $white;
         border-right:2px solid $white;
-    }
-}
-
-@include media-breakpoint-down(md) {
-    .socket-wrap {
-        padding: 0;
-
-        .ul-list-dot {
-            margin-top: 20px;
-        }
-    }
-
-    .socket-explanation {
-
-        .socket-detail {
-            margin-top: 30px;
-
-            p {
-                margin-bottom: 10px;
-            }
-        }
     }
 }
 
@@ -715,23 +644,8 @@ section {
     }
 }
 
-@include media-breakpoint-down(md) {
-    .hire-step {
-        position: relative;
 
-        .hire-step-img {
-            display: none;
-        }
-    }
-
-    .form-download {
-        display: block;
-    }
-
-
-}
 ///ir
-
 .ir-wrap{
     padding: 0 50px;
     &.card-list{
@@ -847,25 +761,6 @@ section {
     &::after{font-size:20px;color:$black;}
 }
 
-#swiper-button-prev{
-
-}
-@include media-breakpoint-down(sm){
-    .thum{
-        display: none;
-    }
-    .gallery-top{
-        width: 100%;
-        .social-bg{
-            height: 300px;
-        }
-    }
-    .swiper-button-next, .swiper-button-prev{
-        display: none;
-    }
-}
-
-
 //검색결과
 .search-result-list{
     border-bottom:1px solid $gray-33;
@@ -879,7 +774,7 @@ section {
     padding:70px 0 25px 0;
 }
 
-//벤딩
+//벤디드페이지
 .bending-wrap{
     border-top:1px solid $black;
     border-bottom:1px solid $black;
@@ -897,7 +792,64 @@ section {
     }
 }
 
+
+///max-width 996px
 @include media-breakpoint-down(md){
+    //제품 글라스
+    .glass-list {
+        width: 100%;
+        padding: 0 10px;
+        margin-top: 20px;
+        .glass-item {
+            height: 100%;
+        }
+    }
+    .glass-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+        border: 1px solid $gray-aa;
+        padding: 15px 0;
+    }
+    .glass-text {
+        padding: 10px;
+    }
+    //카메라윈도우
+    .camera-window {
+        .camera-list {
+            width: 50%;
+            padding: 0 10px;
+            margin-top: 20px;
+
+            .glass-item {
+                height: 100%;
+            }
+        }
+    }
+    //제품 소켓
+    .socket-wrap {
+        padding: 0;
+        .ul-list-dot {margin-top: 20px;}
+    }
+    .socket-explanation {
+        .socket-detail {
+            margin-top: 30px;
+            p { margin-bottom: 10px; }
+        }
+    }
+    //인재 채용
+    .hire-step {
+        position: relative;
+        .hire-step-img {
+            display: none;
+        }
+    }
+    .form-download {
+        display: block;
+    }
+    
+    //벤디드 페이지
     .swiper-slide{
         &.bending{
             width: 100%;
@@ -907,4 +859,42 @@ section {
         }
     }
 }
-
+@include media-breakpoint-down(sm){
+    .thum{display: none;}
+    .gallery-top{
+        width: 100%;
+        .social-bg{
+            height: 300px;
+        }
+    }
+    .swiper-button-next, .swiper-button-prev{display: none;}
+    //ci
+    .color-system{
+        display:block;
+        .color-system-text{
+            margin-left:0;
+            margin-top:20px;
+            ul{margin-top:20px;
+                li{font-size:14px;}
+            }
+        }
+    }
+    
+.announcement-table {
+        padding: 0;
+        .announcement{
+            padding :30px 0;
+            border-bottom: 1px solid $rgba-2;
+            // &:first-child{
+            //     border-top:0;
+            // }
+            >div{display:block !important;}
+        }
+        .edit-announcement{
+            padding:50px 0;
+        }
+    }
+    .s-link-btn{
+        margin-top: 10px;
+    }
+}

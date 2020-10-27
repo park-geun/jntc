@@ -924,7 +924,7 @@ table{
     }
 
     .c-lg-text {
-        font-size: 23px;
+        font-size: 21px;
     }
 
     .c-text-border {
@@ -970,10 +970,11 @@ table{
         font-size: 14px;
         font-weight: 400;
         line-height: 1.68;
+        margin-top:15px;
     }
 
     .nav-tabs {
-        margin: 45px 0;
+        margin: 20px 0;
 
         .nav-item {
             width: 50%;
@@ -1052,16 +1053,37 @@ table{
 
     .ul-list-dot {
         li {
-            padding: 3px;
+            font-size:14px;
+            padding: 3px 5px;
         }
     }
 }
 @include media-breakpoint-down(sm){
+    .m-t-45{margin-top:20px;}
+    .m-t-35{margin-top:15px;}
     .table-wrap{
         overflow: scroll;       
         .table{
             width: 1000px;
         }
+    }
+    .product-question{
+        width: 100%;
+    }
+    .table{
+        margin-top:25px;
+        th,td,tr{font-size:14px !important;}
+        ul li{font-size:14px;}
+    }
+    .pagination{
+        ul{
+            li{
+                a{font-size:14px;}
+            }
+        }
+    }
+    .example{
+        margin-bottom: 20px;
     }
 }
 
