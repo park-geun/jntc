@@ -1,6 +1,5 @@
 window.onload = function () {
-
-
+  
     $('nav>ul>li').hover(function () {
         var idx = $(this).index() + 1;
         console.log(idx);
@@ -112,42 +111,62 @@ $(document).ready(function () {
 
     $('.play-btn').on("click", function () {
         if ($(this).hasClass('active')) {
-            console.log('2');
             $(this).removeClass('active');
             mySwiper.autoplay.start();
 
         } else {
             $(this).addClass('active');
             mySwiper.autoplay.stop();
-            console.log('1');
         }
 
     })
 
-    ///글래스 hover
-    $('.swiper-slide').hover(function () {
+  
+    
+
+     ///사업소개 강화글래스 hover
+     $('.swiper-slide').hover(function () {
         var idx = $(this).index() + 1;
         var glassImg = $('#glass_img_' + idx);
         console.log(idx);
-        $(this).children().addClass('active');
-        glassImg.attr('style', 'background-image:url(../../resources/images/phone-' + idx + '.png)');
+        $(this).children().children().addClass('active');
+        glassImg.attr('style', 'background-image:url(../../resources/images/intro-phone-' + idx + '.jpg)');
 
     }, function () {
         var idx = $(this).index() + 1;
         var glassImg = $('#glass_img_' + idx);
 
-        $(this).children().removeClass('active');
-        glassImg.attr('style', ' background-image:url(../../resources/images/product-' + idx + '.png)');
+        $(this).children().children().removeClass('active');
+        glassImg.attr('style', ' background-image:url(../../resources/images/intro-glass-' + idx + '.jpg)');
 
     })
 
 
+    ///제품 -> 글래스 hover
+    $('.reinforce .glass-list').hover(function () {
+        var idx = $(this).index() + 1;
+        var glassImg = $('#glass_img_' + idx);
+        console.log(idx);
+        $(this).addClass('active');
+        glassImg.attr('style', 'background-image:url(../../resources/images/phone-' + idx + '.jpg)');
+
+    }, function () {
+        var idx = $(this).index() + 1;
+        var glassImg = $('#glass_img_' + idx);
+
+        $(this).removeClass('active');
+        glassImg.attr('style', ' background-image:url(../../resources/images/product-' + idx + '.jpg)');
+
+    })
+
+    
+    //제품 -> 카메라 윈도우
     $('.glass-list.camera').hover(function () {
         var idx = $(this).index() + 1;
         var glassImg = $('#glass_img_' + idx);
 
         $(this).addClass('active');
-        glassImg.attr('style', 'background-image:url(../../resources/images/phone-' + idx + '.png)');
+        glassImg.attr('style', 'background-image:url(../../resources/images/phone-' + idx + '.jpg)');
 
     }, function () {
         var idx = $(this).index() + 1;
@@ -171,6 +190,25 @@ $(document).ready(function () {
 
     })
 })
+
+// tabProductChange('.cover-glass');
+// function tabProductChange(e){
+//     $(e + ' a').each(function() {
+//         $(this).focus(function () {
+//             // var idx = $(this).length;
+//             // console.log(idx);
+//             // var glassImg = $('#glass_img_' + idx);
+
+//             // $(this).addClass('active');
+//             // glassImg.attr('style', 'background-image:url(../../resources/images/phone-' + idx + '.jpg)');
+//         });
+//         $(this).blur(function () {
+//             var idx = $(this).index() + 1;
+//             var glassImg = $('#glass_img_' + idx);
+//         })
+
+//     })
+// }
 
 function openSearch() {
     $('.search-bar').show();

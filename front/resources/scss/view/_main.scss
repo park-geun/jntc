@@ -203,10 +203,9 @@
 
 
     .section-2 {
-
+        padding: 90px 0;
         .about {
             padding: 20px;
-
             .ic-1 {
                 width: 100px;
                 height: 100px;
@@ -262,7 +261,6 @@
 
     .section-3 {
         background-color: $gray-f2;
-
         .global-text {
             p:nth-child(1) {
                 font-size: 38px;
@@ -298,7 +296,7 @@
         }
     }
     .section-4 {
-
+        padding: 90px 0 0 0;
         .fp-wrap {
             height: 100%;
             padding: 75px 50px;
@@ -351,7 +349,7 @@
     }
 
     .section-5 {
-   
+        padding : 90px 0;
         .newsroom{
             height: 100%;
             padding: 0 20px;

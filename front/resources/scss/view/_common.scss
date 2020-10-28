@@ -74,7 +74,9 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
     margin-left: -50px;
     margin-right: -50px;
 }
-
+.m-t-30 {
+    margin-top: 30px;
+}
 .m-t-35 {
     margin-top: 35px;
 }
@@ -916,6 +918,8 @@ table{
         margin-left: 0;
         margin-right: 0;
     }
+    .mt-30{margin-top:30px;}
+    
     .link-btn {
         font-size: 16px;
         padding: 10px;
@@ -1061,6 +1065,7 @@ table{
 @include media-breakpoint-down(sm){
     .m-t-45{margin-top:20px;}
     .m-t-35{margin-top:15px;}
+    .m-b-30{margin: 0 !important;}
     .table-wrap{
         overflow: scroll;       
         .table{
@@ -1087,6 +1092,6 @@ table{
     }
 }
 
-				
+		
 			
 	

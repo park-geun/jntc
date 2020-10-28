@@ -18,8 +18,8 @@ header {
         ul {
             display: flex;
             font-size: 28px;
-            li { padding: 25px 30px; font-weight: 700; color:$black;
-                a{font-size:23px;}
+            li { padding: 25px 30px; color:$black;
+                a{font-size:23px; font-weight:bold;}
                 &.active{color:$orange;border-bottom:3px solid $orange;
                     a{color:$orange; font-weight: bold;}
                 }
@@ -129,8 +129,8 @@ footer {
         p {
             line-height: 1.76;
             font-size:15px;
-            color:$white;
-            span{color:$white;}
+            color:$gray-cc;
+            span{display:inline-block; margin-left: 20px;}
         }
         .link-btn {
             margin: 0;
@@ -158,22 +158,22 @@ footer {
             padding: 0 30px 0 0;
 
             .gnb-title {
-                color: $black;
-                font-size: 18px;
+                color: $gray-33;
+                font-size: 20px;
                 padding-bottom: 10px;
-                font-weight: 700;
                 a{
-                    color: $black;
-                    font-size: 18px;
+                    color: $gray-33;
+                    font-size: 20px;
                     padding-bottom: 10px;
-                    font-weight: 700;
                 }
             }
 
             li {
-                color: $black;
-                font-size: 20px;
-                font-weight: 400;
+                line-height: 24px;
+               a{
+                   font-size:16px;
+                   color:$gray-66;
+               }
             }
         }
     }
@@ -181,8 +181,8 @@ footer {
         padding : 30px 0;
         text-align: right;
         p{word-break: keep-all;
-            &:nth-child(1){font-size: 28px;}
-            &:nth-child(2){font-size: 18px; font-weight: 400;margin:10px 0;}
+            &:nth-child(1){font-size: 34px; font-weight:bold; color:$gray-33;}
+            &:nth-child(2){font-size: 17px; font-weight: 400;margin:10px 0; text-align:right;color:$gray-66}
         }
         >div{
             width: 150px;
@@ -206,6 +206,8 @@ footer {
 }
 
 .sitemaps {
+    width:100%;
+    height:100vh;
     background-color: $white;
     padding: 30px 0;
     border: 1px solid $gray-dd;
@@ -213,33 +215,33 @@ footer {
     display: none;
 
     .sitemap-list {
+        width: 20%;
         border-left: 1px solid $gray-dd;
-        padding: 0 30px;
-
+        padding: 0 20px;
         h2 {
             color: $orange;
-            font-size: 28px;
+            font-size: 24px;
+            font-weight: bold;
         }
-
         ul {
             margin-top: 30px;
             .sitemap-title {
-                color: $black;
-                font-weight: 700;
-                font-size: 22px;
+                color: $gray-33;
+                font-weight: bold;
+                font-size: 18px;
                 padding-bottom: 15px;
                 >a{
-                    color: $black;
-                    font-weight: 700;
-                    font-size: 22px;
-                    padding-bottom: 15px;  
+                    color: $gray-33;
+                    font-weight: bold;
+                    font-size: 18px;
+                    padding-bottom: 15px;
                 }
             }
-
             li {
-                color: $black;
-                font-size: 20px;
-                font-weight: 400;
+               a{
+                   color:$gray-66;
+                   span{font-size:15px;}
+               }
             }
         }
     }
@@ -565,7 +567,26 @@ footer {
             border:none !important;
         }
     }
- 
+    &.bending{
+        width: 70% !important;
+        .lb-nav{
+            width:100vw;
+            a.lb-prev {
+                width:50%; 
+                background: url(../../resources/images/btn-left.png) 10% 48% no-repeat;
+                opacity: 1;
+            }
+            a.lb-next {
+                width:50%; 
+                background:url(../../resources/images/btn-right.png) 90% 48% no-repeat;
+                opacity: 1;
+            }
+        }
+        .lb-image{
+            border:0;
+            border-radius:0;
+        }
+    }
     &.connector{
         .lb-image{
             img{
@@ -674,7 +695,9 @@ footer {
                 background-size: contain;
                 background-position: center;
             }
-            p{font-size:24px; font-weight: 700;margin-left: 15px;}
+            p{font-size:20px; font-weight: 700;margin-left: 15px;
+               span{font-size:14px;}
+            }
         }
     }
     .sub-content{
@@ -720,7 +743,9 @@ footer {
     }
     footer{
         .footer-info{
-            p{font-size:14px;}
+            p{font-size:14px; 
+                span{margin-left:0;}
+            }
         }
         ul{
             li{

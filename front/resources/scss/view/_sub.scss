@@ -247,9 +247,6 @@
     position: relative;
     &.connector{
         
-        // .swiper-wrapper{margin-left:-50px;margin-right:-50px;}
-        .glass-list{padding:0 50px;}
-        // .glass-list{padding:0;}
     }
 }
 .cover-glass{
@@ -273,15 +270,12 @@
                 height: auto;
                 padding: 0;
             }
-            img {
-                height: 100%;
-            }
         }
         .glass-list.active {
             .glass-img {
                 border: 3px solid $orange;
                 background-color: $gray-f5;
-                background-size: inherit;
+                background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
               
@@ -295,12 +289,23 @@
             width: 20%;
         }
     }
+
 }
+
+//글래스리스트 디폴트
 .glass-list {
     width: 100%;
     padding: 0 10px;
     &.business{
         width: 100%;
+
+        &.active{
+            .arrow-plus{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
     }
     .glass-img{
         display: flex;
@@ -312,17 +317,15 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        background-origin: content-box;
+        position: relative;
     }
     .glass-item {
         margin-bottom: 30px;
         height: 100%;
     }
 }
-
 .glass-list.active {
     position: relative;
-
     .glass-img {
         border: 3px solid $orange;
         background-color: $gray-f5;
@@ -338,22 +341,19 @@
         background-image: url('../../resources/images/ic-plus.png');
         background-size: contain;
         position: absolute;
-        top: 30%;
+        top: 25%;
         left: 50%;
-        transform: translate(-50%, -30%);
+        transform: translate(-50%, -25%);
     }
 }
-
-
-
 .glass-text {
-    padding: 15px 20px;
+    padding: 15px;
     text-align: left;
 
     .glass-brand {
         font-size: 16px;
         line-height: 32px;
-        margin-top: 20px;
+        margin-top: 40px;
         font-weight: 400;
     }
     .glass-name {
@@ -370,9 +370,8 @@
         padding: 0;
         font-weight: bold;
         color: $orange;
-
         >span {
-            font-size: 18px;
+            font-size: 20px;
             color: $orange
         }
         &::after {
@@ -392,6 +391,8 @@
         }
     }
 }
+////////////
+
 
 .connector-usb {
     margin: 40px 0;
@@ -472,9 +473,9 @@
             background-image: url('../../resources/images/ic-plus.png');
             background-size: contain;
             position: absolute;
-            top: 30%;
+            top: 25%;
             left: 50%;
-            transform: translate(-50%, -30%);
+            transform: translate(-50%, -25%);
 
         }
     }
@@ -796,6 +797,16 @@
 ///max-width 996px
 @include media-breakpoint-down(md){
     //제품 글라스
+    .cover-glass{
+        &.reinforce{
+            .glass-list{
+                width:50%;
+                .glass-img{
+                    background-size: contain;
+                }
+            }
+        }
+    }
     .glass-list {
         width: 100%;
         padding: 0 10px;
@@ -804,6 +815,7 @@
             height: 100%;
         }
     }
+  
     .glass-img {
         display: flex;
         align-items: center;
@@ -860,6 +872,25 @@
     }
 }
 @include media-breakpoint-down(sm){
+       //제품 글라스
+    .cover-glass{
+        &.reinforce{
+            .glass-list{
+                width:100%;
+                .glass-img{
+                    background-size: contain;
+                }
+            }
+        }
+        .glass-list{
+            .glass-img{
+                height:400px;
+            }
+        }
+    }
+    .glass-img{
+        height: 400px;
+    }
     .thum{display: none;}
     .gallery-top{
         width: 100%;
@@ -880,21 +911,48 @@
         }
     }
     
-.announcement-table {
-        padding: 0;
-        .announcement{
-            padding :30px 0;
-            border-bottom: 1px solid $rgba-2;
-            // &:first-child{
-            //     border-top:0;
-            // }
-            >div{display:block !important;}
-        }
-        .edit-announcement{
-            padding:50px 0;
+    .announcement-table {
+            padding: 0;
+            .announcement{
+                padding :30px 0;
+                border-bottom: 1px solid $rgba-2;
+                // &:first-child{
+                //     border-top:0;
+                // }
+                >div{display:block !important;}
+            }
+            .edit-announcement{
+                padding:50px 0;
         }
     }
     .s-link-btn{
         margin-top: 10px;
     }
+}
+
+
+
+.intro-next{
+    width: 20px;
+    height: 40px;
+    // background-image: url('../../resources/images/ic-next-banner.png');
+    color: inherit;
+    right:1.5% !important;
+    top: 35% !important
+}
+.intro-prev{
+    width: 20px;
+    height: 40px;
+    // background-image: url('../../resources/images/ic-prev-banner.png');
+    // background-repeat: no-repeat;
+    color: inherit;
+    left:1.5% !important;
+    top: 35% !important
+}
+
+.swiper-button-prev.intro-prev.swiper-button-disabled{
+    opacity: 0;
+}
+.swiper-button-next.intro-next.swiper-button-disabled{
+    opacity: 0;
 }
