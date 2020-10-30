@@ -76,14 +76,14 @@
                         </div>
                     </section>
                     <section>
-                        <div class="flat d-flex text-center flex-wrap justify-content-between connector position-relative">
+                        <div class="flat d-flex text-center flex-wrap justify-content-between connector">
                             <div class="swiper-container w-100" id="connector">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="glass-list">
                                             <p class="years-line">2000</p>
                                             <div class="glass-item">
-                                                <div class="glass-img" style="background-image:url('../../resources/images/2g.png');" id="glass_img_1">
+                                                <div class="glass-img" style="background-image:url('../../resources/images/years-phone-1.png');" id="glass_img_1">
                                                 </div>
                                                 <div class="glass-text text-center">
                                                     <div class="glass-text-title">
@@ -106,7 +106,7 @@
                                         <div class="glass-list">
                                             <p class="years-line">2008</p>
                                             <div class="glass-item">
-                                                <div class="glass-img" style="background-image:url('../../resources/images/3g.png');" id="glass_img_2">
+                                                <div class="glass-img" style="background-image:url('../../resources/images/years-phone-2.png');" id="glass_img_2">
                                                 </div>
                                                 <div class="glass-text text-center">
                                                     <div class="glass-text-title">
@@ -130,7 +130,7 @@
                                         <div class="glass-list">
                                             <p class="years-line">2016</p>
                                             <div class="glass-item">
-                                                <div class="glass-img" style="background-image:url('../../resources/images/4g.png');" id="glass_img_3">
+                                                <div class="glass-img" style="background-image:url('../../resources/images/years-phone-3.png');" id="glass_img_3">
                                                 </div>
                                                 <div class="glass-text text-center">
                                                     <div class="glass-text-title">
@@ -154,7 +154,7 @@
                                         <div class="glass-list">
                                             <p class="years-line">2019</p>
                                             <div class="glass-item">
-                                                <div class="glass-img" style="background-image:url('../../resources/images/5g.png');" id="glass_img_4">
+                                                <div class="glass-img" style="background-image:url('../../resources/images/years-phone-4.png');" id="glass_img_4">
                                                 </div>
                                                 <div class="glass-text text-center">
                                                     <div class="glass-text-title">
@@ -174,12 +174,12 @@
                                             <div class="arrow-plus"></div>
                                         </div>
                                     </div>
-                                   
+                                    
                                 </div>
                             </div>
+                            <div class="swiper-button-next intro-next"></div>
+                            <div class="swiper-button-prev intro-prev"></div>
                         </div><!-- flat -->
-                        <div class="swiper-button-next intro-next"></div>
-                        <div class="swiper-button-prev intro-prev"></div>
 
                         <p class="example">** MMI : Multi Media Interface, 국내 표준 Type ,*Micro USB Type B,C : 세계표준 Type
                         </p>
@@ -194,35 +194,38 @@
     <script>
         $(document).ready(function () {
 
-            var mySwiper = new Swiper('#connector', {
-                speed: 400,
-                slidesPerView: "auto",
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.intro-next',
-                    prevEl: '.intro-prev',
-                },
-            });
-
-            
-
-            var index = $('#connector .swiper-slide').length;
-            if(index == 4){
-                $('#connector .swiper-slide').css('width','25%');
-                
+            if($('#connector .swiper-slide').length > 5){
+                var mySwiper = new Swiper('#connector', {
+                    speed: 400,
+                    slidesPerView: "auto",
+                    spaceBetween: 21.5,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.intro-next',
+                        prevEl: '.intro-prev',
+                    },
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 1,
+                        },
+                        640: {
+                            slidesPerView: 2,
+                        },
+                        991: {
+                            slidesPerView: 3,
+                        },
+                        1200: {
+                            slidesPerView: 5,
+                        }
+                    },
+                });
+            }else{
+                $('.intro-next').addClass('opacity');
+                $('.intro-prev').addClass('opacity');
             }
-            if(index == 5){
-                $('#connector .swiper-slide').css('width','20%');
-            }
-            if(index == 6){
-                $('#connector .swiper-slide').css('width','20%');
-                $('.swiper-button-next.intro-next.swiper-button-disabled').css('opacity','1');
-                $('.swiper-button-prev.intro-next.swiper-button-disabled').css('opacity','1');
-            }
-            
         })
     </script>
 </body>

@@ -4,108 +4,6 @@
     position: relative;
     width: 100%;
 
-    .vision-box {
-        p:nth-child(1) {
-            font-size: 30px;
-        }
-
-        p:nth-child(2) {
-            font-size: 24px;
-            color: $orange;
-            margin: 20px 0;
-        }
-
-        ul {
-            li {
-                font-size: 19px;
-                font-weight: 400;
-                line-height: 1.58;
-            }
-        }
-    }
-
-    .technology {
-        width: 300px;
-        text-align: left;
-        position: absolute;
-        top: 20%;
-        left: 10%;
-        transform: translate(-10%, -20%);
-    }
-
-    .marketing {
-        width: 300px;
-        text-align: left;
-        position: absolute;
-        top: 15%;
-        right: 5%;
-        transform: translate(-5%, 0);
-    }
-
-    .produce {
-        width: 300px;
-        text-align: left;
-        position: absolute;
-        bottom: 15%;
-        left: 10%;
-        transform: translate(-10%, -15%);
-    }
-
-    .operation {
-        width: 300px;
-        text-align: left;
-        position: absolute;
-        bottom: 15%;
-        right: 5%;
-        transform: translate(-5%, 0);
-    }
-
-    .vision-bg {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-
-        p {
-            font-size: 28px;
-            font-weight: 700;
-            line-height: 1.43;
-            text-align: center;
-            color: $white;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
-
-    .technology-icon {
-        position: absolute;
-        left: 35%;
-        top: 20%;
-        transform: translate(-35%, -20%);
-    }
-
-    .marketing-icon {
-        position: absolute;
-        right: 30%;
-        top: 20%;
-        transform: translate(-30%, -20%);
-    }
-
-    .produce-icon {
-        position: absolute;
-        left: 35%;
-        bottom: 15%;
-        transform: translate(-35%, -20%);
-    }
-
-    .operation-icon {
-        position: absolute;
-        right: 30%;
-        bottom: 15%;
-        transform: translate(-30%, -20%);
-    }
 }
 
 
@@ -278,9 +176,12 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
-              
             }
-        
+            .arrow-plus{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
     }
     // 제품->강화글라스
@@ -291,8 +192,81 @@
     }
 
 }
-
+.intro-next{
+    width: 20px;
+    height: 40px;
+    // background-image: url('../../resources/images/ic-next-banner.png');
+    color: inherit;
+    right:-5% !important;
+    top: 35% !important;
+    opacity: 1;
+    &.opacity{opacity: 0;}
+}
+.intro-prev{
+    width: 20px;
+    height: 40px;
+    // background-image: url('../../resources/images/ic-prev-banner.png');
+    // background-repeat: no-repeat;
+    color: inherit;
+    left:-5% !important;
+    top: 35% !important;
+    opacity: 1;
+    &.opacity{opacity: 0;}
+}
 //글래스리스트 디폴트
+//사업소개 커넥터
+.connector{
+    .swiper-wrapper{display: flex;justify-content: space-between;}
+    .swiper-slide{flex: 0 1 205px;max-width: 205px;}
+    .glass-list{padding: 0;}
+
+    .swiper-container-initialized{
+        .swiper-slide{flex: 0 0 auto;max-width: 205px;}
+        .swiper-slide{width: 205px !important;}
+    }
+}
+//사업소개 커버글라스
+#cover-glass{
+    width: 100%;
+    .swiper-wrapper{display: flex;justify-content: space-between;}
+    .swiper-slide{flex: 0 0 205px;max-width: 205px;}
+    .glass-list{padding: 0;}
+
+    .swiper-container-initialized{
+        .swiper-slide{flex: 0 0 auto;max-width: 205px;}
+        .swiper-slide{width: 205px !important;}
+    }
+}
+@include media-breakpoint-down(sm){
+    //사업소개 커넥터
+    .connector{
+        .swiper-wrapper{display: block;justify-content: space-between;}
+        .swiper-slide{flex: 0;max-width: 100%; height: auto;}
+        .glass-list{padding: 0;}
+
+        .swiper-container-initialized{
+            .swiper-wrapper{display: flex; justify-content: space-between;}
+            .swiper-slide{flex: none; max-width: 100%;}
+            .swiper-slide{width: 100% !important;}
+        }
+    }  
+//사업소개 커버글라스
+    #cover-glass{
+        width: 100%;
+        .swiper-wrapper{display: block; justify-content: space-between;}
+        .swiper-slide{flex: 0;max-width: 100%; height: auto;}
+        .glass-list{padding: 0;}
+
+        &.swiper-container-initialized{
+            .swiper-wrapper{display: flex; justify-content: space-between;}
+            .swiper-slide{flex: none; max-width: 100%;}
+            .swiper-slide{width: 100%;}
+        }
+    }
+    .years-line{
+        &:after{content:"";width:0;}
+    }
+}
 .glass-list {
     width: 100%;
     padding: 0 10px;
@@ -316,7 +290,7 @@
         padding: 30px 0;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
+        background-size: cover;
         position: relative;
     }
     .glass-item {
@@ -647,6 +621,7 @@
 
 
 ///ir
+.ir-section{padding :24px 0 45px 0}
 .ir-wrap{
     padding: 0 50px;
     &.card-list{
@@ -796,6 +771,13 @@
 
 ///max-width 996px
 @include media-breakpoint-down(md){
+    .ir-wrap{
+        padding: 0;
+        margin-bottom: 20px;
+        &.card-list{
+            padding:0;
+        }
+    }
     //제품 글라스
     .cover-glass{
         &.reinforce{
@@ -872,7 +854,14 @@
     }
 }
 @include media-breakpoint-down(sm){
-       //제품 글라스
+    ///ir
+    .ir-wrap{
+        padding: 0;
+        &.card-list{
+            padding:0;
+        }
+    }
+    //제품 글라스
     .cover-glass{
         &.reinforce{
             .glass-list{
@@ -932,27 +921,3 @@
 
 
 
-.intro-next{
-    width: 20px;
-    height: 40px;
-    // background-image: url('../../resources/images/ic-next-banner.png');
-    color: inherit;
-    right:1.5% !important;
-    top: 35% !important
-}
-.intro-prev{
-    width: 20px;
-    height: 40px;
-    // background-image: url('../../resources/images/ic-prev-banner.png');
-    // background-repeat: no-repeat;
-    color: inherit;
-    left:1.5% !important;
-    top: 35% !important
-}
-
-.swiper-button-prev.intro-prev.swiper-button-disabled{
-    opacity: 0;
-}
-.swiper-button-next.intro-next.swiper-button-disabled{
-    opacity: 0;
-}

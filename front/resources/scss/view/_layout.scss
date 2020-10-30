@@ -107,6 +107,7 @@ footer {
                 content: "|";
                 position: absolute;
                 left: 0;
+                color: $gray-99;
             }
             &.active {
                 a {color: $orange;}
@@ -125,7 +126,7 @@ footer {
     }
 
     .footer-info {
-        padding: 50px 0;
+        padding: 40px 0;
         p {
             line-height: 1.76;
             font-size:15px;
@@ -169,7 +170,7 @@ footer {
             }
 
             li {
-                line-height: 24px;
+                line-height: 30px;
                a{
                    font-size:16px;
                    color:$gray-66;
@@ -261,10 +262,16 @@ footer {
 
 
 .search-bar {
-    display: none;
+ 
     background-color: $white;
     padding: 100px 0;
-    position: relative;
+    &.main-search{
+        width: 100%;
+        position: fixed;
+        z-index:99;
+        top:60px;
+        display: none;
+    }
     .inputSearch{
         width: 60%;
         margin:0 auto;
@@ -276,56 +283,55 @@ footer {
         }
     }
     .search {
-        width: 100%;
-        position: relative;
-        display: flex;
+            width: 100%;
+            position: relative;
+            display: flex;
         }
         
         .searchTerm {
-        width: 100%;
-        border: 3px solid $gray-dd;
-        border-right: none;
-        padding: 15px;
-        height: 60px;
-        outline: none;
-        color: #9DBFAF;
+            width: 100%;
+            border: 3px solid $gray-dd;
+            border-right: none;
+            padding: 15px;
+            height: 60px;
+            outline: none;
+            color: #9DBFAF;
         }
         
         .searchTerm:focus{
-        color: red;
+          color: red;
         }
         
         .searchButton {
-        width: 40px;
-        height: 60px;
-        border: 3px solid $gray-dd;
-        border-left:none;
-        background: none;
-        text-align: center;
-        color: #fff;
-        cursor: pointer;
-        font-size: 20px;
-        i{color:$gray-dd;}
+            width: 40px;
+            height: 60px;
+            border: 3px solid $gray-dd;
+            border-left:none;
+            background: none;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            font-size: 20px;
+            i{color:$gray-dd;}
         }
         
         /*Resize the wrap to see the search bar change!*/
         .search-wrap{
-        width: 50%;
-        margin:0 auto;
+            width: 50%;
+            margin:0 auto;
         }
 
-    
-
-    .close-btn {
-        position: absolute;
-        top: 35px;
-        right: 10%;
-
-        i {
-            font-size: 30px;
-            color: $orange;
+        .close-btn {
+            display:block;
+            background-image: url('../../resources/images/ic-gnb-close.png');
+            width: 21px;
+            height: 21px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 35px;
+            right: 10%;
         }
-    }
     &.ir{
         display: block;
         padding:0;
@@ -393,7 +399,7 @@ footer {
             background-position: center;
             background-repeat: no-repeat;
         }
-        span{font-size:16px;font-weight: 400;transform: skew(-0.1deg);
+        span{font-size:15px;font-weight: 400;color:$gray-33;
             &:first-child{
                 &::before{
                     content:"";
@@ -415,6 +421,7 @@ footer {
             width: 100%;
             border-bottom:1px solid $gray-dd;
             padding:24px 0;
+            &.sub-pt{padding: 0 0 24px 0;}
             .sub-title-ic{
                 width: 40px;
                 height: 40px;
@@ -507,7 +514,9 @@ footer {
     &.notice{
         padding:0;
     }
-
+    .btn{
+        margin : 0 auto;
+    }
     .list-view-btn{
         width: 160px;
         height: 45px;
@@ -517,6 +526,57 @@ footer {
 }
 .modal-b-p{
     padding-bottom:120px;
+}
+
+///aside
+aside{
+    width:310px;
+    position: fixed;
+    right:10px;
+    bottom:50px;
+    transform: translate(-10px ,-50px);
+    z-index:10;
+    @at-root{
+        .aside-banner{
+            display:flex;
+            align-items: flex-end;
+            background-color: $white;
+            padding : 20px 30px;
+            border:1px solid $gray-dd;
+            .aside-text{
+                width: 200px;
+                .title{font-size: 18px; font-weight: bold; color:$orange; line-height: 26px; margin-bottom:5px;}
+                .content{font-size: 16px; color:$gray-33; line-height: 26px;}
+            }
+            .aside-ic{
+                width: 50px;
+                height: 50px;
+                background-image: url('../../resources/images/aside-01.png');
+                background-repeat: no-repeat;
+                margin-left: 30px;
+            }
+
+            &:hover{
+                border:1px solid $orange;
+                background-color: $orange;
+                transition: all .5s;
+                .aside-text{
+                    .title{color:$white}
+                    .content{color:$white}
+                }
+                .aside-ic{
+                    background-image: url('../../resources/images/aside-02.png');
+                }
+    
+            }
+        }
+    }
+    
+}
+@include media-breakpoint-down(sm){
+    aside{
+        display:none;
+    }
 }
 
 //제품 팝업슬라이드
@@ -532,7 +592,7 @@ footer {
   .lb-outerContainer {
     position: relative;
     *zoom: 1;
-    width: 50% !important;
+    width: 50% ;
     height: 50% !important;
     margin: 0 auto;
     border-radius: 4px;
@@ -553,7 +613,7 @@ footer {
           }
       }
   }
-  .lb-outerContainer{
+.lb-outerContainer{
     &.glass{
         position: relative;
         *zoom: 1;
@@ -586,8 +646,16 @@ footer {
             border:0;
             border-radius:0;
         }
+       
     }
     &.connector{
+        position: relative;
+        *zoom: 1;
+        width: 50% !important;
+        height: 50% !important;
+        margin: 0 auto;
+        border-radius: 4px;
+        background-color: $white;
         .lb-image{
             img{
                 width: 100%;
@@ -595,8 +663,93 @@ footer {
         }
     }
     
-  } 
-  
+ } 
+.lb-dataContainer{
+    &.bending{
+        width :100% !important;
+        position: absolute;
+        top: -25%;
+        left: 50%;
+        transform:translate(-50%, 10%);
+        .lb-data{
+            .lb-details{
+                width: 100% !important;
+                text-align: center !important;
+                span{}
+            }
+            .lb-close{
+                right:5%;
+            }
+        }
+    }
+    &.connector{
+        width: 100% !important;
+        .lb-data{
+            .lb-details{
+                width: 100% !important;
+                text-align: center !important;
+                span{}
+            }
+            .lb-close{
+                right:5%;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(sm){
+    .lb-outerContainer {
+        &.bending{
+            width: 90% !important;
+        }
+        &.connector{
+            position: relative;
+            *zoom: 1;
+            width: 90% !important;
+            height: 50% !important;
+            margin: 0 auto;
+            border-radius: 4px;
+            background-color: $white;
+            .lb-image{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+      } 
+      .lb-dataContainer{
+        position: absolute;
+        top: -25%;
+        left: 50%;
+        transform:translate(-50%, 10%);
+        &.bending{
+            .lb-data{
+                .lb-details{
+                    width: 100% !important;
+                    text-align: center !important;
+                    span{font-size:16px;}
+                }
+                .lb-close{
+                    width:15px;
+                    height: 15px;
+                }
+            }
+        }
+        &.connector{
+            .lb-data{
+                .lb-details{
+                    width: 100% !important;
+                    text-align: center !important;
+                    span{font-size:16px;}
+                }
+                .lb-close{
+                    width:15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+}
+ 
 @include media-breakpoint-down(xl){
     header {
         nav {
@@ -637,12 +790,8 @@ footer {
         }
         .right-header{                
             display: flex;
-            
-            .select-icon{
-                width: 15px;
-                height: 15px;
-                background-size: contain;
-            }
+            select{display:none;}
+            .select-ic{width: 0;}
         }
     }
     .search-bar{
@@ -688,6 +837,7 @@ footer {
             width: 100%;
             border-bottom:1px solid $gray-dd;
             padding:15px 0;
+            &.sub-pt{padding: 0 0 15px 0;}
             .sub-title-ic{
                 width: 30px;
                 height: 30px;
@@ -695,7 +845,7 @@ footer {
                 background-size: contain;
                 background-position: center;
             }
-            p{font-size:20px; font-weight: 700;margin-left: 15px;
+            p{font-size:26px; font-weight: 700;margin-left: 15px;
                span{font-size:14px;}
             }
         }
@@ -706,6 +856,7 @@ footer {
             top:60px;
         }
         .title-box {
+            padding : 80px 10px;
             .title{font-size:36px;}
             p{width: 80%; font-size:17px;}
         }
@@ -750,6 +901,7 @@ footer {
         ul{
             li{
                 a{font-size:14px;}
+                &:after{content:"";}
             }
         }
     }

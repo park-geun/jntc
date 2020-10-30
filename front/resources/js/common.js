@@ -91,6 +91,7 @@ $(document).ready(function () {
 
     $('.include-header').load('../layout/header.html');
     $('.include-footer').load('../layout/footer.html');
+    $('.include-aside').load('../layout/aside.html');
 
 
     var mySwiper = new Swiper('#swiper-container', {
@@ -125,7 +126,7 @@ $(document).ready(function () {
     
 
      ///사업소개 강화글래스 hover
-     $('.swiper-slide').hover(function () {
+     $('#cover-glass .swiper-slide').hover(function () {
         var idx = $(this).index() + 1;
         var glassImg = $('#glass_img_' + idx);
         console.log(idx);
@@ -140,7 +141,22 @@ $(document).ready(function () {
         glassImg.attr('style', ' background-image:url(../../resources/images/intro-glass-' + idx + '.jpg)');
 
     })
+    ///사업소개 커넥터 hover
+    // $('.swiper-slide').hover(function () {
+    //     var idx = $(this).index() + 1;
+    //     var glassImg = $('#glass_img_' + idx);
+    //     console.log(idx);
+    //     $(this).children().children().addClass('active');
+    //     glassImg.attr('style', 'background-image:url(../../resources/images/years-phone-' + idx + '.png)');
 
+    // }, function () {
+    //     var idx = $(this).index() + 1;
+    //     var glassImg = $('#glass_img_' + idx);
+
+    //     $(this).children().children().removeClass('active');
+    //     glassImg.attr('style', ' background-image:url(../../resources/images/intro-glass-' + idx + '.jpg)');
+
+    // })
 
     ///제품 -> 글래스 hover
     $('.reinforce .glass-list').hover(function () {
@@ -224,14 +240,10 @@ function openSiteMap() {
 
 function closeBtn() {
     $('.sitemaps').hide();
-    $('.search-bar').hide();
+    $('.search-bar.main-search').hide();
     $('.gnb').hide();
 }
 
 function toggleBtn() {
     $('.toggle-wrap').toggleClass('active');
 }
-
-
-
-

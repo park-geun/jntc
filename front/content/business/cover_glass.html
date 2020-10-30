@@ -96,7 +96,6 @@
                                                                     <p class="glass-name cg">Galaxy Note4 Edge</p>
                                                                 </div>
                                                             </div>
-
                                                         </div>
                                                     </a>
                                                 </div>
@@ -113,14 +112,13 @@
                                                                     <div class="glass-text-title">
                                                                         <span class="s-text-border">2-Bended</span>
                                                                     </div>
-                                                                    <p class="glass-name cg">Galaxy S6 Edge
-                                                                        Galaxy S6+
-                                                                        Blackberry
-                                                                        Vivo Xplay5
+                                                                    <p class="glass-name cg">Galaxy S6 Edge<br>
+                                                                        Galaxy S6+<br>
+                                                                        Blackberry<br>
+                                                                        Vivo Xplay5<br>
                                                                         Sony Xperia XZ3 etc</p>
                                                                 </div>
                                                             </div>
-
                                                         </div>
                                                     </a>
                                                 </div>
@@ -138,13 +136,13 @@
                                                                         <span class="s-text-border">4-Bended</span>
                                                                     </div>
                                                                     <p class="glass-name cg">
-                                                                        Galaxy S7 Edge
-                                                                        Galaxy S8 Edge
-                                                                        V40 ThinQ
-                                                                        G80 ThinQ
-                                                                        Mate20 Pro
-                                                                        P20 Pro
-                                                                        P30 Pro
+                                                                        Galaxy S7 Edge<br>
+                                                                        Galaxy S8 Edge<br>
+                                                                        V40 ThinQ<br>
+                                                                        G80 ThinQ<br>
+                                                                        Mate20 Pro<br>
+                                                                        P20 Pro<br>
+                                                                        P30 Pro<br>
                                                                         P40 Pro
                                                                     </p>
                                                                 </div>
@@ -165,11 +163,10 @@
                                                                     <div class="glass-text-title">
                                                                         <span class="s-text-border">3D 키리스</span>
                                                                     </div>
-                                                                    <p class="glass-name cg">Mate 30 Pro
+                                                                    <p class="glass-name cg">Mate 30 Pro<br>
                                                                         Mate 40 Pro</p>
                                                                 </div>
                                                             </div>
-
                                                         </div>
                                                     </a>
                                                 </div>
@@ -190,15 +187,13 @@
                                                                     <p class="glass-name cg">준비 중</p>
                                                                 </div>
                                                             </div>
-
                                                         </div>
                                                     </a>
                                                 </div>
-                                                
                                             </div>          
-                                            <div class="swiper-button-prev intro-prev"></div>
-                                            <div class="swiper-button-next intro-next"></div>
                                         </div>
+                                        <div class="swiper-button-prev intro-prev"></div>
+                                        <div class="swiper-button-next intro-next"></div>
                                     </div>
                                     <img src="../../resources/images/arrow-img.png" alt="">
                                 </div>
@@ -214,31 +209,34 @@
     <script src="../../resources/js/common.js"></script>
     <script>
         $(document).ready(function () {
-            var swiper = new Swiper('#cover-glass', {
-                slidesPerView: 5,
-                spaceBetween: 30,
-                freeMode: true,
-                breakpoints: {
-                    320: {
-                        slidesPerView: 1,
+            if($('#cover-glass .swiper-slide').length > 5){
+                    var swiper = new Swiper('#cover-glass', {
+                        slidesPerView:"auto",
+                        spaceBetween: 21.5,
+                        breakpoints: {
+                            320: {
+                                slidesPerView: 1,
+                            },
+                            640: {
+                                slidesPerView: 2,
+                            },
+                            991: {
+                                slidesPerView: 3,
+                            },
+                            1200: {
+                                slidesPerView: 5,
+                            }
+                        },
+                        navigation: {
+                            nextEl: '.intro-next',
+                            prevEl: '.intro-prev',
                     },
-                    640: {
-                        slidesPerView: 2,
-                    },
-                    991: {
-                        slidesPerView: 3,
-                    },
-                    1200: {
-                        slidesPerView: 5,
-                    }
-                },
-                navigation: {
-                    nextEl: '.intro-next',
-                    prevEl: '.intro-prev',
-                },
 
-            });
-
+                });
+            }else{
+                $('.intro-next').addClass('opacity');
+                $('.intro-prev').addClass('opacity');
+            }
         })
     </script>
 </body>

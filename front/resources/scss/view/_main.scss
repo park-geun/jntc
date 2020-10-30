@@ -1,414 +1,417 @@
 
-#wrap {
-    .top-scroll{
-        position: fixed;
-        bottom: 5%;
-        right: 5%;
-        z-index: 111;
-        >div{
-            width: 40px;
-            height: 40px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
+.top-scroll{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 111;
+    >div{
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+section>div>h1 {
+    font-size: 42px;
+    color: $black;
+    margin-bottom: 50px;
+}
+
+.swiper-container{
+    &.main{
+        .swiper-pagination{
+            width: 1210px;
+            bottom: 90px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            text-align: left;
+            .swiper-pagination-bullet{
+                width: 15px;
+                height: 15px;
+                opacity: 1;
+                background-color: $white;
+                margin:0 10px;
+                &.swiper-pagination-bullet-active{
+                    background-color: $orange;
+                    width: 60px;
+                    height: 15px;
+                    border-radius: 15px;
+                }
+                &:nth-child(1){margin-left:0px;}
+            }
+        }
+        .player{
+            position: absolute;
+            bottom: 93px;
+            z-index: 10;
+            left: 29%;
+            transform: translate(-29%, 0);
+            text-align: left;
+            .play-btn{  
+                cursor: pointer;
+                width: 20px;
+                height: 20px;
+                background-image: url('../../resources/images/ic-pause.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                &.active{
+                    background-image: url('../../resources/images/ic-play.png');
+                }
+            }
         }
     }
-    section>div>h1 {
-        font-size: 42px;
-        color: $black;
-        margin-bottom: 50px;
+}
+.banner {
+    width: 100%;
+    height: calc(100vh);
+    background-size: cover;
+    background-position: center;
+    .banner-wrap{
+        display: flex;
+        flex-flow: column;
+        p:nth-child(1){font-size:52px;line-height: 1.35;color:$white;margin-bottom:3em;text-shadow: 0.6px 0.8px 1px rgba(0, 0, 0, 0.3);
+        position: absolute; top:25%; span{font-weight: bold;}}
+        p:nth-child(2){
+            color:$white;
+            font-size: 32px;
+            margin-top: 60px; 
+            font-weight: bold;
+            text-shadow: 0.6px 0.8px 1px rgba(0, 0, 0, 0.3);
+            line-height: 38px;
+            position: absolute;
+            bottom:170px;
+            span{
+                color:$white;font-size: 24px;line-height: 1.6;text-shadow: 0.6px 0.8px 1px rgba(0, 0, 0, 0.3);
+            }
+        }
     }
-
+}
+.swiper-button-prev{
+    left: 5%;
+    &.social{top: 55%;}
+}
+.swiper-button-next{
+    right:5%;
+    &.social{top: 55%;}
+}
+@include media-breakpoint-down(xl){
     .swiper-container{
         &.main{
             .swiper-pagination{
-                width: 1210px;
-                bottom: 90px;
-                left: 50%;
-                transform: translate(-50%, 0);
-                text-align: left;
-                .swiper-pagination-bullet{
-                    width: 15px;
-                    height: 15px;
-                    opacity: 1;
-                    background-color: $white;
-                    margin:0 10px;
-                    &.swiper-pagination-bullet-active{
-                        background-color: $orange;
-                        width: 60px;
-                        height: 15px;
-                        border-radius: 15px;
-                    }
-                    &:nth-child(1){margin-left:0px;}
-                }
+                width: 100%;
+                padding: 0 4.5em;
             }
             .player{
-                width: 1210px;
-                position: absolute;
-                bottom: 95px;
-                z-index: 10;
-                left: 50%;
-                transform: translate(-50%, 0);
-                padding : 0 12em;
-                text-align: left;
-                .play-btn{  
-                    cursor: pointer;
-                    width: 20px;
-                    height: 20px;
-                    background-image: url('../../resources/images/ic-pause.png');
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    &.active{
-                        background-image: url('../../resources/images/ic-play.png');
+                left: 29%;
+                transform: translate(-29%, 0);
+                .play-btn{
+                    &::after{
+                        font-size:20px;
                     }
                 }
+                
             }
         }
     }
     .banner {
         width: 100%;
-        height: calc(100vh);
-        background-size: cover;
-        background-position: center;
-        .banner-wrap{
-            display: flex;
-            flex-flow: column;
-            p:nth-child(1){font-size:52px;line-height: 1.35;color:$white;margin-bottom:3em;text-shadow: 0.6px 0.8px 1px rgba(0, 0, 0, 0.3);
-            position: absolute; top:200px; span{font-weight: bold;}}
-            p:nth-child(2){
-                color:$white;
-                font-size: 32px;
-                margin-top: 60px; 
-                font-weight: bold;
-                text-shadow: 0.6px 0.8px 1px rgba(0, 0, 0, 0.3);
-                line-height: 38px;
-                position: absolute;
-                bottom:170px;
-                span{
-                    color:$white;font-size: 24px;line-height: 1.6;text-shadow: 0.6px 0.8px 1px rgba(0, 0, 0, 0.3);
-                }
-            }
+        .banner-wrap{      
+            padding: 4rem;
+            p:nth-child(1){font-weight: bold;font-size:42px;top:150px;}
+            p:nth-child(2){color:$white;font-size: 25px;margin-top: 50px;}
+            p:nth-child(3){color:$white;font-size: 19px;line-height: 1.6;}
         }
     }
     .swiper-button-prev{
-        left: 5%;
+        left: 10px;
     }
     .swiper-button-next{
-        right:5%;
-    }
-    @include media-breakpoint-down(xl){
-        .swiper-container{
-            &.main{
-                .swiper-pagination{
-                    width: 100%;
-                    padding: 0 4.5em;
-                }
-                .player{
-                    width: 100%;
-                    padding: 0 16em;
-                    .play-btn{
-                        &::after{
-                            font-size:20px;
-                        }
+        right:10px;
+    } 
+}
+@include media-breakpoint-down(md){
+    .swiper-container{
+        &.main{
+            .swiper-pagination{
+                width: 100%;
+                padding: 0 4em;
+            }
+            .player{
+                left: 35%;
+                transform: translate(-35%, 0);
+                .play-btn{
+                    &::after{
+                        font-size:20px;
                     }
-                    
                 }
+                
             }
         }
-        .banner {
-            width: 100%;
-            .banner-wrap{      
-                padding: 4rem;
-                p:nth-child(1){font-weight: bold;font-size:42px;top:150px;}
-                p:nth-child(2){color:$white;font-size: 25px;margin-top: 50px;}
-                p:nth-child(3){color:$white;font-size: 19px;line-height: 1.6;}
-            }
-        }
-        .swiper-button-prev{
-            left: 10px;
-        }
-        .swiper-button-next{
-            right:10px;
-        } 
     }
-    @include media-breakpoint-down(md){
-        .swiper-container{
-            &.main{
-                .swiper-pagination{
-                    width: 100%;
-                    padding: 0 4em;
-                }
-                .player{
-                    width: 100%;
-                    padding: 0 16em;
-                    .play-btn{
-                        &::after{
-                            font-size:20px;
-                        }
-                    }
-                    
-                }
-            }
+    .banner {
+        width: 100%;
+        .banner-wrap{      
+            padding: 4rem;
+            p:nth-child(1){font-weight: bold;font-size:35px;line-height: 1.35;color:$white;}
+            p:nth-child(2){color:$white;font-size: 25px;margin-top: 50px;}
+            p:nth-child(3){color:$white;font-size: 19px;line-height: 1.6;}
         }
-        .banner {
-            width: 100%;
-            .banner-wrap{      
-                padding: 4rem;
-                p:nth-child(1){font-weight: bold;font-size:35px;line-height: 1.35;color:$white;}
-                p:nth-child(2){color:$white;font-size: 25px;margin-top: 50px;}
-                p:nth-child(3){color:$white;font-size: 19px;line-height: 1.6;}
-            }
-        } 
-    }
-    @include media-breakpoint-down(sm){
-        .swiper-container{
-            &.main{
-                .swiper-pagination{
-                    padding: 0 2em;
-                    bottom:25%;
-                    .swiper-pagination-bullet{
-                        width: 10px;
+    } 
+}
+@include media-breakpoint-down(sm){
+    .swiper-container{
+        &.main{
+            .swiper-pagination{
+                padding: 0 2em;
+                bottom:25%;
+                .swiper-pagination-bullet{
+                    width: 10px;
+                    height: 10px;
+                    margin:0 5px;
+                    &.swiper-pagination-bullet-active{
+                        background-color: $orange;
+                        width: 40px;
                         height: 10px;
-                        margin:0 5px;
-                        &.swiper-pagination-bullet-active{
-                            background-color: $orange;
-                            width: 40px;
-                            height: 10px;
-                        }
                     }
                 }
-                .player{
-                    bottom:25.5%;
-                    .play-btn{
-                        width: 13px;
-                        height: 13px;
-                        &::after{
-                            font-size:14px;
-                        }
+            }
+            .player{
+                bottom:26%;
+                left: 40%;
+                transform: translate(-40%, 0);
+                .play-btn{
+                    width: 13px;
+                    height: 13px;
+                    &::after{
+                        font-size:14px;
                     }
                 }
             }
         }
-        .banner{
-            .banner-wrap{ 
-                margin-top: 1rem;
-                padding: 2rem;
-                p:nth-child(1){font-weight: bold;font-size:28px;line-height: 1.35;color:$white;top:25%;}
-                p:nth-child(2){color:$white;font-size: 19px;margin-top: 40px; bottom:30%;}
-                p:nth-child(3){color:$white;font-size: 15px;line-height: 1.6;}
-            }
-        } 
     }
+    .banner{
+        .banner-wrap{ 
+            margin-top: 1rem;
+            padding: 2rem;
+            p:nth-child(1){font-weight: bold;font-size:28px;line-height: 1.35;color:$white;top:25%;}
+            p:nth-child(2){color:$white;font-size: 19px;margin-top: 40px; bottom:30%;}
+            p:nth-child(3){color:$white;font-size: 15px;line-height: 1.6;}
+        }
+    } 
+}
 
 
 
-    .section-2 {
-        padding: 90px 0;
-        .about {
-            padding: 20px;
-            .ic-1 {
-                width: 100px;
-                height: 100px;
-                display: inline-block;
-                background-image: url('../../resources/images/ic-01.png');
-                background-size: cover;
-                background-position: center;
-            }
-
-            .ic-2 {
-                width: 100px;
-                height: 100px;
-                display: inline-block;
-                background-image: url('../../resources/images/ic-02.png');
-                background-size: cover;
-                background-position: center;
-            }
-
-            .ic-3 {
-                width: 100px;
-                height: 100px;
-                display: inline-block;
-                background-image: url('../../resources/images/ic-03.png');
-                background-size: cover;
-                background-position: center;
-            }
-
-            .ic-4 {
-                width: 100px;
-                height: 100px;
-                display: inline-block;
-                background-image: url('../../resources/images/ic-04.png');
-                background-size: cover;
-                background-position: center;
-            }
-
-            p:nth-child(2) {
-                font-size: 19px;
-                color: $black;
-            }
-
-            p:nth-child(3) {
-                font-size: 40px;
-                color: $black;
-
-                span {
-                    font-size: 24px;
-                }
-            }
+.section-2 {
+    padding: 90px 0;
+    .about {
+        padding: 20px;
+        .ic-1 {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-image: url('../../resources/images/ic-01.png');
+            background-size: cover;
+            background-position: center;
         }
 
+        .ic-2 {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-image: url('../../resources/images/ic-02.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .ic-3 {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-image: url('../../resources/images/ic-03.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .ic-4 {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-image: url('../../resources/images/ic-04.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        p:nth-child(2) {
+            font-size: 19px;
+            color: $black;
+        }
+
+        p:nth-child(3) {
+            font-size: 40px;
+            color: $black;
+
+            span {
+                font-size: 24px;
+            }
+        }
     }
 
+}
+
+.section-3 {
+    background-color: $gray-f2;
+    .global-text {
+        p:nth-child(1) {
+            font-size: 38px;
+            span {
+                color: $orange;
+            }
+        }
+        p:nth-child(2) {
+            font-size: 20px;
+            font-weight: 400;
+            color: $black;
+            margin: 50px 0;
+        }
+    }
+}
+@include media-breakpoint-down(md){
+    
     .section-3 {
-        background-color: $gray-f2;
+        padding: 50px 0;
         .global-text {
+            margin-top: 3rem;
+        
             p:nth-child(1) {
-                font-size: 38px;
-                span {
-                    color: $orange;
-                }
+                font-size: 28px;
             }
             p:nth-child(2) {
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: 400;
                 color: $black;
                 margin: 50px 0;
             }
         }
     }
-    @include media-breakpoint-down(md){
-       
-        .section-3 {
-            padding: 50px 0;
-            .global-text {
-                margin-top: 3rem;
-            
-                p:nth-child(1) {
-                    font-size: 28px;
-                }
-                p:nth-child(2) {
-                    font-size: 18px;
-                    font-weight: 400;
-                    color: $black;
-                    margin: 50px 0;
-                }
-            }
+}
+.section-4 {
+    padding: 90px 0 0 0;
+    .fp-wrap {
+        height: 100%;
+        padding: 75px 50px;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid $gray-dd;
+
+        p:nth-child(1) {
+            font-size: 38px;
+            color: $black;
         }
-    }
-    .section-4 {
-        padding: 90px 0 0 0;
-        .fp-wrap {
-            height: 100%;
-            padding: 75px 50px;
-            overflow: hidden;
-            position: relative;
-            border: 1px solid $gray-dd;
 
-            p:nth-child(1) {
-                font-size: 38px;
-                color: $black;
-            }
-
-            p:nth-child(2) {
-                font-size: 20px;
-                font-weight: 400;
-                color: $black;
-                margin-top: 50px;
-            }
-
-            .connect-img {
-                text-align: right;
-
-                img {
-                    margin: 0 5px;
-                }
-            }
-
-            .phone-img {
-                width: 615px;
-                height: 615px;
-                background-image: url('../../resources/images/ic-phone-01.png');
-                background-size: cover;
-                background-position: center;
-                position: absolute;
-                transform: translate(-19%, -17%);
-                z-index: -1;
-            }
-
-            .phone-img-2 {
-                width: 615px;
-                height: 615px;
-                background-image: url('../../resources/images/ic-phone-02.png');
-                background-size: cover;
-                background-position: center;
-                position: absolute;
-                transform: translate(18%, -49%);
-                z-index: -2;
-            }
+        p:nth-child(2) {
+            font-size: 20px;
+            font-weight: 400;
+            color: $black;
+            margin-top: 50px;
         }
-    }
 
-    .section-5 {
-        padding : 90px 0;
-        .newsroom{
-            height: 100%;
-            padding: 0 20px;
-        }
-    
-        .newsroom-img {
+        .connect-img {
+            text-align: right;
+
             img {
-                width: 100%;
+                margin: 0 5px;
             }
         }
 
-        .newsroom-content {
-            height: 100%;
-            background-color: $gray-f2;
+        .phone-img {
+            width: 615px;
+            height: 615px;
+            background-image: url('../../resources/images/ic-phone-01.png');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            transform: translate(-19%, -17%);
+            z-index: -1;
+        }
+
+        .phone-img-2 {
+            width: 615px;
+            height: 615px;
+            background-image: url('../../resources/images/ic-phone-02.png');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            transform: translate(18%, -49%);
+            z-index: -2;
+        }
+    }
+}
+
+.section-5 {
+    padding : 90px 0;
+    .newsroom{
+        height: 100%;
+        padding: 0 20px;
+    }
+
+    .newsroom-img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .newsroom-content {
+        height: 100%;
+        background-color: $gray-f2;
+
+        .news-title {
+            font-size: 24px;
+            color: $gray-33;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .news-date {
+            font-size: 19px;
+            font-weight: 400;
+            color: $gray-66;
+        }
+
+        .link-btn {
+            margin: 30px 0 0 0;
+        }
+
+        .news-list {
+            margin-bottom: 40px;
 
             .news-title {
-                font-size: 24px;
-                color: $black;
                 margin-bottom: 5px;
             }
-
-            .news-date {
-                font-size: 19px;
-                font-weight: 400;
-                color: $black;
-            }
-
-            .link-btn {
-                margin: 30px 0 0 0;
-            }
-
-            .news-list {
-                margin-bottom: 40px;
-
-                .news-title {
-                    margin-bottom: 5px;
-                }
-            }
-            .newsroom-text{
-                padding: 30px 40px;
-            }
         }
-        @include media-breakpoint-down(md){
-            .newsroom{
-                margin-top: 2rem;
-                padding : 0;
-                .newsroom-content{
-                    height: auto;
-                }
+        .newsroom-text{
+            padding: 30px 40px;
+        }
+    }
+    @include media-breakpoint-down(md){
+        .newsroom{
+            margin-top: 2rem;
+            padding : 0;
+            .newsroom-content{
+                height: auto;
             }
         }
     }
+}
 
 
 
-    @include media-breakpoint-down(sm){
-        
-    }
-
+@include media-breakpoint-down(sm){
+    .section-2{padding :40px 0;}
+    .section-3{padding : 20px 0;}
+    .section-4{padding :40px 0;}
+    .section-5{padding :40px 0;}
 }
 
 

@@ -101,6 +101,9 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
 .p-40 {
     padding: 40px 0;
 }
+.p-t-40{
+    padding : 40px 0 0 0;
+}
 .margin-minus{
     margin-left:-15px !important;
     margin-right:-15px !important;
@@ -169,7 +172,7 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
 }
 ////
 .border-text {
-    width: 90px;
+    width: 70px;
     padding: 0 5px;
     border: 1px solid #797979;
     border-radius: 30px;
@@ -216,7 +219,7 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
 
 //텍스트 comm
 // c = common, o = orange, b = bold, s = small
-.bold{font-weight:bold;}
+.bold{font-weight:bold !important;}
 //큰 텍스트
 .c-lg-text {
     font-size: 30px;
@@ -269,7 +272,7 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
     font-size: 20px;
     color: $orange;
     margin-top:35px;
-
+    font-weight: bold;
     &.black {
         color: $black;
         margin: 0 0 10px 0;
@@ -391,10 +394,12 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             width: 60px;
             height: 60px;
             background-size: contain;
+            background-repeat: no-repeat;
         }
 
         .news-title {
             font-size: 20px;
+            font-weight: bold;
         }
 
         .news-date {
@@ -412,8 +417,8 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
         justify-content: space-between;
 
         span:nth-child(1) {
-            font-size: 19px;
-            color: $black;
+            font-size: 16px;
+            font-weight: bold;
         }
 
         button:nth-child(2) {
@@ -504,9 +509,10 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
     margin: 0 auto 35px auto;
 
     .icon {
-        width: 53px;
-        height: 75px;
+        width: 65px;
+        height: 65px;
         background-size: contain;
+        background-position:center;
         background-repeat: no-repeat;
     }
 
@@ -514,16 +520,16 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
         width: 132px;
         height: 132px;
         position: relative;
-
         &::after {
             content: "";
             position: absolute;
             width: 20px;
-            height: 30px;
+            height: 35px;
             background-image: url('../../resources/images/gray-right.png');
+            background-repeat: no-repeat;
             top: 50%;
-            right: -40%;
-            transform: translate(40%, -50%);
+            right: -50%;
+            transform: translate(50%, -50%);
         }
         &.none-after{
             &::after {         
@@ -670,13 +676,21 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             th {
                 padding: 10px 0;
                 background-color: $gray-f5;
+                font-weight: bold;
             }
         }
         tbody {
-            td,
+            
             th {
                 padding: 20px;
                 vertical-align: middle;
+            }
+            td{
+                padding: 20px;
+                vertical-align: middle;
+                &.bold{
+                    p{font-weight: bold;}
+                }
             }
         }
     }
@@ -740,13 +754,16 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
         }
     }
     &.ir {
+        thead{
+            th{font-weight: bold;}
+        }
         th {
             padding: 10px 15px;
             border-top: 1px solid $gray-33;
             border-bottom: 1px solid $gray-99;
             background-color: $gray-f5;
             vertical-align: middle;
-            font-size: 19px;
+            font-size: 16px;
         }
         td {
             height: 60px;
@@ -824,6 +841,7 @@ table{
                 white-space: nowrap;
                 overflow: hidden;
             }
+            .date{font-size:14px; color:rgba(51, 51, 51, 0.7);}
         }
     }
 }
@@ -932,7 +950,7 @@ table{
     }
 
     .c-text-border {
-        font-size: 23px;
+        font-size: 21px;
         position: relative;
         padding-bottom: 5px;
 
@@ -948,7 +966,7 @@ table{
     }
 
     .lg-text-border {
-        font-size: 23px;
+        font-size: 21px;
         position: relative;
         padding-bottom: 5px;
         color: $orange;
@@ -1066,6 +1084,8 @@ table{
     .m-t-45{margin-top:20px;}
     .m-t-35{margin-top:15px;}
     .m-b-30{margin: 0 !important;}
+    .margin-50{margin-left:0;margin-right:0;}
+    .margin-25{margin-left:0;margin-right:0;}
     .table-wrap{
         overflow: scroll;       
         .table{
