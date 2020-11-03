@@ -74,6 +74,9 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
     margin-left: -50px;
     margin-right: -50px;
 }
+.m-t-10{
+    margin-top:10px !important;
+}
 .m-t-30 {
     margin-top: 30px;
 }
@@ -847,7 +850,13 @@ table{
             background-color: $gray-dd;
         }
     }
-
+    &.subsidiarys{
+        li{font-size:14px;}
+        li:first-child{
+            margin:30px 0;
+            span{border:1px solid $gray-dd;border-radius: 15px;padding: 5px 20px;margin-left:15px;}
+        }
+    }
     &.ir {
         li {            
             display: flex;

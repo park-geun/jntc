@@ -206,10 +206,12 @@ $(document).ready(function () {
         return false;
     });
 
-   
 })
-
-
+//계열사 소개 토글
+function openSubsidiaryMap(idx){
+    $('#map-'+idx).toggleClass('active');
+    $('.btn-'+idx).toggleClass('active');
+}
 function openSearch() {
     $('.search-bar').show();
     $('.sitemaps').hide();

@@ -60,6 +60,28 @@ section>div>h1 {
                 }
             }
         }
+        .main-btn-prev{
+            &::after{
+                content:"";
+                width: 34px;
+                height: 64px;
+                background-image: url('../../resources/images/btn-g-left.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }  
+        }
+        .main-btn-next{
+            &::after{
+                content:"";
+                width: 34px;
+                height: 64px;
+                background-image: url('../../resources/images/btn-g-right.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }  
+        }
     }
 }
 .banner {

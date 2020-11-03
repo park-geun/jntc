@@ -778,7 +778,51 @@
         .dispute-text{width:85%; margin-left:20px;}
     }
 }
-
+//계열사
+.subsidiary{
+    border-bottom: 1px solid $gray-dd;
+    padding:30px 0;
+}
+.subsidiary-img{
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+}
+.subsidiary-wrap{
+    padding:0 0 0 50px;
+}
+.subsidiary-title{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    .subsidiary-btn{
+        width: 30px;height: 15px;background: url(../../resources/images/g_list_btn.png) no-repeat center;
+        &.active{
+            width: 30px;height: 15px;background: url(../../resources/images/g_list_btn_on.png) no-repeat center;
+        }
+    }
+}
+.road-map{
+    display:none;
+    &.active{
+        display:block;
+    }
+}
+.maps{
+    width: 100%;
+    height: 400px;
+    margin-top:15px;
+}
+@include media-breakpoint-down(sm){
+    .subsidiary-wrap{
+        padding:0;
+    }
+    .maps{
+        width: 100%;
+        height: 200px;
+    }
+}
 //검색결과
 .search-result-list{
     border-bottom:1px solid $gray-33;
@@ -960,6 +1004,3 @@
         margin-top: 10px;
     }
 }
-
-
-
