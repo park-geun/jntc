@@ -114,6 +114,7 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
     line-height: 1.33;
     margin-bottom: 35px;
     position: relative;
+    font-weight: bold;
 
     &::after {
         content: "";
@@ -273,6 +274,7 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
     color: $orange;
     margin-top:35px;
     font-weight: bold;
+    line-height: 26px;
     &.black {
         color: $black;
         margin: 0 0 10px 0;
@@ -318,7 +320,7 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
 .c-s-text {
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 26px;
     margin-top:35px;
 }
 // 붉은 색 텍스트
@@ -601,7 +603,7 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             font-size: 20px;
             color: $black;
             border: 1px solid $gray-b2;
-
+            font-weight: bold;
             &.active {
                 background-color: $orange;
                 border: 1px solid $orange;
@@ -626,7 +628,7 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             display: flex;
             align-items: center;
             justify-content: center;
-
+            font-weight: bold;
             &.active {
                 background-color: $orange;
                 border: 1px solid $orange;
@@ -656,7 +658,6 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             }
         }
     }
-
 }
 
 .table {
@@ -788,6 +789,7 @@ table{
             height: 60px;
             .form-control{
                 height: 45px;
+                &::placeholder{font-size:16px;}
             }
             input{
                 &.w-100{width: 100%;}
@@ -796,6 +798,31 @@ table{
             }
         }
         
+    }
+}
+.select-box{
+    text-align: right;
+    @at-root{
+        .ui-menu{
+            .ui-menu-item-wrapper{
+                padding:0 1em 0 .4em;
+            }
+        }
+        .ui-selectmenu-button{
+            &.ui-button{width:9em;border:1px solid $gray-33;}
+            background-color: $white;
+            height: 40px;
+            .ui-icon-triangle-1-s{
+                background-position: -65px -12px;
+            }
+            .ui-selectmenu-text{
+                line-height: 25px;
+            }
+        }
+        .ui-state-active{
+            border:1px solid $orange !important;
+            background: $orange !important;
+        }
     }
 }
 .last-border {
@@ -1109,6 +1136,20 @@ table{
     }
     .example{
         margin-bottom: 20px;
+    }
+
+    .nav-tabs{
+        &.search{
+            width: 1000px;
+            white-space: nowrap;
+            .search-tabs{
+                .nav-link{
+                    padding:10px 0;
+                    font-size:17px;
+                }
+                
+            }
+        }
     }
 }
 

@@ -18,7 +18,7 @@ header {
         ul {
             display: flex;
             font-size: 28px;
-            li { padding: 25px 30px; color:$black;
+            li { padding: 17px 30px; color:$black;
                 a{font-size:23px; font-weight:bold;}
                 &.active{color:$orange;border-bottom:3px solid $orange;
                     a{color:$orange; font-weight: bold;}
@@ -126,7 +126,7 @@ footer {
     }
 
     .footer-info {
-        padding: 40px 0;
+        padding: 20px 0;
         p {
             line-height: 1.76;
             font-size:15px;
@@ -262,7 +262,6 @@ footer {
 
 
 .search-bar {
- 
     background-color: $white;
     padding: 100px 0;
     &.main-search{
@@ -273,13 +272,26 @@ footer {
         display: none;
     }
     .inputSearch{
-        width: 60%;
+        width: 40%;
         margin:0 auto;
         .form-control{
             border-right:0;
+            &:focus{
+                border-top:2px solid $orange;
+                border-bottom:2px solid $orange;
+                border-left:2px solid $orange;
+            }
         }
         .input-group-text{
             background-color: $white;
+            transition: 0.3s;
+            &.active{
+                border-top:2px solid $orange;
+                border-bottom:2px solid $orange;
+                border-right:2px solid $orange;
+                border-left:0;
+                transition: 0.3s;
+            }
         }
     }
     .search {
@@ -287,7 +299,6 @@ footer {
             position: relative;
             display: flex;
         }
-        
         .searchTerm {
             width: 100%;
             border: 3px solid $gray-dd;
@@ -330,7 +341,7 @@ footer {
             background-size: contain;
             position: absolute;
             top: 35px;
-            right: 10%;
+            right: 15%;
         }
     &.ir{
         display: block;
@@ -360,18 +371,17 @@ footer {
     }
 }
 
-
-
 .sub-content{
     position: relative;
-    padding:85px 0 0 0;
+    padding:69px 0 0 0;
     .sub-bg{
         width:100%;
         height: 80vh;
         position: absolute;
-        top: 85px;
+        top: 69px;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
+        background-position: top center;
         z-index: -1;
     }
     .title-box{
@@ -668,7 +678,7 @@ aside{
     &.bending{
         width :100% !important;
         position: absolute;
-        top: -25%;
+        top: -15%;
         left: 50%;
         transform:translate(-50%, 10%);
         .lb-data{
@@ -678,6 +688,7 @@ aside{
                 span{}
             }
             .lb-close{
+                display:none;
                 right:5%;
             }
         }
@@ -691,6 +702,7 @@ aside{
                 span{}
             }
             .lb-close{
+                display:none;
                 right:5%;
             }
         }

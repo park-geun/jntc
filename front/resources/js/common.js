@@ -57,6 +57,15 @@ window.onload = function () {
             }
         });
     });
+    //검색창 포커스
+    $('.form-control').focus(function(){
+        $('.input-group-text').addClass('active');
+        console.log('focus');
+    })
+    $('.form-control').blur(function(){
+        $('.input-group-text').removeClass('active');
+        console.log('focus');
+    })
 }
 
 function openMobileMenu() {
@@ -109,7 +118,7 @@ $(document).ready(function () {
             delay: 3000,
         }
     });
-
+    //main slider play stop btn
     $('.play-btn').on("click", function () {
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
@@ -121,10 +130,6 @@ $(document).ready(function () {
         }
 
     })
-
-  
-    
-
      ///사업소개 강화글래스 hover
      $('#cover-glass .swiper-slide').hover(function () {
         var idx = $(this).index() + 1;
@@ -193,8 +198,7 @@ $(document).ready(function () {
 
     })
 
-
-
+    //top scroll btn
     $('.top-scroll').click(function () {
         $('html, body').animate({
             scrollTop: 0
@@ -202,29 +206,9 @@ $(document).ready(function () {
         return false;
     });
 
-    $('.form-control').click(function () {
-
-    })
+   
 })
 
-// tabProductChange('.cover-glass');
-// function tabProductChange(e){
-//     $(e + ' a').each(function() {
-//         $(this).focus(function () {
-//             // var idx = $(this).length;
-//             // console.log(idx);
-//             // var glassImg = $('#glass_img_' + idx);
-
-//             // $(this).addClass('active');
-//             // glassImg.attr('style', 'background-image:url(../../resources/images/phone-' + idx + '.jpg)');
-//         });
-//         $(this).blur(function () {
-//             var idx = $(this).index() + 1;
-//             var glassImg = $('#glass_img_' + idx);
-//         })
-
-//     })
-// }
 
 function openSearch() {
     $('.search-bar').show();

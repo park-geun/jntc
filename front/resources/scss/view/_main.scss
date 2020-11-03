@@ -27,15 +27,15 @@ section>div>h1 {
             transform: translate(-50%, 0);
             text-align: left;
             .swiper-pagination-bullet{
-                width: 15px;
-                height: 15px;
+                width: 10px;
+                height: 10px;
                 opacity: 1;
                 background-color: $white;
-                margin:0 10px;
+                margin:0 5px;
                 &.swiper-pagination-bullet-active{
                     background-color: $orange;
-                    width: 60px;
-                    height: 15px;
+                    width: 45px;
+                    height: 10px;
                     border-radius: 15px;
                 }
                 &:nth-child(1){margin-left:0px;}

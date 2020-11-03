@@ -135,7 +135,7 @@
 
     p:nth-child(2) {
         font-size: 17px;
-        line-height: 1.58;
+        line-height: 26px;
         font-weight: 400;
     }
 }
@@ -326,13 +326,13 @@
 
     .glass-brand {
         font-size: 16px;
-        line-height: 32px;
+        line-height: 26px;
         margin-top: 40px;
         font-weight: 400;
     }
     .glass-name {
         font-size: 16px;
-        line-height: 32px;
+        line-height: 26px;
         font-weight: 400;
         &.cg{
             margin-top: 25px;
@@ -560,7 +560,7 @@
 .socket-explanation {
 
     .socket-detail {
-        margin-top: 40px;
+        margin-top: 35px;
 
         p {
             margin-bottom: 10px;
@@ -651,14 +651,22 @@
         p{color:$white;}
     }
     &.footer-modal{
-        padding: 0 50px;
+        padding: 0 40px;
         .modal-popup-header{
             width:100%;
-            padding : 60px 0 24px;
+            padding : 40px 0 24px;
             border-bottom:1px solid $gray-dd;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            .close-btn {
+                display:block;
+                background-image: url('../../resources/images/ic-gnb-close.png');
+                width: 21px;
+                height: 21px;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
         }
         .sub-title{
             width:auto;
@@ -708,11 +716,29 @@
 
 .gallery-thumbs .swiper-slide {
         width: 20% !important;
+        position: relative;
+        cursor: pointer;
+        &::after{
+            content:"";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $black;
+            opacity: .4;
+        }
+        &.swiper-slide-thumb-active{
+            border:5px solid $orange;
+            &::after{
+                opacity: 0;
+            }
+        }
+        
     .social-b{
         height: 120px;
-        opacity: 0.4;
         background-size: cover;
         background-position: center;
+        
     }
 }
 
@@ -735,6 +761,22 @@
         left:-5%;
     }
     &::after{font-size:20px;color:$black;}
+}
+//분쟁광물
+.dispute-list{
+    li{
+        display:flex;
+        padding: 12px 0;
+        .dispute-img{
+            display:inline-block;
+            width: 73px;
+            height: 73px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .dispute-text{width:85%; margin-left:20px;}
+    }
 }
 
 //검색결과

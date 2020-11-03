@@ -30,10 +30,13 @@
             <div class="search-bar result">
                 <div class="input-group inputSearch">
                     <input type="text" class="form-control" placeholder="검색어를 입력해 주세요" aria-label="Search User"
-                        aria-describedby="basic-addon2">
+                        aria-describedby="search-result">
                     <div class="input-group-append">
-                        <span class="input-group-text" id="basic-addon2">
-                            <a href="#"><i class="fa fa-search"></i></a></span>
+                        <span class="input-group-text" id="search-result">
+                            <a href="javascript:void(0);">
+                                <img src="../../resources/images/btn-search.png" alt="검색버튼" width="80%" height="80%">
+                            </a>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -42,32 +45,34 @@
                     <div class="search-result-text">
                         <p class="sub-text"><span>제이앤티씨</span>에 대한 <span>3735</span>건의 검색결과가 있습니다.</p>
                     </div>
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="search-tabs">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tap-1" role="tab"
-                                aria-controls="home" aria-selected="true">전체<span>(7735)</span></a>
-                        </li>
-                        <li class="search-tabs">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tap-2" role="tab"
-                                aria-controls="profile" aria-selected="false">기업정보<span>(1735)</span></a>
-                        </li>
-                        <li class="search-tabs">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tap-3" role="tab"
-                                aria-controls="profile" aria-selected="false">제품<span>(1735)</span></a>
-                        </li>
-                        <li class="search-tabs">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tap-4" role="tab"
-                                aria-controls="profile" aria-selected="false">기술<span>(289)</span></a>
-                        </li>
-                        <li class="search-tabs">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tap-5" role="tab"
-                                aria-controls="profile" aria-selected="false">인재/채용<span>(2386)</span></a>
-                        </li>
-                        <li class="search-tabs">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tap-6" role="tab"
-                                aria-controls="profile" aria-selected="false">투자정보<span>(3572)</span></a>
-                        </li>
-                    </ul>
+                    <div class="overflow-auto">
+                    	<ul class="nav nav-tabs search" id="myTab" role="tablist">
+                    	    <li class="search-tabs">
+                    	        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tap-1" role="tab"
+                    	            aria-controls="home" aria-selected="true">전체<span>(7735)</span></a>
+                    	    </li>
+                    	    <li class="search-tabs">
+                    	        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tap-2" role="tab"
+                    	            aria-controls="profile" aria-selected="false">기업정보<span>(1735)</span></a>
+                    	    </li>
+                    	    <li class="search-tabs">
+                    	        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tap-3" role="tab"
+                    	            aria-controls="profile" aria-selected="false">제품<span>(1735)</span></a>
+                    	    </li>
+                    	    <li class="search-tabs">
+                    	        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tap-4" role="tab"
+                    	            aria-controls="profile" aria-selected="false">기술<span>(289)</span></a>
+                    	    </li>
+                    	    <li class="search-tabs">
+                    	        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tap-5" role="tab"
+                    	            aria-controls="profile" aria-selected="false">인재/채용<span>(2386)</span></a>
+                    	    </li>
+                    	    <li class="search-tabs">
+                    	        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tap-6" role="tab"
+                    	            aria-controls="profile" aria-selected="false">투자정보<span>(3572)</span></a>
+                    	    </li>
+                    	</ul>
+                    </div>
         
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="tap-1" role="tabpanel" aria-labelledby="home-tab">
