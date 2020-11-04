@@ -148,16 +148,14 @@ footer {
 
 .gnb {
     .container{
-        display: none;
+        display: block;
     }
     border-top: 1px solid $gray-dd;
     .gnb-list {
         padding: 30px 0;
-
         ul {
             width: 20%;
             padding: 0 30px 0 0;
-
             .gnb-title {
                 color: $gray-33;
                 font-size: 20px;
@@ -168,7 +166,6 @@ footer {
                     padding-bottom: 10px;
                 }
             }
-
             li {
                 line-height: 30px;
                a{
@@ -181,7 +178,7 @@ footer {
     .gnb-list-sub{
         padding : 30px 0;
         text-align: right;
-        p{word-break: keep-all;
+        p{word-break: break-all;
             &:nth-child(1){font-size: 34px; font-weight:bold; color:$gray-33;}
             &:nth-child(2){font-size: 17px; font-weight: 400;margin:10px 0; text-align:right;color:$gray-66}
         }
@@ -764,6 +761,7 @@ aside{
  
 @include media-breakpoint-down(xl){
     header {
+        padding :10px;
         nav {
             ul {
                 display: flex;
@@ -798,7 +796,7 @@ aside{
             img {padding: 0 0 0 10px;}
         }
         .logo{
-            img{width:60%;}
+            img{width:100%;}
         }
         .right-header{                
             display: flex;
@@ -865,6 +863,7 @@ aside{
     .sub-content{
         padding : 60px 0 0 0;
         .sub-bg{
+            background-size: cover;
             top:60px;
         }
         .title-box {

@@ -413,11 +413,11 @@ header .logo a img{ height:40px; }
 
 section > div > h1{ font-size: 34px; margin-bottom: 45px; font-weight: bold;} 
 .section-3 .global-text p:nth-child(1){ font-size:31px; line-height: 1.4; font-weight: bold;}
-.section-3 .global-text p:nth-child(2){ font-size:16px; line-height: 1.6;     margin: 30px 0;}
+.section-3 .global-text p:nth-child(2){ font-size:16px; line-height: 1.6; margin: 30px 0;}
 .section-3 .global-img img{ height:450px; }
 .section-4 .fp-wrap p:nth-child(1){font-size:30px;}
 .section-4 .fp-wrap p:nth-child(2){font-size:16px;margin-top: 20px;}
-.section-4 .fp-wrap{background-color: #fff;background-position: right bottom;background-repeat: no-repeat;background-size: contain;padding: 50px 40px;padding-bottom: 100px;}
+.section-4 .fp-wrap{height:420px;background-color: #fff;background-position: right bottom;background-repeat: no-repeat;background-size: cover;padding: 50px 40px;padding-bottom: 100px;}
 .section-4 .features{padding-left:30px;padding-right:30px; height: 100%;}
 .section-5 .newsroom-content .news-title{ font-size: 18px; line-height: 24px; }
 .section-5 .newsroom-content .news-date{font-size:15px;}

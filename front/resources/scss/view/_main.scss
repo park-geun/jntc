@@ -20,12 +20,18 @@ section>div>h1 {
 
 .swiper-container{
     &.main{
-        .swiper-pagination{
-            width: 1210px;
-            bottom: 90px;
+        .control-btn{
+            display:flex;
+            align-items: center;
+            position: absolute;
+            bottom:20%;
             left: 50%;
-            transform: translate(-50%, 0);
+            transform: translate(-50%,-20%);
+            z-index: 5;
+        }
+        .swiper-pagination{
             text-align: left;
+            position: static;
             .swiper-pagination-bullet{
                 width: 10px;
                 height: 10px;
@@ -42,12 +48,7 @@ section>div>h1 {
             }
         }
         .player{
-            position: absolute;
-            bottom: 93px;
-            z-index: 10;
-            left: 29%;
-            transform: translate(-29%, 0);
-            text-align: left;
+            margin-left:20px;
             .play-btn{  
                 cursor: pointer;
                 width: 20px;
@@ -89,11 +90,15 @@ section>div>h1 {
     height: calc(100vh);
     background-size: cover;
     background-position: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     .banner-wrap{
         display: flex;
         flex-flow: column;
-        p:nth-child(1){font-size:52px;line-height: 1.35;color:$white;margin-bottom:3em;text-shadow: 0.6px 0.8px 1px rgba(0, 0, 0, 0.3);
-        position: absolute; top:25%; span{font-weight: bold;}}
+        p:nth-child(1){font-size:52px;line-height: 1.35;color:$white;margin-bottom:2em;text-shadow: 0.6px 0.8px 1px rgba(0, 0, 0, 0.3);
+            span{font-weight: bold;}
+        }
         p:nth-child(2){
             color:$white;
             font-size: 32px;
@@ -101,8 +106,6 @@ section>div>h1 {
             font-weight: bold;
             text-shadow: 0.6px 0.8px 1px rgba(0, 0, 0, 0.3);
             line-height: 38px;
-            position: absolute;
-            bottom:170px;
             span{
                 color:$white;font-size: 24px;line-height: 1.6;text-shadow: 0.6px 0.8px 1px rgba(0, 0, 0, 0.3);
             }
@@ -119,21 +122,8 @@ section>div>h1 {
 }
 @include media-breakpoint-down(xl){
     .swiper-container{
-        &.main{
-            .swiper-pagination{
-                width: 100%;
-                padding: 0 4.5em;
-            }
-            .player{
-                left: 29%;
-                transform: translate(-29%, 0);
-                .play-btn{
-                    &::after{
-                        font-size:20px;
-                    }
-                }
-                
-            }
+        .control-btn{
+            padding:0 4rem;
         }
     }
     .banner {
@@ -154,22 +144,7 @@ section>div>h1 {
 }
 @include media-breakpoint-down(md){
     .swiper-container{
-        &.main{
-            .swiper-pagination{
-                width: 100%;
-                padding: 0 4em;
-            }
-            .player{
-                left: 35%;
-                transform: translate(-35%, 0);
-                .play-btn{
-                    &::after{
-                        font-size:20px;
-                    }
-                }
-                
-            }
-        }
+       
     }
     .banner {
         width: 100%;
@@ -183,33 +158,9 @@ section>div>h1 {
 }
 @include media-breakpoint-down(sm){
     .swiper-container{
-        &.main{
-            .swiper-pagination{
-                padding: 0 2em;
-                bottom:25%;
-                .swiper-pagination-bullet{
-                    width: 10px;
-                    height: 10px;
-                    margin:0 5px;
-                    &.swiper-pagination-bullet-active{
-                        background-color: $orange;
-                        width: 40px;
-                        height: 10px;
-                    }
-                }
-            }
-            .player{
-                bottom:26%;
-                left: 40%;
-                transform: translate(-40%, 0);
-                .play-btn{
-                    width: 13px;
-                    height: 13px;
-                    &::after{
-                        font-size:14px;
-                    }
-                }
-            }
+        .control-btn{
+            padding:0 2rem;
+            bottom: 25%;
         }
     }
     .banner{
