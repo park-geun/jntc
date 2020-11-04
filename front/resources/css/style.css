@@ -4209,7 +4209,7 @@ footer .btn-prev { width: 160px; height: 45px; border: 1px solid #333333; }
 
 .gnb { border-top: 1px solid #dddddd; }
 
-.gnb .container { display: block; }
+.gnb .container { display: none; }
 
 .gnb .gnb-list { padding: 30px 0; }
 
