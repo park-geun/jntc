@@ -31,7 +31,7 @@
             <!-- include-header -->
         </div>
         <div class="sub-content">
-            <div class="sub-bg" style="background-image:url('../../resources/images/sub-bg.png')"></div>
+            <div class="sub-bg" style="background-image:url('../../resources/images/bg-product-coverglass.png')"></div>
 
             <div class="container">
                 <div class="title-box">
@@ -542,79 +542,77 @@
             <!-- ///include footer -->
         </div>
     </div><!-- wrap -->
-
-        <script>
-            $(document).ready(function () {
-                
-                var mySwiper = new Swiper('#swiper_socket_1', {
-                    speed: 400,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    autoplay:true,
-                    loop:true,
-
-                })
-                var mySwiper = new Swiper('#swiper_socket_2', {
-                    speed: 500,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    autoplay:true,
-                    loop:true,
-                })
-                var mySwiper = new Swiper('#swiper_socket_3', {
-                    speed: 600,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    autoplay:true,
-                    loop:true,
-                }) 
-                var mySwiper = new Swiper('#swiper_socket_4', {
-                    speed: 400,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    autoplay:true,
-                    loop:true,
-                })
-                var mySwiper = new Swiper('#swiper_socket_5', {
-                    speed: 500,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    autoplay:true,
-                    loop:true,
-                })
-                var mySwiper = new Swiper('#swiper_socket_6', {
-                    speed: 600,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    autoplay:true,
-                    loop:true,
-                })
-                $('.lb-outerContainer').addClass('connector');
-                $('.lb-dataContainer').addClass('connector');
-                lightbox.option({
-                    'resizeDuration': 200,
-                    'wrapAround': true,
-                    'alwaysShowNavOnTouchDevices': true,
-                    'disableScrolling': true,
-                    'showImageNumberLabel': false,
-                })
-
+<!-- script -->
+    <script src="../../resources/js/common.js"></script>
+    <script>
+        $(document).ready(function () {
+            
+            var mySwiper = new Swiper('#swiper_socket_1', {
+                speed: 400,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                autoplay:true,
+                loop:true,
 
             })
-        </script>
-        <script src="../../resources/js/common.js"></script>
+            var mySwiper = new Swiper('#swiper_socket_2', {
+                speed: 500,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                autoplay:true,
+                loop:true,
+            })
+            var mySwiper = new Swiper('#swiper_socket_3', {
+                speed: 600,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                autoplay:true,
+                loop:true,
+            }) 
+            var mySwiper = new Swiper('#swiper_socket_4', {
+                speed: 400,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                autoplay:true,
+                loop:true,
+            })
+            var mySwiper = new Swiper('#swiper_socket_5', {
+                speed: 500,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                autoplay:true,
+                loop:true,
+            })
+            var mySwiper = new Swiper('#swiper_socket_6', {
+                speed: 600,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                autoplay:true,
+                loop:true,
+            })
+            $('.lb-outerContainer').addClass('connector');
+            $('.lb-dataContainer').addClass('connector');
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                'alwaysShowNavOnTouchDevices': true,
+                'disableScrolling': true,
+                'showImageNumberLabel': false,
+            })
+        })
+    </script>
 </body>
 
 </html>

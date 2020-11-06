@@ -120,6 +120,14 @@
 	url('../fonts/nanumsquares/NanumSquareB.woff') format('woff'),
 	url('../fonts/nanumsquares/nanumsquareb.svg#nanumsquarebregular') format('svg');
 	font-weight: 700;
-	font-style: normal;
+	font-style: bold;
 }
-
+@font-face {
+	font-family: 'nanum-square-eb';
+	src: url('../fonts/nanumsquares/nanumsquareeb.eot');
+	src: url('../fonts/nanumsquares/nanumsquareeb.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/nanumsquares/nanumsquareeb.ttf') format('truetype'),
+	url('../fonts/nanumsquares/NanumSquareeb.woff') format('woff');
+	font-weight: 900;
+	font-style: bolder;
+}

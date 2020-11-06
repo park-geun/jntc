@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-Compatible" content="IE=edge">
@@ -18,6 +19,24 @@
     <script src="../../resources/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Swiper -->
     <script src="../../resources/plugin/swiper/js/swiper.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwlNqAEil52XRPHmSVb4Luk18qQG9GqcM&amp;sensor=false&amp;language=ko">
+    </script>
+    <script>
+         function initialize() {
+            var myLatlng = new google.maps.LatLng(37.1348402, 126.995392); // 좌표값
+            var mapOptions = {
+                zoom: 14, // 지도 확대레벨 조정
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(document.getElementById('jnte-map'), mapOptions);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+            });
+        }
+        window.onload = initialize;
+    </script>
 </head>
 
 <body>
@@ -32,7 +51,6 @@
             <div class="container">
                 <div class="title-box">
                     <h1 class="title">계열사 소개</h1>
-                    
                 </div>
 
                 <div class="content-body">
@@ -49,7 +67,6 @@
                         <p>국내 계열사</p>
                     </div>
 
-
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
                             <a class="nav-link active" href="subsidiary_domestic.html">국내</a>
@@ -64,7 +81,7 @@
                         <div class="row">
                             <div class="col-xl-4 col-sm-12 p-0">
                                 <div class="subsidiary-img" style="background-image:url('../../resources/images/subsidiary_img_01.png')"></div>
-                                <a href="" class="link-btn m-t-10">홈페이지 바로가기
+                                <a href="http://thejnte.com" class="link-btn m-t-10">홈페이지 바로가기
                                     <img src="../../resources/images/ic-s-right.png" alt="홈페이지 바로가기">
                                 </a>
                             </div>
@@ -89,20 +106,16 @@
                         <div class="row">
                             <div class="col-12 p-0">
                                 <div class="road-map" id="map-1">
-                                    <p class="c-m-text">공장자동화설비 사업부 <span class="c-m-text black">(제 1사업장)</span></p>
-                                    <p class="c-s-text m-0">(제 1사업장) 경기도 화성시 정남면 내향안길 240-5</p>
-                                    
-                                    <div class="maps" id="jnte-map"></div>
-                                  
-                                </div>
-                            </div>
-                            <div class="col-12 p-0">
-                                <div class="road-map" id="map-1">
-                                    <p class="c-m-text">카메라윈도우글라스 사업부 <span class="c-m-text black">(제 2사업장)</span></p>
-                                    <p class="c-s-text m-0">(제 2사업장) 경기도 화성시 향남읍 토성로 464-17</p>
-                                    
-                                    <div class="maps" id="jnte-map"></div>
-                                  
+                                    <div class="wrap">
+                                        <p class="c-m-text">공장자동화설비 사업부 <span class="c-m-text black">(제 1사업장)</span></p>
+                                        <p class="c-s-text m-0">(제 1사업장) 경기도 화성시 정남면 내향안길 240-5</p>
+                                        <div class="maps" id="jnte-map"></div>
+                                    </div>
+                                    <div class="wrap">
+                                        <p class="c-m-text">카메라윈도우글라스 사업부 <span class="c-m-text black">(제 2사업장)</span></p>
+                                        <p class="c-s-text m-0">(제 2사업장) 경기도 화성시 향남읍 토성로 464-17</p>
+                                        <div class="maps" id="jnte-map-2"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +125,7 @@
                         <div class="row">
                             <div class="col-xl-4 col-sm-12 p-0">
                                 <div class="subsidiary-img" style="background-image:url('../../resources/images/subsidiary_img_02.png')"></div>
-                                <a href="" class="link-btn m-t-10">홈페이지 바로가기
+                                <a href="http://thejntg" class="link-btn m-t-10">홈페이지 바로가기
                                     <img src="../../resources/images/ic-s-right.png" alt="홈페이지 바로가기">
                                 </a>
                             </div>
@@ -137,7 +150,10 @@
                         <div class="row">
                             <div class="col-12 p-0">
                                 <div class="road-map" id="map-2">
-                                    <div class="maps" id="jntg-map"></div>
+                                    <div class="wrap">
+
+                                        <div class="maps" id="jntg-map"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +178,7 @@
                                     </p>
                                     <ul class="ul-list-dot subsidiarys">
                                         <li class="">주요 생산제품 : <span>금(Au) 도금</span> <span>팔라듐(Pd) 도금</span></li>
-                                        <li>대표이사 : </li>
+                                        <li>대표이사 : 이정규</li>
                                         <li>창립일 : 2005년 2월</li>
                                         <li>주소 : 경기도 화성시 마도면 마도공단로6길 46-3</li>
                                     </ul>
@@ -172,7 +188,9 @@
                         <div class="row">
                             <div class="col-12 p-0">
                                 <div class="road-map" id="map-3">
-                                    <div class="maps" id="jntg-map"></div>
+                                    <div class="wrap">
+                                        <div class="maps" id="jntg-map"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -184,28 +202,9 @@
             <!-- include-footer -->
         </div>
     </div> <!-- wrap -->
+
+    <!-- //script -->
     <script src="../../resources/js/common.js"></script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwlNqAEil52XRPHmSVb4Luk18qQG9GqcM&amp;sensor=false&amp;language=ko">
-    </script>
-
-    <script>
-         function initialize() {
-            var myLatlng = new google.maps.LatLng(37.1348402, 126.995392); // 좌표값
-            var mapOptions = {
-                zoom: 14, // 지도 확대레벨 조정
-                center: myLatlng,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
-            var map = new google.maps.Map(document.getElementById('jnte-map'), mapOptions);
-            var marker = new google.maps.Marker({
-                position: myLatlng,
-                map: map,
-            });
-        }
-        window.onload = initialize;
-    </script>
-
 </body>
 
 </html>

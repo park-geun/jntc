@@ -1,5 +1,6 @@
+
 window.onload = function () {
-  
+ 
     $('nav>ul>li').hover(function () {
         var idx = $(this).index() + 1;
         console.log(idx);
@@ -8,8 +9,9 @@ window.onload = function () {
         $('.gnb').show();
         $('#nav-' + idx).addClass('active'); //nav text hover
         $('#nav-' + idx).siblings().removeClass('active');
+        
     }, function () {})
-
+   
     //gnb 삭제
     $('.gnb').on('mouseleave', function () {
         $(this).hide();
@@ -84,8 +86,11 @@ function closeMoblieBtn() {
 function goNoticeView() {
     $('#footer_notice_list').modal('hide');
     $('#footer_notice_view').modal('show');
-
 }
+function backNoticeView(){
+    $('#footer_notice_list').modal('show');
+    $('#footer_notice_view').modal('hide');
+}  
 
 //family site open/close
 function openFamilySite() {
@@ -97,14 +102,13 @@ function closeFamilySite() {
     $('.famliy-site').hide();
 }
 $(document).ready(function () {
-
     $('.include-header').load('../layout/header.html');
     $('.include-footer').load('../layout/footer.html');
     $('.include-aside').load('../layout/aside.html');
 
-
     var mySwiper = new Swiper('#swiper-container', {
-        speed: 400,
+        speed: 700,
+        effect:"fade",
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -115,8 +119,8 @@ $(document).ready(function () {
         },
         loop: true,
         autoplay: {
-            delay: 3000,
-        }
+            delay: 5000,
+        },
     });
     //main slider play stop btn
     $('.play-btn').on("click", function () {
@@ -164,6 +168,7 @@ $(document).ready(function () {
     // })
 
     ///제품 -> 글래스 hover
+   
     $('.reinforce .glass-list').hover(function () {
         var idx = $(this).index() + 1;
         var glassImg = $('#glass_img_' + idx);
@@ -187,7 +192,7 @@ $(document).ready(function () {
         var glassImg = $('#glass_img_' + idx);
 
         $(this).addClass('active');
-        glassImg.attr('style', 'background-image:url(../../resources/images/phone-' + idx + '.jpg)');
+        glassImg.attr('style', 'background-image:url(../../resources/images/window-phone-' + idx + '.jpg)');
 
     }, function () {
         var idx = $(this).index() + 1;

@@ -19,8 +19,10 @@ header {
             display: flex;
             font-size: 28px;
             li { padding: 17px 30px; color:$black;
-                a{font-size:23px; font-weight:bold;}
-                &.active{color:$orange;border-bottom:3px solid $orange;
+                a{font-size:23px; font-weight:bold;
+                    &:hover{color:$orange;}
+                }
+                &.active{color:$orange;border-bottom:1px solid $orange; margin-bottom:-1px;
                     a{color:$orange; font-weight: bold;}
                 }
             }
@@ -43,6 +45,9 @@ header {
             background-image:url('../../resources/images/earth.png') ;
             background-size: contain;
             
+        }
+        select{
+            cursor: pointer;
         }
     }
 
@@ -181,12 +186,6 @@ footer {
         p{word-break: break-all;
             &:nth-child(1){font-size: 34px; font-weight:bold; color:$gray-33;}
             &:nth-child(2){font-size: 17px; font-weight: 400;margin:10px 0; text-align:right;color:$gray-66}
-        }
-        >div{
-            width: 150px;
-            height: 100px;
-            border:1px solid $gray-dd;
-            float: right;
         }
     }
     .close-btn {
@@ -349,12 +348,12 @@ footer {
             float: right;
             margin : 20px 0;
             .form-control{
-                height: 45px;
+                height: 40px;
                 border:1px solid $gray-33;
                 border-right:0;
             }
             .input-group-text {
-                height: 45px;
+                height: 40px;
                 background-color: $white;
                 border:1px solid $gray-33;
                 border-left:0;
@@ -515,6 +514,31 @@ footer {
         }
     }
 }
+// .modal{
+//     .modal-dialog{
+//         &.language{
+//             width: 100%;
+//             height: 100%;
+//             position: relative;
+//             left: inherit;
+//             bottom: inherit;
+//             .modal-content{
+//                 width: 90px;
+//                 height: 120px;
+//                 position: absolute;
+//                 top:50px;
+//                 right:220px;
+//             }
+//             .modal-body{
+//                 padding:0;
+//                 .content-text{
+//                     a{display:inline-block}
+//                 }
+//             }
+//         }
+//     }
+// }
+
 .modal-footer{
     margin:0 auto;
     
@@ -527,8 +551,11 @@ footer {
     .list-view-btn{
         width: 160px;
         height: 45px;
+        display:inline-block;
         line-height: 45px;
-        border:1px solid $gray-33;
+        background-color: $orange;
+        color: $white;
+        span{margin-bottom:2px;}
     }
 }
 .modal-b-p{
@@ -639,21 +666,32 @@ aside{
         .lb-nav{
             width:100vw;
             a.lb-prev {
-                width:50%; 
+                width:100px; 
+                height: 100px;
+                position: absolute;
+                left:60px;
+                top: 50%;
+                transform: translate(0, -50%);
                 background: url(../../resources/images/btn-left.png) 10% 48% no-repeat;
                 opacity: 1;
+                float: inherit;
             }
             a.lb-next {
-                width:50%; 
+                width:100px; 
+                height: 100px;
+                position: absolute;
+                right:60px;
+                top: 50%;
+                transform: translate(0, -50%);
                 background:url(../../resources/images/btn-right.png) 90% 48% no-repeat;
                 opacity: 1;
+                float: inherit;
             }
         }
         .lb-image{
             border:0;
             border-radius:0;
         }
-       
     }
     &.connector{
         position: relative;
@@ -663,6 +701,29 @@ aside{
         margin: 0 auto;
         border-radius: 4px;
         background-color: $white;
+        .lb-nav{
+            width:100vw;
+            a.lb-prev {
+                width:100px; 
+                height: 100px;
+                position: absolute;
+                left:60px;
+                top: 50%;
+                transform: translate(0, -50%);
+                background: url(../../resources/images/btn-left.png) 10% 48% no-repeat;
+                opacity: 1;
+            }
+            a.lb-next {
+                width:100px; 
+                height: 100px;
+                position: absolute;
+                right:60px;
+                top: 50%;
+                transform: translate(0, -50%);
+                background:url(../../resources/images/btn-right.png) 90% 48% no-repeat;
+                opacity: 1;
+            }
+        }
         .lb-image{
             img{
                 width: 100%;
@@ -675,7 +736,7 @@ aside{
     &.bending{
         width :100% !important;
         position: absolute;
-        top: -15%;
+        top: -11%;
         left: 50%;
         transform:translate(-50%, 10%);
         .lb-data{
@@ -692,6 +753,10 @@ aside{
     }
     &.connector{
         width: 100% !important;
+        position: absolute;
+        top: -8%;
+        left: 50%;
+        transform:translate(-50%, 10%);
         .lb-data{
             .lb-details{
                 width: 100% !important;
@@ -726,11 +791,8 @@ aside{
         }
       } 
       .lb-dataContainer{
-        position: absolute;
-        top: -25%;
-        left: 50%;
-        transform:translate(-50%, 10%);
         &.bending{
+            top: -25%;
             .lb-data{
                 .lb-details{
                     width: 100% !important;
@@ -744,6 +806,7 @@ aside{
             }
         }
         &.connector{
+            top: -15%;
             .lb-data{
                 .lb-details{
                     width: 100% !important;
@@ -822,8 +885,11 @@ aside{
             margin-top: 20px;
         }
         ul{width: 100%;flex-flow:wrap; 
-            :first-child{padding:0;}
+            :first-child{padding:0;
+                
+            }
             li{padding : 0 20px 0 0; 
+                &::after{content:""}
                 a{
                     font-size:15px;
                 }
@@ -895,6 +961,7 @@ aside{
 }
 @include media-breakpoint-down(sm){
     section{padding : 20px 0;}
+   
     .sub-section-banner{
         p{
             padding:25px 0;

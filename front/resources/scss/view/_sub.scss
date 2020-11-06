@@ -125,6 +125,7 @@
     // margin-top: 60px;
     p:nth-child(1) {
         margin-bottom: 30px;
+        padding-right: 15px;
     }
 
     p:nth-child(2) {
@@ -594,9 +595,8 @@
 .announcement-table {
     border-top: 2px solid $rgba-5;
     border-bottom: 2px solid $rgba-5;
-    padding: 0 30px;
     .announcement{
-        padding :30px 0;
+        padding :30px;
         border-bottom: 1px solid $rgba-2;
         // &:first-child{
         //     border-top:0;
@@ -632,6 +632,17 @@
     }
 }
 //공시
+.disclosure-wrap{
+    height: 930px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0 auto;
+    text-align: center;
+    @at-root{
+        .stork{width: 800px; height: 100%;}
+    }
+}
+
 .modal{
     .modal-dialog{
         
@@ -653,6 +664,7 @@
     .sub-title{
         p{color:$white;}
     }
+    
     &.footer-modal{
         padding: 0 40px;
         .modal-popup-header{
@@ -680,6 +692,61 @@
         .close{
             margin:0;
             padding:0;
+        }
+    }
+    &.disclosure-modal{
+        .sub-title{
+            padding:0;
+            border:0;
+           p{color:$white;}
+        }
+        .modal-popup-header{
+            width:100%;
+            padding : 40px 0 24px;
+            border-bottom:1px solid $gray-dd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .close-btn {
+                display:block;
+                background-image: url('../../resources/images/ic-gnb-close.png');
+                width: 21px;
+                height: 21px;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md){
+
+     .modal-header{
+         &.footer-modal{
+             padding:0 20px;
+             .modal-popup-header{
+                 padding: 20px 0 12px;
+             }
+             .sub-title{
+                 p{font-size:24px;}
+                 .sub-title-ic{width:30px;height: 30px;}
+             }
+         }
+     }
+}
+@include media-breakpoint-down(sm){
+   .modal{
+       .content-scroll{padding: 10px 15px!important;}
+   }
+    .modal-header{
+        &.footer-modal{
+            padding:0 20px;
+            .modal-popup-header{
+                padding: 20px 0 12px;
+            }
+            .sub-title{
+                p{font-size:20px;}
+                .sub-title-ic{width:30px;height: 30px;}
+            }
         }
     }
 }
@@ -793,6 +860,7 @@
 .dispute-list{
     li{
         display:flex;
+        align-items: center;
         padding: 12px 0;
         .dispute-img{
             display:inline-block;
@@ -824,9 +892,9 @@
     align-items: center;
     justify-content: space-between;
     .subsidiary-btn{
-        width: 30px;height: 15px;background: url(../../resources/images/g_list_btn.png) no-repeat center;
+        width: 30px;height: 15px;background: url(../../resources/images/g_list_btn_on.png) no-repeat center;
         &.active{
-            width: 30px;height: 15px;background: url(../../resources/images/g_list_btn_on.png) no-repeat center;
+            width: 30px;height: 15px;background: url(../../resources/images/g_list_btn.png) no-repeat center;
         }
     }
 }
@@ -840,6 +908,29 @@
     width: 100%;
     height: 400px;
     margin-top:15px;
+}
+.compete{
+    .content{
+        .desc{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+    .img{width: 75px;height: 75px;background-size: contain;background-repeat: no-repeat; margin:0 auto 18px;}
+}
+.social-wrap{
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+}
+.objective{
+    .content{
+        .desc{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+    .img{width: 75px;height: 75px;background-size: contain;background-repeat: no-repeat; margin:0 auto 18px;}
 }
 //기술경쟁력
 @include media-breakpoint-down(sm){
@@ -902,11 +993,19 @@
                 }
             }
         }
+        &.camera{
+            .glass-list{
+                width: 50%;
+            }
+        }
     }
     .glass-list {
         width: 100%;
         padding: 0 10px;
         margin-top: 20px;
+        .glass-img{
+            background-size: contain;
+        }
         .glass-item {
             height: 100%;
         }
@@ -919,6 +1018,7 @@
         height: 250px;
         border: 1px solid $gray-aa;
         padding: 15px 0;
+        background-size: contain;
     }
     .glass-text {
         padding: 10px;
@@ -990,6 +1090,11 @@
                 height:400px;
             }
         }
+        &.camera{
+            .glass-list{
+                width: 100%;
+            }
+        }
     }
     .glass-img{
         height: 400px;
@@ -1015,17 +1120,17 @@
     }
     
     .announcement-table {
-            padding: 0;
-            .announcement{
-                padding :30px 0;
-                border-bottom: 1px solid $rgba-2;
-                // &:first-child{
-                //     border-top:0;
-                // }
-                >div{display:block !important;}
-            }
-            .edit-announcement{
-                padding:50px 0;
+        padding: 0;
+        .announcement{
+            padding :30px 0;
+            border-bottom: 1px solid $rgba-2;
+            // &:first-child{
+            //     border-top:0;
+            // }
+            >div{display:block !important;}
+        }
+        .edit-announcement{
+            padding:50px 0;
         }
     }
     .s-link-btn{
@@ -1036,4 +1141,14 @@
         flex-flow:wrap;
         .arrow-right{display:none;}
     }
+    .social-wrap{
+        flex-flow: wrap;
+        .left_arrow{display:none;}
+        .right_arrow{display:none;}
+    }
 }
+
+
+
+
+

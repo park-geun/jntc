@@ -7,6 +7,7 @@
     <title>JNTC</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../resources/plugin/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="../../resources/plugin/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="../../resources/css/style.css">
     <link rel="stylesheet" href="../../resources/css/comm.css">
@@ -16,9 +17,28 @@
     <script src="../../resources/plugin/jquery/jquery.min.js"></script>
     <!-- bootstrap -->
     <script src="../../resources/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery-ui -->
+    <script src="../../resources/plugin/jquery-ui/jquery-ui.min.js"></script>
     <!-- Swiper -->
     <script src="../../resources/plugin/swiper/js/swiper.min.js"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwlNqAEil52XRPHmSVb4Luk18qQG9GqcM&sensor=false&language=ko">
+    </script>
+    <script>
+        function initialize() {
+            var myLatlng = new google.maps.LatLng(37.2915450, 127.0430790); // 좌표값
+            var mapOptions = {
+                zoom: 14, // 지도 확대레벨 조정
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+            });
+        }
+        window.onload = initialize;
+    </script>
 </head>
 
 <body>
@@ -71,97 +91,104 @@
 
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="tap-1" role="tabpanel" aria-labelledby="home-tab">
-                            <div class="search-bar ir">
+                            <div class="search-bar ir d-flex align-items-center justify-content-end">
+                                <div class="select-box">
+                                    <select name="ir-info" id="ir-info">
+                                        <option disabled selected>제목</option>
+                                        <option>제목</option>
+                                        <option>내용</option>
+                                    </select>
+                                </div>
                                 <div class="input-group inputSearch">
-                                    <input type="text" class="form-control" placeholder="" aria-label="Search User"
-                                        aria-describedby="basic-addon2">
+                                    <input type="text" class="form-control" placeholder="" aria-label="Search User" aria-describedby="basic-addon2">
                                     <div class="input-group-append">
                                         <span class="input-group-text" id="basic-addon2">
                                             <a href="#/"><i class="fa fa-search"></i></a></span>
                                     </div>
                                 </div>
                             </div>
-                            <table class="table ir">
-                                <thead class="thead-light">
-                                    <tr class="text-center">
-                                        <th scope="col">번호</th>
-                                        <th scope="col">제목</th>
-                                        <th scope="col">자료 다운로드</th>
-                                        <th scope="col">날짜</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center">1</td>
-                                        <td class="d-s-text">2020년 2분기 실적발표자료</td>
-                                        <td class="text-center"><a href="" download="@"></a></td>
-                                        <td class="text-center">2020.08.24
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">2</td>
-                                        <td class="d-s-text">제 25기 반기보고서</td>
-                                        <td class="text-center"><a href="" download="@"></a></td>
-                                        <td class="text-center">2020.08.14</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">3</td>
-                                        <td class="d-s-text">2020년 1분기 실적발표자료</td>
-                                        <td class="text-center"><a href="" download="@"></a></td>
-                                        <td class="text-center">2020.05.23</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">4</td>
-                                        <td class="d-s-text">제 25기 분기보고서</td>
-                                        <td class="text-center"><a href="" download="@"></a></td>
-                                        <td class="text-center">2020.05.15</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">5</td>
-                                        <td class="d-s-text">제 24기 사업보고서</td>
-                                        <td class="text-center"><a href="" download="@"></a></td>
-                                        <td class="text-center">2020.03.30</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">6</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">7</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">8</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">9</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">10</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
+                            <div class="table-wrap">
+                                <table class="table ir m-0">
+                                    <thead class="thead-light">
+                                        <tr class="text-center">
+                                            <th scope="col">번호</th>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">자료 다운로드</th>
+                                            <th scope="col">날짜</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">1</td>
+                                            <td class="d-s-text">2020년 2분기 실적발표자료</td>
+                                            <td class="text-center"><a href="" download="@"></a></td>
+                                            <td class="text-center">2020.08.24
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">2</td>
+                                            <td class="d-s-text">제 25기 반기보고서</td>
+                                            <td class="text-center"><a href="" download="@"></a></td>
+                                            <td class="text-center">2020.08.14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">3</td>
+                                            <td class="d-s-text">2020년 1분기 실적발표자료</td>
+                                            <td class="text-center"><a href="" download="@"></a></td>
+                                            <td class="text-center">2020.05.23</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">4</td>
+                                            <td class="d-s-text">제 25기 분기보고서</td>
+                                            <td class="text-center"><a href="" download="@"></a></td>
+                                            <td class="text-center">2020.05.15</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">5</td>
+                                            <td class="d-s-text">제 24기 사업보고서</td>
+                                            <td class="text-center"><a href="" download="@"></a></td>
+                                            <td class="text-center">2020.03.30</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">6</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">7</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">8</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">9</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">10</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+    
+                                    </tbody>
+                                </table>
+                            </div>
 
                             <div class="pagination">
                                 <ul class="d-flex align-items-center">
                                     <a href="#">
                                         <li><span class="left-pagination"></span></li>
                                     </a>
-
                                     <li>
                                         <a href="#">
                                             < </a> </li> <li>
@@ -201,42 +228,21 @@
                                     </a>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
-
                 </div>
-
             </div>
-
-
-
         </div>
         <div class="include-footer">
             <!-- ///include footer -->
         </div>
     </div><!-- wrap -->
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwlNqAEil52XRPHmSVb4Luk18qQG9GqcM&sensor=false&language=ko">
-    </script>
-
+    <!-- script -->
     <script>
-        function initialize() {
-            var myLatlng = new google.maps.LatLng(37.2915450, 127.0430790); // 좌표값
-            var mapOptions = {
-                zoom: 14, // 지도 확대레벨 조정
-                center: myLatlng,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
-            var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-            var marker = new google.maps.Marker({
-                position: myLatlng,
-                map: map,
-            });
-        }
-        window.onload = initialize;
+        $(function () {
+            $("#ir-info").selectmenu();
+        });
     </script>
-
     <script src="../../resources/js/common.js"></script>
 </body>
 

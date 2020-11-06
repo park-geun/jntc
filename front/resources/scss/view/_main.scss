@@ -11,7 +11,7 @@
         background-repeat: no-repeat;
         background-position: center;
     }
-}
+} 
 section>div>h1 {
     font-size: 42px;
     color: $black;
@@ -24,9 +24,9 @@ section>div>h1 {
             display:flex;
             align-items: center;
             position: absolute;
-            bottom:20%;
+            bottom:5%;
             left: 50%;
-            transform: translate(-50%,-20%);
+            transform: translate(-50%,-5%);
             z-index: 5;
         }
         .swiper-pagination{
@@ -61,48 +61,62 @@ section>div>h1 {
                 }
             }
         }
-        .main-btn-prev{
-            &::after{
-                content:"";
-                width: 34px;
-                height: 64px;
-                background-image: url('../../resources/images/btn-g-left.png');
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-            }  
-        }
-        .main-btn-next{
-            &::after{
-                content:"";
-                width: 34px;
-                height: 64px;
-                background-image: url('../../resources/images/btn-g-right.png');
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-            }  
+        .swiper-slide{
+            position: relative;
+            height: calc(100vh);
+            &.swiper-slide-active{
+                .banner{
+                    transform: scale(1.08);
+                }
+            }
         }
     }
-}
-.banner {
-    width: 100%;
-    height: calc(100vh);
-    background-size: cover;
-    background-position: center;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    .main-btn-prev::after {
+        content: "";
+        width: 34px;
+        height: 60px;
+        background-image: url(../../resources/images/btn-left.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .main-btn-next::after {
+        content: "";
+        width: 34px;
+        height: 60px;
+        background-image: url(../../resources/images/btn-right.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .banner {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        background-size: cover;
+        background-position: center;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(1);
+        -webkit-transition: transform 5s;
+        transition: transform 5s;
+    }
     .banner-wrap{
+        position: absolute;
+        top: 60%;
+        transform: translate( 0 , -50%);
         display: flex;
         flex-flow: column;
-        p:nth-child(1){font-size:52px;line-height: 1.35;color:$white;margin-bottom:2em;text-shadow: 0.6px 0.8px 1px rgba(0, 0, 0, 0.3);
-            span{font-weight: bold;}
+        p:nth-child(1){font-size:52px;line-height: 1.35;color:$white;text-shadow: 0.6px 0.8px 1px rgba(0, 0, 0, 0.3);
+            span{font-weight: 900;}
         }
         p:nth-child(2){
             color:$white;
             font-size: 32px;
-            margin-top: 60px; 
+            margin-top: 230px; 
             font-weight: bold;
             text-shadow: 0.6px 0.8px 1px rgba(0, 0, 0, 0.3);
             line-height: 38px;
@@ -112,6 +126,8 @@ section>div>h1 {
         }
     }
 }
+
+
 .swiper-button-prev{
     left: 5%;
     &.social{top: 55%;}
@@ -120,21 +136,34 @@ section>div>h1 {
     right:5%;
     &.social{top: 55%;}
 }
+@include media-breakpoint-down(xxl){
+    .swiper-container{
+        .banner-wrap{
+          
+            p:nth-child(2){
+                font-size: 32px;
+                margin-top: 150px; 
+            }
+        }
+    }
+}
 @include media-breakpoint-down(xl){
     .swiper-container{
         .control-btn{
             padding:0 4rem;
         }
-    }
-    .banner {
-        width: 100%;
-        .banner-wrap{      
+        .banner-wrap{     
+            top: 50%;     
             padding: 4rem;
             p:nth-child(1){font-weight: bold;font-size:42px;top:150px;}
             p:nth-child(2){color:$white;font-size: 25px;margin-top: 50px;}
             p:nth-child(3){color:$white;font-size: 19px;line-height: 1.6;}
         }
     }
+    .banner {
+        width: 100%;
+    }
+   
     .swiper-button-prev{
         left: 10px;
     }
@@ -145,16 +174,18 @@ section>div>h1 {
 @include media-breakpoint-down(md){
     .swiper-container{
        
-    }
-    .banner {
-        width: 100%;
-        .banner-wrap{      
+        .banner-wrap{  
+            top: 50%;    
             padding: 4rem;
             p:nth-child(1){font-weight: bold;font-size:35px;line-height: 1.35;color:$white;}
             p:nth-child(2){color:$white;font-size: 25px;margin-top: 50px;}
             p:nth-child(3){color:$white;font-size: 19px;line-height: 1.6;}
         }
+    }
+    .banner {
+        width: 100%;
     } 
+  
 }
 @include media-breakpoint-down(sm){
     .swiper-container{
@@ -162,16 +193,20 @@ section>div>h1 {
             padding:0 2rem;
             bottom: 25%;
         }
-    }
-    .banner{
         .banner-wrap{ 
+            top: 50%;
             margin-top: 1rem;
             padding: 2rem;
             p:nth-child(1){font-weight: bold;font-size:28px;line-height: 1.35;color:$white;top:25%;}
-            p:nth-child(2){color:$white;font-size: 19px;margin-top: 40px; bottom:30%;}
+            p:nth-child(2){color:$white;font-size: 19px;margin-top: 40px; bottom:30%; span{
+                color:$white;font-size:19px;line-height: 1.4;text-shadow: 0.6px 0.8px 1px rgba(0, 0, 0, 0.3);
+            }}
             p:nth-child(3){color:$white;font-size: 15px;line-height: 1.6;}
         }
+    }
+    .banner{
     } 
+    
 }
 
 
@@ -344,6 +379,7 @@ section>div>h1 {
             color: $gray-33;
             margin-bottom: 5px;
             font-weight: bold;
+            display:inline-block;
         }
 
         .news-date {

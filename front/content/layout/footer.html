@@ -7,14 +7,14 @@
         <div class="famliy-content">
             <ul>
                 <li class="famliy-title c-m-text bold">국내</li>
-                <li><a href="javascript:void(0)">제이앤티이 (JNTE)</a></li>
-                <li><a href="javascript:void(0)">제이앤티지 (JNTG)</a></li>
+                <li><a href="http://thejnte.com" target="_blink">제이앤티이 (JNTE)</a></li>
+                <li><a href="http://thejntg" target="_blink">제이앤티지 (JNTG)</a></li>
                 <li><a href="javascript:void(0)">코메트 (COMET)</a></li>
             </ul>
             <ul>
                 <li class="famliy-title c-m-text bold">해외</li>
-                <li><a href="javascript:void(0)">JNTC VINA (베트남)</a></li>
-                <li><a href="javascript:void(0)">청도JNTC유한공사 (중국)</a></li>
+                <li><a href="http://thejntcvina.com" target="_blink">JNTC VINA (베트남)</a></li>
+                <li><a href="http://theqdjntc.com" target="_blink">청도JNTC유한공사 (중국)</a></li>
             </ul>
         </div>
     </div>
@@ -24,12 +24,13 @@
         <div class="row">
             <div class="col p-0">
                 <ul>
-                    <li class="active"><a href="">사업장 안내</a></li>
+                    <li class="active"><a href="../intro/work_domestic.html">사업장 안내</a></li>
                     <li><span><a href="#footer_privacy" data-toggle="modal">개인정보취급방침</a></span></li>
                     <li><span><a href="#footer_email" data-toggle="modal">이메일무단수집거부</a></span></li>
                     <li><span><a href="#footer_center" data-toggle="modal">부정비리 신고센터</a></span></li>
-                    <li><a href="javascript:void(0)" onclick="openSiteMap()">사이트 맵</a></li>
-                    <li><span><a href="#footer_notice_list" data-toggle="modal">공지사항</a></span></li>
+                    <li class="only_w"><a href="javascript:void(0)" onclick="openSiteMap()">사이트 맵</a></li>
+                    <li class="only_mo"><a href="javascript:void(0)" onclick="openMobileMenu()">사이트 맵</a></li>
+                    <li><span><a href="#footer_notice_list" data-toggle="modal">게시판</a></span></li>
                 </ul>
             </div>
         </div>
@@ -42,15 +43,14 @@
                 <p class="m-t-30">© 2020 제이앤티씨 ALL RIGHTS RESERVED</p>
             </div>
             <div class="col-md-4 col-sm-12 col-12 text-right p-0">
-                <a href="javascript:void(0)" class="link-btn" onclick="openFamilySite();">패밀리사이트<img src="../../resources/images/ic-more.png" alt="패밀리사이트"></a>
+                <a href="javascript:void(0)" class="link-btn" data-toggle="modal" data-target="#family">패밀리사이트<img src="../../resources/images/ic-more.png" alt="패밀리사이트"></a>
             </div>
         </div>
     </div>
 </footer>
 <!-- 개인정보처리방침 -->
-<div class="modal fade privacy" id="footer_privacy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<div class="modal fade" id="footer_privacy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog info none" role="document">
         <div class="modal-content">
             <div class="modal-header footer-modal">
                 <div class="modal-popup-header">
@@ -277,7 +277,7 @@
 <!-- 이메일 무단수집거부 -->
 <div class="modal fade" id="footer_email" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog email" role="document">
         <div class="modal-content">
             <div class="modal-header footer-modal">
                 <div class="modal-popup-header">
@@ -295,7 +295,7 @@
                     정보보호 등에 관한 법률』등에 의해 처벌 받을 수 있습니다.
                 </div>
                 <div class="content-text-sub fr">
-                    불법 대응 센터 http://www.spamcop.or.kr
+                    <a href="http://www.spamcop.or.kr" target="_blink">불법 대응 센터 http://www.spamcop.or.kr</a>
                 </div>
             </div>
         </div>
@@ -304,7 +304,7 @@
 <!-- 부정비리 신고센터 -->
 <div class="modal fade" id="footer_center" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog center" role="document">
         <div class="modal-content">
             <div class="modal-header footer-modal">
                 <div class="modal-popup-header">
@@ -322,14 +322,13 @@
                     비리사실에 대한 제보를 육하원칙으로 받고 있습니다. 당사는 제보자에 대한 비밀보장과 불이익조치 금지 등을 규정하고 있습니다.
                 </div>
                 <div class="content-text-sub fl">
-                    이메일 : ethics@thejnt.com
+                    이메일 : <a href="http://ethics@thejnt.com" class="o-s-text">ethics@thejnt.com</a>
                 </div>
-                <a href="" class="link-btn">제보하기<img src="../../resources/images/ic-s-right.png" alt="자세히 보기"></a>
+                <a href="http://ethics@thejnt.com" target="_blink" class="link-btn">제보하기<img src="../../resources/images/ic-s-right.png" alt="자세히 보기"></a>
             </div>
         </div>
     </div>
 </div>
-
 <!-- 공지사항lsit -->
 <div class="modal fade" id="footer_notice_list" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog notice none" role="document">
@@ -359,67 +358,69 @@
 
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="tap-1" role="tabpanel" aria-labelledby="home-tab">
-                        <table class="table ir">
-                            <thead class="thead-light">
-                                <tr class="text-center">
-                                    <th scope="col">번호</th>
-                                    <th scope="col">제목</th>
-                                    <th scope="col">자료 다운로드</th>
-                                    <th scope="col">날짜</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-center">1</td>
-                                    <td class="d-s-text"><a href="javascript:void(0)" onclick="goNoticeView()">협력사 바코드 발행 프로그램 IP 변경 메뉴얼 첨부드립니다.</a></td>
-                                    <td class="text-center"><div class="ic-check"></div></td>
-                                    <td class="text-center">2014.12.08</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">2</td>
-                                    <td class="d-s-text">JNTC 윤리 경영 교안</td>
-                                    <td class="text-center"><a href="" download="@"></a></td>
-                                    <td class="text-center">2014.12.08</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">3</td>
-                                    <td class="d-s-text">[거래처] JNTC 부정 비리 제보를 받습니다.</td>
-                                    <td class="text-center"><a href="" download="@"></a></td>
-                                    <td class="text-center">2015.08.13</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">4</td>
-                                    <td class="d-s-text"></td>
-                                    <td class="text-center"><a href="" download="@"></a></td>
-                                    <td class="text-center">2015.09.25</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">5</td>
-                                    <td class="d-s-text"></td>
-                                    <td class="text-center"><a href="" download="@"></a></td>
-                                    <td class="text-center">2015.09.25</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">6</td>
-                                    <td class="d-s-text"></td>
-                                    <td class="text-center"><a href="" download="@"></a></td>
-                                    <td class="text-center">2015.09.25</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">7</td>
-                                    <td class="d-s-text"></td>
-                                    <td class="text-center"><a href="" download="@"></a></td>
-                                    <td class="text-center">2015.09.25</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center"></td>
-                                    <td class="d-s-text"></td>
-                                    <td class="text-center"><a href="" download="@"></a></td>
-                                    <td class="text-center"></td>
-                                </tr>
-                              
-                            </tbody>
-                        </table>
+                        <div class="table-wrap">
+                            <table class="table ir">
+                                <thead class="thead-light">
+                                    <tr class="text-center">
+                                        <th scope="col">번호</th>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">자료 다운로드</th>
+                                        <th scope="col">날짜</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td class="d-s-text"><a href="javascript:void(0)" onclick="goNoticeView()">협력사 바코드 발행 프로그램 IP 변경 메뉴얼 첨부드립니다.</a></td>
+                                        <td class="text-center"><div class="ic-check"></div></td>
+                                        <td class="text-center">2014.12.08</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td class="d-s-text">JNTC 윤리 경영 교안</td>
+                                        <td class="text-center"><a href="" download="@"></a></td>
+                                        <td class="text-center">2014.12.08</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">3</td>
+                                        <td class="d-s-text">[거래처] JNTC 부정 비리 제보를 받습니다.</td>
+                                        <td class="text-center"><a href="" download="@"></a></td>
+                                        <td class="text-center">2015.08.13</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">4</td>
+                                        <td class="d-s-text"></td>
+                                        <td class="text-center"><a href="" download="@"></a></td>
+                                        <td class="text-center">2015.09.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">5</td>
+                                        <td class="d-s-text"></td>
+                                        <td class="text-center"><a href="" download="@"></a></td>
+                                        <td class="text-center">2015.09.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">6</td>
+                                        <td class="d-s-text"></td>
+                                        <td class="text-center"><a href="" download="@"></a></td>
+                                        <td class="text-center">2015.09.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7</td>
+                                        <td class="d-s-text"></td>
+                                        <td class="text-center"><a href="" download="@"></a></td>
+                                        <td class="text-center">2015.09.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center"></td>
+                                        <td class="d-s-text"></td>
+                                        <td class="text-center"><a href="" download="@"></a></td>
+                                        <td class="text-center"></td>
+                                    </tr>
+                                  
+                                </tbody>
+                            </table>
+                        </div>
                         <div class="modal-b-p">
                             <div class="pagination">
                                 <ul class="d-flex align-items-center">
@@ -470,61 +471,63 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="tap-2" role="tabpanel" aria-labelledby="home-tab">
-                        <table class="table ir">
-                            <thead class="thead-light">
-                                <tr class="text-center">
-                                    <th scope="col">번호</th>
-                                    <th scope="col">제목</th>
-                                    <th scope="col">자료 다운로드</th>
-                                    <th scope="col">날짜</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-center">1</td>
-                                    <td class="d-s-text"><a href="javascript:void(0)" class="btn-next">제이앤티씨, 제1사업장(커넥터 사업부) 버스 노선표</a></td>
-                                    <td class="text-center"><div class="ic-check"></div></td>
-                                    <td class="text-center">2020.08.24</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">2</td>
-                                    <td class="d-s-text">JNTC, JNTS, JNTG 전자세금계산서 수신 account@thejnt.com</td>
-                                    <td class="text-center"><a href="" download="@"></a></td>
-                                    <td class="text-center">2020.08.14</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">3</td>
-                                    <td class="d-s-text"></td>
-                                    <td class="text-center"><a href="" download="@"></a></td>
-                                    <td class="text-center">2020.05.23</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">4</td>
-                                    <td class="d-s-text"></td>
-                                    <td class="text-center"><a href="" download="@"></a></td>
-                                    <td class="text-center">2020.05.15</td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">5</td>
-                                    <td class="d-s-text"></td>
-                                    <td class="text-center"><a href="" download="@"></a></td>
-                                    <td class="text-center">2020.03.30</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            
-                            </tbody>
-                        </table>
+                        <div class="table-wrap">
+                            <table class="table ir">
+                                <thead class="thead-light">
+                                    <tr class="text-center">
+                                        <th scope="col">번호</th>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">자료 다운로드</th>
+                                        <th scope="col">날짜</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td class="d-s-text"><a href="javascript:void(0)" class="btn-next" onclick="goNoticeView()">제이앤티씨, 제1사업장(커넥터 사업부) 버스 노선표</a></td>
+                                        <td class="text-center"><div class="ic-check"></div></td>
+                                        <td class="text-center">2020.08.24</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td class="d-s-text">JNTC, JNTS, JNTG 전자세금계산서 수신 account@thejnt.com</td>
+                                        <td class="text-center"><a href="" download="@"></a></td>
+                                        <td class="text-center">2020.08.14</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">3</td>
+                                        <td class="d-s-text"></td>
+                                        <td class="text-center"><a href="" download="@"></a></td>
+                                        <td class="text-center">2020.05.23</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">4</td>
+                                        <td class="d-s-text"></td>
+                                        <td class="text-center"><a href="" download="@"></a></td>
+                                        <td class="text-center">2020.05.15</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">5</td>
+                                        <td class="d-s-text"></td>
+                                        <td class="text-center"><a href="" download="@"></a></td>
+                                        <td class="text-center">2020.03.30</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                
+                                </tbody>
+                            </table>
+                        </div>
                 
                         <div class="modal-b-p">
                         	<div class="pagination">
@@ -580,7 +583,6 @@
         </div>
     </div>
 </div>
-
 <!-- 공지사항 view -->
 <div class="modal fade" id="footer_notice_view" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog notice none">
@@ -636,14 +638,12 @@
             </div>
             <div class="modal-footer notice">
                 <div class="modal-b-p">
-                    <button type="button" class="list-view-btn btn-default btn-prev">목록보기 <span class="d-inline-block ic-list-back"></span></button>
+                    <button type="button" class="list-view-btn btn-default btn-prev" onclick="backNoticeView()">목록보기 <span class="d-inline-block ic-list-back"></span></button>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
 <!-- 문의 메일보내기 -->
 <div class="modal fade" id="send-mail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog send none">
@@ -691,6 +691,64 @@
             <div class="modal-footer notice">
                 <div class="p-40">
                     <button type="button" class="send-btn">메일보내기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 공시 -->
+<div class="modal fade" id="disclosure" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog disclosure" role="document">
+        <div class="modal-header disclosure-modal">
+            <div class="modal-popup-header">
+                <div class="sub-title d-flex align-items-center">
+                    <div class="sub-title-ic" style="background-image:url('../../resources/images/ic-disclosure.png')">
+                    </div>
+                    <p>공시정보</p>
+                </div>
+                <a href="javascript:void(0);" data-dismiss="modal" aria-label="Close" class="close-btn"></a>
+            </div>
+        </div>
+        <div class="modal-content">
+            <div class="modal-body">
+               
+                <iframe src="http://dart.fss.or.kr/" frameborder="0" width="100%" height="700px"></iframe>
+              
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 언어 -->
+<div class="modal fade" id="language" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog language" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="content-text">
+                    <a href="javascript:void(0)" class="c-s-text bold">KOR</a>
+                    <a href="javascript:void(0)" class="c-s-text bold">ENG</a>
+                    <a href="javascript:void(0)" class="c-s-text bold">CHN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 패밀리사이트 -->
+<div class="modal fade" id="family" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog family" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="content-text">
+                    <ul>
+                        <li><a href="http://thejnte.com" target="_blink">제이앤티그륩</a></li>
+                        <li><a href="http://thejnte.com" target="_blink">제이앤티이 (JNTE)</a></li>
+                        <li><a href="http://thejntg" target="_blink">제이앤티지 (JNTG)</a></li>
+                        <li><a href="javascript:void(0)">코메트 (COMET)</a></li>
+                        <li><a href="http://thejntcvina.com" target="_blink">JNTC VINA (베트남)</a></li>
+                        <li><a href="http://theqdjntc.com" target="_blink">청도JNTC유한공사 (중국)</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
