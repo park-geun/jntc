@@ -169,6 +169,7 @@ footer {
                     color: $gray-33;
                     font-size: 20px;
                     padding-bottom: 10px;
+                    &:hover{color:$orange;transition:.2s all;}
                 }
             }
             li {
@@ -204,12 +205,11 @@ footer {
 
 .sitemaps {
     width:100%;
-    height:100vh;
+    height:100%;
     background-color: $white;
     padding: 30px 0;
-    border: 1px solid $gray-dd;
     position: relative;
-    display: none;
+    display: block;
 
     .sitemap-list {
         width: 20%;
@@ -255,7 +255,14 @@ footer {
     }
 
 }
-
+// sitemap modal
+.modal{
+    .modal-dialog{
+        &.sitemap{
+            width: 100%; max-width:100%; position: absolute;bottom: auto; left:50%; transform: translate(-50%, 0);
+        }
+    }
+}
 
 .search-bar {
     background-color: $white;
@@ -264,7 +271,6 @@ footer {
         width: 100%;
         position: fixed;
         z-index:99;
-        top:60px;
         display: none;
     }
     .inputSearch{
@@ -288,6 +294,7 @@ footer {
                 border-left:0;
                 transition: 0.3s;
             }
+            i{color:$gray-99;}
         }
     }
     .search {
@@ -386,6 +393,7 @@ footer {
             font-size: 48px;
             color: $white;                
             text-shadow: 0 0 6px rgba(0,0,0,0.2);
+            font-weight: bold;
         }
         p{width:40%;color:$white; font-size: 18px;line-height: 1.5;
         text-shadow: 0 0 6px rgba(0,0,0,0.2);}
@@ -545,18 +553,23 @@ footer {
     &.notice{
         padding:0;
     }
-    .btn{
-        margin : 0 auto;
+   
+    @at-root{
+        .btn{
+            width: 100%;
+            margin : 0 auto;
+        }
+        .list-view-btn{
+            width: 160px;
+            height: 45px;
+            display:inline-block;
+            line-height: 45px;
+            background-color: $orange;
+            color: $white;
+            span{margin-bottom:2px;}
+        }
     }
-    .list-view-btn{
-        width: 160px;
-        height: 45px;
-        display:inline-block;
-        line-height: 45px;
-        background-color: $orange;
-        color: $white;
-        span{margin-bottom:2px;}
-    }
+   
 }
 .modal-b-p{
     padding-bottom:120px;
@@ -696,8 +709,8 @@ aside{
     &.connector{
         position: relative;
         *zoom: 1;
-        width: 50% !important;
-        height: 50% !important;
+        width: 684px !important;
+        height: 545px !important;
         margin: 0 auto;
         border-radius: 4px;
         background-color: $white;
@@ -786,6 +799,19 @@ aside{
             .lb-image{
                 img{
                     width: 100%;
+                }
+            }
+            .lb-nav{
+                a.lb-prev {
+                    width:30px; 
+                    height: 30px;
+                    left:2px;
+                }
+                a.lb-next {
+                    width:30px; 
+                    height: 30px;
+                    right:2px;
+                    top: 50%;
                 }
             }
         }

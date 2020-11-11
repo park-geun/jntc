@@ -1,3 +1,7 @@
+
+<a href="" class="top-scroll">
+    <div style="background-image: url('../../resources/images/icon_scroll_top.png');"></div>
+</a>
 <div class="container">
     <div class="famliy-site">
         <div class="famliy-header">
@@ -28,7 +32,7 @@
                     <li><span><a href="#footer_privacy" data-toggle="modal">개인정보취급방침</a></span></li>
                     <li><span><a href="#footer_email" data-toggle="modal">이메일무단수집거부</a></span></li>
                     <li><span><a href="#footer_center" data-toggle="modal">부정비리 신고센터</a></span></li>
-                    <li class="only_w"><a href="javascript:void(0)" onclick="openSiteMap()">사이트 맵</a></li>
+                    <li class="only_w"><a href="#sitemap" data-toggle="modal">사이트 맵</a></li>
                     <li class="only_mo"><a href="javascript:void(0)" onclick="openMobileMenu()">사이트 맵</a></li>
                     <li><span><a href="#footer_notice_list" data-toggle="modal">게시판</a></span></li>
                 </ul>
@@ -72,21 +76,21 @@
                     </p>
                     <br>
                     <div class="cont">
-                        <h5 class="c-m-text black">
+                        <h5 class="c-m-text blackk m-t-20">
                             1. 개인정보 처리(수집·이용) 목적
                         </h5>
                         <p class="c-s-text m-0">
                             회사는 개인정보를 다음의 목적을 위해 처리합니다. 처리한 개인정보는 다음의 목적 이외의 용도로는 사용되지 않으며, 이용 목적이 변경될 시에는 사전동의를 구할 예정입니다.
                         </p>
-                            <ul>
-                                <li>
-                                    -	회사, 제품, IR 등 (문의 및 답변 등 기타 서비스 제공)
-                                </li>
-                            </ul>
+                        <ul>
+                            <li>
+                                -	회사, 제품, IR 등 (문의 및 답변 등 기타 서비스 제공)
+                            </li>
+                        </ul>
                     </div>
                 
                     <div class="cont">
-                        <h5 class="c-m-text black">
+                        <h5 class="c-m-text black m-t-20">
                             2. 개인정보 처리·이용 및 보유기간
                         </h5>
                         <p class="c-s-text m-0">
@@ -97,7 +101,7 @@
                     </div>
                   
                     <div class="cont">
-                        <h5 class="c-m-text black">
+                        <h5 class="c-m-text blackk m-t-20">
                             3. 정보주체의 권리·의무 및 그 행사방법
                         </h5>
                         <p class="c-s-text m-0">
@@ -359,6 +363,7 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="tap-1" role="tabpanel" aria-labelledby="home-tab">
                         <div class="table-wrap">
+                            <div class="cursor-ic"></div>
                             <table class="table ir">
                                 <thead class="thead-light">
                                     <tr class="text-center">
@@ -472,6 +477,7 @@
                     </div>
                     <div class="tab-pane fade" id="tap-2" role="tabpanel" aria-labelledby="home-tab">
                         <div class="table-wrap">
+                            <div class="cursor-ic"></div>
                             <table class="table ir">
                                 <thead class="thead-light">
                                     <tr class="text-center">
@@ -679,7 +685,8 @@
                         </tr>
                         <tr>
                             <th>문의내용</th>
-                            <td><input type="text" class="form-control w-100 h-160" placeholder="문의하실 내용을 작성하세요"></td>
+                            <td><textarea class="w-100 h-160" placeholder="문의하실 내용을 작성하세요"></textarea></td>
+                               
                         </tr>
                         <tr>
                             <th>파일첨부</th>
@@ -726,9 +733,9 @@
         <div class="modal-content">
             <div class="modal-body">
                 <div class="content-text">
-                    <a href="javascript:void(0)" class="c-s-text bold">KOR</a>
-                    <a href="javascript:void(0)" class="c-s-text bold">ENG</a>
-                    <a href="javascript:void(0)" class="c-s-text bold">CHN</a>
+                    <a href="javascript:void(0)" class="c-s-text bold active">KOR</a>
+                    <p class="c-s-text bold">ENG</p>
+                    <p class="c-s-text bold">CHN</p>
                 </div>
             </div>
         </div>
@@ -754,4 +761,6 @@
         </div>
     </div>
 </div>
+
+
 

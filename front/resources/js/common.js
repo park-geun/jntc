@@ -211,7 +211,42 @@ $(document).ready(function () {
         return false;
     });
 
+    //커넥터 hide
+    $('.lb-nav').click(function(){
+        $('.lightboxOverlay').hide();
+        $('.lightbox').hide();
+        $('body.lb-disable-scrolling').css({'overflow':'auto'});
+    })
+    //테이블 cursor
+    $('.table-wrap').bind("touchstart",function(){
+        $('.cursor-ic').hide();
+    });   
+    
+    $('.swiper-socket').click(function(){
+        var lightImg = $('.lightbox');
+        
+        if( lightImg.show() ){
+            console.log(';asd');
+        }
+
+    })
+   
+ 
 })
+
+//스크롤 액션
+$(document).scroll(function(){
+    var scrollTop = $(this).scrollTop();
+
+    if(scrollTop <= 100){
+        $('.top-scroll').removeClass('active');
+    }else{
+        console.log('asssd');
+        $('.top-scroll').addClass('active');
+    }
+})
+
+
 //계열사 소개 토글
 function openSubsidiaryMap(idx){
     $('#map-'+idx).toggleClass('active');

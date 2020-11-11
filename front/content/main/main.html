@@ -14,6 +14,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <!-- jquery -->
     <script src="../../resources/plugin/jquery/jquery.min.js"></script>
+    <!-- cookie -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <!-- bootstrap -->
     <script src="../../resources/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Swiper -->
@@ -26,8 +28,19 @@
         <div class="include-header">
             <!-- ///include header -->
         </div>
-
-        <div class="">
+        <div class="position-relative">
+            <div class="popup-banner">
+                <img src="../../resources/images/popup-banner.png" alt="팝업배너">
+                <div class="cookie">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cookie-check">
+                        <label class="form-check-label s-example" for="cookie-check">
+                          오늘하루 그만보기
+                        </label>
+                    </div>
+                    <a href="javascript:void(0)" class="a" onclick="closeWin(1)">close</a>
+                </div>
+            </div>
             <section class="section-1 p-0 m-0">
                 <div class="swiper-container main" id="swiper-container">
                     <div class="swiper-wrapper">
@@ -260,9 +273,6 @@
             </section>
         </div>
 
-        <a href="" class="top-scroll">
-            <div style="background-image: url('../../resources/images/icon_scroll_top.png');"></div>
-        </a>
 
         <div class="include-footer">
             <!-- ///include footer -->

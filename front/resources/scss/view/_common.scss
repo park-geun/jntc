@@ -2,6 +2,7 @@ $orange : #f47920;
 $b-orange:#ef4538;
 $red : #f54336;
 $black:#000000;
+$blue:#048de3;
 $gray-cc:#cccccc;
 $gray-79:#797979;
 $gray-f2:#f2f2f2;
@@ -19,13 +20,15 @@ $white : #ffffff;
 $rgba-2:rgba(0, 0, 0, 0.2);
 $rgba-5:rgba(0, 0, 0, 0.5);
 $rgba-7:rgba(0, 0, 0, 0.7);
+/* 주가정보 */
+.red-color{color:$red;}
+.blue-color{color: $blue;}
 
 body {
     text-decoration: none;
     color: $gray-33;
     font-weight: 400;
 }
-
 p,a,h1,h2,h3,h4,h5,li,th,tr,td {
     font-size: 16px;
     color: $gray-33;
@@ -153,6 +156,10 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
     img {
         vertical-align: inherit;
         margin: 0 5px 0 20px;
+    }
+    &:hover{
+        border:1px solid $orange;
+        transition: .5s all;
     }
 }
 
@@ -381,6 +388,11 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
         font-weight: 400;
     }
 }
+//예시 텍스트
+.s-example {
+    font-size: 15px;
+    color:$gray-33;
+}
 
 //예시 텍스트
 .example {
@@ -406,13 +418,16 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
     }
     &.vision {
         border: 1px solid $gray-b2;
-        padding: 50px 120px;
+        padding: 50px 100px;
+    }
+    &.connector{
+        padding: 50px 90px;
     }
     &.ir {
         height: 400px;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 90%;
+        background-size: auto;
         margin-top:0;
     }
     &.none-bg {
@@ -737,6 +752,7 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
     }
 
     &.property {
+        margin-top:20px;
         .bold{font-weight: 700;}
         th {
             padding: 10px 15px;
@@ -797,7 +813,149 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             font-weight: 400;
         }
     }
-   
+    &.finance{
+        margin-top:20px;border-top:2px solid $gray-33; border-bottom:2px solid $gray-33;
+        thead{
+            .colspans{ font-weight: 400;}
+            th{
+                font-weight: bold;
+                color:#333;
+                background-color: #f8f8f8;
+                text-align: center;
+                padding:10px;
+                font-size:16px;
+                span{display:block;}
+            }
+        }
+        tbody{
+            .top{border-top:1px solid #ddd;}
+            th{
+                vertical-align: middle;
+                text-align: center;
+                border:0;
+            }
+            td{
+                padding:10px;
+                text-align: center;
+                border-bottom:1px solid #ddd;
+            }
+        }
+    }
+    &.finance-position{
+        margin-top:20px;border-top:2px solid $gray-33; border-bottom:2px solid  $gray-33;
+        padding:0 15px;
+        thead{
+            .colspans{ font-weight: 400;}
+            th{
+                vertical-align: middle;
+                font-weight: bold;
+                color:#333;
+                background-color: #f8f8f8;
+                text-align: center;
+                padding:10px;
+                font-size:16px;
+                span{display:block;}
+            }
+        }
+        tbody{
+            .top{border-top:1px solid #ddd;}
+            th{
+                vertical-align: middle;
+                text-align: center;
+                border-top:1px solid $gray-dd;
+            }
+            td{
+                padding:10px;
+                text-align: center;
+                border-bottom:1px solid #ddd;
+            }
+        }
+    }
+    &.stork-time{
+        margin-top:20px;border-top:2px solid $gray-33; border-bottom:2px solid  $gray-33;
+        padding:0 15px;
+        thead{
+            .colspans{ font-weight: 400;}
+            th{
+                vertical-align: middle;
+                font-weight: bold;
+                color:#333;
+                background-color: #f8f8f8;
+                text-align: center;
+                padding:10px;
+                font-size:16px;
+                span{display:block;}
+            }
+        }
+        tbody{
+            border-top:1px solid $gray-dd;
+            .top{border-top:1px solid #ddd;}
+            th{
+                vertical-align: middle;
+                text-align: center;
+                border:0;
+                padding:10px;
+            }
+            td{
+                padding:10px;
+                text-align: center;
+                border:0;
+            }
+        }
+    }
+    &.stork-table{
+        margin-top:20px;border-top:2px solid $gray-33; border-bottom:2px solid $gray-33;
+
+        thead{
+            .colspans{ font-weight: 400;}
+            th{
+                font-weight: bold;
+                color:#333;
+                background-color: #f8f8f8;
+                text-align: center;
+                padding:10px;
+                font-size:16px;
+                vertical-align: middle;
+                span{display:block;}
+            }
+        }
+        tbody{
+            .top{border-top:1px solid #ddd;}
+            th{
+                vertical-align: middle;
+                text-align: center;
+                border:0;
+            }
+            td{
+                padding:10px;
+                text-align: center;
+                border-bottom:1px solid #ddd;
+                @at-root{
+                    &.up{
+                        color:$orange;
+                        &::before{
+                            content:"\f0d8";
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 12px;
+                            color:$orange;
+                        }
+                    }
+                    &.down{
+                        color:$blue;
+                        &::before{
+                            content:"\f0d7";
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            font-size: 12px;
+                            color:$blue;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
 }
 table{
     &.send{
@@ -810,13 +968,20 @@ table{
         td{
             height: 60px;
             .form-control{
+                font-size:16px;
                 height: 45px;
-                &::placeholder{font-size:16px;}
+                &::placeholder{font-size:16px; color:$gray-99;}
+
             }
             input{
                 &.w-100{width: 100%;}
                 &.w-70{width:70%;}
                 &.h-160{height: 160px;}
+            }
+            @at-root{
+                textarea{height: 160px;border:2px solid $gray-dd;
+                    &::placeholder{ color:$gray-99;padding:20px;}
+                }
             }
         }
         
@@ -831,8 +996,8 @@ table{
             }
         }
         .ui-selectmenu-button{
-            &.ui-button{width:9em;border:1px solid $gray-33;}
-            background-color: $white;
+            &.ui-button{width:8em !important; border:1px solid $gray-33 !important;}
+            background-color: $white !important;
             height: 40px;
             .ui-icon-triangle-1-s{
                 background-position: -65px -12px;
@@ -880,7 +1045,7 @@ table{
         li {            
             display: flex;
             justify-content: space-between;
-            padding: 10px 0 10px 10px;
+            padding: 5px 0 10px 5px;
 
             &:first-child {
                 margin-top: 10px;
@@ -1137,11 +1302,25 @@ table{
     .m-b-30{margin: 0 !important;}
     .margin-50{margin-left:0;margin-right:0;}
     .margin-25{margin-left:0;margin-right:0;}
+    .m-wrap{flex-flow:wrap;}
+    
     .table-wrap{
         overflow: scroll;    
-        clear: both;   
+        clear: both;  
+        position: relative;
         .table{
             width: 1000px;
+        }
+        .cursor-ic{
+            width: 76px;
+            height: 62px;
+            background-image: url('../../resources/images/ic-touch.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
         }
     }
     .product-question{
