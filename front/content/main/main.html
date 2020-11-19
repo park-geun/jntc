@@ -29,16 +29,16 @@
             <!-- ///include header -->
         </div>
         <div class="position-relative">
-            <div class="popup-banner">
+            <div class="popup-banner" data-cookie="c1">
                 <img src="../../resources/images/popup-banner.png" alt="팝업배너">
                 <div class="cookie">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="cookie-check">
+                        <input class="form-check-input" type="checkbox" id="cookie-check" name="cookie-check">
                         <label class="form-check-label s-example" for="cookie-check">
                           오늘하루 그만보기
                         </label>
                     </div>
-                    <a href="javascript:void(0)" class="a" onclick="closeWin(1)">close</a>
+                    <a href="javascript:void(0)" class="close"></a>
                 </div>
             </div>
             <section class="section-1 p-0 m-0">
@@ -279,7 +279,77 @@
         </div>
 
     </div>
+    <script>
+        //팝업
+        function setCookie(cookieName, value, exdays) {
+            var exdate = new Date();
+            exdate.setDate(exdate.getDate() + exdays);
+            var cookieValue = escape(value) + ((exdays==null) ? "" : "; expires=" + exdate.toGMTString());
+            document.cookie = cookieName + "=" + cookieValue;
+        }
+    
+        function deleteCookie(cookieName) {
+            var expireDate = new Date();
+            expireDate.setDate(expireDate.getDate() - 1);
+            document.cookie = cookieName + "= " + "; expires=" + expireDate.toGMTString();
+        }
+    
+        function getCookie(cookieName) {
+            cookieName = cookieName + '=';
+            var cookieData = document.cookie;
+            var start = cookieData.indexOf(cookieName);
+            var cookieValue = '';
+            if(start != -1){
+                start += cookieName.length;
+                var end = cookieData.indexOf(';', start);
+                if(end == -1)end = cookieData.length;
+                cookieValue = cookieData.substring(start, end);
+            }
+            return unescape(cookieValue);
+        }
+    
+        $(document).ready(function() {
+            var cookiename;
+    
+            $('[data-cookie]').each(function(){
+                cookiename = $(this).attr('data-cookie');
+                if(getCookie(cookiename) != "Y"){
+                    $(".popup-banner").show();
+                    $('[data-cookie=' + cookiename + ']').show();
+                }
+            });
+    
+            //팝업닫기
+            $('.popup-banner .close').on('click',function() {
+                $(this).closest('[data-cookie]').hide();
+                checkPopupLength();
+            });
+    
 
+            //오늘하루 그만보기
+            if($("input:checkbox[name=cookie-check]").is(":checked") == true ){
+                $('.popup-banner .close').on('click',function() {
+                    var cookiename = $(this).closest('[data-cookie]').data('cookie');
+                    closePopupToday(cookiename);
+                    $(this).closest('[data-cookie]').hide();
+                    checkPopupLength();
+                });
+            }
+
+           
+    
+        });
+    
+        function closePopupToday(cookiename) {
+            setCookie(cookiename, 'Y', 1);
+        }
+    
+        function checkPopupLength() {
+            if ($('[data-cookie]:visible').length == 0) {
+                $('.popupMainWrap').hide();
+            }
+        }
+    </script>
     <script src="../../resources/js/common.js"></script>
 </body>
 

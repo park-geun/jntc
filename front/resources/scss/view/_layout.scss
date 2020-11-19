@@ -2,6 +2,7 @@
 .wrap{
     padding :20px;
 }
+
 section {
     padding : 45px 0;
 }
@@ -14,6 +15,7 @@ section {
     border-bottom:1px solid $gray-dd;
 }
 header {
+    
     nav {
         ul {
             display: flex;
@@ -30,6 +32,7 @@ header {
     }
     .right-header{                
         display: flex;
+        .sel-language{display:flex;}
         .select-box{
             display:flex;
             align-items: center;
@@ -44,10 +47,23 @@ header {
             height: 20px;
             background-image:url('../../resources/images/earth.png') ;
             background-size: contain;
-            
         }
-        select{
-            cursor: pointer;
+        .country{
+            margin:0 10px 0 5px;
+            position: relative;
+            &::after{
+                content:"";
+                position: absolute;
+                top:50%;
+                transform: translate(0, -50%);
+                background-image: url('../../resources/images/ic-s-down.png');
+                background-repeat: no-repeat;
+                width: 11px;
+                height: 5px;
+                right: -15px;
+            
+                
+            }
         }
     }
 
@@ -169,7 +185,7 @@ footer {
                     color: $gray-33;
                     font-size: 20px;
                     padding-bottom: 10px;
-                    &:hover{color:$orange;transition:.2s all;}
+                    &:hover{color:$orange; transition:.2s all;}
                 }
             }
             li {
@@ -447,6 +463,7 @@ footer {
         }
     }
 }
+
 .sub-section-banner{
     margin:0;
     text-align: center;
@@ -621,8 +638,13 @@ aside{
     
 }
 @include media-breakpoint-down(sm){
+    
     aside{
         display:none;
+    }
+    
+    .wrap{
+        padding :0;
     }
 }
 
@@ -849,6 +871,11 @@ aside{
 }
  
 @include media-breakpoint-down(xl){
+    .header{
+        .gnb{
+            .container{padding:0 50px;}
+        }
+    }
     header {
         padding :10px;
         nav {
@@ -863,6 +890,15 @@ aside{
                 }
             }
         }
+    }
+    .sitemaps{
+        .close-btn{
+            top: 35px;
+            right: 5%;
+        }
+    }
+    .sub-title{
+        p{font-size:30px; font-weight: 700;margin-left: 20px;}
     }
 }
 @include media-breakpoint-down(md){
@@ -881,15 +917,15 @@ aside{
     header{
         padding :10px;
         select {margin: 0 5px 0 0;}
-        a {
-            img {padding: 0 0 0 10px;}
-        }
+       
         .logo{
-            img{width:100%;}
+            a {
+                img {width:70%;height:30px;padding: 0 0 0 10px;}
+            }
         }
         .right-header{                
-            display: flex;
-            select{display:none;}
+            .sel-language{display:none;}
+            align-items: center;
             .select-ic{width: 0;}
         }
     }
@@ -953,10 +989,10 @@ aside{
         }
     }
     .sub-content{
-        padding : 60px 0 0 0;
+        padding : 50px 0 0 0;
         .sub-bg{
             background-size: cover;
-            top:60px;
+            top:50px;
         }
         .title-box {
             padding : 80px 10px;
@@ -993,13 +1029,17 @@ aside{
             padding:25px 0;
         }
     }
-    .section-location{
-        span{font-size:14px;}
+    .content-body{
+        .section-location{
+            .location-ic-home{width: 13px;height: 13px;}
+            span{font-size:12px;}
+        }
     }
+    
     footer{
         .footer-info{
-            p{font-size:14px; 
-                span{margin-left:0;}
+            p{font-size:14px;
+                span{margin-left:15px;}
             }
         }
         ul{
@@ -1010,8 +1050,6 @@ aside{
         }
     }
 }
-
-
 
 
    

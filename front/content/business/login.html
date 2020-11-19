@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html,body{height: 100% !important; margin:0;}
+    p{margin:0;}
+    .login {
+      width: 100%;
+      height: 100%;
+      background: url("../images/bg-login.jpg") 100% 50% no-repeat;
+      background-size: cover;
+      position: relative;
+      display:flex;
+      align-items: center;
+    }
+    .login-content{
+        width:520px;
+        border:1px solid #ddd;
+        margin:0 auto;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        padding:40px 0;
+
+    }
+    .desc{
+        width: 415px;
+        margin:0 auto;
+    }
+    #logo{margin:0 auto;text-align:center;}
+    .txt{
+        text-align: center;
+        font-size:26px;
+        color: #f47920;
+        font-weight:bold;
+        margin:20px 0 35px; 
+    }
+    .txt span{
+        color:#000
+    }
+    .login-input{
+        width: 100%;
+        text-align: center;
+        display:flex;
+        flex-flow:column;
+    }
+    fieldset{border:0;text-align:center;padding:0;margin:0;}
+    .form-control{
+        width: 100%;
+        height: 60px;
+        border:2px solid #ddd;
+        margin-bottom:10px;
+    }
+    .form-control.id{
+        background-image:url('../../resources/images/admin-ic-name.png');
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .form-control.pw{
+        background-image:url('../../resources/images/admin-ic-password.png');
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .form-control::placeholder{
+        padding:0 20px;
+        line-height: 60px;
+        font-size:20px;
+        color:#cccccc;
+    }
+    .btn{
+        width: 100%;
+        height: 60px;
+        background-color: #f47920;
+        color:#fff;
+        border:none;
+        font-size:20px;
+        outline:2px solid #f47920;
+        margin-top:10px;
+    }
+    .form-check{
+        width: 100%;
+        margin:0 auto;
+        text-align:left;
+        margin-top:20px;
+    }
+    .form-check span{
+        color:#333;
+        margin-left:10px;
+    }
+    .form-check input[type="checkbox"]{
+        margin:0;
+    }
+    .help{
+        font-size:16px;
+        color:#333;
+        margin:40px 0;
+    }
+    .help a{
+        color:#f47920
+    }
+    .call{ color:#f47920}
+    @media (max-width: 1199.98px) {
+     
+    }
+    
+    @media (max-width: 991.98px) {
+   
+    }
+</style>
+<body>
+    <div class="login">
+        <div class="login-content">
+            <div class="desc">
+                <h1 id="logo"><img alt="JNTC" src="../../resources/images/logo.png"></h1>
+                <p class="txt">제이앤티씨 <span>CMS ADMIN</span></p>
+                <form action="/admin/login/process.do" method="POST">
+                    <fieldset>
+                        <div class="login-input">
+                            <div class="">
+                                <input type="text" name="email" class="form-control form-control-lg id" placeholder="아이디">
+                            </div>
+                            <div class="">
+                                <input type="password" name="mpassword" class="form-control form-control-lg pw" placeholder="비밀번호">
+                            </div>
+                        </div>
+                        <button type="submit" id="loginBtn" class="btn btn-danger btn-lg">로그인</button>
+                        <div class="form-check">
+                            <input type="checkbox"><span>로그인 정보 기억</span>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="footer">
+                    <p class="help">내 컴퓨터가 아닌 곳에서 로그인하신 경우에는 사용 후에 반드시 로그인 정보를 삭제하시기 바랍니다.
+                        <a href="javscript:void(0)">도움말</a>
+                    </p>
+                    <p class="call">로그인 정보를 잊으셨을 경우, 전산팀으로 연락 주세요.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

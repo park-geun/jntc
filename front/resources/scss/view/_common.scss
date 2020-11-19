@@ -362,7 +362,7 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
 }
 //오렌지색 텍스트
 .o-s-text {
-    font-size: 16px;
+    font-size: 16px !important;
     color: $orange;
 }
 
@@ -452,6 +452,11 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             font-weight: 400;
         }
     }
+    &.subsidiary{
+        ul{
+            li{padding:20px 0;}
+        }
+    }
 }
 
 //토글
@@ -460,12 +465,10 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         span:nth-child(1) {
             font-size: 16px;
             font-weight: bold;
         }
-
         button:nth-child(2) {
             width: 30px;
             height: 20px;
@@ -473,22 +476,14 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             background-size: contain;
             background-repeat: no-repeat;
         }
-
     }
 
     .toggle-content {
-        &.ir{
-            
-            ul {
-                margin-bottom:65px;
-            } 
-        }
         display: block;
-
-        ul {
-            margin: 30px 0;
+        &.ir{
+            ul { margin-bottom:65px;} 
         }
-
+        ul { margin: 30px 0; }
         .maps {
             border-top: 1px solid $gray-dd;
             padding-top: 20px;
@@ -506,7 +501,23 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
         }
     }
 }
-
+@include media-breakpoint-down(sm){
+    .toggle-wrap {
+        .toggle-head {
+            span:nth-child(1) {
+                width:80%;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+        .toggle-content {
+            &.ir{
+                ul { margin-bottom:20px;} 
+            }
+    
+        }
+    }
+}
 .maps {
     width: 100%;
     float: inherit;
@@ -678,6 +689,7 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
         text-align: center;
         padding:0;
         margin-left: -1px;
+        &:first-child{margin-left:1px;}
         .nav-link{
             height: 100%;
             padding: 21px 0;
@@ -832,7 +844,6 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             th{
                 vertical-align: middle;
                 text-align: center;
-                border:0;
             }
             td{
                 padding:10px;
@@ -1110,6 +1121,7 @@ table{
 }
 
 @include media-breakpoint-down(xl) {
+    .container{padding :0 10px;}
     .orange-circle {
         &.small {
             width: 160px;
@@ -1141,9 +1153,15 @@ table{
         margin-left: 0;
         margin-right: 0;
     }
+    .border-box{
+        &.ir{
+            background-size: 300px;
+        }
+    }
 }
 
 @include media-breakpoint-down(md) {
+    .container{padding :0;}
      .margin-15 {
         margin-left: 0;
         margin-right: 0;
@@ -1302,6 +1320,7 @@ table{
     .m-b-30{margin: 0 !important;}
     .margin-50{margin-left:0;margin-right:0;}
     .margin-25{margin-left:0;margin-right:0;}
+    .margin{margin-left:0;margin-right:0;}
     .m-wrap{flex-flow:wrap;}
     
     .table-wrap{
@@ -1322,6 +1341,12 @@ table{
             left:50%;
             transform: translate(-50%, -50%);
         }
+        &.img{
+            margin-top:40px;
+            border:1px solid $gray-dd;
+            .border-box{border:0}
+            img{max-width: inherit;}
+        }
     }
     .product-question{
         width: 100%;
@@ -1338,8 +1363,17 @@ table{
             }
         }
     }
-    .example{
+    //예시 텍스트
+    .s-example {
+        font-size: 14px;
+        color:$gray-33;
+    }
+
+    //예시 텍스트
+    .example {
+        font-size: 13px;
         margin-bottom: 20px;
+        color: $rgba-7;
     }
 
     .nav-tabs{

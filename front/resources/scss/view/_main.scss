@@ -159,6 +159,11 @@ section>div>h1 {
         justify-content: space-between;
         padding:5px;
     }
+    .close{
+        width:15px;height: 15px;
+        background-image: url('../../resources/images/ic-gnb-close.png'); background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 @include media-breakpoint-down(xxl){
     .swiper-container{
@@ -172,6 +177,10 @@ section>div>h1 {
     }
 }
 @include media-breakpoint-down(xl){
+    .popup-banner{
+        width: 370px;
+        height: 570px;
+    }
     .swiper-container{
         .control-btn{
             padding:0 4rem;
@@ -196,6 +205,10 @@ section>div>h1 {
     } 
 }
 @include media-breakpoint-down(md){
+    .popup-banner{
+        width: 300px;
+        height: 450px;
+    }
     .swiper-container{
        
         .banner-wrap{  
@@ -212,6 +225,14 @@ section>div>h1 {
   
 }
 @include media-breakpoint-down(sm){
+    .popup-banner{
+        width: 300px;
+        height: 440px;
+        top:2%;
+        .form-check{
+            label{font-size:14px;}
+        }
+    }
     .swiper-container{
         .control-btn{
             padding:0 2rem;
@@ -274,7 +295,46 @@ section>div>h1 {
             background-size: cover;
             background-position: center;
         }
+        .ic-5 {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-image: url('../../resources/images/ic-subsidiary-5.png');
+            background-size: cover;
+            background-position: center;
+        }
 
+        .ic-6 {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-image: url('../../resources/images/ic-subsidiary-6.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .vietnam{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-size: cover;
+            background-position: center;
+            &.icon-1{ background-image: url('../../resources/images/ic-subsidiary-1.png');}
+            &.icon-2{ background-image: url('../../resources/images/ic-subsidiary-2.png');}
+            &.icon-3{ background-image: url('../../resources/images/ic-subsidiary-5.png');}
+            &.icon-4{ background-image: url('../../resources/images/ic-subsidiary-6.png');}
+        }
+        .china{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            &.icon-1{ background-image: url('../../resources/images/ic-subsidiary-1.png');}
+            &.icon-2{ background-image: url('../../resources/images/ic-subsidiary-2.png');}
+            &.icon-3{ background-image: url('../../resources/images/ic-subsidiary-3.png');}
+            &.icon-4{ background-image: url('../../resources/images/ic-subsidiary-4.png');}
+        }
         p:nth-child(2) {
             font-size: 19px;
             color: $black;
