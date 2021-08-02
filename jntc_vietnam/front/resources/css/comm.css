@@ -411,7 +411,7 @@ section > div > h1{ font-size: 34px; margin-bottom: 45px; font-weight: bold;}
     .summary .section-2{padding:20px 0;}
     .summary .section-2 > div > div > div{ margin-bottom:30px; }
     .summary .section-2 .year-text{margin: 10px 0 30px 0; }
-    .summary .section-2 .button-wrap a{margin-right: 10px;padding: 10px 20px;}
+    .summary .section-2 .button-wrap a{margin-right: 10px;padding: 10px;}
  
     .sales div.w50{ width:100%; margin:0; margin-bottom:20px; }
     .sales div .content-img{ background-size: 300px; height:300px;}
@@ -444,11 +444,15 @@ section > div > h1{ font-size: 34px; margin-bottom: 45px; font-weight: bold;}
     header a img{padding-left: 15px; height: 25px;}
     .banner_slide{ width:100%; }
     .swiper-slide .img{height:224px;}
-   
     .border-right{
         border:0 !important;
     }
-
-
-    
+    .link-btn {font-size: 14px;padding: 5px 15px;}
+    .tab-content > .history-wrap{ 
+        display:block;
+        margin-top: 20px;
+    }
+    .tab-content > div .left-content .img{
+        width: 100%;
+    }
 }

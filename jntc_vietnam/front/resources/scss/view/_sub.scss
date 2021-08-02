@@ -664,21 +664,17 @@
         padding: 0 10px;
         margin-top: 20px;
         .glass-img{
-            background-size: contain;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 250px;
+            border: 1px solid $gray-aa;
+            padding: 15px 0;
+            background-size: cover;
         }
         .glass-item {
             height: 100%;
         }
-    }
-  
-    .glass-img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 250px;
-        border: 1px solid $gray-aa;
-        padding: 15px 0;
-        background-size: contain;
     }
     .glass-text {
         padding: 10px;
@@ -731,7 +727,6 @@
     }
 }
 @include media-breakpoint-down(sm){
-    
     //제품 글라스
     .cover-glass{
         &.reinforce{
@@ -752,6 +747,9 @@
                     height:150px;
                 }
             }
+        }
+        .glass-list{
+            .glass-img{height: 350px;}
         }
     }
     .announcement-table {

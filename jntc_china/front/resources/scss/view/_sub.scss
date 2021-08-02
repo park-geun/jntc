@@ -122,7 +122,11 @@
 //사업소개 커버글라스
 .glass-container{
     width: 100%;
-    .swiper-wrapper{display: flex;justify-content: space-between;}
+    .swiper-wrapper{display: flex;justify-content: space-between;
+        &.active{justify-content: flex-start;
+            .swiper-slide{margin-right:21.5px;}
+        }
+    }
     .swiper-slide{flex: 0 0 205px;max-width: 205px;}
     .glass-list{padding: 0;}
 
@@ -664,21 +668,17 @@
         padding: 0 10px;
         margin-top: 20px;
         .glass-img{
-            background-size: contain;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 250px;
+            border: 1px solid $gray-aa;
+            padding: 15px 0;
+            background-size: cover;
         }
         .glass-item {
             height: 100%;
         }
-    }
-  
-    .glass-img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 250px;
-        border: 1px solid $gray-aa;
-        padding: 15px 0;
-        background-size: contain;
     }
     .glass-text {
         padding: 10px;
@@ -752,6 +752,9 @@
                     height:150px;
                 }
             }
+        }
+        .glass-list{
+            .glass-img{height: 350px;}
         }
     }
     .announcement-table {

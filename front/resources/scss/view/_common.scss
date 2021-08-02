@@ -28,13 +28,13 @@ body {
     text-decoration: none;
     color: $gray-33;
     font-weight: 400;
-}
-p,a,h1,h2,h3,h4,h5,li,th,tr,td {
-    font-size: 16px;
-    color: $gray-33;
-    word-break: keep-all;
-    font-weight: 400;
-    // transform: skew(-0.1deg);
+    p,a,h1,h2,h3,h4,h5,li,th,tr,td {
+        font-size: 16px;
+        color: $gray-33;
+        word-break: keep-all;
+        font-weight: 400;
+        // transform: skew(-0.1deg);
+    }
 }
 .container{
     padding-left:0;
@@ -593,7 +593,6 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
         height: 280px;
         position: relative;
         background-size: cover;
-
         &::after {
             content: "";
             position: absolute;
@@ -712,7 +711,6 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
 .table {
     color: $gray-33;
     margin-top:50px;
-    color: $black;
     &.tab-panel {
         th,
         td {
@@ -837,6 +835,7 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
                 padding:10px;
                 font-size:16px;
                 span{display:block;}
+                .none-language{display: inline;}
             }
         }
         tbody{
@@ -866,6 +865,7 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
                 padding:10px;
                 font-size:16px;
                 span{display:block;}
+                .none-language{display: inline;}
             }
         }
         tbody{
@@ -998,6 +998,21 @@ table{
         
     }
 }
+@include media-breakpoint-down(sm){
+    table{
+        &.send{
+            td{
+                input{
+                    &.w-100{width: 100%;}
+                    &.w-70{width:100%;}
+                    &.h-160{height: 160px;}
+                }
+            }
+        }
+    }
+
+    
+}
 .select-box{
     text-align: right;
     @at-root{
@@ -1076,7 +1091,17 @@ table{
         }
     }
 }
-
+@include media-breakpoint-down(sm){
+    .ul-list-dot{
+        &.subsidiarys{
+            li{font-size:13px;}
+            li:first-child{
+                margin:30px 0;
+                span{border:1px solid $gray-dd;border-radius: 15px;padding: 0 20px;margin-left:0;display:inline-block;}
+            }
+        } 
+    }
+}
 .pagination {
     ul {
         li{
@@ -1402,13 +1427,14 @@ table{
             justify-content: center;
         }
     }
+    .select-box{margin-top:0;}
 }
-
-		
-			
-	
-
-
+.modal[data-overlap=true]{
+    z-index: 1052;
+}
+.modal-backdrop + .modal-backdrop{
+    z-index: 1051;
+}
 
 
 

@@ -1,0 +1,67 @@
+body.cn{
+    //중문
+    font-family: "Noto Sans SC" !important;
+    p,a,h1,h2,h3,h4,h5,li,th,tr,td {
+        word-break: break-word;
+    }
+    .sub-title{
+        p{
+            font-size:30px;
+            line-height: 20px;
+        }
+    }
+    .tab-content > div .right-content .history dl dd div{margin-bottom:20px;}
+    .tab-content > div .history dl dd div p.text{
+        width: calc(100% - 300px) !important;
+        margin-top: -10.5px !important;
+        line-height: 20px !important;
+    }
+    .quality{
+        .content{min-height: 500px !important;} 
+    }
+
+    .border-box{
+        &.compete{height:500px;}
+    }
+    .ir-wrap{
+        &.card-list{height: 100%;
+            .newsroom.border-box{height:100%}
+        }
+    }
+    .language-none{
+        display:none;
+    }
+    .sitemap-list{
+        ul{
+            li{line-height: 17px; padding-bottom:10px;}
+        }
+    }
+    .ui-selectmenu-button.ui-button{
+        width: 10em !important;
+    }
+    .ui-selectmenu-text{font-size:15px;}
+    .table{
+        &.finance{
+            thead{
+                th{
+                    .none-language{display: none;}
+                }
+            }
+            tbody{
+                .none-language{display: none;}
+            }
+        }
+        &.finance-position{
+            thead{
+                th{
+                    .none-language{display: none;}
+                }
+            }
+            tbody{
+                .none-language{display: none;}
+            }
+        }
+    }
+    .modal-dialog.family .modal-body ul li{padding:5px 0;}
+    .modal-dialog.family .modal-body ul li a{display:block;line-height: 18px;}
+}

@@ -1,0 +1,128 @@
+body.en{
+    //영문
+    p,a,h1,h2,h3,h4,h5,li,th,tr,td {
+        word-break: break-word;
+    }
+    .gnb{
+        .gnb-list{
+            ul{
+                li{line-height: 17px;padding:15px 0 0 0;}
+            }
+        }
+    }
+    .sub-title{
+        p{
+            font-size:30px;
+            line-height: 20px;
+        }
+    }
+    .tab-content > div .right-content .history dl dd div{margin-bottom:20px;}
+    .tab-content > div .history dl dd div p.text{
+        width: calc(100% - 300px) !important;
+        margin-top: -10.5px !important;
+        line-height: 20px !important;
+    }
+    .quality{
+        .content{min-height: 500px !important;} 
+    }
+
+    .border-box{
+        &.compete{height:530px;}
+    }
+    .ir-wrap{
+        &.card-list{height: 100%;
+            .newsroom.border-box{height:100%}
+        }
+    }
+    .language-none{
+        display:none;
+    }
+    .sitemap-list{
+        ul{
+            li{line-height: 17px; padding-bottom:10px;}
+        }
+    }
+    .border-text{width:auto;}
+    .table{
+        &.finance{
+            thead{
+                th{
+                    .none-language{display: none;}
+                }
+            }
+            tbody{
+                .none-language{display: none;}
+            }
+        }
+        &.finance-position{
+            thead{
+                th{
+                    .none-language{display: none;}
+                }
+            }
+            tbody{
+                .none-language{display: none;}
+            }
+        }
+        &.tab-panel{
+            tbody{
+                th{padding: 20px 10px;}
+            }
+        }
+    }
+    .ul-list-dot{
+        &.subsidiarys{
+            li::before{
+                top: 10px;
+            }
+        }
+    }
+    .gnb{
+        .en-layout-1{
+            ul:nth-child(3){width:15%}
+            ul:nth-child(4){width:25%}
+        }
+        .en-layout-5{
+           ul{width:25%}
+        }
+    }
+   .ui-selectmenu-button.ui-button{
+       width: 10em !important;
+   }
+   .ui-selectmenu-text{font-size:15px;}
+    //푸터
+   footer{
+       .footer-info{
+           p{
+               span{margin-left:0;}
+           }
+       }
+   }  
+}
+@include media-breakpoint-down(sm){
+    body.en{
+        .tab-content > div .history dl dd div p.text{
+            width: calc(100% - 98px) !important;
+            margin-top: -10.5px !important;
+            line-height: 20px !important;
+        }
+        .tab-content > div .right-content .history dl dd div p.text{
+            width: 60% !important;
+        }
+        .tab-content > div .left-content .img{width:100%;}
+        footer{
+            .footer-info{
+                p{
+                    span{margin-left:0;}
+                }
+            }
+        }
+        .toggle_list.map .list p.title span{line-height: 30px;}
+        .toggle_list.map .list p.title span em{
+            display:block;
+        }
+
+
+    }
+    
+}

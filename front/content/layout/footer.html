@@ -67,8 +67,7 @@
                 </div>
             </div>
             <div class="modal-body">
-                <div class="content-scroll">
-                    
+                <div class="content-scroll">                                               
                     <p>
                         제이앤티씨 (이하 ‘회사’라고 함)는 이용자의 개인정보를 보호하기 위하여, 「정보통신망 이용촉진 및 정보보호에 관한 법률」, 「개인정보보호법」, 개인정보보호 규정 및 가이드라인을 준수하고 있습니다.<br>
                         <br>
@@ -137,7 +136,7 @@
                         <ul>
                             <li>
                                 (파기방법) 
-                            </li>
+                            <s/li>
                             <li>
                                 -	개인정보가 기록된 출력물, 서면 등: 파쇄 또는 소각
                             </li>
@@ -147,8 +146,10 @@
                         </ul>
                     </div>
                     <div class="cont">
-                        6. 개인정보 자동 수집 장치의 설치/운영 및 거부
-                        회사는 정보주체의 이용정보를 저장하고 수시로 불러오는 ‘쿠키(cookie)’를 사용하지 않습니다.
+                        <h5 class="c-m-text black">
+                            6. 개인정보 자동 수집 장치의 설치/운영 및 거부
+                            회사는 정보주체의 이용정보를 저장하고 수시로 불러오는 ‘쿠키(cookie)’를 사용하지 않습니다.
+                        </h5>
                     </div>
                     <br>
                     <div class="cont">
@@ -326,9 +327,9 @@
                     비리사실에 대한 제보를 육하원칙으로 받고 있습니다. 당사는 제보자에 대한 비밀보장과 불이익조치 금지 등을 규정하고 있습니다.
                 </div>
                 <div class="content-text-sub fl">
-                    이메일 : <a href="http://ethics@thejnt.com" class="o-s-text">ethics@thejnt.com</a>
+                    이메일 : <a href="#send-mail" class="o-s-text" data-toggle="modal">ethics@thejnt.com</a>
                 </div>
-                <a href="http://ethics@thejnt.com" target="_blink" class="link-btn">제보하기<img src="../../resources/images/ic-s-right.png" alt="자세히 보기"></a>
+                <a href="#send-mail" target="_blink" class="link-btn" data-toggle="modal">제보하기<img src="../../resources/images/ic-s-right.png" alt="자세히 보기"></a>
             </div>
         </div>
     </div>
@@ -422,7 +423,7 @@
                                         <td class="text-center"><a href="" download="@"></a></td>
                                         <td class="text-center"></td>
                                     </tr>
-                                  
+                                    
                                 </tbody>
                             </table>
                         </div>
@@ -644,7 +645,7 @@
             </div>
             <div class="modal-footer notice">
                 <div class="modal-b-p">
-                    <button type="button" class="list-view-btn btn-default btn-prev" onclick="backNoticeView()">목록보기 <span class="d-inline-block ic-list-back"></span></button>
+                    <button type="button" class="list-view-btn btn-default btn-prev text-center" onclick="backNoticeView()">목록보기</button>
                 </div>
             </div>
         </div>
@@ -753,14 +754,61 @@
                         <li><a href="http://thejnte.com" target="_blink">제이앤티이 (JNTE)</a></li>
                         <li><a href="http://thejntg" target="_blink">제이앤티지 (JNTG)</a></li>
                         <li><a href="javascript:void(0)">코메트 (COMET)</a></li>
-                        <li><a href="http://thejntcvina.com" target="_blink">JNTC VINA (베트남)</a></li>
-                        <li><a href="http://theqdjntc.com" target="_blink">청도JNTC유한공사 (중국)</a></li>
+                        <li><a href="http://thejntcvina.com/ko/" target="_blink">JNTC VINA (베트남)</a></li>
+                        <li><a href="http://theqdjntc.com/ko/" target="_blink">청도JNTC유한공사 (중국)</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+<!-- 문의 메일보내기 -->
+<div class="modal fade" id="send-mail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" data-overlap="true">
+    <div class="modal-dialog send none">
+        <div class="modal-content">
+            <div class="modal-header footer-modal">
+                <div class="modal-popup-header">
+                    <div class="sub-title d-flex align-items-center">
+                        <div class="sub-title-ic" style="background-image:url('../../resources/images/ic-send.png')">
+                        </div>
+                        <p>문의 메일보내기</p>
+                    </div>
+                    <a href="javascript:void(0);" data-dismiss="modal" aria-label="Close" class="close-btn"></a>
+                </div>
+            </div>
+            <div class="modal-body notice m-t-20"> 
+                <table class="send">
+                    <tbody>
+                        <tr>
+                            <th>받는사람</th>
+                            <td><input type="text" class="form-control w-70" placeholder="ethics@thejnt.com"></td>
+                        </tr>
+                        <tr>
+                            <th>제목</th>
+                            <td><input type="text" class="form-control w-70" placeholder="제목을 작성하세요"></td>
+                        </tr>
+                        <tr>
+                            <th>작성자</th>
+                            <td><input type="text" class="form-control w-100" placeholder="작성자 이름을 입력하세요"></td>
+                        </tr>
+                        <tr>
+                            <th>이메일</th>
+                            <td><input type="text" class="form-control w-100" placeholder="답변 받으실 메일 주소를 입력하세요"></td>
+                        </tr>
+                        <tr>
+                            <th>문의내용</th>
+                            <td><textarea class="w-100 h-160" placeholder="문의하실 내용을 작성하세요"></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer notice">
+                <div class="p-40">
+                    <button type="button" class="send-btn">메일보내기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 

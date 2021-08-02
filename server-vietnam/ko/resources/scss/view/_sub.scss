@@ -1,0 +1,777 @@
+
+.section-main {
+    position: relative;
+    width: 100%;
+
+}
+///////커버글라스
+.cover-glass-content {
+
+    // margin-top: 60px;
+    p:nth-child(1) {
+        margin-bottom: 30px;
+        padding-right: 15px;
+    }
+
+    p:nth-child(2) {
+        font-size: 17px;
+        line-height: 26px;
+        font-weight: 400;
+    }
+}
+
+.flat {
+    width: 100%;
+    position: relative;
+    &.connector{
+        
+    }
+}
+.cover-glass{
+    // 제품->카메라윈도우
+    &.camera{
+        .glass-list{
+            width:20%;
+        }
+        .glass-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 250px;
+            border: 1px solid $gray-aa;
+            padding: 30px 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-origin: inherit;
+            &.connector {
+                height: auto;
+                padding: 0;
+            }
+        }
+        .glass-list.active {
+            .glass-img {
+                border: 3px solid $orange;
+                background-color: $gray-f5;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .arrow-plus{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    // 제품->강화글라스
+    &.reinforce{
+        .glass-list{
+            width: 20%;
+        }
+    }
+}
+.intro-prev{
+    // background-image: url('../../resources/images/ic-prev-banner.png');
+    // background-repeat: no-repeat;
+    color: inherit;
+    left:-5% !important;
+    top: 35% !important;
+    opacity: 1;
+    &.opacity{opacity: 0;}
+    &::after{
+        content:"";
+        width: 34px;
+        height: 64px;
+        background-image: url('../../resources/images/btn-g-left.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    } 
+}
+.intro-next{
+    // background-image: url('../../resources/images/ic-next-banner.png');
+    color: inherit;
+    right:-5% !important;
+    top: 35% !important;
+    opacity: 1;
+    &.opacity{opacity: 0;}
+    &::after{
+        content:"";
+        width: 34px;
+        height: 64px;
+        background-image: url('../../resources/images/btn-g-right.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    } 
+}
+
+//글래스리스트 디폴트
+//사업소개 커넥터
+#connector{
+    .swiper-wrapper{display: flex;justify-content: space-between;}
+    .swiper-slide{flex: 0 1 205px;max-width: 205px;}
+    .glass-list{padding: 0;}
+
+    &.swiper-container-initialized{
+        .swiper-slide{flex: 0 0 auto;max-width: 205px;}
+        .swiper-slide{width: 205px !important;}
+    }
+}
+//사업소개 커버글라스
+.glass-container{
+    width: 100%;
+    .swiper-wrapper{display: flex;justify-content: space-between;}
+    .swiper-slide{flex: 0 0 205px;max-width: 205px;}
+    .glass-list{padding: 0;}
+
+    .swiper-container-initialized{
+        .swiper-slide{flex: 0 0 auto;max-width: 205px;}
+        .swiper-slide{width: 205px !important;}
+    }
+}
+@include media-breakpoint-down(xl){
+    .glass-container{
+        .swiper-slide{flex: 0 0 170px;max-width: 170px;}
+    
+        .swiper-container-initialized{
+            .swiper-slide{flex: 0 0 auto;max-width: 170px;}
+        }
+    }
+    .years-line{
+        &:after{content:"";right:-15px}
+    }
+}
+@include media-breakpoint-down(md){
+    .glass-container{
+        .swiper-slide{flex: 0 0 170px;max-width: 170px;}
+    
+        .swiper-container-initialized{
+            .swiper-slide{flex: 0 0 auto;max-width: 170px;}
+            .swiper-slide{width: 170px !important;}
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .glass-container{
+        .swiper-slide{flex: 0 0 145px;max-width: 145px;}
+    
+        .swiper-container-initialized{
+            .swiper-slide{flex: 0 0 auto;max-width: 145px;}
+            .swiper-slide{width: 145px !important;}
+        }
+    }
+}
+@include media-breakpoint-down(sm){
+    //사업소개 커넥터
+    #connector{
+        .swiper-wrapper{display: block; justify-content: space-between;}
+        .swiper-slide{flex: 0;max-width: 100%; height: auto;}
+        .glass-list{padding: 0;}
+
+        &.swiper-container-initialized{
+            .swiper-wrapper{display:flex; justify-content: space-between;}
+            .swiper-slide{flex: none; max-width: 100%;}
+            .swiper-slide{width: 100% !important;}
+        }
+    }  
+    //사업소개 커버글라스
+    .glass-container{
+        width: 100%;
+        .swiper-wrapper{display: block; justify-content: space-between;}
+        .swiper-slide{flex: 0;max-width: 100%; height: auto;}
+        .glass-list{padding: 0;}
+
+        &.swiper-container-initialized{
+            .swiper-wrapper{display: flex; justify-content: space-between;}
+            .swiper-slide{flex: none; max-width: 100%;}
+            .swiper-slide{width: 100%;}
+        }
+    }
+    .years-line{
+        margin-bottom:10px;
+        &:after{content:"";width:0;}
+    }
+
+    //슬라이드 버튼
+    .intro-prev{
+        left:0 !important;
+        top: 40% !important;
+        opacity: 1;
+        &.opacity{opacity: 0;}
+        &::after{
+            content:"";
+            width: 17px;
+            height: 34px;
+        } 
+    }
+    .intro-next{
+        right:0 !important;
+        top:40% !important;
+        opacity: 1;
+        &.opacity{opacity: 0;}
+        &::after{
+            content:"";
+            width: 17px;
+            height: 34px;
+        } 
+    }
+}
+.glass-list {
+    width: 100%;
+    padding: 0 10px;
+    &.business{
+        width: 100%;
+
+        &.active{
+            .arrow-plus{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .glass-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+        border: 1px solid $gray-aa;
+        padding: 30px 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .glass-item {
+        margin-bottom: 30px;
+        height: 100%;
+    }
+}
+.glass-list.active {
+    position: relative;
+    .glass-img {
+        border: 3px solid $orange;
+        background-color: $gray-f5;
+        &.camera{
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    .arrow-plus {
+        width: 25px;
+        height: 25px;
+        background-image: url('../../resources/images/ic-plus.png');
+        background-size: contain;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+    }
+}
+.glass-text {
+    padding : 25px 5px;
+    text-align: left;
+
+    .glass-brand {
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 40px;
+        font-weight: 400;
+    }
+    .glass-name {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        &.cg{
+            margin-top: 35px;
+        }
+    }
+    .s-text-border {
+        font-size: 20px;
+        position: relative;
+        padding: 0;
+        font-weight: bold;
+        color: $orange;
+        >span {
+            font-size: 20px;
+            color: $orange;
+            display:inline-block;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background-color: $orange;
+            bottom: -20px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+    .s-text-border.list {
+        &::after {
+            top: 65px;
+        }
+    }
+}
+////////////
+
+/////제품->커버글라스
+.product-glass {
+    margin-left: -10px;
+    margin-right: -10px;
+
+}
+
+/////제품->카메라윈도우
+.camera-window {
+    margin-left: -10px;
+    margin-right: -10px;
+
+    .camera-list {
+        width: 20%;
+        padding: 0 10px;
+        margin-bottom: 60px;
+
+        .glass-item {
+            height: 100%;
+        }
+    }
+
+    .camera-list.active {
+        position: relative;
+
+        .camera-img {
+            border: 3px solid $orange;
+            background-color: $gray-f5;
+        }
+
+        .arrow-plus {
+            width: 25px;
+            height: 25px;
+            background-image: url('../../resources/images/ic-plus.png');
+            background-size: contain;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -25%);
+
+        }
+    }
+
+    .camera-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $gray-aa;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .camera-text {
+        padding: 15px 20px;
+        text-align: left;
+        position: relative;
+
+        .camera-brand {
+            font-size: 16px;
+            line-height: 1.26;
+            margin-top: 30px;
+        }
+
+        .camera-name {
+            font-size: 16px;
+            line-height: 1.26;
+        }
+
+        .camera-text-title {
+
+            p:nth-child(2) {
+                font-size: 16px;
+                margin-top: 5px;
+                font-weight: 700;
+            }
+        }
+
+        .s-text-border {
+            font-size: 22px;
+            padding: 0;
+            color: $orange;
+
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background-color: $orange;
+            bottom: -5px;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+}
+
+
+.modal{
+    .modal-dialog{
+        
+        &.disclosure{
+            position: inherit;
+            bottom: 0;
+            &::after{
+                content:"";
+                background:none;
+            }
+        }
+     
+    }
+}
+.modal-header{
+    background:none;
+    margin:0;
+    padding:0;
+    .sub-title{
+        p{color:$white;}
+    }
+    
+    &.footer-modal{
+        padding: 0 40px;
+        .modal-popup-header{
+            width:100%;
+            padding : 40px 0 24px;
+            border-bottom:1px solid $gray-dd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .close-btn {
+                display:block;
+                background-image: url('../../resources/images/ic-gnb-close.png');
+                width: 21px;
+                height: 21px;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        .sub-title{
+            width:auto;
+            border-bottom:0;
+            padding:0;
+            p{color:$black;}
+        }
+        .close{
+            margin:0;
+            padding:0;
+        }
+    }
+    &.disclosure-modal{
+        .sub-title{
+            padding:0;
+            border:0;
+           p{color:$white;}
+        }
+        .modal-popup-header{
+            width:100%;
+            padding : 40px 0 24px;
+            border-bottom:1px solid $gray-dd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .close-btn {
+                display:block;
+                background-image: url('../../resources/images/ic-gnb-close.png');
+                width: 21px;
+                height: 21px;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md){
+
+     .modal-header{
+         &.footer-modal{
+             padding:0 20px;
+             .modal-popup-header{
+                 padding: 20px 0 12px;
+             }
+             .sub-title{
+                 p{font-size:24px;}
+                 .sub-title-ic{width:30px;height: 30px;}
+             }
+         }
+     }
+}
+@include media-breakpoint-down(sm){
+   .modal{
+       .content-scroll{padding: 10px 15px!important;}
+   }
+    .modal-header{
+        &.footer-modal{
+            padding:0 20px;
+            .modal-popup-header{
+                padding: 20px 0 12px;
+            }
+            .sub-title{
+                p{font-size:20px;}
+                .sub-title-ic{width:30px;height: 30px;}
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl){
+    #swiper-button-next{
+        &.swiper-button-next{
+            right:0;
+        }
+    }
+    #swiper-button-prev{
+        &.swiper-button-prev{
+            left:0;
+        }
+    }
+}
+//분쟁광물
+.dispute-list{
+    li{
+        display:flex;
+        align-items: center;
+        padding: 12px 0;
+        .dispute-img{
+            display:inline-block;
+            width: 73px;
+            height: 73px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .dispute-text{width:85%; margin-left:20px;}
+    }
+}
+//계열사
+.subsidiary{
+    border-bottom: 1px solid $gray-dd;
+    padding:30px 0;
+}
+.subsidiary-img{
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+}
+.subsidiary-wrap{
+    padding:0 0 0 50px;
+}
+.subsidiary-title{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    .subsidiary-btn{
+        width: 30px;height: 15px;background: url(../../resources/images/g_list_btn_on.png) no-repeat center;
+        &.active{
+            width: 30px;height: 15px;background: url(../../resources/images/g_list_btn.png) no-repeat center;
+        }
+    }
+}
+.road-map{
+    display:none;
+    &.active{
+        display:block;
+        .maps{
+            width: 100%;
+            height: 400px;
+            margin:35px 0 20px 0;
+            background: $gray-dd;
+        }
+    }
+    
+}
+.compete{
+    .content{
+        .desc{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+    .img{width: 75px;height: 75px;background-size: contain;background-repeat: no-repeat; margin:0 auto 18px;}
+}
+.social-wrap{
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+}
+.objective{
+    .content{
+        .desc{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+    .img{width: 75px;height: 75px;background-size: contain;background-repeat: no-repeat; margin:0 auto 18px;}
+}
+
+@include media-breakpoint-down(xl){
+    .sub-title{
+        p{font-size:28px;}
+    }
+}
+
+///max-width 996px
+@include media-breakpoint-down(md){
+    section{
+        .row{
+            &.margin-50{margin-left:-10px;margin-right:-10px;}
+            &.margin-25{margin-left:-10px;margin-right:-10px;}
+        }
+    }
+    .ir-wrap{
+        margin-bottom: 20px;
+        padding: 0 10px;
+        &.card-list{
+            padding:0 10px;
+        }
+    }
+    //제품 글라스
+    .cover-glass{
+        &.reinforce{
+            .glass-list{
+                width:50%;
+                .glass-img{
+                    height: 300px;
+                    background-size: contain;
+                }
+            }
+        }
+        &.camera{
+            .glass-list{
+                width: 50%;
+                .glass-img{
+                    height: 300px;
+                }
+            }
+        }
+    }
+    .glass-list {
+        width: 100%;
+        padding: 0 10px;
+        margin-top: 20px;
+        .glass-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 250px;
+            border: 1px solid $gray-aa;
+            padding: 15px 0;
+            background-size: cover;
+        }
+        .glass-item {
+            height: 100%;
+        }
+    }
+    .glass-text {
+        padding: 10px;
+    }
+    //카메라윈도우
+    .camera-window {
+        .camera-list {
+            width: 50%;
+            padding: 0 10px;
+            margin-top: 20px;
+
+            .glass-item {
+                height: 100%;
+            }
+        }
+    }
+    //제품 소켓
+    .socket-wrap {
+        padding: 0;
+        .ul-list-dot {margin-top: 20px;}
+    }
+    .socket-explanation {
+        .socket-detail {
+            margin-top: 30px;
+            p { margin-bottom: 10px; }
+        }
+    }
+    //인재 채용
+    .hire-step {
+        position: relative;
+        .hire-step-img {
+            display: none;
+        }
+    }
+    .form-download {
+        display: block;
+    }
+    
+    //벤디드 페이지
+    .swiper-slide{
+        &.bending{
+            width: 100%;
+            height: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .subsidiary-wrap{
+        padding:20px 0 0 0;
+    }
+}
+@include media-breakpoint-down(sm){
+    //제품 글라스
+    .cover-glass{
+        &.reinforce{
+            .row{&.margin{margin-left:-10px;margin-right:-10px;}}
+            .glass-list{
+                width:50%;
+                .glass-img{
+                    height: 150px;
+                    background-size: contain;
+                }
+            }
+        }
+        &.camera{
+            .row{&.margin{margin-left:-10px;margin-right:-10px;}}
+            .glass-list{
+                width: 50%;
+                .glass-img{
+                    height:150px;
+                }
+            }
+        }
+        .glass-list{
+            .glass-img{height: 350px;}
+        }
+    }
+    .announcement-table {
+        padding: 0;
+        .announcement{
+            padding :30px 0;
+            border-bottom: 1px solid $rgba-2;
+            // &:first-child{
+            //     border-top:0;
+            // }
+            >div{display:block !important;}
+        }
+        .edit-announcement{
+            padding:50px 0;
+        }
+    }
+    .s-link-btn{
+        margin-top: 10px;
+    }
+}
+.cont{margin-top:15px;}
+
+
+
+

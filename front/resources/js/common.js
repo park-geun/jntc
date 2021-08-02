@@ -94,6 +94,9 @@ function ingAlert(){
 function goNoticeView() {
     $('#footer_notice_list').modal('hide');
     $('#footer_notice_view').modal('show');
+    setTimeout(function(){
+        $('body').addClass('modal-open');
+    },1000)
 }
 function backNoticeView(){
     $('#footer_notice_list').modal('show');
@@ -146,17 +149,16 @@ $(document).ready(function () {
      $('#cover-glass .swiper-slide').hover(function () {
         var idx = $(this).index() + 1;
         var glassImg = $('#glass_img_' + idx);
-        console.log(idx);
-        $(this).children().children().addClass('active');
-        glassImg.attr('style', 'background-image:url(../../resources/images/intro-phone-' + idx + '.jpg)');
+        var phoneImg = $('#phone_img_' + idx);
+        phoneImg.show();
+        glassImg.hide();
 
     }, function () {
         var idx = $(this).index() + 1;
         var glassImg = $('#glass_img_' + idx);
-
-        $(this).children().children().removeClass('active');
-        glassImg.attr('style', ' background-image:url(../../resources/images/intro-glass-' + idx + '.jpg)');
-
+        var phoneImg = $('#phone_img_' + idx);
+        phoneImg.hide();
+        glassImg.show();
     })
     ///사업소개 커넥터 hover
     // $('.swiper-slide').hover(function () {
@@ -262,7 +264,6 @@ function openSubsidiaryMap(idx){
 }
 function openSearch() {
     $('.search-bar').show();
-    $('.sitemaps').hide();
     $('.gnb').hide();
 }
 
@@ -273,7 +274,6 @@ function openSiteMap() {
 }
 
 function closeBtn() {
-    $('.sitemaps').hide();
     $('.search-bar.main-search').hide();
     $('.gnb').hide();
 }

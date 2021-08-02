@@ -17,7 +17,7 @@ section {
 header {
     .logo{
         display:block;
-        width:385px;
+        width:260px;
         height: 45px;
         background-image: url('../../resources/images/logo.png');
         background-size: cover;
@@ -161,13 +161,14 @@ footer {
         z-index: -1;
     }
     .title-box{
-        padding :138px 0;
+        padding :102px 0;
         .title{
-            font-size: 36px;
+            font-size: 48px;
             color: $white;                
             text-shadow: 0 0 6px rgba(0,0,0,0.2);
             font-weight: bold;
-            span{font-size:30px;}
+            line-height: 3.4rem;
+            span{font-size:36px;}
         }
         p{width:40%;color:$white; font-size: 18px;line-height: 1.5;
         text-shadow: 0 0 6px rgba(0,0,0,0.2);}
@@ -403,6 +404,7 @@ footer {
     }
     
     footer{
+        padding:0;
         .footer-info{
             p{font-size:14px;
                 span{margin-left:15px;}

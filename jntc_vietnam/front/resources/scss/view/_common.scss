@@ -498,7 +498,127 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
     margin:0 10px;
 }
 
+//tab panel comm
+.nav-tabs {
+    margin-top: 45px;
+    margin-bottom:20px;
 
+    .nav-item {
+        width: 50%;
+        text-align: center;
+        padding: 0;
+        margin-left: -1px;
+
+        .nav-link {
+            height: 100%;
+            padding: 21px 0;
+            border: none;
+            font-size: 20px;
+            color: $black;
+            border: 1px solid $gray-b2;
+            font-weight: bold;
+            &.active {
+                background-color: $orange;
+                border: 1px solid $orange;
+                color: $white;
+            }
+        }
+    }
+
+    .nav-item-3 {
+        width: 33.3%;
+        text-align: center;
+        padding: 0;
+        margin-left: -1px;
+
+        .nav-link {
+            height: 100%;
+            padding: 21px 0;
+            border: none;
+            font-size: 20px;
+            color: $black;
+            border: 1px solid $gray-b2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            &.active {
+                background-color: $orange;
+                border: 1px solid $orange;
+                color: $white;
+            }
+        }
+    }
+}
+
+.table{
+    width: 100%;
+    color: $gray-33;
+    margin-top:50px;
+    &.ir {
+        thead{
+            th{font-weight: bold;}
+        }
+        th {
+            padding: 10px 15px;
+            border-top: 1px solid $gray-33;
+            border-bottom: 1px solid $gray-99;
+            background-color: $gray-f5;
+            vertical-align: middle;
+            font-size: 16px;
+        }
+        td {
+            height: 60px;
+            padding: 0 30px;
+            border-top: none;
+            vertical-align: middle;
+            border-bottom: 1px solid $gray-dd;
+            font-weight: 400;
+        }
+    }
+}
+.pagination {
+    ul {
+        li{
+            .left-pagination{
+                width: 20px;
+                height: 16px;
+                display: inline-block;
+                background-image: url('../../resources/images/left-pagination.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position:center;
+                vertical-align: middle;
+            }
+            .right-pagination{
+                width: 20px;
+                height: 16px;
+                display: inline-block;
+                background-image: url('../../resources/images/right-pagination.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position:center;
+                vertical-align: middle;
+            }
+        }
+        a {
+            margin: 0 10px;
+
+            &.active {
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $white;
+                background-color: $gray-dd;
+                padding: 5px;
+                border-radius: 50px;
+            }
+        }
+    }
+
+}
 @include media-breakpoint-down(xl) {
     .container{padding :0 10px;}
     .orange-circle {
@@ -656,7 +776,6 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
         }
     }
 
-    
     ///box border comm
     .border-box {
         border: 1px solid $gray-b2;
@@ -779,6 +898,13 @@ p,a,h1,h2,h3,h4,h5,li,th,tr,td {
             display:flex;
             flex-flow:column;
             justify-content: center;
+        }
+    }
+    .pagination{
+        ul{
+            li{
+                a{font-size:14px;}
+            }
         }
     }
 }
